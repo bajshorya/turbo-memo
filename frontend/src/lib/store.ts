@@ -1,5 +1,7 @@
 import { create } from "zustand";
 
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001";
+
 export interface TweetSuggestion {
   id: string;
   agent: string;
@@ -15,74 +17,84 @@ export interface TweetSuggestion {
   insight?: string;
 }
 
-export interface FinancialMetric {
-  label: string;
-  value: string;
-  change?: string;
-}
-
-export interface AgentPerformance {
-  name: string;
-  percentage: number;
-  type: string;
-}
-
 interface DashboardState {
   tweetSuggestions: TweetSuggestion[];
 
-  // ✅ Volume Agent
   apiData: any[];
-  currentIndex: number;
-  fetchVolumeData: () => Promise<void>;
-  nextVolumeItem: () => void;
-
-  // ✅ Category Agent
   apiDataCategory: any[];
+
+  currentIndex: number;
   currentIndexCategory: number;
+
+  fetchVolumeData: () => Promise<void>;
   fetchCategoryData: () => Promise<void>;
+
+  nextVolumeItem: () => void;
   nextCategoryItem: () => void;
 
-  // ✅ shared helper
   setTweetFromApi: (data: any, type: "volume" | "category") => void;
-
-  selectedExchange: string;
-  searchQuery: string;
 
   approveTweet: (id: string) => void;
   rejectTweet: (id: string) => void;
   expandToThread: (id: string) => void;
-  setSelectedExchange: (exchange: string) => void;
-  setSearchQuery: (query: string) => void;
 }
 
 export const useDashboardStore = create<DashboardState>((set, get) => ({
-  selectedExchange: "all-dex",
-  searchQuery: "",
-
   tweetSuggestions: [],
 
-  // =========================
-  // ✅ VOLUME AGENT
-  // =========================
   apiData: [],
+  apiDataCategory: [],
+
   currentIndex: 0,
+  currentIndexCategory: 0,
 
+  // =========================
+  // FETCH VOLUME
+  // =========================
   fetchVolumeData: async () => {
-    const res = await fetch("http://localhost:3001/agent/volume-analyzer");
-    const data = await res.json();
+    try {
+      const res = await fetch(`${BASE_URL}/agent/volume-analyzer`);
+      const data = await res.json();
 
-    set({
-      apiData: data,
-      currentIndex: 0,
-    });
+      set({
+        apiData: data,
+        currentIndex: 0,
+      });
 
-    if (data.length > 0) {
-      get().setTweetFromApi(data[0], "volume");
+      if (data.length > 0) {
+        get().setTweetFromApi(data[0], "volume");
+      }
+    } catch (err) {
+      console.error("Volume fetch error:", err);
     }
   },
 
+  // =========================
+  // FETCH CATEGORY
+  // =========================
+  fetchCategoryData: async () => {
+    try {
+      const res = await fetch(`${BASE_URL}/agent/category-volume-analyzer`);
+      const data = await res.json();
+
+      set({
+        apiDataCategory: data,
+        currentIndexCategory: 0,
+      });
+
+      if (data.length > 0) {
+        get().setTweetFromApi(data[0], "category");
+      }
+    } catch (err) {
+      console.error("Category fetch error:", err);
+    }
+  },
+
+  // =========================
+  // NEXT ITEM (ROTATION)
+  // =========================
   nextVolumeItem: () => {
-    const { currentIndex, apiData } = get();
+    const { apiData, currentIndex } = get();
     if (!apiData.length) return;
 
     const nextIndex = (currentIndex + 1) % apiData.length;
@@ -91,30 +103,8 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
     get().setTweetFromApi(apiData[nextIndex], "volume");
   },
 
-  // =========================
-  // ✅ CATEGORY AGENT
-  // =========================
-  apiDataCategory: [],
-  currentIndexCategory: 0,
-
-  fetchCategoryData: async () => {
-    const res = await fetch(
-      "http://localhost:3001/agent/category-volume-analyzer",
-    );
-    const data = await res.json();
-
-    set({
-      apiDataCategory: data,
-      currentIndexCategory: 0,
-    });
-
-    if (data.length > 0) {
-      get().setTweetFromApi(data[0], "category");
-    }
-  },
-
   nextCategoryItem: () => {
-    const { currentIndexCategory, apiDataCategory } = get();
+    const { apiDataCategory, currentIndexCategory } = get();
     if (!apiDataCategory.length) return;
 
     const nextIndex = (currentIndexCategory + 1) % apiDataCategory.length;
@@ -124,58 +114,55 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
   },
 
   // =========================
-  // ✅ COMMON MAPPER
+  // KEEP ONLY 2 CARDS
   // =========================
   setTweetFromApi: (data, type) => {
     if (!data) return;
 
     const tweet: TweetSuggestion = {
       id: type === "category" ? `cat-${data.id}` : `vol-${data.id}`,
-
       agent: type === "category" ? "Category Volume Agent" : "Volume Agent",
-
-      agentType: type === "category" ? "Category Volume" : "Volume Agent",
-
+      agentType: type === "category" ? "Category Volume" : "Volume",
       content: data.suggested_tweet,
-      timestamp: "just now",
+      timestamp: new Date().toISOString(),
       status: "pending",
       performance: Math.floor(Math.random() * 100),
       exchange: "garden",
-
       category: data.category,
       metric: data.metric,
       value: data.value,
       insight: data.insight,
     };
 
-    set({
-      tweetSuggestions: [tweet], // always 1 card
+    set((state) => {
+      const filtered = state.tweetSuggestions.filter((t) =>
+        type === "volume" ? !t.id.startsWith("vol-") : !t.id.startsWith("cat-"),
+      );
+
+      return {
+        tweetSuggestions: [tweet, ...filtered],
+      };
     });
   },
 
   // =========================
-  // ✅ ACTIONS
+  // ACTIONS
   // =========================
   approveTweet: (id) =>
     set((state) => ({
-      tweetSuggestions: state.tweetSuggestions.map((tweet) =>
-        tweet.id === id ? { ...tweet, status: "approved" } : tweet,
+      tweetSuggestions: state.tweetSuggestions.map((t) =>
+        t.id === id ? { ...t, status: "approved" } : t,
       ),
     })),
 
   rejectTweet: (id) =>
     set((state) => ({
-      tweetSuggestions: state.tweetSuggestions.map((tweet) =>
-        tweet.id === id ? { ...tweet, status: "rejected" } : tweet,
+      tweetSuggestions: state.tweetSuggestions.map((t) =>
+        t.id === id ? { ...t, status: "rejected" } : t,
       ),
     })),
 
   expandToThread: (id) => {
-    console.log("Expanding tweet to thread:", id);
+    console.log("Expand:", id);
   },
-
-  setSelectedExchange: (exchange) =>
-    set(() => ({ selectedExchange: exchange })),
-
-  setSearchQuery: (query) => set(() => ({ searchQuery: query })),
 }));
