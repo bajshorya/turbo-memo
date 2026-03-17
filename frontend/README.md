@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Garden Finance - Agent Dashboard
+
+A modern, responsive dashboard for managing AI agent activities and social media suggestions built with Next.js, shadcn/ui, and Zustand.
+
+## Features
+
+- **Social Feed Layout**: Clean, Twitter-like interface for browsing agent activities
+- **Tweet Management**: Approve, reject, or expand suggested tweets to threads
+- **Real-time Metrics**: Display financial statistics and agent performance
+- **Purple/Pink Theme**: Beautiful gradient design matching garden.finance branding
+- **Responsive Design**: Works seamlessly across desktop and mobile devices
+- **State Management**: Efficient state handling with Zustand
+
+## Tech Stack
+
+- **Framework**: Next.js 16 with App Router
+- **Styling**: Tailwind CSS with shadcn/ui components
+- **State Management**: Zustand
+- **Package Manager**: Bun
+- **TypeScript**: Full type safety
+- **Icons**: Lucide React
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+   ```bash
+   bun install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2. Run the development server:
+   ```bash
+   bun run dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Project Structure
+
+```
+src/
+├── app/                 # Next.js app router
+├── components/          # React components
+│   ├── ui/             # shadcn/ui components
+│   ├── header.tsx      # Main navigation header
+│   ├── sidebar.tsx     # Left sidebar with suggestions
+│   ├── tweet-card.tsx  # Individual tweet suggestion cards
+│   └── stats-panel.tsx # Right panel with metrics
+├── lib/
+│   ├── store.ts        # Zustand state management
+│   └── utils.ts        # Utility functions
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Components
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### TweetCard
+Displays individual tweet suggestions with:
+- Agent identification and performance metrics
+- Content preview with smart formatting
+- Action buttons (approve, reject, expand to thread)
+- Status indicators
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### StatsPanel
+Shows key metrics including:
+- Financial statistics ($4.2B, $3.1B, $1.2B)
+- Agent performance percentages
+- Visual progress indicators
 
-## Learn More
+### Header
+Navigation bar featuring:
+- Garden Finance branding
+- Search functionality
+- Filter controls
+- Feed type toggles
 
-To learn more about Next.js, take a look at the following resources:
+## State Management
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The app uses Zustand for lightweight state management:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```typescript
+interface DashboardState {
+  tweetSuggestions: TweetSuggestion[]
+  financialMetrics: FinancialMetric[]
+  agentPerformance: AgentPerformance[]
+  approveTweet: (id: string) => void
+  rejectTweet: (id: string) => void
+  expandToThread: (id: string) => void
+}
+```
 
-## Deploy on Vercel
+## Design System
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The dashboard implements garden.finance's brand colors:
+- **Primary Purple**: `oklch(0.488 0.243 264.376)`
+- **Light Pink**: `oklch(0.97 0.02 320)`
+- **Gradients**: Purple to pink backgrounds
+- **Interactive Elements**: Hover states and smooth transitions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Development
+
+- **Linting**: Biome for fast, modern linting
+- **Formatting**: Biome for consistent code style
+- **Type Checking**: TypeScript with strict mode
+- **Hot Reload**: Fast refresh during development
+
+## Build
+
+```bash
+bun run build
+```
+
+## License
+
+Private - Garden Finance
