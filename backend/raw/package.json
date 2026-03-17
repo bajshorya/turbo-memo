@@ -1,0 +1,17 @@
+{
+  "name": "garden-api",
+  "version": "1.0.0",
+  "description": "Garden Finance API for Bitcoin bridge volume data",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "vercel dev",
+    "deploy": "vercel deploy --prod"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}

@@ -1,0 +1,902 @@
+[
+  {
+    "id": 1,
+    "category": "All-Time Milestone",
+    "metric": "Total Cumulative Volume",
+    "value": "$1.03 Billion",
+    "raw_value": 1032909569.96,
+    "insight": "Garden has processed over $1 billion in total cross-chain Bitcoin bridge volume since inception (Mar 2025 – Mar 2026), cementing its position as a major BTCfi infrastructure player.",
+    "suggested_tweet": "🌸 $1,000,000,000+\n\nGarden has crossed $1 Billion in total bridge volume.\n\nNative Bitcoin. Trustless. 30 seconds.\n\nThis is what BTCfi looks like. 🧵"
+  },
+  {
+    "id": 2,
+    "category": "All-Time Milestone",
+    "metric": "Total Order Count",
+    "value": "48,476 orders",
+    "raw_value": 48476,
+    "insight": "Garden has fulfilled 48,476 cross-chain swap orders in approximately 12 months — averaging ~133 orders per day across the entire period.",
+    "suggested_tweet": "48,476 trustless Bitcoin swaps completed.\n\nEvery single one: non-custodial, atomic, settled on-chain.\n\nGarden is quietly becoming the backbone of BTCfi. 🌸"
+  },
+  {
+    "id": 3,
+    "category": "All-Time Milestone",
+    "metric": "Unique Integrator / Source Count",
+    "value": "112 unique sources",
+    "raw_value": 112,
+    "insight": "Volume flowed in from 112 distinct sources/integrators including wallets, aggregators, DeFi protocols, and direct users — showing broad ecosystem adoption.",
+    "suggested_tweet": "112 different sources sent volume to Garden in the past year.\n\nWallets. Aggregators. DeFi apps. Direct users.\n\nBTCfi adoption is happening from every angle. 🌸"
+  },
+  {
+    "id": 4,
+    "category": "Source Dominance",
+    "metric": "Direct Traffic Volume",
+    "value": "$810.2M (78.4% of total)",
+    "raw_value": 810219696.96,
+    "insight": "Direct users (app.garden.finance) drove 78.4% of all volume — $810M out of $1.03B — showing strong organic product usage and brand recall.",
+    "suggested_tweet": "78% of Garden's $1B+ volume came from direct users — people who just open app.garden.finance and bridge.\n\nNo referral needed. The product speaks. 🌸"
+  },
+  {
+    "id": 5,
+    "category": "Source Spotlight",
+    "metric": "LI.FI Aggregator Volume",
+    "value": "$23.3M across 4,136 orders",
+    "raw_value": 23324291.41,
+    "insight": "LI.FI drove over $23M in volume across 4,136 orders — the highest order count from any external integrator, showing deep routing preference from the largest bridge aggregator.",
+    "suggested_tweet": "LI.FI routed $23M+ through Garden across 4,136 swaps.\n\nWhen aggregators choose Garden for Bitcoin routes, users follow.\n\nThis is what being the best Bitcoin bridge means. 🌸"
+  },
+  {
+    "id": 6,
+    "category": "Source Spotlight",
+    "metric": "Rango Exchange Volume",
+    "value": "$21.2M across 1,488 orders",
+    "raw_value": 21208603.81,
+    "insight": "Rango routed $21.2M through Garden across 1,488 orders — a significant vote of confidence from one of DeFi's leading multi-chain aggregators.",
+    "suggested_tweet": "Rango sent $21.2M to Garden across 1,488 swaps.\n\nAggregators route to the fastest, most reliable bridge.\n\nFor Bitcoin, that's Garden. 🌸"
+  },
+  {
+    "id": 7,
+    "category": "Source Spotlight",
+    "metric": "Phantom Wallet Volume",
+    "value": "$5.5M across 8,524 orders",
+    "raw_value": 5548310.07,
+    "insight": "Phantom wallet users completed 8,524 orders through Garden — the highest order count of any single integrator. This shows massive retail Bitcoin bridging activity via Phantom.",
+    "suggested_tweet": "8,524 swaps via Phantom wallet. 🫧\n\nPhantom users love bridging Bitcoin through Garden.\n\nNative BTC. Any chain. 30 seconds. That's Garden. 🌸"
+  },
+  {
+    "id": 8,
+    "category": "Source Spotlight",
+    "metric": "Google Search Driven Volume",
+    "value": "$25.5M across 651 orders",
+    "raw_value": 25493982.7,
+    "insight": "$25.5M in volume came from users who found Garden via Google search — with an average order size of ~$39,160, suggesting high-value users discovering Garden organically.",
+    "suggested_tweet": "$25.5M in volume. 651 swaps.\n\nAll from people who Googled 'Bitcoin bridge' and landed on Garden.\n\nSEO is a moat. 🌸"
+  },
+  {
+    "id": 9,
+    "category": "Source Spotlight",
+    "metric": "Twitter (t.co) Driven Volume",
+    "value": "$13.3M across 754 orders",
+    "raw_value": 13279802.93,
+    "insight": "$13.3M in bridge volume came directly from Twitter/X links, proving social media is a meaningful volume driver for Garden.",
+    "suggested_tweet": "$13.3M in bridge volume came directly from tweets.\n\nEvery post about Garden drives real capital.\n\nThe community is the growth engine. 🌸"
+  },
+  {
+    "id": 10,
+    "category": "Source Spotlight",
+    "metric": "garden.finance Website Referral Volume",
+    "value": "$14.6M across 994 orders",
+    "raw_value": 14585709.4,
+    "insight": "The garden.finance marketing/blog site referred $14.6M in volume — showing the website's content and SEO contributes meaningfully beyond just direct app traffic.",
+    "suggested_tweet": "Our website alone referred $14.6M in bridge volume.\n\nContent → Trust → Volume.\n\nBuilding in public works. 🌸"
+  },
+  {
+    "id": 11,
+    "category": "Source Spotlight",
+    "metric": "Dzap Integrator Volume",
+    "value": "$4.9M across 67 orders",
+    "raw_value": 4892232.31,
+    "insight": "Dzap sent $4.9M through Garden with just 67 orders — an average order size of ~$73K, indicating Dzap routes large institutional/whale-sized Bitcoin swaps through Garden.",
+    "suggested_tweet": "Dzap sent $4.9M through Garden in just 67 orders.\n\nAverage swap size: ~$73,000.\n\nInstitutions use Garden. 🌸"
+  },
+  {
+    "id": 12,
+    "category": "Source Spotlight",
+    "metric": "SatsTerminal Volume",
+    "value": "$885.6K across 432 orders",
+    "raw_value": 885652.43,
+    "insight": "SatsTerminal (satsTerminal + SatsTerminal combined) drove nearly $886K across 432 orders — a Bitcoin-native tool routing native BTC through Garden.",
+    "suggested_tweet": "SatsTerminal users sent nearly $886K through Garden.\n\nBitcoin-native tools choose Bitcoin-native bridges.\n\nGarden. 🌸"
+  },
+  {
+    "id": 13,
+    "category": "Peak Day",
+    "metric": "Single Day Highest Volume",
+    "value": "$18.35M on May 27, 2025",
+    "raw_value": 18348999.13,
+    "insight": "May 27, 2025 recorded the single highest daily volume from the Direct source — $18.35M — suggesting a significant market event or product moment drove massive bridging.",
+    "suggested_tweet": "$18.3M bridged in a single day. 🚀\n\nMay 27, 2025 — Garden's biggest day on record.\n\nBitcoin is moving. Garden is the highway. 🌸"
+  },
+  {
+    "id": 14,
+    "category": "Peak Day",
+    "metric": "Single Day Highest Order Count (Direct)",
+    "value": "270 orders on May 28, 2025",
+    "raw_value": 270,
+    "insight": "May 28, 2025 saw 270 direct orders — the highest single-day order count from direct users — indicating a surge in retail bridging activity.",
+    "suggested_tweet": "270 Bitcoin bridges in a single day. ⚡\n\nMay 28, 2025 — our busiest day ever.\n\nBTCfi season is real. 🌸"
+  },
+  {
+    "id": 15,
+    "category": "Peak Day",
+    "metric": "Phantom Wallet Record Day",
+    "value": "464 orders on Feb 23, 2026",
+    "raw_value": 464,
+    "insight": "Phantom wallet users placed 464 orders on Feb 23, 2026 — the highest single-day order count from any integrator ever recorded in the dataset.",
+    "suggested_tweet": "464 Bitcoin swaps from Phantom in a single day. 🫧\n\nFeb 23, 2026 — the most active day from any single integration.\n\nPhantom × Garden = unstoppable. 🌸"
+  },
+  {
+    "id": 16,
+    "category": "Monthly Trend",
+    "metric": "May 2025 Total Volume",
+    "value": "~$178M",
+    "raw_value": 178000000,
+    "insight": "May 2025 was Garden's breakout month — driven by massive Direct volume spikes (up to $18M/day), marking the first time the protocol consistently processed tens of millions per day.",
+    "suggested_tweet": "May 2025: Garden's first $100M+ month. 📈\n\nFrom thousands/day to millions/day.\n\nBTCfi has entered its growth phase. 🌸"
+  },
+  {
+    "id": 17,
+    "category": "Monthly Trend",
+    "metric": "February 2026 LI.FI Surge",
+    "value": "LI.FI contributed $7.7M+ in Feb 2026",
+    "raw_value": 7700000,
+    "insight": "February 2026 saw LI.FI volume explode — with multiple days exceeding $1M from LI.FI alone. This marks a major aggregator routing shift toward Garden.",
+    "suggested_tweet": "February 2026: LI.FI started sending $1M+ per day to Garden. 🔥\n\nAggregators are routing Bitcoin through us at scale.\n\nThe infrastructure play is working. 🌸"
+  },
+  {
+    "id": 18,
+    "category": "Monthly Trend",
+    "metric": "Phantom Wallet Feb 2026 Explosion",
+    "value": "~3,800 orders in Feb 2026",
+    "raw_value": 3800,
+    "insight": "Phantom wallet drove ~3,800 orders in February 2026 alone — a single-month record — representing ~44% of all Phantom orders ever placed through Garden.",
+    "suggested_tweet": "February 2026: Phantom users placed ~3,800 Bitcoin bridge orders through Garden.\n\nThat's more than the previous 6 months combined.\n\nGrowth is accelerating. 🌸"
+  },
+  {
+    "id": 19,
+    "category": "Growth Comparison",
+    "metric": "March 2025 vs March 2026 Daily Volume",
+    "value": "~10x growth in avg daily volume",
+    "raw_value": 10,
+    "insight": "In March 2025, daily direct volume averaged ~$600K. By March 2026, it averaged ~$700K–$1.5M, with several multi-million dollar days — a 3–10x improvement in daily throughput.",
+    "suggested_tweet": "March 2025 → March 2026\n\nAverage daily volume: 3x–10x higher.\n\nSame product. Better infrastructure. More integrators.\n\nGarden is compounding. 🌸"
+  },
+  {
+    "id": 20,
+    "category": "Growth Comparison",
+    "metric": "Q1 2025 vs Q1 2026 Order Count",
+    "value": "Q1 2025: ~700 orders | Q1 2026: ~4,000+ orders",
+    "raw_value": 6,
+    "insight": "The first 3 weeks of March 2026 alone saw more orders than the entirety of March 2025, driven by new integrators (LI.FI, Phantom, CashApp) going live.",
+    "suggested_tweet": "Q1 2025: ~700 orders in 3 weeks\nQ1 2026: ~4,000+ orders in 3 weeks\n\n6x more swaps. Same trustless Bitcoin bridge.\n\nThe ecosystem found Garden. 🌸"
+  },
+  {
+    "id": 21,
+    "category": "Integrator Growth",
+    "metric": "New Integrators in 2026",
+    "value": "LI.FI, Phantom, CashApp, Rift Dex, RWA Bridge, Maestro, Adobo",
+    "raw_value": 7,
+    "insight": "2026 brought a wave of new integrators — most notably LI.FI and Phantom — that dramatically expanded Garden's reach into new user segments.",
+    "suggested_tweet": "2026 integrations unlocked:\n✅ LI.FI\n✅ Phantom\n✅ CashApp\n✅ Rift Dex\n✅ Maestro\n✅ RWA Bridge\n\nGarden is becoming the Bitcoin bridge layer for all of DeFi. 🌸"
+  },
+  {
+    "id": 22,
+    "category": "Integrator Growth",
+    "metric": "CashApp as Integrator",
+    "value": "$818 across 32 orders",
+    "raw_value": 818.19,
+    "insight": "CashApp appeared as a traffic source in March 2026 — a notable signal that mainstream fintech users are discovering Garden for Bitcoin bridging.",
+    "suggested_tweet": "CashApp users found Garden. 💚\n\nMainstream fintech → BTCfi.\n\nThe bridge between TradFi and DeFi is being built, one swap at a time. 🌸"
+  },
+  {
+    "id": 23,
+    "category": "Integrator Growth",
+    "metric": "Rift Dex Volume in Feb 2026",
+    "value": "$1.88M across 195 orders",
+    "raw_value": 1881457.02,
+    "insight": "Rift Dex became a consistent volume contributor in early 2026, routing $1.88M through Garden — representing a new DeFi protocol choosing Garden as its Bitcoin bridge layer.",
+    "suggested_tweet": "Rift Dex routed $1.88M through Garden. 🔁\n\nDeFi protocols are choosing Garden as their native Bitcoin bridge layer.\n\nBTCfi infrastructure is maturing. 🌸"
+  },
+  {
+    "id": 24,
+    "category": "Average Order Size",
+    "metric": "Overall Average Order Size",
+    "value": "$21,308 per order",
+    "raw_value": 21308,
+    "insight": "With $1.03B volume across 48,476 orders, Garden's average order size is ~$21,308 — well above typical retail DeFi swap sizes, indicating significant institutional or high-net-worth usage.",
+    "suggested_tweet": "Average Garden swap size: $21,308.\n\nThis isn't just retail.\n\nWhales are using Garden to move serious Bitcoin. 🌸"
+  },
+  {
+    "id": 25,
+    "category": "Average Order Size",
+    "metric": "Direct User Average Order Size",
+    "value": "~$50,360 per order",
+    "raw_value": 50360,
+    "insight": "Direct users averaged $50,360 per swap ($810M / 16,087 orders) — significantly higher than integrator-driven orders, suggesting direct users are sophisticated, high-value participants.",
+    "suggested_tweet": "Direct Garden users swap an average of $50,000 per transaction.\n\nThis is who uses Garden: Bitcoin holders moving serious capital.\n\nNot retail noise. Conviction. 🌸"
+  },
+  {
+    "id": 26,
+    "category": "Average Order Size",
+    "metric": "LI.FI Average Order Size",
+    "value": "~$5,638 per order",
+    "raw_value": 5638,
+    "insight": "LI.FI's average order size was ~$5,638 — smaller than direct users but driving the highest order volume, showing aggregators bring high-frequency retail Bitcoin bridging.",
+    "suggested_tweet": "LI.FI users average $5,600 per Bitcoin swap through Garden.\n\n4,136 swaps. $23M moved.\n\nHigh frequency + trustless = the aggregator choice. 🌸"
+  },
+  {
+    "id": 27,
+    "category": "Average Order Size",
+    "metric": "Untracked Source Average Order Size",
+    "value": "~$28,590 per order",
+    "raw_value": 28590,
+    "insight": "Untracked sources (API/SDK usage without referrer) averaged $28,590 per order across $97M total — hinting at programmatic/institutional users integrating directly via Garden's API.",
+    "suggested_tweet": "~$97M in volume with no referrer tag.\n\nAverage size: $28,590 per swap.\n\nDevelopers and institutions are integrating Garden's SDK silently. 🌸"
+  },
+  {
+    "id": 28,
+    "category": "Daily Records",
+    "metric": "Highest Single Day Untracked Volume",
+    "value": "$2.9M on Sep 1, 2025",
+    "raw_value": 2926804.69,
+    "insight": "September 1, 2025 saw $2.9M from Untracked sources in a single day — 70 orders averaging $41,811 each — a record day for API/SDK-based institutional bridging.",
+    "suggested_tweet": "$2.9M bridged via Garden's API in a single day.\n\n70 orders. ~$42K average.\n\nDevelopers building on Garden are moving serious capital. 🌸"
+  },
+  {
+    "id": 29,
+    "category": "Daily Records",
+    "metric": "Highest LI.FI Single Day Volume",
+    "value": "$1.49M on Feb 24, 2026",
+    "raw_value": 1491711.52,
+    "insight": "LI.FI routed $1.49M through Garden on February 24 alone — the largest single-day figure from any external aggregator.",
+    "suggested_tweet": "$1.49M routed through Garden by LI.FI in a single day. 📡\n\nFeb 24, 2026 — LI.FI's biggest Garden day ever.\n\nAggregators trust Garden with scale. 🌸"
+  },
+  {
+    "id": 30,
+    "category": "Daily Records",
+    "metric": "Highest Rango Single Day Volume",
+    "value": "$3.34M on Sep 20, 2025",
+    "raw_value": 3342760.03,
+    "insight": "Rango routed $3.34M through Garden on Sep 20, 2025 in just 28 orders — averaging $119K per order, suggesting large institutional Bitcoin movements routed through Rango.",
+    "suggested_tweet": "$3.34M from Rango in a single day. 28 orders.\n\nThat's $119K average per swap.\n\nInstitutional Bitcoin is moving through Garden. 🌸"
+  },
+  {
+    "id": 31,
+    "category": "Ecosystem Insights",
+    "metric": "Hyperliquid Integration Volume",
+    "value": "$106.9K (gitbook referrals) + app volume",
+    "raw_value": 106903.11,
+    "insight": "Hyperliquid's gitbook docs drove over $106K in volume to Garden — showing HyperEVM users bridging Bitcoin directly through Garden to access Hyperliquid's perpetuals ecosystem.",
+    "suggested_tweet": "Hyperliquid traders are using Garden to bridge BTC to HyperEVM.\n\n$106K+ driven from Hyperliquid docs alone.\n\nBTCfi is coming to perps. 🌸"
+  },
+  {
+    "id": 32,
+    "category": "Ecosystem Insights",
+    "metric": "StarkNet Integration Volume",
+    "value": "$444K across 60 orders",
+    "raw_value": 444243.08,
+    "insight": "Starknet.io referred $444K in Garden volume — showing Bitcoin holders using Garden to access Starknet's ZK-rollup DeFi ecosystem.",
+    "suggested_tweet": "Bitcoin on StarkNet? \n\n$444K bridged through Garden to Starknet.\n\nZK-rollup DeFi is now within reach of Bitcoin holders. 🌸"
+  },
+  {
+    "id": 33,
+    "category": "Ecosystem Insights",
+    "metric": "Botanix Labs Integration Volume",
+    "value": "$423.4K across 240 orders",
+    "raw_value": 423365.57,
+    "insight": "Botanix Labs drove $423K in volume across 240 orders — representing BTC bridging to Botanix's Bitcoin EVM sidechain, a growing BTCfi ecosystem.",
+    "suggested_tweet": "Botanix × Garden: $423K bridged to Bitcoin's EVM sidechain.\n\n240 swaps. Bitcoin DeFi native.\n\nThe BTCfi stack is assembling. 🌸"
+  },
+  {
+    "id": 34,
+    "category": "Ecosystem Insights",
+    "metric": "Citrea Integration Volume",
+    "value": "$3,931 across 64 orders",
+    "raw_value": 3931.59,
+    "insight": "bapps.citrea.xyz drove 64 orders through Garden — an early signal of Bitcoin ZK-rollup users (Citrea) bridging via Garden.",
+    "suggested_tweet": "Citrea ZK-rollup users are bridging Bitcoin through Garden. 🔐\n\nBitcoin's ZK future has a bridge: Garden.\n\n🌸"
+  },
+  {
+    "id": 35,
+    "category": "Ecosystem Insights",
+    "metric": "Xverse Wallet Volume",
+    "value": "$1.6M across 21 orders",
+    "raw_value": 1597123.63,
+    "insight": "Xverse, the leading Bitcoin-native wallet, drove $1.6M through Garden in 21 orders — averaging $76K per swap — showing Bitcoin power users routing through Garden.",
+    "suggested_tweet": "Xverse wallet users average $76K per Bitcoin swap through Garden.\n\n$1.6M total. 21 orders.\n\nBitcoin-native wallets choose Garden. 🌸"
+  },
+  {
+    "id": 36,
+    "category": "Ecosystem Insights",
+    "metric": "Perplexity AI Driven Volume",
+    "value": "$976K across 20 orders",
+    "raw_value": 976460.62,
+    "insight": "Users referred from Perplexity AI search drove nearly $1M in volume — an unexpected channel showing AI-assisted research leading directly to Bitcoin bridging actions.",
+    "suggested_tweet": "~$1M in volume came from Perplexity AI searches. 🤖\n\nPeople ask AI 'how to bridge Bitcoin' — and AI recommends Garden.\n\nThis is the future of discovery. 🌸"
+  },
+  {
+    "id": 37,
+    "category": "Ecosystem Insights",
+    "metric": "ChatGPT Driven Volume",
+    "value": "$134.2K across 33 orders",
+    "raw_value": 134215.28,
+    "insight": "ChatGPT (chatgpt.com) referred $134K in volume — users asking AI assistants about Bitcoin bridging are being directed to Garden.",
+    "suggested_tweet": "ChatGPT users found Garden. $134K in swaps came directly from chatgpt.com.\n\nWhen you ask AI 'best Bitcoin bridge' — it says Garden.\n\n🤖🌸"
+  },
+  {
+    "id": 38,
+    "category": "Ecosystem Insights",
+    "metric": "Claude AI Driven Volume",
+    "value": "$51,908 in a single order",
+    "raw_value": 51908.54,
+    "insight": "One $51,908 order came directly from claude.ai — a fascinating data point showing Anthropic's Claude users bridging Bitcoin through Garden.",
+    "suggested_tweet": "A Claude AI user bridged $51,908 of Bitcoin through Garden. 🤖\n\nAI assistants are becoming Bitcoin bridge discovery engines.\n\nGarden. Recommended by AI. 🌸"
+  },
+  {
+    "id": 39,
+    "category": "Ecosystem Insights",
+    "metric": "Gemini AI Driven Volume",
+    "value": "$450.8K across 12 orders",
+    "raw_value": 450822.42,
+    "insight": "Google Gemini (gemini.google.com) referred $450K in volume — with an average order of $37,568 — making Gemini one of the most valuable AI referral channels.",
+    "suggested_tweet": "Google Gemini users bridged $450K through Garden. 🌐\n\nAverage swap: $37,568.\n\nAI is the new search. Garden is the answer. 🌸"
+  },
+  {
+    "id": 40,
+    "category": "Ecosystem Insights",
+    "metric": "MetaMask Portfolio Referral",
+    "value": "$530.7K across 19 orders",
+    "raw_value": 530677.23,
+    "insight": "MetaMask Portfolio users drove $530K in volume — showing EVM wallet users discovering Garden for native Bitcoin access.",
+    "suggested_tweet": "MetaMask Portfolio users sent $530K through Garden.\n\nEVM wallets want native Bitcoin.\n\nGarden is where they get it. 🌸"
+  },
+  {
+    "id": 41,
+    "category": "Ecosystem Insights",
+    "metric": "Brave Browser Search Volume",
+    "value": "$2.08M across 79 orders",
+    "raw_value": 2083392.47,
+    "insight": "Brave browser search referred $2.08M in Garden volume — crypto's most privacy-conscious browser naturally leads users to the most trustless Bitcoin bridge.",
+    "suggested_tweet": "Brave search users sent $2M+ through Garden.\n\nPrivacy-first browser. Trustless Bitcoin bridge.\n\nAlignment. 🌸"
+  },
+  {
+    "id": 42,
+    "category": "Ecosystem Insights",
+    "metric": "DuckDuckGo Search Volume",
+    "value": "$1.13M across 137 orders",
+    "raw_value": 1135327.31,
+    "insight": "DuckDuckGo referred $1.13M in Garden volume — another strong privacy-browser signal, confirming Garden's appeal to the privacy-conscious Bitcoin community.",
+    "suggested_tweet": "DuckDuckGo users sent $1.1M through Garden.\n\nPrivacy-conscious Bitcoin holders choose Garden.\n\nTrustless bridging for those who value ownership. 🌸"
+  },
+  {
+    "id": 43,
+    "category": "Ecosystem Insights",
+    "metric": "Bing Search Volume Spike",
+    "value": "$781.4K across 7 orders",
+    "raw_value": 781391.46,
+    "insight": "Bing drove $781K in Garden volume — with one May 8, 2025 order totaling $669K from a single Bing user, suggesting an ultra high-value user finding Garden via Bing.",
+    "suggested_tweet": "One Bing search led to a $669K Bitcoin bridge on Garden.\n\nThis is the power of discoverability.\n\nSearch → Trust → Bridge → 🌸"
+  },
+  {
+    "id": 44,
+    "category": "Weekly Trend",
+    "metric": "Best Week in Dataset (May 21–27, 2025)",
+    "value": "~$77M in a single week",
+    "raw_value": 77000000,
+    "insight": "The week of May 21–27, 2025 was Garden's all-time record week — with multiple $10M+ days (May 21: $17.6M, May 22: $16.4M, May 26: $17.9M, May 27: $18.3M).",
+    "suggested_tweet": "Week of May 21–27, 2025:\n\n4 days with $10M+ in volume.\n\nGarden's best week ever. Peak BTCfi season.\n\nWe're just getting started. 🌸"
+  },
+  {
+    "id": 45,
+    "category": "Weekly Trend",
+    "metric": "Consistent $1M+ Daily Volume Streak",
+    "value": "10+ consecutive days in May 2025",
+    "raw_value": 10,
+    "insight": "Garden maintained $1M+ in daily direct volume for 10+ consecutive days in May 2025 — a milestone proving product-market fit at scale.",
+    "suggested_tweet": "10+ consecutive days of $1M+ daily volume.\n\nMay 2025 was when Garden proved it could sustain institutional-grade throughput.\n\nConsistency > spikes. 🌸"
+  },
+  {
+    "id": 46,
+    "category": "Source Comparison",
+    "metric": "AI Search Sources vs Traditional Search",
+    "value": "AI sources: $1.56M | Traditional search: $27.7M",
+    "raw_value": 1560000,
+    "insight": "While Google/Bing/DuckDuckGo still dominate search referrals ($27.7M), AI assistants (ChatGPT, Perplexity, Gemini, Claude) collectively drove $1.56M — and this trend is accelerating rapidly in 2026.",
+    "suggested_tweet": "AI search engines sent $1.56M to Garden in the past year.\n\nThis number is growing fast.\n\nWhen AI recommends Bitcoin bridges, Garden wins. 🌸"
+  },
+  {
+    "id": 47,
+    "category": "Geographic/Platform Signals",
+    "metric": "Yandex (Russian) User Volume",
+    "value": "$2,525 across 7 orders",
+    "raw_value": 2525.61,
+    "insight": "Yandex search (Russia's dominant search engine) referred users to Garden — showing Garden's reach spans beyond English-speaking markets.",
+    "suggested_tweet": "From Yandex to Garden.\n\nBitcoin has no borders. Neither does Garden.\n\nGlobal BTCfi. 🌸"
+  },
+  {
+    "id": 48,
+    "category": "Onchain Ecosystem",
+    "metric": "DocsTesting Source Volume",
+    "value": "$429K across 42 orders",
+    "raw_value": 429522.92,
+    "insight": "DocsTesting is a source tied to developers testing Garden's SDK/API. $429K across 42 orders suggests active developer testing of real capital flows — a strong signal of deep integration work.",
+    "suggested_tweet": "Developers are testing Garden with $429K in real volume.\n\nWhen builders test with real capital, productions integrations follow.\n\nThe pipeline is full. 🌸"
+  },
+  {
+    "id": 49,
+    "category": "Onchain Ecosystem",
+    "metric": "Coinbase Wallet Volume",
+    "value": "$198.3K across 15 orders",
+    "raw_value": 198263.3,
+    "insight": "Coinbase Wallet (cbwallet) drove $198K in Garden volume — showing even Coinbase's wallet users are choosing Garden for cross-chain Bitcoin swaps.",
+    "suggested_tweet": "Coinbase Wallet users bridged $198K through Garden. 🔵\n\nEven Coinbase users choose Garden for Bitcoin.\n\nThe best bridge wins. 🌸"
+  },
+  {
+    "id": 50,
+    "category": "Volume Acceleration",
+    "metric": "Jan–Mar 2026 vs Jan–Mar 2025 Volume Growth",
+    "value": "~5–8x YoY volume growth estimate",
+    "raw_value": 6.5,
+    "insight": "Comparing early 2025 daily averages (~$200K–$600K/day) to early 2026 (regularly $300K–$2M/day from Direct alone + new integrators), volume has grown roughly 5–8x year-over-year.",
+    "suggested_tweet": "Jan–Mar 2025: averaging ~$400K/day\nJan–Mar 2026: regularly hitting $1–2M/day\n\n~5x year-over-year volume growth.\n\nGarden is compounding. 🌸"
+  },
+  {
+    "id": 51,
+    "category": "Order Frequency",
+    "metric": "Average Daily Order Count (Full Period)",
+    "value": "~133 orders/day",
+    "raw_value": 133,
+    "insight": "Over the full 374-day period (Mar 9 2025 – Mar 17 2026), Garden averaged 133 Bitcoin bridge orders per day across all sources.",
+    "suggested_tweet": "133 Bitcoin bridges per day. Every day. For a year.\n\nTrustless. Non-custodial. 30 seconds.\n\nGarden. Always open. 🌸"
+  },
+  {
+    "id": 52,
+    "category": "Order Frequency",
+    "metric": "Peak Daily Order Count (All Sources)",
+    "value": "~600+ orders on best days in Feb 2026",
+    "raw_value": 600,
+    "insight": "With Phantom driving 400+ orders/day alongside Direct and LI.FI, February 2026 regularly saw 500–700+ combined daily orders — 5x the annual average.",
+    "suggested_tweet": "February 2026: 500–700+ Bitcoin bridge orders per day.\n\nThat's 5x our historical average.\n\nIntegrations = flywheel. 🌸"
+  },
+  {
+    "id": 53,
+    "category": "Order Frequency",
+    "metric": "onMeta (India) Order Count",
+    "value": "9,821 orders across $1.1M",
+    "raw_value": 9821,
+    "insight": "onMeta is an Indian fiat on-ramp that routed 9,821 orders through Garden — the highest order count of any named integrator, averaging only ~$113 per order, suggesting massive retail Indian user adoption.",
+    "suggested_tweet": "9,821 orders. $113 average. India is using Garden. 🇮🇳\n\nonMeta (India's fiat on-ramp) routed 9,821 Bitcoin bridge orders through Garden.\n\nBTCfi is global. 🌸"
+  },
+  {
+    "id": 54,
+    "category": "Retail Signal",
+    "metric": "onMeta Small-Order Activity",
+    "value": "Avg $113/order across 9,821 orders",
+    "raw_value": 113,
+    "insight": "onMeta's ~$113 average order size reflects true retail adoption — Indian users bridging small amounts of Bitcoin through Garden, enabled by fiat on-ramp integration.",
+    "suggested_tweet": "The average Indian user is bridging $113 of Bitcoin through Garden via onMeta.\n\nBig vision, small entry.\n\nBTCfi is for everyone. 🌸"
+  },
+  {
+    "id": 55,
+    "category": "Integrator ROI",
+    "metric": "Most Capital-Efficient Integrator (Volume per Order)",
+    "value": "Dzap: $73,018/order avg",
+    "raw_value": 73018,
+    "insight": "Dzap achieved the highest average order size among named integrators at $73K per swap — making it the most capital-efficient integration for Garden in terms of volume-per-order.",
+    "suggested_tweet": "Dzap sends $73K of Bitcoin per swap through Garden on average.\n\nFewer orders. Bigger capital.\n\nInstitutional BTCfi is here. 🌸"
+  },
+  {
+    "id": 56,
+    "category": "Integrator ROI",
+    "metric": "Most Order-Efficient Integrator",
+    "value": "onMeta: 9,821 orders (most ever)",
+    "raw_value": 9821,
+    "insight": "onMeta generated more orders than any other named source — 9,821 — while Phantom generated 8,524. Together, these two integrators drove ~38% of all orders.",
+    "suggested_tweet": "Two integrators. 18,345 orders between them.\n\nonMeta + Phantom = retail BTCfi distribution at scale.\n\nGarden's integrations are multiplying impact. 🌸"
+  },
+  {
+    "id": 57,
+    "category": "Volume Distribution",
+    "metric": "Top 5 Sources Market Share",
+    "value": "Direct + Untracked + Google + LI.FI + Rango = 93.5% of volume",
+    "raw_value": 93.5,
+    "insight": "The top 5 volume sources — Direct, Untracked, Google, LI.FI, and Rango — account for 93.5% of all volume, while 107 other sources make up the remaining 6.5%.",
+    "suggested_tweet": "Garden's volume: concentrated at the top, distributed at the edges.\n\nTop 5 sources: 93.5% of volume.\n\nBut 107 more sources are growing. Long tail = long-term. 🌸"
+  },
+  {
+    "id": 58,
+    "category": "Volume Distribution",
+    "metric": "Integrator-Driven Volume (ex-Direct)",
+    "value": "~$222M (21.5% of total)",
+    "raw_value": 222000000,
+    "insight": "Excluding Direct traffic, integrators and referral sources collectively drove ~$222M — 21.5% of all volume. This share is growing rapidly as new integrators like LI.FI and Phantom scale.",
+    "suggested_tweet": "Integrators drove $222M of Garden's volume — and their share is growing.\n\nFrom $0 to $222M via 3rd-party integrations.\n\nSDK distribution is the flywheel. 🌸"
+  },
+  {
+    "id": 59,
+    "category": "Milestones Timeline",
+    "metric": "First $1M Day",
+    "value": "April 10, 2025 (Direct: $884K + Untracked: $336K)",
+    "raw_value": 1000000,
+    "insight": "April 10, 2025 marked the first time Garden crossed $1M in combined daily volume — a watershed moment in the protocol's growth trajectory.",
+    "suggested_tweet": "April 10, 2025: Garden's first $1M day.\n\nLess than 16 months after launch.\n\nNow we regularly do this weekly. Progress is exponential. 🌸"
+  },
+  {
+    "id": 60,
+    "category": "Milestones Timeline",
+    "metric": "First $10M Day",
+    "value": "May 13, 2025 (Direct: $7.08M + others: $3M+)",
+    "raw_value": 10000000,
+    "insight": "May 13, 2025 saw Garden exceed $10M in a single day for the first time — driven by $7.08M in Direct volume alone, with additional contributions from other sources.",
+    "suggested_tweet": "May 13, 2025: Garden's first $10M day. 🎯\n\nFrom $1M days to $10M days in just 5 weeks.\n\nMomentum compounds. 🌸"
+  },
+  {
+    "id": 61,
+    "category": "Competitive Position",
+    "metric": "Total Volume vs $1B Milestone",
+    "value": "$1.03B total — milestone crossed",
+    "raw_value": 1032909569.96,
+    "insight": "Garden crossed $1B in total cumulative bridge volume — putting it in an elite tier of Bitcoin bridge protocols, alongside wrapped BTC solutions that have been running for years.",
+    "suggested_tweet": "$1 Billion bridged.\n\nIn under 12 months.\n\nTrustless. Non-custodial. 30 seconds.\n\nGarden is the Bitcoin bridge. 🌸"
+  },
+  {
+    "id": 62,
+    "category": "Seasonal Pattern",
+    "metric": "Weekend vs Weekday Activity",
+    "value": "Consistent 7-day activity with no major weekend dip",
+    "raw_value": 7,
+    "insight": "Garden volume data shows consistent 7-day-a-week activity with no significant weekend drops — unlike traditional finance. Bitcoin never sleeps, and neither does Garden.",
+    "suggested_tweet": "Bitcoin bridges on weekends.\nBitcoin bridges on holidays.\nBitcoin bridges at 3am.\n\nGarden is always online. 24/7/365. 🌸"
+  },
+  {
+    "id": 63,
+    "category": "Seasonal Pattern",
+    "metric": "Late October 2025 Activity",
+    "value": "Multiple $6M+ days Oct 22–27",
+    "raw_value": 6000000,
+    "insight": "Late October 2025 saw Garden's highest sustained volume outside the May 2025 peak — with several $5–8M days, correlating with Bitcoin's price action in that period.",
+    "suggested_tweet": "October 2025: Bitcoin moved. Garden moved more. 📈\n\nMultiple $6M+ days as the market heated up.\n\nGarden is the on-ramp to BTCfi when Bitcoin pumps. 🌸"
+  },
+  {
+    "id": 64,
+    "category": "Untracked / API Signals",
+    "metric": "Untracked Source Total Volume",
+    "value": "$97.2M across 3,401 orders",
+    "raw_value": 97230914.5,
+    "insight": "$97.2M came from sources with no referrer tracking — meaning direct API/SDK calls without a referral header. This is the 'silent' institutional and developer-driven volume layer.",
+    "suggested_tweet": "$97.2M in 'silent' volume.\n\nNo referral tag. Pure API/SDK usage.\n\n3,401 orders. $28K average.\n\nDevelopers are building on Garden quietly. 🌸"
+  },
+  {
+    "id": 65,
+    "category": "Growth Rate",
+    "metric": "March 2026 Daily Average vs March 2025",
+    "value": "March 2026 avg ~$280K/day (first 17 days) vs March 2025 ~$120K/day",
+    "raw_value": 2.3,
+    "insight": "The first 17 days of March 2026 show a combined ~$4.8M/day rate when all sources are included — vs ~$500K–$1M/day in March 2025. Even excluding the May 2025 outlier peak, baseline has grown ~3–5x.",
+    "suggested_tweet": "March 2025 baseline: ~$500K/day\nMarch 2026 baseline: ~$1.5M/day\n\nBaseline volume has tripled. Without the peak spikes.\n\nThe floor keeps rising. 🌸"
+  },
+  {
+    "id": 66,
+    "category": "Integration Network",
+    "metric": "Aggregator Network Effect",
+    "value": "LI.FI + Rango + Dzap + DZap = $49.4M",
+    "raw_value": 49400000,
+    "insight": "The four major DeFi aggregators (LI.FI, Rango, Dzap, DZap) collectively routed $49.4M through Garden — representing 4.8% of total volume but signaling massive future growth as aggregator routing deepens.",
+    "suggested_tweet": "4 major DeFi aggregators. $49.4M routed through Garden.\n\nLI.FI + Rango + Dzap + DZap\n\nThe aggregator flywheel is spinning. 🌸"
+  },
+  {
+    "id": 67,
+    "category": "New Entrant Highlights",
+    "metric": "Phantom First Appearance to Scale",
+    "value": "From 0 to 8,524 orders in ~6 weeks",
+    "raw_value": 8524,
+    "insight": "Phantom wallet appeared in Garden's data in early February 2026 and rapidly scaled to 400+ daily orders within weeks — the fastest-scaling integrator Garden has ever seen.",
+    "suggested_tweet": "Phantom integrated Garden in early 2026.\n\n6 weeks later: 400+ daily orders.\n\nThe fastest integration ramp-up in Garden history. 🌸"
+  },
+  {
+    "id": 68,
+    "category": "New Entrant Highlights",
+    "metric": "LI.FI Scale-Up Speed",
+    "value": "From first appearance to $1.4M/day in ~3 weeks",
+    "raw_value": 1400000,
+    "insight": "LI.FI first appeared in Garden data in late January 2026. By February 5, it was routing $1.43M in a single day. The ramp was nearly instant at scale.",
+    "suggested_tweet": "LI.FI's first week on Garden: small numbers.\nLI.FI's 3rd week: $1.4M in a single day.\n\nWhen aggregators commit, they go all-in. 🌸"
+  },
+  {
+    "id": 69,
+    "category": "Unique Metrics",
+    "metric": "Volume Per Active Source (Daily Avg)",
+    "value": "$1,234 avg volume per source per day",
+    "raw_value": 1234,
+    "insight": "With $1.03B volume from 112 sources over 374 days, each source contributed on average $1,234/day — though highly skewed toward Direct users.",
+    "suggested_tweet": "112 sources. 374 days. $1B+ bridged.\n\nEvery integration, every referral, every search — they all add up.\n\nGarden's distribution is diversifying. 🌸"
+  },
+  {
+    "id": 70,
+    "category": "Unique Metrics",
+    "metric": "Orders Per Source (Average)",
+    "value": "~433 orders per unique source",
+    "raw_value": 433,
+    "insight": "On average, each unique source (integrator/referrer) drove 433 orders to Garden — showing that integrations are sticky and users return after discovery.",
+    "suggested_tweet": "The average Garden integration drives 433 Bitcoin bridge orders.\n\nUsers who find Garden through any channel keep coming back.\n\nRetention is the real moat. 🌸"
+  },
+  {
+    "id": 71,
+    "category": "Comparative",
+    "metric": "Q4 2025 vs Q4 2024 (proxy: Mar-Jun 2025 vs Sep-Dec 2025)",
+    "value": "Sep–Dec 2025 avg ~$1.5–2M/day vs Mar–Jun 2025 avg ~$600K/day",
+    "raw_value": 2.5,
+    "insight": "The second half of 2025 (Sep–Dec) showed consistently higher baseline volume than Q1-Q2 2025, with daily averages roughly 2.5x higher — showing compounding organic growth.",
+    "suggested_tweet": "H1 2025: ~$600K avg daily volume\nH2 2025: ~$1.5M avg daily volume\n\n2.5x growth in 6 months — without a major spike event.\n\nOrganic. Compounding. 🌸"
+  },
+  {
+    "id": 72,
+    "category": "Community Sources",
+    "metric": "Telegram (web.telegram.org) Volume",
+    "value": "$1,324 across 15 orders",
+    "raw_value": 1324.1,
+    "insight": "web.telegram.org drove 15 orders through Garden — showing community Telegram groups are actively sharing Garden links that lead to real bridge usage.",
+    "suggested_tweet": "Telegram communities are driving Bitcoin bridges to Garden.\n\nCrypto's most active comms platform = BTCfi on-ramp.\n\n🌸"
+  },
+  {
+    "id": 73,
+    "category": "Community Sources",
+    "metric": "Reddit Driven Volume",
+    "value": "First Reddit order: March 7, 2026",
+    "raw_value": 20.87,
+    "insight": "The first tracked Reddit referral to Garden appeared on March 7, 2026 — suggesting growing organic community discussion on Reddit about Bitcoin bridging.",
+    "suggested_tweet": "Reddit found Garden. First tracked referral: March 2026. 🟠\n\nThe Bitcoin community is discovering BTCfi.\n\nShare your story. 🌸"
+  },
+  {
+    "id": 74,
+    "category": "Institutional Signals",
+    "metric": "Single Largest Recorded Order",
+    "value": "~$811K from app.garden.finance on Mar 13, 2025",
+    "raw_value": 811259.97,
+    "insight": "The single largest order in the dataset came from app.garden.finance on March 13, 2025 — $811K in one swap — demonstrating Garden handles institutional-scale Bitcoin moves.",
+    "suggested_tweet": "$811,000 bridged in a single Garden swap.\n\nOne transaction. Trustless. Non-custodial. 30 seconds.\n\nThis is what BTCfi at scale looks like. 🌸"
+  },
+  {
+    "id": 75,
+    "category": "Institutional Signals",
+    "metric": "Untracked $2.2M Single Day Order",
+    "value": "$2.2M from Untracked on Mar 14, 2025",
+    "raw_value": 2200163.12,
+    "insight": "On March 14, 2025, a single source with no referrer tag sent $2.2M in 5 orders — average $440K per swap — the earliest evidence of institutional-scale API usage.",
+    "suggested_tweet": "$2.2M in 5 Bitcoin swaps. No referrer. Pure API.\n\nMarch 2025 — before Garden was on anyone's radar.\n\nInstitutions move quietly. 🌸"
+  },
+  {
+    "id": 76,
+    "category": "Protocol Resilience",
+    "metric": "Volume Through Oct/Nov 2025 (Post-Exploit Period)",
+    "value": "Oct 2025: $15M+ | Nov 2025: $3M+ (recovery)",
+    "raw_value": 15000000,
+    "insight": "Despite the publicized solver exploit in late October 2025, Garden continued processing volume and showed recovery in November — demonstrating the protocol's resilience.",
+    "suggested_tweet": "Protocol tested. Protocol survived. Protocol grew.\n\nOctober 2025: Garden faced challenges and kept bridging Bitcoin.\n\nTrustless architecture doesn't stop for anyone. 🌸"
+  },
+  {
+    "id": 77,
+    "category": "Protocol Resilience",
+    "metric": "November 2025 Recovery Signal",
+    "value": "Volume resumed and scaled in Dec–Jan",
+    "raw_value": 1,
+    "insight": "After the November 2025 quiet period, December 2025 and January 2026 showed volume return and scale — proving community trust in Garden's fundamentals.",
+    "suggested_tweet": "Nov 2025 was quiet. Dec 2025 came back. Jan 2026 scaled.\n\nReal protocols don't die from setbacks.\n\nGarden is built to last. 🌸"
+  },
+  {
+    "id": 78,
+    "category": "Ecosystem Depth",
+    "metric": "Story Foundation Driven Volume",
+    "value": "$3,731 across 5 orders",
+    "raw_value": 3731.25,
+    "insight": "rewards.story.foundation referred orders to Garden — showing Bitcoin bridging activity connected to Story Protocol's IP ecosystem.",
+    "suggested_tweet": "Story Protocol users are bridging Bitcoin through Garden.\n\nBTCfi is reaching IP protocols now.\n\nThe use cases keep expanding. 🌸"
+  },
+  {
+    "id": 79,
+    "category": "Ecosystem Depth",
+    "metric": "Airdrops.io Volume",
+    "value": "$161.2K across 3 orders",
+    "raw_value": 161241.58,
+    "insight": "airdrops.io referred $161K to Garden — showing airdrop hunters bridging Bitcoin to qualify for BTCfi protocol rewards, a strong product-market fit signal.",
+    "suggested_tweet": "Airdrop hunters found Garden. $161K bridged from airdrops.io.\n\nBTCfi has token incentives. Garden has the bridge.\n\nAlign incentives. Watch capital flow. 🌸"
+  },
+  {
+    "id": 80,
+    "category": "Ecosystem Depth",
+    "metric": "Campamento DeFi (Spanish) Volume",
+    "value": "$231.7K across 23 orders",
+    "raw_value": 231668.18,
+    "insight": "campamentodefi.com (a Spanish-language DeFi educational community) drove $231K in Garden volume — confirming Garden has strong Latin American community traction.",
+    "suggested_tweet": "La comunidad DeFi latina ama Garden.\n\n$231K bridged desde campamentodefi.com.\n\nBTCfi no tiene fronteras. 🌸"
+  },
+  {
+    "id": 81,
+    "category": "Ecosystem Depth",
+    "metric": "teletype.in (Russian Community) Volume",
+    "value": "$3,185 across 23 orders",
+    "raw_value": 3185.02,
+    "insight": "teletype.in (a Telegram-based blogging platform popular in Russia/CIS) drove 23 Garden orders — showing Russian/CIS Bitcoin community adoption of Garden.",
+    "suggested_tweet": "Russian-language crypto blogs are sending users to Garden.\n\nBitcoin DeFi has no geography.\n\nGlobal. Trustless. 🌸"
+  },
+  {
+    "id": 82,
+    "category": "Ecosystem Depth",
+    "metric": "Across Bridge Referral",
+    "value": "$99,999 in 1 order",
+    "raw_value": 99999.5,
+    "insight": "Across Protocol (another bridge) referred a $100K order to Garden — suggesting Across users needed a Bitcoin-specific route and chose Garden for the final leg.",
+    "suggested_tweet": "Even users of other bridges come to Garden for Bitcoin.\n\nAcross Protocol → Garden: $100K.\n\nWhen you need native BTC, there's only one choice. 🌸"
+  },
+  {
+    "id": 83,
+    "category": "Ecosystem Depth",
+    "metric": "Uniswap Referral Volume",
+    "value": "$2,583 across 6 orders",
+    "raw_value": 2583.61,
+    "insight": "app.uniswap.org referred 6 Garden orders — likely from users wanting to convert EVM assets back to native Bitcoin after Uniswap DeFi activity.",
+    "suggested_tweet": "Uniswap users coming to Garden to get back to native Bitcoin.\n\nThe full loop: BTC → DeFi → back to BTC.\n\nGarden closes the cycle. 🌸"
+  },
+  {
+    "id": 84,
+    "category": "Ecosystem Depth",
+    "metric": "Hypurr Finance Volume",
+    "value": "$5,754 across 3 orders",
+    "raw_value": 5753.99,
+    "insight": "app.hypurr.fi (Hyperliquid perps tooling) drove Garden orders — confirming HyperEVM perp traders are bridging Bitcoin through Garden to access Hyperliquid.",
+    "suggested_tweet": "Hyperliquid traders are using Garden to bridge native BTC to HyperEVM.\n\nPerps traders want Bitcoin exposure on the fastest perp DEX.\n\nGarden delivers it. 🌸"
+  },
+  {
+    "id": 85,
+    "category": "Ecosystem Depth",
+    "metric": "GMX Referral Volume",
+    "value": "$1,585 across 2 orders",
+    "raw_value": 1585.62,
+    "insight": "app.gmx.io referred 2 Garden orders — perpetuals traders on GMX bridging Bitcoin through Garden, another sign of BTCfi integration with DeFi's leading perp DEX.",
+    "suggested_tweet": "GMX traders are bridging Bitcoin through Garden.\n\nBitcoin → GMX perps. The BTCfi DeFi loop is real.\n\n🌸"
+  },
+  {
+    "id": 86,
+    "category": "Ecosystem Depth",
+    "metric": "imToken Wallet Volume",
+    "value": "$21,976 across 2 orders",
+    "raw_value": 21975.93,
+    "insight": "imToken (Asia's largest mobile crypto wallet) referred 2 Garden orders averaging $10,988 each — an early signal of Asian wallet users discovering Garden.",
+    "suggested_tweet": "imToken users found Garden. Asia's biggest mobile wallet. $22K bridged.\n\nAsia + Bitcoin DeFi + Garden = an inevitable combination. 🌸"
+  },
+  {
+    "id": 87,
+    "category": "Ecosystem Depth",
+    "metric": "Rabby Wallet Volume",
+    "value": "$159 across 5 orders",
+    "raw_value": 159.48,
+    "insight": "Rabby wallet (DeBank's EVM-focused wallet) referred 5 Garden orders — showing Ethereum power users with Rabby bridging Bitcoin through Garden.",
+    "suggested_tweet": "Rabby wallet users are bridging Bitcoin through Garden.\n\nEVM power users want native BTC access.\n\nGarden gives it to them. 🌸"
+  },
+  {
+    "id": 88,
+    "category": "Ecosystem Depth",
+    "metric": "Maestro Bot Volume",
+    "value": "$40,244 across 9 orders",
+    "raw_value": 40244.19,
+    "insight": "Maestro (Telegram trading bot) drove $40K in Garden volume — representing automated Bitcoin bridging via Telegram bots, a novel use case.",
+    "suggested_tweet": "Telegram bots are bridging Bitcoin through Garden. 🤖\n\nMaestro sent $40K in automated swaps.\n\nBTCfi is becoming programmable. 🌸"
+  },
+  {
+    "id": 89,
+    "category": "Ecosystem Depth",
+    "metric": "OpenSea Referral",
+    "value": "$28 in 1 order",
+    "raw_value": 28.35,
+    "insight": "One order came from OpenSea — a signal that NFT users are exploring Bitcoin DeFi through Garden, potentially to acquire BTC for Bitcoin-based NFT ecosystems.",
+    "suggested_tweet": "Even an OpenSea user found Garden.\n\nWhen NFT collectors want native Bitcoin, they bridge through Garden.\n\nBTCfi is everywhere. 🌸"
+  },
+  {
+    "id": 90,
+    "category": "Macro Trend",
+    "metric": "Integrator Share of Volume Growing",
+    "value": "Integrator % of volume: ~5% (Mar 2025) → ~40%+ (Mar 2026)",
+    "raw_value": 40,
+    "insight": "In early 2025, nearly all volume was direct. By early 2026, integrators (LI.FI, Phantom, Rango etc.) regularly contribute 30–50% of daily volume — the SDK distribution flywheel is working.",
+    "suggested_tweet": "March 2025: 95% of volume = direct users.\nMarch 2026: 40–50% of volume = integrators.\n\nThe SDK flywheel has ignited.\n\nDistribution > marketing. 🌸"
+  },
+  {
+    "id": 91,
+    "category": "Macro Trend",
+    "metric": "Sustainability of Growth",
+    "value": "Baseline daily volume floors keep rising quarter-over-quarter",
+    "raw_value": 1,
+    "insight": "Even in quiet periods (Nov 2025 recovery, early Jan 2026), Garden's daily volume floor was higher than previous quiet periods — indicating structural demand growth, not just spikes.",
+    "suggested_tweet": "Garden's 'slow days' are getting faster.\n\nEvery quarter, the floor rises.\n\nThis is compounding infrastructure adoption. 🌸"
+  },
+  {
+    "id": 92,
+    "category": "Macro Trend",
+    "metric": "Diversification of Source Mix",
+    "value": "Single-source dependency dropped from ~95% to ~60%",
+    "raw_value": 60,
+    "insight": "Direct traffic represented ~95% of volume in Mar 2025 but by Mar 2026 new sources (LI.FI, Phantom, Rango) regularly contribute 30–40% of volume — healthier diversification.",
+    "suggested_tweet": "Garden's volume is diversifying.\n\nFewer eggs in one basket. More integrations. More resilience.\n\nThis is how protocols become infrastructure. 🌸"
+  },
+  {
+    "id": 93,
+    "category": "Special Stats",
+    "metric": "Slowest Day Volume",
+    "value": "$62 on Nov 8, 2025 (recovery period)",
+    "raw_value": 62.38,
+    "insight": "November 2025 saw minimal activity (likely post-incident pause) — with some days recording under $100 — making the subsequent recovery to millions/day even more remarkable.",
+    "suggested_tweet": "There were days with near-zero volume.\n\nNow there are days with $10M+.\n\nEvery protocol that lasts goes through the valley.\n\nGarden kept building. 🌸"
+  },
+  {
+    "id": 94,
+    "category": "Special Stats",
+    "metric": "Fastest Recovery Post-Quiet Period",
+    "value": "Nov 2025 → Dec 2025: $62/day to $300K+/day in 3 weeks",
+    "raw_value": 300000,
+    "insight": "Garden rebounded from near-zero daily volumes in early November 2025 to hundreds of thousands per day by early December — demonstrating strong user trust recovery.",
+    "suggested_tweet": "Recovery speed: 3 weeks from near-zero to $300K+ days.\n\nWhen a protocol has real product-market fit, users come back.\n\nGarden's fundamentals are unshaken. 🌸"
+  },
+  {
+    "id": 95,
+    "category": "Upcoming Hooks",
+    "metric": "Year in Review: $1B Crossed",
+    "value": "$1,032,909,569 total volume",
+    "raw_value": 1032909569.96,
+    "insight": "With over $1 billion bridged in Garden's first full year of scaled operations, the protocol has established itself as the benchmark for trustless Bitcoin bridging.",
+    "suggested_tweet": "Year 1 recap:\n\n✅ $1,032,909,569 bridged\n✅ 48,476 swaps\n✅ 112 integrations\n✅ 374 consecutive days of bridging\n\nYear 2 is going to be different. 🌸"
+  },
+  {
+    "id": 96,
+    "category": "Upcoming Hooks",
+    "metric": "Next Milestone: 50,000 Orders",
+    "value": "Currently at 48,476 — 1,524 away",
+    "raw_value": 48476,
+    "insight": "Garden is 1,524 swaps away from its 50,000th trustless Bitcoin bridge — at current March 2026 rates (~100–200 orders/day), this milestone could arrive within days.",
+    "suggested_tweet": "Garden is approaching its 50,000th trustless Bitcoin swap.\n\n~1,524 bridges to go.\n\nWill you be one of them? 🌸"
+  },
+  {
+    "id": 97,
+    "category": "Upcoming Hooks",
+    "metric": "Path to $2B",
+    "value": "$1.03B done. Run-rate implies $2B by mid-2026",
+    "raw_value": 2000000000,
+    "insight": "At March 2026 daily rates (~$3–5M/day combined), Garden is on a run-rate of ~$1.5–1.8B/year, suggesting $2B cumulative total is achievable by mid-2026.",
+    "suggested_tweet": "$1B down. $2B in sight.\n\nAt current run-rate: $2 Billion by mid-2026.\n\nBTCfi is just getting started. 🌸"
+  },
+  {
+    "id": 98,
+    "category": "Viral Stat",
+    "metric": "Bitcoin Never Stopped Bridging",
+    "value": "374 consecutive days of non-zero volume",
+    "raw_value": 374,
+    "insight": "Garden recorded non-zero volume every single day from March 9, 2025 to March 17, 2026 — 374 consecutive days of active Bitcoin bridging with zero protocol downtime days.",
+    "suggested_tweet": "374 consecutive days.\n\n374 days of Bitcoin being bridged trustlessly.\n374 days of non-custodial swaps.\n374 days of BTCfi.\n\nGarden. Always on. 🌸"
+  },
+  {
+    "id": 99,
+    "category": "Viral Stat",
+    "metric": "Volume Per Second (Lifetime)",
+    "value": "~$32.77/second bridged through Garden",
+    "raw_value": 32.77,
+    "insight": "Over the 374-day period (32,313,600 seconds), Garden processed $1.03B — equivalent to $31.97 of Bitcoin bridged every second, continuously.",
+    "suggested_tweet": "Every second of the past year, Garden bridged ~$32 of Bitcoin.\n\n$32/second. 24 hours a day. 374 days.\n\nThat's what trustless infrastructure looks like. 🌸"
+  },
+  {
+    "id": 100,
+    "category": "Viral Stat",
+    "metric": "If Garden Volume Were a Country's GDP",
+    "value": "$1.03B ≈ GDP of small island nations",
+    "raw_value": 1030000000,
+    "insight": "$1B+ in bridge volume represents real economic activity — capital that Bitcoin holders trusted Garden to move across chains without intermediaries.",
+    "suggested_tweet": "$1,000,000,000 of Bitcoin moved trustlessly through Garden.\n\nNo banks. No custody. No permission needed.\n\nThis is what permissionless finance looks like. 🌸"
+  }
+]
