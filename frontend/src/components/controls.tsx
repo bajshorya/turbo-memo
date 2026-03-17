@@ -20,7 +20,7 @@ export function Controls() {
           </Button>
 
           <div className="flex items-center gap-2">
-            {["Volume", "Category", "Fees"].map((label) => (
+            {["Volume", "Category", "Fees", "Asset"].map((label) => (
               <div
                 key={label}
                 className="h-8 flex items-center rounded-full px-3 bg-white border border-gray-200 text-xs font-medium text-[#1a1a3e]"

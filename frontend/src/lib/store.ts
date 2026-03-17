@@ -35,17 +35,20 @@ interface DashboardState {
   volumeFeed: AgentFeedState;
   categoryFeed: AgentFeedState;
   feesFeed: AgentFeedState;
+  assetFeed: AgentFeedState;
 
   // Fetch actions
   fetchVolumeData: () => Promise<void>;
   fetchCategoryData: () => Promise<void>;
   fetchFeesData: () => Promise<void>;
+  fetchAssetData: () => Promise<void>;
   fetchAllFeeds: () => Promise<void>;
 
   // Swipe / advance actions
   advanceVolume: () => void;
   advanceCategory: () => void;
   advanceFees: () => void;
+  advanceAsset: () => void;
 
   // Search / filter (kept from original)
   selectedExchange: string;
@@ -75,6 +78,7 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
   volumeFeed: { ...defaultFeed },
   categoryFeed: { ...defaultFeed },
   feesFeed: { ...defaultFeed },
+  assetFeed: { ...defaultFeed },
 
   // ── Fetch ──────────────────────────────────────────
   fetchVolumeData: async () => {
@@ -107,9 +111,19 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
     }
   },
 
+  fetchAssetData: async () => {
+    set({ assetFeed: { ...defaultFeed, loading: true } });
+    try {
+      const data = await fetchFeed("/agent/asset-analyzer");
+      set({ assetFeed: { data, currentIndex: 0, loading: false, error: null } });
+    } catch (e: any) {
+      set({ assetFeed: { ...defaultFeed, loading: false, error: e.message } });
+    }
+  },
+
   fetchAllFeeds: async () => {
-    const { fetchVolumeData, fetchCategoryData, fetchFeesData } = get();
-    await Promise.all([fetchVolumeData(), fetchCategoryData(), fetchFeesData()]);
+    const { fetchVolumeData, fetchCategoryData, fetchFeesData, fetchAssetData } = get();
+    await Promise.all([fetchVolumeData(), fetchCategoryData(), fetchFeesData(), fetchAssetData()]);
   },
 
   // ── Advance (swipe) ───────────────────────────────
@@ -133,6 +147,13 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
     if (!feesFeed.data.length) return;
     const newData = [...feesFeed.data.slice(1), feesFeed.data[0]];
     set({ feesFeed: { ...feesFeed, data: newData } });
+  },
+
+  advanceAsset: () => {
+    const { assetFeed } = get();
+    if (!assetFeed.data.length) return;
+    const newData = [...assetFeed.data.slice(1), assetFeed.data[0]];
+    set({ assetFeed: { ...assetFeed, data: newData } });
   },
 
   // ── Filter ────────────────────────────────────────

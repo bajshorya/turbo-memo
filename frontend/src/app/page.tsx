@@ -12,10 +12,12 @@ export default function Home() {
     volumeFeed,
     categoryFeed,
     feesFeed,
+    assetFeed,
     fetchAllFeeds,
     advanceVolume,
     advanceCategory,
     advanceFees,
+    advanceAsset,
   } = useDashboardStore();
 
   useEffect(() => {
@@ -50,6 +52,13 @@ export default function Home() {
             loading={feesFeed.loading}
             error={feesFeed.error}
             onSwipe={advanceFees}
+          />
+          <AgentFeed
+            title="Asset Analyzer"
+            data={assetFeed.data}
+            loading={assetFeed.loading}
+            error={assetFeed.error}
+            onSwipe={advanceAsset}
           />
         </div>
 

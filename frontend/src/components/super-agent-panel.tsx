@@ -3,17 +3,18 @@
 import { useDashboardStore } from "@/lib/store";
 
 export function SuperAgentPanel() {
-  const { volumeFeed, categoryFeed, feesFeed } = useDashboardStore();
+  const { volumeFeed, categoryFeed, feesFeed, assetFeed } = useDashboardStore();
 
   // Aggregate: take the top card from each feed
   const topCards = [
     { agent: "Volume Analyzer", item: volumeFeed.data[0] ?? null },
     { agent: "Category Volume", item: categoryFeed.data[0] ?? null },
     { agent: "Fees Analyzer", item: feesFeed.data[0] ?? null },
+    { agent: "Asset Analyzer", item: assetFeed.data[0] ?? null },
   ];
 
   const allLoading =
-    volumeFeed.loading && categoryFeed.loading && feesFeed.loading;
+    volumeFeed.loading && categoryFeed.loading && feesFeed.loading && assetFeed.loading;
 
   return (
     <div className="w-80 min-w-72 space-y-4 shrink-0">
@@ -90,6 +91,7 @@ export function SuperAgentPanel() {
             { label: "Volume", count: volumeFeed.data.length },
             { label: "Category", count: categoryFeed.data.length },
             { label: "Fees", count: feesFeed.data.length },
+            { label: "Asset", count: assetFeed.data.length },
           ].map(({ label, count }) => (
             <div key={label} className="flex items-center justify-between">
               <span className="text-[11px] text-gray-500">{label}</span>
