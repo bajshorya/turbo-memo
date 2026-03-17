@@ -1,47 +1,272 @@
 [
   {
     "id": 1,
-    "category": "Super: All-Time Milestone",
-    "metric": "Total Cumulative Volume",
-    "value": "$1.03 Billion",
-    "raw_value": 1032909569.96,
-    "insight": "Garden has processed over $1 billion in total cross-chain Bitcoin bridge volume since inception (Mar 2025 – Mar 2026), cementing its position as a major BTCfi infrastructure player.",
-    "suggested_tweet": "$1,000,000,000.\n\ngarden just crossed $1b in cumulative volume.\n\nnative btc. trustless. 30 seconds.\n\nbtcfi is here."
+    "category": "Super: Structural Shift",
+    "metric": "The Integrator Flippening",
+    "value": "78% (Lifetime) vs 36% (Q1 2026) Direct Volume",
+    "raw_value": 36.0,
+    "insight": "Looking at the $1B lifetime data, Direct volume commands 78%. But isolating just Q1 2026, Direct has dropped to 36%, with Integrators skyrocketing to 34% (and driving 85% of all orders). Garden has successfully transitioned from a standalone dApp to core backend infrastructure for the ecosystem.",
+    "suggested_tweet": "all-time, 78% of our volume came from direct users.\n\nin q1 2026? that dropped to 36%.\n\nnot because direct slowed down. because integrators are scaling exponentially.\n\ninvisible infrastructure."
   },
   {
     "id": 2,
-    "category": "Super: Viral Stats",
-    "metric": "Integrator Orders vs Direct Orders Ratio",
-    "value": "9:1 integrator-to-direct order ratio",
-    "raw_value": 9,
-    "insight": "For every 1 direct user order, there were 9 integrator-driven orders in Q1 2026. This 9:1 ratio shows how deeply integrations have become the dominant force in Garden's order flow.",
-    "suggested_tweet": "for every 1 person who uses our frontend, 9 people use an app powered by garden.\n\ninvisible infrastructure."
+    "category": "Super: Acquisition Intelligence",
+    "metric": "AI vs Traditional SEO Order Sizes",
+    "value": "AI ($27,889 avg) vs SEO ($23,447 avg)",
+    "raw_value": 27889.0,
+    "insight": "While Google drives more total volume, users who discover Garden via AI chatbots (ChatGPT, Gemini, Claude, Bing AI) possess the highest average order size of any discovered channel ($27k+). High-net-worth users are using LLMs for deep DeFi research.",
+    "suggested_tweet": "people discovering garden through ai chatbots average $27k per swap.\n\nhighest intent users on the internet right now.\n\nai is the new whale acquisition channel."
   },
   {
     "id": 3,
-    "category": "Super: Recent Momentum",
-    "metric": "Q1 2026 Resurgence",
-    "value": "$55.1K in a single week",
-    "raw_value": 55158.34,
-    "insight": "Volume bottomed out in late December 2025 ($590) but has aggressively rebounded, hitting over $55k in the first week of March 2026. A massive 93x increase from the bottom.",
-    "suggested_tweet": "we were quiet in december.\n\nnow we're doing $55k+ a week again.\n\nback to building the best bitcoin bridge. 🌸"
+    "category": "Super: Network Velocity",
+    "metric": "Real-Time Throughput",
+    "value": "1 swap every 2 minutes (Sustained)",
+    "raw_value": 120.0,
+    "insight": "Over the recent 72-hour mid-March window, Garden processed 2,164 trustless swaps. This equates to roughly one fully settled, non-custodial cross-chain transaction every 2 minutes, 24/7. Lifetime, this is ~$32 routed every single second.",
+    "suggested_tweet": "1 trustless btc swap every 2 minutes.\n\nfor 72 hours straight.\n\nno wrapped tokens. no multisig delays.\n\njust execution."
   },
   {
     "id": 4,
-    "category": "Super: Aggregate Performance",
-    "metric": "3-Day Total Volume (Mar 14-17)",
-    "value": "$6.26M in 72 hours",
-    "raw_value": 6261216,
-    "insight": "Over a single 3-day mid-month period, Garden processed $6.26M across all assets and chains, maintaining a consistent multi-million dollar daily run rate.",
-    "suggested_tweet": "3 days. $6.2m bridged.\n\nwe don't just spike. we sustain.\n\nthe baseline is rising."
+    "category": "Super: Asset Evolution",
+    "metric": "Beyond Bitcoin: Stablecoin Dominance",
+    "value": "$1.98M Solana USDC in 3 days",
+    "raw_value": 1981335.0,
+    "insight": "Garden is known as a BTC bridge, but in the Mar 14-17 window, Solana USDC was the single highest volume asset ($1.98M), outpacing native BTC ($1.49M). The protocol is quietly capturing the whale-tier stablecoin routing market.",
+    "suggested_tweet": "we built the best bitcoin bridge.\n\nturns out, that also makes you the best stablecoin bridge.\n\nnearly $2m in solana usdc routed in 3 days."
   },
   {
     "id": 5,
-    "category": "Super: All-Time Milestone",
-    "metric": "Total Order Count",
-    "value": "48,476 orders",
-    "raw_value": 48476,
-    "insight": "Garden has fulfilled 48,476 cross-chain swap orders in approximately 12 months — averaging ~133 orders per day across the entire period.",
-    "suggested_tweet": "48,476 trustless btc swaps.\n\nall non-custodial. all settled on-chain.\n\nthe backbone of btcfi."
+    "category": "Super: Institutional Adoption",
+    "metric": "The API 'Silent' Layer",
+    "value": "$97.2M Lifetime Untracked Volume",
+    "raw_value": 97230914.0,
+    "insight": "Untracked API/SDK volume (no referrer tag) accounts for $97.2M of the lifetime $1B, and it boasts the highest average order size across all datasets ($37,870). This is pure institutional, programmatic, and developer-driven capital bypassing frontends.",
+    "suggested_tweet": "nearly $100m bridged with zero marketing attribution.\n\npure api volume. $37k average swap.\n\nsilent money moves quietly."
+  },
+  {
+    "id": 6,
+    "category": "Super: Integrator Velocity",
+    "metric": "Phantom Wallet's Unprecedented Ramp",
+    "value": "0 to 8,524 orders in ~6 weeks",
+    "raw_value": 8524.0,
+    "insight": "Phantom went from non-existent in Garden's logs to generating 400+ daily orders and 8,524 total swaps in roughly six weeks. It is the fastest-scaling integration in Garden's history, proving the massive latent demand for native BTC in Solana wallets.",
+    "suggested_tweet": "phantom went from zero to 400+ daily orders in 6 weeks.\n\nour fastest scaling integration ever.\n\nmeet users where they already are."
+  },
+  {
+    "id": 7,
+    "category": "Super: Protocol Resilience",
+    "metric": "The Valley vs The Peak",
+    "value": "$62 Day (Nov '25) vs $4.79M Day (Mar '26)",
+    "raw_value": 4790000.0,
+    "insight": "Post-incident in November 2025, Garden had a day with just $62 in volume. By March 2026, daily volumes regularly approach $5M. The ability to retain user trust and rebound 77,000x from the absolute bottom is a massive signal of unshakeable PMF.",
+    "suggested_tweet": "nov 8, 2025: our slowest day ever at $62.\n\nmar 10, 2026: $4.79m in 24 hours.\n\ntrustless architecture survives. keep building."
+  },
+  {
+    "id": 8,
+    "category": "Super: Ecosystem Breadth",
+    "metric": "Day-Zero Liquidity for Alt-VMs",
+    "value": "Monad, Citrea, MegaETH, Botanix logs active",
+    "raw_value": 4.0,
+    "insight": "Mid-March 2026 logs show active test and mainnet volume for Monad, Citrea (cBTC), MegaETH (BTC.b), and Botanix. Garden is positioning itself as the default, day-zero liquidity layer for every new high-performance chain and ZK-rollup.",
+    "suggested_tweet": "monad. megaeth. citrea. botanix.\n\ntestnet and mainnet volume already showing up in our logs.\n\nwe go where the liquidity goes."
+  },
+  {
+    "id": 9,
+    "category": "Super: Retail vs Institutional",
+    "metric": "The Spectrum of Capital",
+    "value": "onMeta ($113 avg) vs Dzap ($73k avg)",
+    "raw_value": 73000.0,
+    "insight": "Garden natively supports extreme retail (India's onMeta averaging $113 across 9,800 orders) and extreme whales (Dzap averaging $73k per swap). The infrastructure doesn't discriminate based on capital size.",
+    "suggested_tweet": "the average indian user bridges $113 via onmeta.\n\nthe average dzap user bridges $73k.\n\nthe exact same rails handle both seamlessly.\n\nbtcfi is for everyone."
+  },
+  {
+    "id": 10,
+    "category": "Super: Aggregator Dominance",
+    "metric": "The Routing Layer Kings",
+    "value": "$49.4M from top 4 aggregators",
+    "raw_value": 49400000.0,
+    "insight": "LI.FI, Rango, Dzap, and DZap combined for nearly $50M in lifetime volume. LI.FI alone scaled to $1.4M/day just three weeks post-integration. Aggregators are routing large chunks of the cross-chain market exclusively through Garden.",
+    "suggested_tweet": "4 major aggregators routed nearly $50m through garden.\n\nli.fi hit $1.4m/day just 3 weeks after integrating.\n\nwhen routing algorithms optimize for speed and trust, they pick us."
+  },
+  {
+    "id": 11,
+    "category": "Super: Macro Baseline",
+    "metric": "The Rising Floor",
+    "value": "$400k/day (Q1 '25) to $1.5M+/day (Q1 '26)",
+    "raw_value": 3.75,
+    "insight": "Ignoring the massive $77M week spike of May 2025, Garden's organic daily baseline volume has roughly tripled YoY. A \"slow\" day in 2026 is better than a \"great\" day in early 2025.",
+    "suggested_tweet": "our slow days in 2026 are bigger than our record days in early 2025.\n\nbaseline volume has tripled year over year.\n\nthe floor is rising."
+  },
+  {
+    "id": 12,
+    "category": "Super: User Retention",
+    "metric": "High-Frequency Bridging",
+    "value": "1.41 orders per wallet daily",
+    "raw_value": 1.41,
+    "insight": "In the Mar 16-17 window, 548 unique wallets placed 776 orders. This 1.41 ratio indicates users aren't just bridging once and leaving; they are actively trading back and forth, treating Garden like a decentralized exchange.",
+    "suggested_tweet": "average active wallet is doing 1.4 swaps per day.\n\nwhen bridging takes 30 seconds, it stops being a chore and becomes a feature."
+  },
+  {
+    "id": 13,
+    "category": "Super: Asset Evolution",
+    "metric": "The cbBTC Solana Explosion",
+    "value": "224 orders in 72 hours",
+    "raw_value": 224.0,
+    "insight": "Coinbase's cbBTC on Solana is seeing massive velocity. Garden processed 224 orders for this specific asset pair in just 3 days, proving it is a critical hub for unifying fragmented wrapped Bitcoin liquidity.",
+    "suggested_tweet": "over 200 swaps for cbbtc on solana in just 3 days.\n\nliquidity is fragmented everywhere. garden pieces it back together."
+  },
+  {
+    "id": 14,
+    "category": "Super: Traffic Quality",
+    "metric": "The Value of Privacy Users",
+    "value": "$3.2M from Brave + DuckDuckGo",
+    "raw_value": 3218719.0,
+    "insight": "Privacy-focused browsers (Brave and DuckDuckGo) natively drove over $3.2M in volume. The cypherpunk, privacy-conscious cohort of Bitcoin holders naturally aligns with Garden's trustless, non-custodial ethos.",
+    "suggested_tweet": "$3.2m bridged from brave and duckduckgo search users.\n\nprivacy-conscious holders want trustless bridges.\n\nalignment."
+  },
+  {
+    "id": 15,
+    "category": "Super: Market Flow",
+    "metric": "Capital Rotation Engine",
+    "value": "$730k USDC leaving Solana in 24 hours",
+    "raw_value": 730343.0,
+    "insight": "On Mar 14-15, Garden saw heavily asymmetrical flow: $730k of USDC left Solana while only $288k entered. Garden isn't just an onboarding tool; it's the exact rails whales use to execute massive cross-chain capital rotations in real-time.",
+    "suggested_tweet": "mar 14: $730k of usdc bridged *out* of solana.\n\nwhen whales rotate capital across chains, they take the fastest route.\n\ngarden."
+  },
+  {
+    "id": 16,
+    "category": "Super: Integrator Impact",
+    "metric": "The 9:1 Leverage Ratio",
+    "value": "9 integrator orders for every 1 direct order",
+    "raw_value": 9.0,
+    "insight": "In Q1 2026, the volume of integrator orders dwarfed direct orders 9 to 1. This leverage ratio shows that SDK development scales exponentially better than traditional direct-to-consumer marketing.",
+    "suggested_tweet": "for every 1 person who bridges on our frontend, 9 people use an app powered by garden.\n\n9:1 ratio.\n\nbuild the sdk. the distribution follows."
+  },
+  {
+    "id": 17,
+    "category": "Super: Continuous Operation",
+    "metric": "Unbroken Uptime",
+    "value": "374 consecutive days of non-zero volume",
+    "raw_value": 374.0,
+    "insight": "Through extreme market volatility, protocol exploits, and network upgrades, Garden registered non-zero bridging volume for 374 days straight. It is a persistent, always-on liquidity machine.",
+    "suggested_tweet": "374 straight days of btc bridging.\n\nweekends. holidays. 3am.\n\nzero downtime. always trustless."
+  },
+  {
+    "id": 18,
+    "category": "Super: Ecosystem Breadth",
+    "metric": "HyperEVM Whales",
+    "value": "$17,966 avg uBTC swap",
+    "raw_value": 17966.0,
+    "insight": "Users bridging native BTC to uBTC on HyperEVM average nearly $18k per swap. Hyperliquid perps traders are bypassing centralized exchanges and using Garden to fund their margin accounts directly from mainnet Bitcoin.",
+    "suggested_tweet": "hyperevm users average almost $18k per swap on garden.\n\nperps traders bridging native btc directly to the fastest l1.\n\nno cex required."
+  },
+  {
+    "id": 19,
+    "category": "Super: Niche Networks",
+    "metric": "Telegram Bot Automation",
+    "value": "$40k from Maestro Bot",
+    "raw_value": 40244.0,
+    "insight": "Maestro trading bot routed over $40k through Garden. This is a critical signal that cross-chain bridging is becoming fully automated and programmable within Telegram trading environments.",
+    "suggested_tweet": "telegram bots are bridging btc automatically.\n\n$40k from maestro.\n\nprogrammable btcfi is already here."
+  },
+  {
+    "id": 20,
+    "category": "Super: Target Audience",
+    "metric": "Eth Mainnet Remains Heavy",
+    "value": "$46k avg WBTC swap on Ethereum",
+    "raw_value": 46000.0,
+    "insight": "Despite high gas fees, WBTC swaps on Ethereum mainnet averaged $46k in the latest data window. L1 whales still rely on Garden for large, secure native Bitcoin conversions.",
+    "suggested_tweet": "wbtc swaps on eth mainnet averaging $46k each.\n\nmainnet whales still routing through garden.\n\nsize demands security."
+  },
+  {
+    "id": 21,
+    "category": "Super: Discovery Economics",
+    "metric": "Zero-CAC Growth Engine",
+    "value": "$8M (8.3%) from purely organic search/AI in Q1",
+    "raw_value": 8004019.0,
+    "insight": "Combining traditional SEO and AI search, $8M of Q1 2026 volume was purely organic, costing $0 in customer acquisition. Content engineering and high domain authority are Garden's most efficient growth levers.",
+    "suggested_tweet": "$8m bridged from organic search and ai in 76 days.\n\nzero ad spend.\n\nearned growth > paid growth."
+  },
+  {
+    "id": 22,
+    "category": "Super: Real-World Crossing",
+    "metric": "TradFi to DeFi",
+    "value": "CashApp users executing swaps",
+    "raw_value": 818.0,
+    "insight": "The appearance of CashApp in the Mar 2026 logs shows the absolute mainstreaming of Garden. Users are taking retail Bitcoin from traditional fintech apps and piping it directly into DeFi via Garden.",
+    "suggested_tweet": "cashapp users are finding garden.\n\ntradfi straight to btcfi, one trustless swap at a time."
+  },
+  {
+    "id": 23,
+    "category": "Super: Ecosystem Breadth",
+    "metric": "Closing the Loop with Uniswap",
+    "value": "app.uniswap.org referrals",
+    "raw_value": 2583.0,
+    "insight": "Users originating from Uniswap's frontend are using Garden. This shows the final leg of the DeFi journey: swapping altcoins on a DEX, and using Garden to cash out cleanly back to Native Bitcoin.",
+    "suggested_tweet": "uniswap users cashing out to native btc through garden.\n\nclosing the loop.\n\nbtc -> defi -> btc."
+  },
+  {
+    "id": 24,
+    "category": "Super: Network Health",
+    "metric": "Liquidity Parity",
+    "value": "1:1 Source vs Destination Volume (Mar 16-17)",
+    "raw_value": 1.0,
+    "insight": "Over a 48-hour period, $1.016M flowed in and $1.013M flowed out. This perfect 1:1 equilibrium indicates highly efficient, two-way arbitrage and a perfectly balanced liquidity network.",
+    "suggested_tweet": "$1.01m inbound. $1.01m outbound in 48 hours.\n\nperfect liquidity parity across the network.\n\nhealthy markets route through garden."
+  },
+  {
+    "id": 25,
+    "category": "Super: Growth Velocity",
+    "metric": "The Path to $50M Weeks",
+    "value": "Feb 2026 did ~$14M in 14 days",
+    "raw_value": 14000000.0,
+    "insight": "Garden's velocity is accelerating. Processing ~$14M in just two weeks during February 2026 proves the protocol is on a rapid trajectory to hit its first $50M week as integrator volume compounds.",
+    "suggested_tweet": "$14m+ processed in just two weeks in february.\n\nthe trajectory is steep. $50m weeks are coming."
+  },
+  {
+    "id": 26,
+    "category": "Super: Asset Evolution",
+    "metric": "BNB Chain Dark Horse",
+    "value": "$1.67M BTCB volume in 3 days",
+    "raw_value": 1674804.0,
+    "insight": "While Solana gets the mindshare, BNB Chain pushed $1.67M of BTCB volume over a 3-day window. BSC remains a massive, quiet liquidity giant that heavily utilizes Garden's infrastructure.",
+    "suggested_tweet": "$1.6m+ in btcb routed through bnb chain in 3 days.\n\nbsc liquidity is quiet but massive.\n\nwe route it all."
+  },
+  {
+    "id": 27,
+    "category": "Super: Global Reach",
+    "metric": "Beyond the West",
+    "value": "Yandex, Campamento DeFi, teletype.in active",
+    "raw_value": 237378.0,
+    "insight": "Volume derived from Russian search engines (Yandex), Latin American communities (Campamento DeFi), and CIS blogging platforms (teletype) proves Garden's product-market fit is globally borderless.",
+    "suggested_tweet": "latam defi groups. russian search engines. indian fiat ramps.\n\nbtcfi has no borders. neither does garden."
+  },
+  {
+    "id": 28,
+    "category": "Super: The Order Count Barrier",
+    "metric": "Closing in on 50k",
+    "value": "48,476 total orders executed",
+    "raw_value": 48476.0,
+    "insight": "Garden is inches away from executing its 50,000th trustless cross-chain swap. At the current daily run rate of 500-700 orders, this psychological milestone will be shattered within days.",
+    "suggested_tweet": "approaching 50,000 all-time trustless swaps.\n\ncurrently settling 500+ a day.\n\nmath says we hit it this week."
+  },
+  {
+    "id": 29,
+    "category": "Super: Wallet Dominance",
+    "metric": "Xverse Power Users",
+    "value": "$76k average swap size via Xverse",
+    "raw_value": 76000.0,
+    "insight": "Xverse, the leading Bitcoin-native wallet, drove $1.6M in volume but with a staggering $76k average order size. Bitcoin OGs and power users trust Xverse, and Xverse users trust Garden.",
+    "suggested_tweet": "xverse wallet users average $76k per swap on garden.\n\n$1.6m total.\n\nbitcoin native power users choose us."
+  },
+  {
+    "id": 30,
+    "category": "Super: The Big Picture",
+    "metric": "The Run-Rate to $2 Billion",
+    "value": "$52M+ March 2026 Pace",
+    "raw_value": 624000000.0,
+    "insight": "It took roughly a year to hit $1B cumulative volume. However, at the March 2026 pace of $52M+ per month, Garden is effectively on a >$600M annualized run-rate, meaning $2B will arrive in half the time.",
+    "suggested_tweet": "$1b done.\n\nmarch is pacing for $52m+ alone.\n\n$2b is coming a lot faster than you think.\n\ncompounding."
   }
 ]
