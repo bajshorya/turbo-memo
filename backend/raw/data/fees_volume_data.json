@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "category": "Recent Momentum",
+    "metric": "Q1 2026 Resurgence",
+    "value": "$55.1K in a single week",
+    "raw_value": 55158.34,
+    "insight": "Volume bottomed out in late December 2025 ($590) but has aggressively rebounded, hitting over $55k in the first week of March 2026. A massive 93x increase from the bottom.",
+    "suggested_tweet": "we were quiet in december.\n\nnow we're doing $55k+ a week again.\n\nback to building the best bitcoin bridge. 🌸"
+  },
+  {
+    "id": 2,
+    "category": "All-Time Highs",
+    "metric": "Highest Weekly Fees (All-Time)",
+    "value": "$254.6K in Jan 2024",
+    "raw_value": 254636.0,
+    "insight": "The week of Jan 28, 2024, remains the all-time high for the protocol, representing a massive inflow of activity during that market cycle.",
+    "suggested_tweet": "throwback to late jan '24 when we did $254k in fees in a single week.\n\nwe're coming for that record again soon.\n\nbm."
+  },
+  {
+    "id": 3,
+    "category": "Month-Over-Month",
+    "metric": "Feb '26 vs Jan '26 Growth",
+    "value": "153% MoM Growth",
+    "raw_value": 153.0,
+    "insight": "February 2026 saw roughly $58k in total fees compared to January's ~$23k, showing strong, steady compounding growth entering the new year.",
+    "suggested_tweet": "jan '26 to feb '26.\n\n150% month-over-month growth.\n\nno incentives. just people realizing native btc swaps are better."
+  },
+  {
+    "id": 4,
+    "category": "Recent Momentum",
+    "metric": "March 2026 Peak",
+    "value": "Highest volume since Oct 2025",
+    "raw_value": 55158.34,
+    "insight": "The $55k print on the week of March 8 is the highest single-week performance in 5 months, indicating a breakout in current usage.",
+    "suggested_tweet": "highest weekly volume since october.\n\n$55k+ in fees last week alone.\n\npeople are waking up to native cross-chain btc."
+  },
+  {
+    "id": 5,
+    "category": "Milestones",
+    "metric": "Total Operational Time",
+    "value": "134 weeks of data",
+    "raw_value": 134,
+    "insight": "Garden has been operational and recording consistent fee generation for 134 weeks straight, proving resilience across multiple market conditions.",
+    "suggested_tweet": "134 weeks of continuous operation.\n\nfrom zero in mid-2023 to securing massive btc flow every week.\n\n10,000 hours of bridging."
+  },
+  {
+    "id": 6,
+    "category": "Historical Spikes",
+    "metric": "The May 2025 Surge",
+    "value": "$296K in 14 days",
+    "raw_value": 296077.89,
+    "insight": "Weeks of May 18 and May 25, 2025, produced nearly $300k in fees combined, a massive stress test that the infrastructure handled perfectly.",
+    "suggested_tweet": "remember may '25? we printed nearly $300k in two weeks.\n\nthe infrastructure handled it flawlessly.\n\nscaling trustless btc isn't a theory anymore."
+  },
+  {
+    "id": 7,
+    "category": "Consistency",
+    "metric": "Q4 2025 Stability",
+    "value": "4 straight weeks over $20K",
+    "raw_value": 4.0,
+    "insight": "October 2025 wasn't just a spike; it was sustained volume, with four consecutive weeks never dropping below the $23k mark.",
+    "suggested_tweet": "october '25 was a movie. four straight weeks crushing $20k+.\n\nwhen the market moves, it moves through garden."
+  },
+  {
+    "id": 8,
+    "category": "Consistency",
+    "metric": "The $10K Club",
+    "value": "45+ weeks over $10K",
+    "raw_value": 45,
+    "insight": "Looking historically, Garden has printed over $10,000 in weekly fees more than 45 times. This isn't a flash-in-the-pan protocol.",
+    "suggested_tweet": "45+ individual weeks generating over $10k in protocol fees.\n\nreal yield on real utility.\n\nwho else is doing this for btc?"
+  },
+  {
+    "id": 9,
+    "category": "Historical Spikes",
+    "metric": "January 2024 Mega-Month",
+    "value": "$700K+ in a single month",
+    "raw_value": 712441.0,
+    "insight": "Adding the January 2024 weeks together yields over $700k in fees, remaining the single most lucrative month in protocol history.",
+    "suggested_tweet": "january 2024.\n\n$700k+ in a single month. \n\ntrustless bitcoin liquidity for markets, not chains."
+  },
+  {
+    "id": 10,
+    "category": "Baseline Growth",
+    "metric": "Summer 2025 Floor",
+    "value": "$30K-$50K consistent range",
+    "raw_value": 35000.0,
+    "insight": "Throughout July and August 2025, the baseline volume established a much higher floor, rarely dipping below $30k weekly.",
+    "suggested_tweet": "late summer '25 the baseline shifted.\n\n$30k-$50k became the new normal.\n\nthe floor is rising."
+  },
+  {
+    "id": 11,
+    "category": "Milestones",
+    "metric": "The Six-Figure Weeks",
+    "value": "7 weeks crossing $100K",
+    "raw_value": 7,
+    "insight": "There are exactly 7 weeks in the dataset where fees crossed $100,000 (five in early 2024, two in May 2025).",
+    "suggested_tweet": "7 times garden has cleared $100k in a single week.\n\nit's not a fluke when it becomes a habit.\n\nmore coming."
+  },
+  {
+    "id": 12,
+    "category": "Recovery & Resilience",
+    "metric": "10-Week Climb",
+    "value": "Steady Q1 2026 recovery",
+    "raw_value": 10,
+    "insight": "It took exactly 10 weeks to climb out of the sub-$1k dip in late Dec 2025 to reach the current $55k+ high.",
+    "suggested_tweet": "december bottoms make march tops.\n\n10 weeks of steady climbing.\n\nup only from here."
+  },
+  {
+    "id": 13,
+    "category": "Big Picture",
+    "metric": "First Week vs. Latest Peak",
+    "value": "$0 to $55K",
+    "raw_value": 55158.0,
+    "insight": "The contrast between the first recorded weeks in Aug 2023 ($0) and the recent March 2026 numbers shows the massive scale achieved.",
+    "suggested_tweet": "how it started: $0 (aug '23)\nhow it's going: $55k+ a week (mar '26)\n\nbrick by brick."
+  },
+  {
+    "id": 14,
+    "category": "Historical Spikes",
+    "metric": "February 2024 Streak",
+    "value": "3 consecutive $100K+ weeks",
+    "raw_value": 3,
+    "insight": "Feb 4, 11, and 18 of 2024 saw back-to-back-to-back six-figure fee weeks, testing the system's absolute limits at the time.",
+    "suggested_tweet": "three back-to-back $100k+ weeks in feb '24.\n\nthe system didn't blink.\n\nbattle-tested btc rails."
+  },
+  {
+    "id": 15,
+    "category": "Recent Momentum",
+    "metric": "Current Quarter Setup",
+    "value": "Accelerating trajectory",
+    "raw_value": 0,
+    "insight": "The shape of the curve in Q1 2026 looks identical to the buildup phases that preceded the massive May 2025 and Jan 2024 spikes.",
+    "suggested_tweet": "q1 '26 is quietly building up to be a monster.\n\nstay tuned."
+  },
+  {
+    "id": 16,
+    "category": "Perspective",
+    "metric": "Redefining a 'Slow' Week",
+    "value": "$1K then vs $10K now",
+    "raw_value": 10000.0,
+    "insight": "In late 2023, breaking $1,000 was a milestone. Today, anything under $10,000 is statistically a \"slow\" week.",
+    "suggested_tweet": "it took us months to break $1k a week back in '23.\n\nnow we consider $10k a slow week.\n\nperspective."
+  },
+  {
+    "id": 17,
+    "category": "Historical Spikes",
+    "metric": "October 19, 2025",
+    "value": "$60.8K single week",
+    "raw_value": 60814.62,
+    "insight": "The week of Oct 19 was the highest volume week of H2 2025, acting as a great reference point for the current March 2026 push.",
+    "suggested_tweet": "that $60k week in october.\n\njust a glimpse of what happens when btc volatility meets instant settlement."
+  },
+  {
+    "id": 18,
+    "category": "Consistency",
+    "metric": "Higher Floors",
+    "value": "Baselines are moving up",
+    "raw_value": 0,
+    "insight": "Every time volume drops off a peak (like post-May 2025), the new baseline is higher than the previous year's baseline.",
+    "suggested_tweet": "we don't just spike. we build higher floors.\n\nevery cycle the baseline goes up."
+  },
+  {
+    "id": 19,
+    "category": "Averages",
+    "metric": "5-Figure Averages",
+    "value": "Consistent $10K+ rolling average",
+    "raw_value": 10000.0,
+    "insight": "Even factoring in the December lull, the 6-month rolling average for weekly fees remains firmly in the five-figure territory.",
+    "suggested_tweet": "averaging 5-figures weekly over the last few months.\n\nprotocol revenue is the only metric that matters."
+  },
+  {
+    "id": 20,
+    "category": "Year-Over-Year",
+    "metric": "March YoY Comparison",
+    "value": "Evolution of March",
+    "raw_value": 3,
+    "insight": "Comparing March 2024 (cooling off from highs), March 2025 (building up), and March 2026 (breaking out) shows the structural maturity of the platform.",
+    "suggested_tweet": "mar '24: settling in\nmar '25: testing limits\nmar '26: scaling up\n\nwe like the trajectory."
+  }
+]

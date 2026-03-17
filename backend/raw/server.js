@@ -13,18 +13,26 @@ app.get("/agent/volume-analyzer", (req, res) => {
   const dataPath = path.join(__dirname, "data", "volume_analyzer_data.json");
   setTimeout(() => {
     res.json(JSON.parse(fs.readFileSync(dataPath, "utf8")));
-  }, 3001);
+  }, 2000);
 });
 
 app.get("/agent/category-volume-analyzer", (req, res) => {
   const dataPath = path.join(__dirname, "data", "category_volume_data.json");
   setTimeout(() => {
     res.json(JSON.parse(fs.readFileSync(dataPath, "utf8")));
-  }, 3001);
+  }, 2000);
+});
+
+app.get("/agent/fees-analyzer", (req, res) => {
+  const dataPath = path.join(__dirname, "data", "fees_volume_data.json");
+  setTimeout(() => {  
+    res.json(JSON.parse(fs.readFileSync(dataPath, "utf8")));
+  }, 2000);
 });
 
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
   console.log(`  • GET /agent/volume-analyzer`);
   console.log(`  • GET /agent/category-volume-analyzer`);
+  console.log(`  • GET /agent/fees-analyzer`);
 });
