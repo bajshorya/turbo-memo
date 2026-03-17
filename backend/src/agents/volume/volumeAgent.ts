@@ -1,6 +1,3 @@
-// src/agents/volume/volumeAgent.ts
-// Volume Analyzer Agent — reads garden.finance volume data, analyzes it
-// with Claude, and stores structured insights into MongoDB for the super agent.
 
 import Anthropic from "@anthropic-ai/sdk";
 import { connectMongo, AgentOutputModel } from "../../db/mongo.js";

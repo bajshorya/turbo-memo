@@ -1,7 +1,4 @@
-// src/agents/volume/volumePreprocessor.ts
-// Reads the raw volume.json file and computes all aggregations BEFORE
-// sending anything to Claude. This keeps the Claude prompt tight and factual
-// instead of dumping 40k lines of raw JSON at it.
+
 
 import fs from "fs";
 import path from "path";

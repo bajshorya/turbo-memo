@@ -1,7 +1,3 @@
-// src/agents/category-volume/volumeAgent.ts
-// Category-Volume Analyzer Agent — analyzes garden.finance swap volume grouped by
-// category (e.g., swap type, token category, route complexity), extracts category-specific
-// insights, and stores them in MongoDB for the super agent.
 
 import Anthropic from "@anthropic-ai/sdk";
 import { connectMongo, AgentOutputModel } from "../../db/mongo.js";

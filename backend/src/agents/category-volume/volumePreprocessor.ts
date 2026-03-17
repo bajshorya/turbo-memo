@@ -1,7 +1,4 @@
-// src/agents/category-volume/volumePreprocessor.ts
-// Reads the raw category_volume.json file and computes all category-level aggregations
-// BEFORE sending anything to Claude. This keeps the Claude prompt tight and focused
-// on category composition, trends, and diversity.
+
 
 import fs from "fs";
 import path from "path";
