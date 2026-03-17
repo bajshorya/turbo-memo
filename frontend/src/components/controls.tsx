@@ -8,7 +8,7 @@ import { useDashboardStore } from "@/lib/store";
 const COOLDOWN_MS = 15_000;
 
 export function Controls() {
-  const { fetchAllFeeds, lastRefreshTime } = useDashboardStore();
+  const { fetchAllFeeds, lastRefreshTime, isRefreshing } = useDashboardStore();
   const [remaining, setRemaining] = useState(0);
 
   useEffect(() => {
@@ -26,11 +26,11 @@ export function Controls() {
   }, [lastRefreshTime]);
 
   const onRefresh = useCallback(() => {
-    if (remaining > 0) return;
+    if (remaining > 0 || isRefreshing) return;
     fetchAllFeeds();
-  }, [remaining, fetchAllFeeds]);
+  }, [remaining, isRefreshing, fetchAllFeeds]);
 
-  const disabled = remaining > 0;
+  const disabled = remaining > 0 || isRefreshing;
   const seconds = Math.ceil(remaining / 1000);
 
   return (
@@ -66,8 +66,8 @@ export function Controls() {
           disabled={disabled}
           className="h-10 bg-[#f8f8f8] text-[#473c75] hover:bg-gray-50 rounded-full px-4 font-medium disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          <RefreshCw className={`w-4 h-4 mr-2 ${disabled ? "" : ""}`} />
-          {disabled ? `Refresh` : "Refresh All"}
+          <RefreshCw className={`w-4 h-4 mr-2 ${isRefreshing ? 'animate-spin' : ''}`} />
+          {isRefreshing ? 'Refreshing...' : disabled && remaining > 0 ? `Refresh (${seconds}s)` : "Refresh All"}
         </Button>
       </div>
     </div>

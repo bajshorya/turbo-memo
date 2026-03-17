@@ -14,7 +14,9 @@ export default function Home() {
     categoryFeed,
     feesFeed,
     assetFeed,
+    superAgentFeed,
     fetchAllFeeds,
+    fetchSuperAgentData,
     nextVolume,
     prevVolume,
     nextCategory,
@@ -30,19 +32,29 @@ export default function Home() {
     fetchAllFeeds();
   }, [fetchAllFeeds]);
 
+  // Check if all sub-agent feeds are done loading
+  const allSubAgentsLoaded = !volumeFeed.loading && !categoryFeed.loading && !feesFeed.loading && !assetFeed.loading;
+
+  // Fetch super agent data once all sub-agents are loaded
+  useEffect(() => {
+    if (allSubAgentsLoaded && volumeFeed.data.length > 0 && categoryFeed.data.length > 0 && feesFeed.data.length > 0 && assetFeed.data.length > 0) {
+      fetchSuperAgentData();
+    }
+  }, [allSubAgentsLoaded, volumeFeed.data.length, categoryFeed.data.length, feesFeed.data.length, assetFeed.data.length, fetchSuperAgentData]);
+
   return (
     <div className="max-h-screen bg-[#e4ebf2] px-10 overflow-hidden">
       <Header />
       <Controls />
 
       <div className="flex gap-6 p-6 min-h-[calc(100vh-120px)]">
-        {/* Right — Super Agent (full right half) */}
+        {/* Left — Super Agent Panel (1/3 width) */}
         <SuperAgentPanel />
 
-        {/* Left — Sub-Agent Feeds */}
+        {/* Right — Agent Feeds (2/3 width) */}
         <div className="w-2/3 relative">
           <ScrollArea className="h-[calc(100vh-180px)] pr-4">
-            <div className="grid grid-cols-3 gap-4 pb-16">
+            <div className="grid grid-cols-2 gap-4 pb-16">
               <AgentFeed
                 title="Volume Analyzer"
                 data={volumeFeed.data}
@@ -80,9 +92,17 @@ export default function Home() {
                 onPrev={prevAsset}
               />
             </div>
-          </ScrollArea>
 
-          {/* Fixed scroll indicator at bottom */}
+            {/* Bottom gradient overlay */}
+          <div
+            className="absolute bottom-0 left-0 right-0 pointer-events-none z-20"
+            style={{
+              height: '160px',
+              background: 'linear-gradient(to top, #e4ebf2 0%, rgba(228, 235, 242, 0.8) 30%, transparent 100%)'
+            }}
+          />
+
+          {/* Fixed scroll indicator at bottom - Always show */}
           <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 z-30">
             <div className="bg-white/90 backdrop-blur-sm border border-gray-200 rounded-full px-4 py-2 shadow-lg">
               <p className="text-sm text-gray-600 flex items-center gap-2">
@@ -93,8 +113,11 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </div>
+          </ScrollArea>
 
+          
+        </div>
+        
 
       </div>
     </div>

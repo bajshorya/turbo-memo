@@ -27,6 +27,9 @@ interface DashboardState {
   assetFeed: AgentFeedState;
   superAgentFeed: AgentFeedState;
 
+  // Global loading state
+  isRefreshing: boolean;
+
   // Refresh cooldown
   lastRefreshTime: number;
 
@@ -67,8 +70,15 @@ const defaultFeed: AgentFeedState = {
 
 const MAX_CARDS = 5;
 const REFRESH_COOLDOWN = 15_000; // 15 seconds
+const LOADING_DURATION_MIN = 10_000; // 10 seconds
+const LOADING_DURATION_MAX = 15_000; // 15 seconds
 
 async function fetchFeed(endpoint: string): Promise<AgentDataItem[]> {
+  // Add artificial delay for skeleton loading
+  const loadingTime = Math.random() * (LOADING_DURATION_MAX - LOADING_DURATION_MIN) + LOADING_DURATION_MIN;
+  
+  await new Promise(resolve => setTimeout(resolve, loadingTime));
+  
   const res = await fetch(`${BASE_URL}${endpoint}`);
   if (!res.ok) throw new Error(`Failed to fetch ${endpoint}`);
   const data: AgentDataItem[] = await res.json();
@@ -85,6 +95,7 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
   selectedExchange: "all-dex",
   searchQuery: "",
   lastRefreshTime: 0,
+  isRefreshing: false,
 
   volumeFeed: { ...defaultFeed },
   categoryFeed: { ...defaultFeed },
@@ -150,9 +161,22 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
     if (lastRefreshTime > 0 && now - lastRefreshTime < REFRESH_COOLDOWN) {
       return;
     }
-    set({ lastRefreshTime: now });
-    const { fetchVolumeData, fetchCategoryData, fetchFeesData, fetchAssetData, fetchSuperAgentData } = get();
-    await Promise.all([fetchVolumeData(), fetchCategoryData(), fetchFeesData(), fetchAssetData(), fetchSuperAgentData()]);
+    
+    set({ lastRefreshTime: now, isRefreshing: true });
+    
+    const { fetchVolumeData, fetchCategoryData, fetchFeesData, fetchAssetData } = get();
+    
+    try {
+      // Only fetch sub-agent data, not super agent
+      await Promise.all([
+        fetchVolumeData(), 
+        fetchCategoryData(), 
+        fetchFeesData(), 
+        fetchAssetData()
+      ]);
+    } finally {
+      set({ isRefreshing: false });
+    }
   },
 
   // ── Navigate (next/prev with max 5 cap) ───────────

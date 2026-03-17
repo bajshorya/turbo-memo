@@ -5,12 +5,15 @@ import { AgentCard } from "./agent-card";
 import { SuperAgentPanelSkeleton } from "./super-agent-panel-skeleton";
 
 export function SuperAgentPanel() {
-  const { superAgentFeed } = useDashboardStore();
+  const { superAgentFeed, volumeFeed, categoryFeed, feesFeed, assetFeed } = useDashboardStore();
   const { data, currentIndex, loading, error } = superAgentFeed;
   const currentItem = data[currentIndex] ?? null;
 
-  // Show skeleton when loading
-  if (loading) {
+  // Check if all sub-agent feeds are done loading
+  const allSubAgentsLoaded = !volumeFeed.loading && !categoryFeed.loading && !feesFeed.loading && !assetFeed.loading;
+
+  // Show skeleton when loading OR when sub-agents aren't loaded yet
+  if (loading || !allSubAgentsLoaded) {
     return <SuperAgentPanelSkeleton />;
   }
 
