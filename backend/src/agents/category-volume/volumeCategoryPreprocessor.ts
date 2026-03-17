@@ -1,4 +1,3 @@
-
 import fs from "fs";
 import path from "path";
 import type {
@@ -9,6 +8,23 @@ import type {
   TimeframeStats,
   VolumeSource,
 } from "../../types/volumeTypes";
+
+// Define the actual structure of your category volume data
+interface CategoryVolumeEntry {
+  category: string; // Direct category field
+  total_volume: number;
+  total_order_count: number;
+  timestamp: string;
+}
+
+interface CategoryRawVolumeData {
+  volumes: CategoryVolumeEntry[];
+  metadata: {
+    total_volume: number;
+    total_order_count: number;
+    total_volume_by_source: any[]; // This might be different in your data
+  };
+}
 
 // ── Category-specific types ───────────────────────────────────────────────────
 
@@ -109,7 +125,7 @@ export class VolumePreprocessor {
     this.dataPath = path.join(process.cwd(), "data", dataFileName);
   }
 
-  load(): RawVolumeData {
+  load(): CategoryRawVolumeData {
     if (!fs.existsSync(this.dataPath)) {
       throw new Error(
         `Category volume data file not found at: ${this.dataPath}\n` +
@@ -117,13 +133,30 @@ export class VolumePreprocessor {
       );
     }
     const raw = fs.readFileSync(this.dataPath, "utf-8");
-    return JSON.parse(raw) as RawVolumeData;
+    return JSON.parse(raw) as CategoryRawVolumeData;
   }
 
   process(): PreprocessedCategoryVolumeData {
     const raw = this.load();
     const entries = raw.volumes;
-    const metadata = raw.metadata;
+
+    // Calculate total volume and orders from entries since metadata might be structured differently
+    const totalVolume = entries.reduce(
+      (sum, entry) => sum + entry.total_volume,
+      0,
+    );
+    const totalOrders = entries.reduce(
+      (sum, entry) => sum + entry.total_order_count,
+      0,
+    );
+
+    console.log(`[CategoryPreprocessor] Loaded ${entries.length} entries`);
+    if (entries.length > 0) {
+      console.log(
+        "[CategoryPreprocessor] Sample entry:",
+        JSON.stringify(entries[0], null, 2),
+      );
+    }
 
     // ── 1. Build daily snapshots & category maps for each day ─────────────────
 
@@ -141,9 +174,9 @@ export class VolumePreprocessor {
 
     for (const entry of entries) {
       const date = toDateStr(entry.timestamp);
-      // For category volume, use the "source" as the category
-      // In a real setup, this might be a separate "category" field
-      const categoryName = this.extractCategory(entry);
+
+      // Extract category directly from the entry
+      const categoryName = entry.category || "Unknown";
 
       if (!dailyMap.has(date)) {
         dailyMap.set(date, {
@@ -213,23 +246,23 @@ export class VolumePreprocessor {
     const peakCategoryEntries = peakDayCategories
       ? Array.from(peakDayCategories.entries()).sort((a, b) => b[1] - a[1])
       : [];
-    const dominantCat = peakCategoryEntries[0]
-      ? {
-          name: peakCategoryEntries[0][0],
-          pct: parseFloat(
-            (
-              (peakCategoryEntries[0][1] /
-                (peakDayCategories
-                  ? Array.from(peakDayCategories.values()).reduce(
-                      (a, b) => a + b,
-                      0,
-                    )
-                  : 1)) *
-              100
-            ).toFixed(2),
-          ),
-        }
-      : { name: "N/A", pct: 0 };
+
+    let dominantCat: { name: string; pct: number };
+
+    if (peakCategoryEntries.length > 0 && peakDayCategories) {
+      const totalInDay = Array.from(peakDayCategories.values()).reduce(
+        (a, b) => a + b,
+        0,
+      );
+      dominantCat = {
+        name: peakCategoryEntries[0][0],
+        pct: parseFloat(
+          ((peakCategoryEntries[0][1] / totalInDay) * 100).toFixed(2),
+        ),
+      };
+    } else {
+      dominantCat = { name: "N/A", pct: 0 };
+    }
 
     const peak_day_with_category = {
       ...peak_day,
@@ -239,8 +272,6 @@ export class VolumePreprocessor {
 
     // ── 5. Category statistics ─────────────────────────────────────────────────
 
-    const totalVol = metadata.total_volume;
-
     const category_stats: CategoryStat[] = Array.from(
       allCategoriesMap.entries(),
     )
@@ -248,8 +279,7 @@ export class VolumePreprocessor {
         // Find orders for this category (sum from all entries)
         let orders = 0;
         for (const entry of entries) {
-          const catName = this.extractCategory(entry);
-          if (catName === name) {
+          if (entry.category === name) {
             orders += entry.total_order_count;
           }
         }
@@ -283,7 +313,9 @@ export class VolumePreprocessor {
           name,
           total_volume: parseFloat(volume.toFixed(2)),
           total_orders: orders,
-          volume_share_pct: parseFloat(((volume / totalVol) * 100).toFixed(2)),
+          volume_share_pct: parseFloat(
+            ((volume / totalVolume) * 100).toFixed(2),
+          ),
           avg_order_size:
             orders > 0 ? parseFloat((volume / orders).toFixed(2)) : 0,
           growth_7d_pct: growthPct(vol7d, volPrior7d),
@@ -453,9 +485,9 @@ export class VolumePreprocessor {
       data_from,
       data_to,
       total_days,
-      all_time_volume: parseFloat(metadata.total_volume.toFixed(2)),
-      all_time_orders: metadata.total_order_count,
-      all_time_volume_fmt: formatUSD(metadata.total_volume),
+      all_time_volume: parseFloat(totalVolume.toFixed(2)),
+      all_time_orders: totalOrders,
+      all_time_volume_fmt: formatUSD(totalVolume),
       total_categories: allCategoriesMap.size,
       daily_snapshots,
       category_stats,
@@ -467,21 +499,5 @@ export class VolumePreprocessor {
       avg_diversity_index,
       total_entries: entries.length,
     };
-  }
-
-  // Extract category from entry
-  // This should be customized based on your data structure
-  private extractCategory(entry: RawVolumeEntry): string {
-    const source = entry.source;
-    if (typeof source.source_type === "string") {
-      return source.source_type;
-    }
-    if (
-      typeof source.source_type === "object" &&
-      "Referrer" in source.source_type
-    ) {
-      return source.source_type.Referrer.platform;
-    }
-    return "Unknown";
   }
 }

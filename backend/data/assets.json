@@ -1,0 +1,181 @@
+{
+    "volumes": [
+        {
+            "asset": "USDC - solana",
+            "total_volume": 1018394.710097,
+            "source_volume": 730343.394771,
+            "destination_volume": 288051.31532600004,
+            "unique_wallets": 11,
+            "total_orders": 18,
+            "double_counted_volume": 2035449.4856058615
+        },
+        {
+            "asset": "BTC - bitcoin",
+            "total_volume": 831458.6142208246,
+            "source_volume": 349719.0775886388,
+            "destination_volume": 481739.5366321858,
+            "unique_wallets": 166,
+            "total_orders": 207,
+            "double_counted_volume": 1664065.6984624006
+        },
+        {
+            "asset": "BTCB - bnbchain",
+            "total_volume": 649725.1493525142,
+            "source_volume": 300344.64362451184,
+            "destination_volume": 349380.50572800235,
+            "unique_wallets": 28,
+            "total_orders": 59,
+            "double_counted_volume": 1299621.758318745
+        },
+        {
+            "asset": "WBTC - ethereum",
+            "total_volume": 230005.34284433498,
+            "source_volume": 0.0,
+            "destination_volume": 230005.34284433498,
+            "unique_wallets": 5,
+            "total_orders": 5,
+            "double_counted_volume": 460039.89284433494
+        },
+        {
+            "asset": "SOL - solana",
+            "total_volume": 67584.45616867684,
+            "source_volume": 18844.52336795298,
+            "destination_volume": 48739.93280072386,
+            "unique_wallets": 106,
+            "total_orders": 127,
+            "double_counted_volume": 135199.33939177592
+        },
+        {
+            "asset": "USDT - ethereum",
+            "total_volume": 56885.608712,
+            "source_volume": 45699.419310000005,
+            "destination_volume": 11186.189402,
+            "unique_wallets": 18,
+            "total_orders": 18,
+            "double_counted_volume": 113697.51318110408
+        },
+        {
+            "asset": "USDC - ethereum",
+            "total_volume": 36319.234395,
+            "source_volume": 662.6801740000001,
+            "destination_volume": 35656.554221,
+            "unique_wallets": 9,
+            "total_orders": 9,
+            "double_counted_volume": 72712.112032359
+        },
+        {
+            "asset": "uBTC - hyperevm",
+            "total_volume": 35705.845656909,
+            "source_volume": 35698.763849999996,
+            "destination_volume": 7.081806909000001,
+            "unique_wallets": 2,
+            "total_orders": 2,
+            "double_counted_volume": 71336.738812824
+        },
+        {
+            "asset": "cbBTC - base",
+            "total_volume": 18616.938366356,
+            "source_volume": 790.571227411,
+            "destination_volume": 17826.367138945,
+            "unique_wallets": 24,
+            "total_orders": 48,
+            "double_counted_volume": 37267.55056434091
+        },
+        {
+            "asset": "LTC - litecoin",
+            "total_volume": 10240.03246812166,
+            "source_volume": 0.0,
+            "destination_volume": 10240.03246812166,
+            "unique_wallets": 1,
+            "total_orders": 1,
+            "double_counted_volume": 20501.61425880216
+        },
+        {
+            "asset": "cbBTC - ethereum",
+            "total_volume": 5526.928669397,
+            "source_volume": 0.0,
+            "destination_volume": 5526.928669397,
+            "unique_wallets": 2,
+            "total_orders": 2,
+            "double_counted_volume": 11065.488809921
+        },
+        {
+            "asset": "WBTC - arbitrum",
+            "total_volume": 1462.465838593,
+            "source_volume": 977.8963676779999,
+            "destination_volume": 484.56947091499995,
+            "unique_wallets": 12,
+            "total_orders": 30,
+            "double_counted_volume": 2890.3418599460006
+        },
+        {
+            "asset": "cbBTC - solana",
+            "total_volume": 345.89674563,
+            "source_volume": 174.94379128399999,
+            "destination_volume": 170.952954346,
+            "unique_wallets": 16,
+            "total_orders": 39,
+            "double_counted_volume": 692.3184120612777
+        },
+        {
+            "asset": "BTC.b - megaeth",
+            "total_volume": 301.14912967400005,
+            "source_volume": 301.14912967400005,
+            "destination_volume": 0.0,
+            "unique_wallets": 3,
+            "total_orders": 3,
+            "double_counted_volume": 601.665843674
+        },
+        {
+            "asset": "spark:primary",
+            "total_volume": 275.40008658,
+            "source_volume": 7.051110000000001,
+            "destination_volume": 268.34897658,
+            "unique_wallets": 3,
+            "total_orders": 3,
+            "double_counted_volume": 552.5974892590001
+        },
+        {
+            "asset": "iBTC - arbitrum",
+            "total_volume": 129.19455910058284,
+            "source_volume": 0.0,
+            "destination_volume": 129.19455910058284,
+            "unique_wallets": 1,
+            "total_orders": 1,
+            "double_counted_volume": 259.69455910058286
+        },
+        {
+            "asset": "cBTC - citrea",
+            "total_volume": 49.476321268,
+            "source_volume": 0.0,
+            "destination_volume": 49.476321268,
+            "unique_wallets": 2,
+            "total_orders": 4,
+            "double_counted_volume": 99.057172568
+        },
+        {
+            "asset": "MON - monad",
+            "total_volume": 19.7060401965906,
+            "source_volume": 0.0,
+            "destination_volume": 19.7060401965906,
+            "unique_wallets": 1,
+            "total_orders": 1,
+            "double_counted_volume": 39.457212196590596
+        },
+        {
+            "asset": "BTC - botanix",
+            "total_volume": 11.823099,
+            "source_volume": 11.823099,
+            "destination_volume": 0.0,
+            "unique_wallets": 1,
+            "total_orders": 1,
+            "double_counted_volume": 23.62071108
+        }
+    ],
+    "total_volume": 2963057.972771175,
+    "source_volume": 1483575.9374111507,
+    "destination_volume": 1479482.0353600262,
+    "unique_wallets": 411,
+    "total_orders": 578,
+    "double_counted_volume": 5926115.945542355
+}

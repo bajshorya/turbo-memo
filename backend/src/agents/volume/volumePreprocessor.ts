@@ -1,5 +1,3 @@
-
-
 import fs from "fs";
 import path from "path";
 import type {
@@ -128,47 +126,19 @@ export class VolumePreprocessor {
     );
 
     // ── 4. Integrator stats ───────────────────────────────────────────────────
+    // ── 4. Integrator stats ───────────────────────────────────────────────────
     const totalVol = metadata.total_volume;
 
-    // Merge sources that are the same platform under different casings/paths
-    const integratorMap = new Map<string, { volume: number; orders: number }>();
+    const integratorMap = new Map<
+      string,
+      { volume: number; orders: number; originalName: string }
+    >();
 
     for (const src of metadata.total_volume_by_source) {
-      // Normalize: strip URLs to domain, lowercase, clean up
-      let name = src.source_type;
-
-      // URL sources → extract meaningful domain
-      if (name.startsWith("http")) {
-        try {
-          const url = new URL(name);
-          const host = url.hostname.replace("www.", "");
-          // Map known domains to friendly names
-          const domainMap: Record<string, string> = {
-            "garden.finance": "Garden (direct web)",
-            "app.garden.finance": "Garden App",
-            "explorer.garden.finance": "Garden Explorer",
-            "docs.garden.finance": "Garden Docs",
-            "google.com": "Google Search",
-            "t.co": "Twitter/X",
-            "search.brave.com": "Brave Search",
-            "duckduckgo.com": "DuckDuckGo",
-            "gemini.google.com": "Google Gemini",
-            "perplexity.ai": "Perplexity AI",
-            "claude.ai": "Claude.ai",
-            "chatgpt.com": "ChatGPT",
-            "airdrops.io": "Airdrops.io",
-            "findmybridge.com": "FindMyBridge",
-            "li.fi": "LI.FI",
-          };
-          name = domainMap[host] ?? host;
-        } catch {
-          // keep as-is if URL parse fails
-        }
-      }
-
-      // Normalize casing variants (phantom vs Phantom, onMeta vs OnMeta)
-      name = name.trim();
-      const key = name.toLowerCase();
+      const normalizedName = resolveSourceName({
+        source_type: src.source_type,
+      } as VolumeSource);
+      const key = normalizedName.toLowerCase();
 
       const existing = integratorMap.get(key);
       if (existing) {
@@ -178,6 +148,7 @@ export class VolumePreprocessor {
         integratorMap.set(key, {
           volume: src.total_volume,
           orders: src.total_order_count,
+          originalName: normalizedName,
         });
       }
     }
@@ -185,25 +156,22 @@ export class VolumePreprocessor {
     const integrator_stats: IntegratorStat[] = Array.from(
       integratorMap.entries(),
     )
-      .map(([key, stats]) => {
-        // Capitalize first letter for display
-        const displayName = key.charAt(0).toUpperCase() + key.slice(1);
-        return {
-          name: displayName,
-          total_volume: parseFloat(stats.volume.toFixed(2)),
-          total_orders: stats.orders,
-          volume_share_pct: parseFloat(
-            ((stats.volume / totalVol) * 100).toFixed(2),
-          ),
-          avg_order_size:
-            stats.orders > 0
-              ? parseFloat((stats.volume / stats.orders).toFixed(2))
-              : 0,
-        };
-      })
+      .map(([_, stats]) => ({
+        name: stats.originalName,
+        total_volume: parseFloat(stats.volume.toFixed(2)),
+        total_orders: stats.orders,
+        volume_share_pct: parseFloat(
+          ((stats.volume / totalVol) * 100).toFixed(2),
+        ),
+        avg_order_size:
+          stats.orders > 0
+            ? parseFloat((stats.volume / stats.orders).toFixed(2))
+            : 0,
+      }))
       .sort((a, b) => b.total_volume - a.total_volume)
-      .slice(0, 20); // top 20 integrators
+      .slice(0, 20);
 
+    const unique_sources = integrator_stats.length; // ← now accurate
     // ── 5. Timeframe stats ────────────────────────────────────────────────────
     const now = new Date(data_to);
 
@@ -314,7 +282,7 @@ export class VolumePreprocessor {
       peak_day,
       recent_7d_avg,
       recent_30d_avg,
-      unique_sources: metadata.total_volume_by_source.length,
+      unique_sources,
       total_entries: entries.length,
     };
   }

@@ -1,21 +1,18 @@
+// backend/src/agents/fees/testFeesAgent.ts
+
 import "dotenv/config";
-import { CategoryVolumeAgent } from "./volumeCategoryAgent.js";
+import { FeesAgent } from "./feesAgent.js";
 import { disconnectMongo } from "../../db/mongo.js";
 
 async function main() {
   console.log("╔═══════════════════════════════════════════╗");
-  console.log("║  Category Volume Agent — Standalone Test  ║");
+  console.log("║        Fees Agent — Standalone Test       ║");
   console.log("╚═══════════════════════════════════════════╝\n");
 
-  const agent = new CategoryVolumeAgent("category_volume.json");
+  const agent = new FeesAgent("fees.json");
 
   try {
     const result = await agent.run();
-
-    console.log("\n═══ CATEGORY COMPOSITION HIGHLIGHTS ═══");
-    result.highlights.forEach((h, i) => {
-      console.log(`\n  ${i + 1}. ${h}`);
-    });
 
     console.log("\n═══ TWEET DATA POINTS ═══");
     result.tweet_data_points.forEach((p, i) => {
@@ -27,9 +24,9 @@ async function main() {
       console.log(`\n  ${i + 1}. ${a}`);
     });
 
-    console.log("\n═══ CATEGORY SIGNALS DETECTED ═══");
+    console.log("\n═══ SIGNALS DETECTED ═══");
     if (result.signals.length === 0) {
-      console.log("\n  No notable category signals detected.");
+      console.log("\n  No notable signals detected.");
     } else {
       result.signals.forEach((s, i) => {
         console.log(
@@ -38,9 +35,23 @@ async function main() {
       });
     }
 
-    console.log("\n✓ Category Volume Agent test completed successfully.\n");
+    console.log("\n═══ KEY METRICS ═══");
+    console.log(
+      `\n  Total Fees All-time: $${result.metrics.total_fees_all_time.toLocaleString()}`,
+    );
+    console.log(
+      `  Avg Daily Fees (30d): $${result.metrics.avg_daily_fees_30d.toLocaleString()}`,
+    );
+    console.log(
+      `  Annual Runrate: $${result.metrics.estimated_annual_fees_runrate.toLocaleString()}`,
+    );
+    console.log(`  Avg Fee Rate: ${result.metrics.avg_fee_rate_pct}%`);
+    console.log(`  Fees per Order: $${result.metrics.fees_per_order_avg_usd}`);
+    console.log(`  Fees Growth (30d): ${result.metrics.fees_growth_30d_pct}%`);
+
+    console.log("\n✓ Fees Agent test completed successfully.\n");
   } catch (err) {
-    console.error("\n✗ Category Volume Agent test failed:", err);
+    console.error("\n✗ Fees Agent test failed:", err);
     process.exit(1);
   } finally {
     await disconnectMongo();

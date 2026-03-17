@@ -1,0 +1,1964 @@
+{
+  "volumes": [
+    {
+      "category": "Direct",
+      "total_volume": 67.88779246,
+      "total_order_count": 3,
+      "timestamp": "2026-01-01T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 2551.6973006099997,
+      "total_order_count": 15,
+      "timestamp": "2026-01-01T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 5633.3536239875,
+      "total_order_count": 2,
+      "timestamp": "2026-01-01T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 234791.0312735519,
+      "total_order_count": 12,
+      "timestamp": "2026-01-02T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 4204.434278272944,
+      "total_order_count": 19,
+      "timestamp": "2026-01-02T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 89908.52232749999,
+      "total_order_count": 5,
+      "timestamp": "2026-01-03T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 773.403466748,
+      "total_order_count": 9,
+      "timestamp": "2026-01-03T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 509.1458157,
+      "total_order_count": 2,
+      "timestamp": "2026-01-03T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 56.815518639000004,
+      "total_order_count": 2,
+      "timestamp": "2026-01-03T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 2257.060655238008,
+      "total_order_count": 3,
+      "timestamp": "2026-01-04T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 1024.508352462,
+      "total_order_count": 14,
+      "timestamp": "2026-01-04T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 53.12957675,
+      "total_order_count": 2,
+      "timestamp": "2026-01-04T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 349.2185465647,
+      "total_order_count": 3,
+      "timestamp": "2026-01-04T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 14750.006100807012,
+      "total_order_count": 20,
+      "timestamp": "2026-01-05T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 7709.785980957033,
+      "total_order_count": 20,
+      "timestamp": "2026-01-05T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 371.62860746,
+      "total_order_count": 5,
+      "timestamp": "2026-01-05T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 799.9919599565999,
+      "total_order_count": 2,
+      "timestamp": "2026-01-05T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 7089.947021498,
+      "total_order_count": 4,
+      "timestamp": "2026-01-06T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 1482.86086065,
+      "total_order_count": 20,
+      "timestamp": "2026-01-06T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 392.2993254016001,
+      "total_order_count": 2,
+      "timestamp": "2026-01-06T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 215260.73233496238,
+      "total_order_count": 6,
+      "timestamp": "2026-01-07T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 133643.5200788,
+      "total_order_count": 25,
+      "timestamp": "2026-01-07T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 371.8705924725,
+      "total_order_count": 1,
+      "timestamp": "2026-01-07T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 13123.059052084,
+      "total_order_count": 58,
+      "timestamp": "2026-01-08T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 31858.622123545,
+      "total_order_count": 27,
+      "timestamp": "2026-01-08T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 162.59852385,
+      "total_order_count": 1,
+      "timestamp": "2026-01-08T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 4206.8592810636,
+      "total_order_count": 2,
+      "timestamp": "2026-01-08T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 10727.078906509301,
+      "total_order_count": 10,
+      "timestamp": "2026-01-09T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 1488.567568859097,
+      "total_order_count": 18,
+      "timestamp": "2026-01-09T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 1156.3404083,
+      "total_order_count": 3,
+      "timestamp": "2026-01-09T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 206.25235333799998,
+      "total_order_count": 2,
+      "timestamp": "2026-01-09T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 660641.4211682641,
+      "total_order_count": 14,
+      "timestamp": "2026-01-10T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 1875.8172978500002,
+      "total_order_count": 11,
+      "timestamp": "2026-01-10T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 561.0924565400001,
+      "total_order_count": 1,
+      "timestamp": "2026-01-10T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 47031.55690493981,
+      "total_order_count": 11,
+      "timestamp": "2026-01-11T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 1853.7759272130002,
+      "total_order_count": 10,
+      "timestamp": "2026-01-11T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 4794.073010100001,
+      "total_order_count": 1,
+      "timestamp": "2026-01-11T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 125345.46007797802,
+      "total_order_count": 3,
+      "timestamp": "2026-01-11T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 159140.10296145803,
+      "total_order_count": 14,
+      "timestamp": "2026-01-12T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 3350.5468437330005,
+      "total_order_count": 35,
+      "timestamp": "2026-01-12T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 198559.48268625,
+      "total_order_count": 3,
+      "timestamp": "2026-01-12T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 151.675577013,
+      "total_order_count": 2,
+      "timestamp": "2026-01-12T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 11110.379704434,
+      "total_order_count": 12,
+      "timestamp": "2026-01-13T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 2661.967318984,
+      "total_order_count": 20,
+      "timestamp": "2026-01-13T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 19.49296244,
+      "total_order_count": 1,
+      "timestamp": "2026-01-13T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 975.5096546380969,
+      "total_order_count": 4,
+      "timestamp": "2026-01-13T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 77767.09360239,
+      "total_order_count": 9,
+      "timestamp": "2026-01-14T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 5119.75590311849,
+      "total_order_count": 25,
+      "timestamp": "2026-01-14T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 12524.009325521998,
+      "total_order_count": 3,
+      "timestamp": "2026-01-14T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 50757.498045450004,
+      "total_order_count": 4,
+      "timestamp": "2026-01-14T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 240920.972263424,
+      "total_order_count": 14,
+      "timestamp": "2026-01-15T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 7477.280904969465,
+      "total_order_count": 17,
+      "timestamp": "2026-01-15T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 1193.8760106890002,
+      "total_order_count": 3,
+      "timestamp": "2026-01-15T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 692730.030017442,
+      "total_order_count": 15,
+      "timestamp": "2026-01-16T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 1869.842672021836,
+      "total_order_count": 12,
+      "timestamp": "2026-01-16T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 687.3685032676,
+      "total_order_count": 2,
+      "timestamp": "2026-01-16T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 871675.2742342199,
+      "total_order_count": 27,
+      "timestamp": "2026-01-17T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 2089.7895328579652,
+      "total_order_count": 14,
+      "timestamp": "2026-01-17T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 115.3784778,
+      "total_order_count": 1,
+      "timestamp": "2026-01-17T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 27908.503109547764,
+      "total_order_count": 14,
+      "timestamp": "2026-01-18T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 4005.1063479344652,
+      "total_order_count": 10,
+      "timestamp": "2026-01-18T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 1162.25360064,
+      "total_order_count": 1,
+      "timestamp": "2026-01-18T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 839613.7699225391,
+      "total_order_count": 63,
+      "timestamp": "2026-01-19T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 3362.8821809290002,
+      "total_order_count": 14,
+      "timestamp": "2026-01-19T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 18.493418,
+      "total_order_count": 1,
+      "timestamp": "2026-01-19T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 185327.63371583,
+      "total_order_count": 1,
+      "timestamp": "2026-01-19T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 4721.7293502092,
+      "total_order_count": 17,
+      "timestamp": "2026-01-19T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 1668479.0005306145,
+      "total_order_count": 33,
+      "timestamp": "2026-01-20T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 3696.0874811277686,
+      "total_order_count": 19,
+      "timestamp": "2026-01-20T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 2041.576591381424,
+      "total_order_count": 75,
+      "timestamp": "2026-01-20T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 994507.2589581315,
+      "total_order_count": 49,
+      "timestamp": "2026-01-21T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 4610.086762011542,
+      "total_order_count": 28,
+      "timestamp": "2026-01-21T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 175242.2957258263,
+      "total_order_count": 13,
+      "timestamp": "2026-01-22T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 2376.646024907322,
+      "total_order_count": 26,
+      "timestamp": "2026-01-22T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 4744.7673572,
+      "total_order_count": 1,
+      "timestamp": "2026-01-22T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 787.774769538,
+      "total_order_count": 2,
+      "timestamp": "2026-01-22T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 408.9335496155,
+      "total_order_count": 5,
+      "timestamp": "2026-01-22T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 424296.109359858,
+      "total_order_count": 28,
+      "timestamp": "2026-01-23T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 2087.3199035383323,
+      "total_order_count": 15,
+      "timestamp": "2026-01-23T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 69.888470920332,
+      "total_order_count": 2,
+      "timestamp": "2026-01-23T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 641.2947041190666,
+      "total_order_count": 3,
+      "timestamp": "2026-01-23T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 31445.533504201998,
+      "total_order_count": 5,
+      "timestamp": "2026-01-24T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 1727.6344256869997,
+      "total_order_count": 13,
+      "timestamp": "2026-01-24T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 57.799346400000005,
+      "total_order_count": 2,
+      "timestamp": "2026-01-24T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 4093.376771722,
+      "total_order_count": 2,
+      "timestamp": "2026-01-24T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 472349.9167681557,
+      "total_order_count": 5,
+      "timestamp": "2026-01-25T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 2967.667816454,
+      "total_order_count": 29,
+      "timestamp": "2026-01-25T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 1775.5406879999998,
+      "total_order_count": 1,
+      "timestamp": "2026-01-25T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 101217.271655601,
+      "total_order_count": 6,
+      "timestamp": "2026-01-25T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 142569.50938109797,
+      "total_order_count": 6,
+      "timestamp": "2026-01-26T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 3628.8554877789998,
+      "total_order_count": 43,
+      "timestamp": "2026-01-26T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 35.267858739999994,
+      "total_order_count": 2,
+      "timestamp": "2026-01-26T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 40825.85196232421,
+      "total_order_count": 4,
+      "timestamp": "2026-01-26T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 280514.55165403,
+      "total_order_count": 13,
+      "timestamp": "2026-01-27T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 2582.1771538653943,
+      "total_order_count": 26,
+      "timestamp": "2026-01-27T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 1516.967712899,
+      "total_order_count": 3,
+      "timestamp": "2026-01-27T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 20715.698430540004,
+      "total_order_count": 8,
+      "timestamp": "2026-01-27T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 161510.4850663424,
+      "total_order_count": 25,
+      "timestamp": "2026-01-28T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 3918.7891555827105,
+      "total_order_count": 31,
+      "timestamp": "2026-01-28T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 1878.5057955800003,
+      "total_order_count": 3,
+      "timestamp": "2026-01-28T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 75175.7893259693,
+      "total_order_count": 15,
+      "timestamp": "2026-01-28T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 1168571.8109282258,
+      "total_order_count": 20,
+      "timestamp": "2026-01-29T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 3612.5835577734615,
+      "total_order_count": 41,
+      "timestamp": "2026-01-29T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 705.5015167199999,
+      "total_order_count": 1,
+      "timestamp": "2026-01-29T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 44384.25194,
+      "total_order_count": 1,
+      "timestamp": "2026-01-29T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 5390.574797612,
+      "total_order_count": 2,
+      "timestamp": "2026-01-29T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 275605.3030336484,
+      "total_order_count": 13,
+      "timestamp": "2026-01-30T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 13310.785766751549,
+      "total_order_count": 26,
+      "timestamp": "2026-01-30T00:00:00Z"
+    },
+    {
+      "category": "LLMs",
+      "total_volume": 1683.69067,
+      "total_order_count": 1,
+      "timestamp": "2026-01-30T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 1004.4403075,
+      "total_order_count": 2,
+      "timestamp": "2026-01-30T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 19.5644995,
+      "total_order_count": 1,
+      "timestamp": "2026-01-30T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 2735.8586869408,
+      "total_order_count": 4,
+      "timestamp": "2026-01-30T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 1111840.5127032176,
+      "total_order_count": 25,
+      "timestamp": "2026-01-31T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 7684.885409320956,
+      "total_order_count": 30,
+      "timestamp": "2026-01-31T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 26439.721776813,
+      "total_order_count": 10,
+      "timestamp": "2026-01-31T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 269.09429671,
+      "total_order_count": 1,
+      "timestamp": "2026-01-31T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 274698.58311124356,
+      "total_order_count": 18,
+      "timestamp": "2026-02-01T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 31187.167269245376,
+      "total_order_count": 29,
+      "timestamp": "2026-02-01T00:00:00Z"
+    },
+    {
+      "category": "LLMs",
+      "total_volume": 92243.72319219165,
+      "total_order_count": 2,
+      "timestamp": "2026-02-01T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 9329.82338883772,
+      "total_order_count": 4,
+      "timestamp": "2026-02-01T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 130758.08194523715,
+      "total_order_count": 13,
+      "timestamp": "2026-02-02T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 55379.12597744169,
+      "total_order_count": 83,
+      "timestamp": "2026-02-02T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 10379.049276364,
+      "total_order_count": 4,
+      "timestamp": "2026-02-02T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 25943.595423214,
+      "total_order_count": 5,
+      "timestamp": "2026-02-02T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 345708.639099031,
+      "total_order_count": 22,
+      "timestamp": "2026-02-03T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 95529.38570517377,
+      "total_order_count": 145,
+      "timestamp": "2026-02-03T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 456648.5106825058,
+      "total_order_count": 7,
+      "timestamp": "2026-02-03T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 13979.195218842,
+      "total_order_count": 1,
+      "timestamp": "2026-02-03T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 19887.126831325,
+      "total_order_count": 3,
+      "timestamp": "2026-02-03T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 319667.69532858016,
+      "total_order_count": 34,
+      "timestamp": "2026-02-04T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 324630.9484165221,
+      "total_order_count": 162,
+      "timestamp": "2026-02-04T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 317689.12171732,
+      "total_order_count": 8,
+      "timestamp": "2026-02-04T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 51109.460751371,
+      "total_order_count": 7,
+      "timestamp": "2026-02-04T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 1592559.8853929518,
+      "total_order_count": 113,
+      "timestamp": "2026-02-05T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 1437075.7713778992,
+      "total_order_count": 393,
+      "timestamp": "2026-02-05T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 1945098.6621115627,
+      "total_order_count": 21,
+      "timestamp": "2026-02-05T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 294432.311011575,
+      "total_order_count": 3,
+      "timestamp": "2026-02-05T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 96153.14473326366,
+      "total_order_count": 6,
+      "timestamp": "2026-02-05T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 1492416.6935247122,
+      "total_order_count": 71,
+      "timestamp": "2026-02-06T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 1386089.8833885777,
+      "total_order_count": 289,
+      "timestamp": "2026-02-06T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 837030.647865125,
+      "total_order_count": 7,
+      "timestamp": "2026-02-06T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 1238.748155928,
+      "total_order_count": 2,
+      "timestamp": "2026-02-06T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 307244.046089523,
+      "total_order_count": 33,
+      "timestamp": "2026-02-07T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 355940.19129080174,
+      "total_order_count": 115,
+      "timestamp": "2026-02-07T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 587184.6115258359,
+      "total_order_count": 6,
+      "timestamp": "2026-02-07T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 141001.68922747555,
+      "total_order_count": 8,
+      "timestamp": "2026-02-08T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 278421.68093296373,
+      "total_order_count": 100,
+      "timestamp": "2026-02-08T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 85205.65247653304,
+      "total_order_count": 13,
+      "timestamp": "2026-02-08T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 428005.5058527176,
+      "total_order_count": 27,
+      "timestamp": "2026-02-09T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 1287107.373956273,
+      "total_order_count": 69,
+      "timestamp": "2026-02-09T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 114.681698345268,
+      "total_order_count": 2,
+      "timestamp": "2026-02-09T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 2114.5416400000004,
+      "total_order_count": 1,
+      "timestamp": "2026-02-09T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 202169.92659745633,
+      "total_order_count": 26,
+      "timestamp": "2026-02-10T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 553259.8854399549,
+      "total_order_count": 86,
+      "timestamp": "2026-02-10T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 67708.97086011726,
+      "total_order_count": 5,
+      "timestamp": "2026-02-10T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 1208.92322681372,
+      "total_order_count": 4,
+      "timestamp": "2026-02-10T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 314782.7984161939,
+      "total_order_count": 26,
+      "timestamp": "2026-02-11T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 1307380.5680434278,
+      "total_order_count": 122,
+      "timestamp": "2026-02-11T00:00:00Z"
+    },
+    {
+      "category": "LLMs",
+      "total_volume": 106462.169645184,
+      "total_order_count": 2,
+      "timestamp": "2026-02-11T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 17316.164798651575,
+      "total_order_count": 3,
+      "timestamp": "2026-02-11T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 919.7538858700001,
+      "total_order_count": 2,
+      "timestamp": "2026-02-11T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 18052.468411435002,
+      "total_order_count": 4,
+      "timestamp": "2026-02-11T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 14836.392071131,
+      "total_order_count": 20,
+      "timestamp": "2026-02-12T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 1209280.3236745286,
+      "total_order_count": 108,
+      "timestamp": "2026-02-12T00:00:00Z"
+    },
+    {
+      "category": "LLMs",
+      "total_volume": 76193.027414696,
+      "total_order_count": 3,
+      "timestamp": "2026-02-12T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 11752.31332324,
+      "total_order_count": 2,
+      "timestamp": "2026-02-12T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 613.3713638500001,
+      "total_order_count": 2,
+      "timestamp": "2026-02-12T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 35286.689898100005,
+      "total_order_count": 2,
+      "timestamp": "2026-02-12T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 149898.264883248,
+      "total_order_count": 17,
+      "timestamp": "2026-02-13T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 1593605.9210312977,
+      "total_order_count": 331,
+      "timestamp": "2026-02-13T00:00:00Z"
+    },
+    {
+      "category": "LLMs",
+      "total_volume": 293571.57979486254,
+      "total_order_count": 3,
+      "timestamp": "2026-02-13T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 158.35661811999998,
+      "total_order_count": 3,
+      "timestamp": "2026-02-13T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 124.74874135286001,
+      "total_order_count": 3,
+      "timestamp": "2026-02-13T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 314657.45488222723,
+      "total_order_count": 17,
+      "timestamp": "2026-02-14T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 666851.0234876325,
+      "total_order_count": 451,
+      "timestamp": "2026-02-14T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 178079.02787188702,
+      "total_order_count": 5,
+      "timestamp": "2026-02-14T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 67.218670862,
+      "total_order_count": 3,
+      "timestamp": "2026-02-14T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 2385.44038871145,
+      "total_order_count": 5,
+      "timestamp": "2026-02-14T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 143402.77644225262,
+      "total_order_count": 11,
+      "timestamp": "2026-02-15T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 757369.6723552842,
+      "total_order_count": 423,
+      "timestamp": "2026-02-15T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 177088.1136278779,
+      "total_order_count": 5,
+      "timestamp": "2026-02-15T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 13616.921629766714,
+      "total_order_count": 11,
+      "timestamp": "2026-02-15T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 217592.084539764,
+      "total_order_count": 21,
+      "timestamp": "2026-02-16T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 1058529.7896017414,
+      "total_order_count": 441,
+      "timestamp": "2026-02-16T00:00:00Z"
+    },
+    {
+      "category": "LLMs",
+      "total_volume": 204.36334786799998,
+      "total_order_count": 1,
+      "timestamp": "2026-02-16T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 414807.95132004726,
+      "total_order_count": 15,
+      "timestamp": "2026-02-16T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 265142.2025188616,
+      "total_order_count": 12,
+      "timestamp": "2026-02-16T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 198536.92111254713,
+      "total_order_count": 22,
+      "timestamp": "2026-02-17T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 526539.8695926174,
+      "total_order_count": 451,
+      "timestamp": "2026-02-17T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 6651.733538688041,
+      "total_order_count": 1,
+      "timestamp": "2026-02-17T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 4878.297938087791,
+      "total_order_count": 12,
+      "timestamp": "2026-02-17T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 149709.26722334026,
+      "total_order_count": 26,
+      "timestamp": "2026-02-18T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 1489000.8454917688,
+      "total_order_count": 488,
+      "timestamp": "2026-02-18T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 11510.794093506,
+      "total_order_count": 3,
+      "timestamp": "2026-02-18T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 1997.899363162,
+      "total_order_count": 1,
+      "timestamp": "2026-02-18T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 841.5061641294405,
+      "total_order_count": 3,
+      "timestamp": "2026-02-18T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 487850.972106395,
+      "total_order_count": 19,
+      "timestamp": "2026-02-19T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 708023.5802900563,
+      "total_order_count": 539,
+      "timestamp": "2026-02-19T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 34442.946407994,
+      "total_order_count": 5,
+      "timestamp": "2026-02-19T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 37295.47243611,
+      "total_order_count": 1,
+      "timestamp": "2026-02-19T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 18589.74919161237,
+      "total_order_count": 2,
+      "timestamp": "2026-02-19T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 254305.18805757782,
+      "total_order_count": 24,
+      "timestamp": "2026-02-20T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 1282137.551593848,
+      "total_order_count": 550,
+      "timestamp": "2026-02-20T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 19639.513685275582,
+      "total_order_count": 7,
+      "timestamp": "2026-02-20T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 330.8782642857116,
+      "total_order_count": 3,
+      "timestamp": "2026-02-20T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 23459.804636304,
+      "total_order_count": 8,
+      "timestamp": "2026-02-21T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 617722.8278701999,
+      "total_order_count": 543,
+      "timestamp": "2026-02-21T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 7053.7412322,
+      "total_order_count": 1,
+      "timestamp": "2026-02-21T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 3438.024994384,
+      "total_order_count": 1,
+      "timestamp": "2026-02-21T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 18651.129735253504,
+      "total_order_count": 9,
+      "timestamp": "2026-02-21T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 74718.25780494056,
+      "total_order_count": 10,
+      "timestamp": "2026-02-22T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 913695.9893177325,
+      "total_order_count": 520,
+      "timestamp": "2026-02-22T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 679.424168452,
+      "total_order_count": 1,
+      "timestamp": "2026-02-22T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 17696.85633291944,
+      "total_order_count": 14,
+      "timestamp": "2026-02-22T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 397833.26206186134,
+      "total_order_count": 37,
+      "timestamp": "2026-02-23T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 1799974.889393675,
+      "total_order_count": 642,
+      "timestamp": "2026-02-23T00:00:00Z"
+    },
+    {
+      "category": "LLMs",
+      "total_volume": 15334.865270999999,
+      "total_order_count": 1,
+      "timestamp": "2026-02-23T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 13227.212996863,
+      "total_order_count": 4,
+      "timestamp": "2026-02-23T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 464237.1486186138,
+      "total_order_count": 14,
+      "timestamp": "2026-02-23T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 240347.80997260407,
+      "total_order_count": 20,
+      "timestamp": "2026-02-24T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 1970171.7182718238,
+      "total_order_count": 591,
+      "timestamp": "2026-02-24T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 34200.39574778506,
+      "total_order_count": 4,
+      "timestamp": "2026-02-24T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 23.556649479999997,
+      "total_order_count": 1,
+      "timestamp": "2026-02-24T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 734665.3326523672,
+      "total_order_count": 10,
+      "timestamp": "2026-02-24T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 270793.60448855534,
+      "total_order_count": 16,
+      "timestamp": "2026-02-25T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 928072.1202358078,
+      "total_order_count": 486,
+      "timestamp": "2026-02-25T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 269.45303995824,
+      "total_order_count": 3,
+      "timestamp": "2026-02-25T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 1357893.5426779871,
+      "total_order_count": 15,
+      "timestamp": "2026-02-25T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 433095.2262829517,
+      "total_order_count": 32,
+      "timestamp": "2026-02-26T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 354691.5296409458,
+      "total_order_count": 294,
+      "timestamp": "2026-02-26T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 28123.426497259938,
+      "total_order_count": 3,
+      "timestamp": "2026-02-26T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 703203.8139683454,
+      "total_order_count": 16,
+      "timestamp": "2026-02-26T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 278175.03654981643,
+      "total_order_count": 25,
+      "timestamp": "2026-02-27T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 238151.9901680201,
+      "total_order_count": 302,
+      "timestamp": "2026-02-27T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 44432.901468005344,
+      "total_order_count": 6,
+      "timestamp": "2026-02-27T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 855214.1731366569,
+      "total_order_count": 15,
+      "timestamp": "2026-02-27T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 413335.48457006644,
+      "total_order_count": 11,
+      "timestamp": "2026-02-28T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 137724.89922058184,
+      "total_order_count": 252,
+      "timestamp": "2026-02-28T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 20759.01595050794,
+      "total_order_count": 3,
+      "timestamp": "2026-02-28T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 396823.18676560407,
+      "total_order_count": 8,
+      "timestamp": "2026-02-28T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 340938.1547166149,
+      "total_order_count": 12,
+      "timestamp": "2026-03-01T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 847669.5589957851,
+      "total_order_count": 235,
+      "timestamp": "2026-03-01T00:00:00Z"
+    },
+    {
+      "category": "LLMs",
+      "total_volume": 287.665066896,
+      "total_order_count": 2,
+      "timestamp": "2026-03-01T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 2962.84049554,
+      "total_order_count": 1,
+      "timestamp": "2026-03-01T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 36637.24452441803,
+      "total_order_count": 4,
+      "timestamp": "2026-03-01T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 288957.1970415716,
+      "total_order_count": 19,
+      "timestamp": "2026-03-02T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 244865.29683815403,
+      "total_order_count": 292,
+      "timestamp": "2026-03-02T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 127610.15721702279,
+      "total_order_count": 8,
+      "timestamp": "2026-03-02T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 667803.2443105123,
+      "total_order_count": 11,
+      "timestamp": "2026-03-02T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 175142.59498290755,
+      "total_order_count": 19,
+      "timestamp": "2026-03-03T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 441785.4909094951,
+      "total_order_count": 298,
+      "timestamp": "2026-03-03T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 670863.60980917,
+      "total_order_count": 8,
+      "timestamp": "2026-03-03T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 1160460.5074634876,
+      "total_order_count": 17,
+      "timestamp": "2026-03-03T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 1040927.6823562647,
+      "total_order_count": 31,
+      "timestamp": "2026-03-04T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 783340.5273409539,
+      "total_order_count": 412,
+      "timestamp": "2026-03-04T00:00:00Z"
+    },
+    {
+      "category": "LLMs",
+      "total_volume": 733.1773546000001,
+      "total_order_count": 1,
+      "timestamp": "2026-03-04T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 8756.226207340002,
+      "total_order_count": 3,
+      "timestamp": "2026-03-04T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 1469491.7970396597,
+      "total_order_count": 15,
+      "timestamp": "2026-03-04T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 1235161.1918261892,
+      "total_order_count": 24,
+      "timestamp": "2026-03-05T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 269823.61344169336,
+      "total_order_count": 307,
+      "timestamp": "2026-03-05T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 446987.5713013799,
+      "total_order_count": 10,
+      "timestamp": "2026-03-05T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 14.894341088000001,
+      "total_order_count": 1,
+      "timestamp": "2026-03-05T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 539831.9890605578,
+      "total_order_count": 13,
+      "timestamp": "2026-03-05T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 571321.789391908,
+      "total_order_count": 16,
+      "timestamp": "2026-03-06T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 148550.86915698563,
+      "total_order_count": 347,
+      "timestamp": "2026-03-06T00:00:00Z"
+    },
+    {
+      "category": "LLMs",
+      "total_volume": 40.432680203000004,
+      "total_order_count": 2,
+      "timestamp": "2026-03-06T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 520533.00151917397,
+      "total_order_count": 5,
+      "timestamp": "2026-03-06T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 4256.85311382,
+      "total_order_count": 2,
+      "timestamp": "2026-03-06T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 202327.04399977543,
+      "total_order_count": 6,
+      "timestamp": "2026-03-06T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 253555.81463515642,
+      "total_order_count": 16,
+      "timestamp": "2026-03-07T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 203368.50489346363,
+      "total_order_count": 337,
+      "timestamp": "2026-03-07T00:00:00Z"
+    },
+    {
+      "category": "LLMs",
+      "total_volume": 51908.535865800004,
+      "total_order_count": 1,
+      "timestamp": "2026-03-07T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 1261.0592086,
+      "total_order_count": 3,
+      "timestamp": "2026-03-07T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 441809.3314438126,
+      "total_order_count": 6,
+      "timestamp": "2026-03-07T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 1466074.8916931173,
+      "total_order_count": 25,
+      "timestamp": "2026-03-08T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 1464146.9605108632,
+      "total_order_count": 196,
+      "timestamp": "2026-03-08T00:00:00Z"
+    },
+    {
+      "category": "LLMs",
+      "total_volume": 554.339451521,
+      "total_order_count": 1,
+      "timestamp": "2026-03-08T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 43394.66498464,
+      "total_order_count": 3,
+      "timestamp": "2026-03-08T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 1237398.79945905,
+      "total_order_count": 10,
+      "timestamp": "2026-03-08T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 2065516.5115397223,
+      "total_order_count": 32,
+      "timestamp": "2026-03-09T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 964803.5108017975,
+      "total_order_count": 235,
+      "timestamp": "2026-03-09T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 21.86686855,
+      "total_order_count": 1,
+      "timestamp": "2026-03-09T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 50121.18527945553,
+      "total_order_count": 3,
+      "timestamp": "2026-03-09T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 1357101.0610137498,
+      "total_order_count": 25,
+      "timestamp": "2026-03-10T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 552246.715890089,
+      "total_order_count": 259,
+      "timestamp": "2026-03-10T00:00:00Z"
+    },
+    {
+      "category": "LLMs",
+      "total_volume": 2232.9497254297758,
+      "total_order_count": 3,
+      "timestamp": "2026-03-10T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 235.515375555,
+      "total_order_count": 7,
+      "timestamp": "2026-03-10T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 1390.207397104,
+      "total_order_count": 1,
+      "timestamp": "2026-03-10T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 1677688.8230443655,
+      "total_order_count": 11,
+      "timestamp": "2026-03-10T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 1463595.063965635,
+      "total_order_count": 32,
+      "timestamp": "2026-03-11T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 492853.97684486,
+      "total_order_count": 277,
+      "timestamp": "2026-03-11T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 3373.0649630856637,
+      "total_order_count": 9,
+      "timestamp": "2026-03-11T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 9539.579574096,
+      "total_order_count": 1,
+      "timestamp": "2026-03-11T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 673023.276237032,
+      "total_order_count": 10,
+      "timestamp": "2026-03-11T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 1369420.2810337872,
+      "total_order_count": 28,
+      "timestamp": "2026-03-12T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 880545.4425194133,
+      "total_order_count": 324,
+      "timestamp": "2026-03-12T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 53664.74042399482,
+      "total_order_count": 11,
+      "timestamp": "2026-03-12T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 263934.65924382984,
+      "total_order_count": 9,
+      "timestamp": "2026-03-12T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 1056581.631900199,
+      "total_order_count": 26,
+      "timestamp": "2026-03-13T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 900348.5866102913,
+      "total_order_count": 469,
+      "timestamp": "2026-03-13T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 49510.093016331,
+      "total_order_count": 7,
+      "timestamp": "2026-03-13T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 3182.1167640000003,
+      "total_order_count": 1,
+      "timestamp": "2026-03-13T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 1011874.6317336233,
+      "total_order_count": 8,
+      "timestamp": "2026-03-13T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 637612.6447206,
+      "total_order_count": 18,
+      "timestamp": "2026-03-14T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 374158.953564882,
+      "total_order_count": 249,
+      "timestamp": "2026-03-14T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 31114.750470253588,
+      "total_order_count": 8,
+      "timestamp": "2026-03-14T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 1899670.009756639,
+      "total_order_count": 13,
+      "timestamp": "2026-03-14T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 239127.265651803,
+      "total_order_count": 16,
+      "timestamp": "2026-03-15T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 238497.01183182735,
+      "total_order_count": 364,
+      "timestamp": "2026-03-15T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 553.343690326,
+      "total_order_count": 21,
+      "timestamp": "2026-03-15T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 790491.0454854937,
+      "total_order_count": 7,
+      "timestamp": "2026-03-15T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 402476.6285620215,
+      "total_order_count": 15,
+      "timestamp": "2026-03-16T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 394800.3841516217,
+      "total_order_count": 339,
+      "timestamp": "2026-03-16T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 15235.867547210073,
+      "total_order_count": 11,
+      "timestamp": "2026-03-16T00:00:00Z"
+    },
+    {
+      "category": "Twitter/X",
+      "total_volume": 296.64957711399995,
+      "total_order_count": 9,
+      "timestamp": "2026-03-16T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 1216764.46917722,
+      "total_order_count": 14,
+      "timestamp": "2026-03-16T00:00:00Z"
+    },
+    {
+      "category": "Direct",
+      "total_volume": 49721.163772361,
+      "total_order_count": 2,
+      "timestamp": "2026-03-17T00:00:00Z"
+    },
+    {
+      "category": "Integrators",
+      "total_volume": 27151.7281401238,
+      "total_order_count": 128,
+      "timestamp": "2026-03-17T00:00:00Z"
+    },
+    {
+      "category": "SEO",
+      "total_volume": 211.918185207,
+      "total_order_count": 9,
+      "timestamp": "2026-03-17T00:00:00Z"
+    },
+    {
+      "category": "Untracked",
+      "total_volume": 1180749.1623267306,
+      "total_order_count": 6,
+      "timestamp": "2026-03-17T00:00:00Z"
+    }
+  ],
+  "metadata": {
+    "total_volume": 96500607.8017181,
+    "total_order_count": 17278,
+    "total_volume_by_category": [
+      {
+        "category": "Direct",
+        "total_volume": 34748239.63804094,
+        "total_order_count": 1632
+      },
+      {
+        "category": "Integrators",
+        "total_volume": 32863111.33936346,
+        "total_order_count": 14735
+      },
+      {
+        "category": "LLMs",
+        "total_volume": 641450.5194802519,
+        "total_order_count": 23
+      },
+      {
+        "category": "SEO",
+        "total_volume": 7362569.117288172,
+        "total_order_count": 314
+      },
+      {
+        "category": "Twitter/X",
+        "total_volume": 926405.499181763,
+        "total_order_count": 47
+      },
+      {
+        "category": "Untracked",
+        "total_volume": 19958831.688363537,
+        "total_order_count": 527
+      }
+    ]
+  },
+  "_analysis_metadata": {
+    "cleaned_at": "2026-03-17T08:27:26.460161Z",
+    "action": "removed orders arrays"
+  }
+}

@@ -1,6 +1,4 @@
-// src/agents/superAgent.ts
-
-import Anthropic from "@anthropic-ai/sdk";
+import { GoogleGenerativeAI } from "@google/generative-ai";
 import {
   getRecentOutputs,
   saveSuperAgentRun,
@@ -8,7 +6,7 @@ import {
 } from "../memoryStore.js";
 import type { AgentOutput, SuperAgentResult, SuperAgentRun } from "../types.js";
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 
 // ── System prompt ─────────────────────────────────────────────────────────────
 
@@ -70,6 +68,16 @@ Respond ONLY with a valid JSON object matching this exact shape (no markdown, no
 }
 `.trim();
 
+// Initialize Gemini model once (with system prompt + strict JSON mode)
+const model = genAI.getGenerativeModel({
+  model: "gemini-1.5-pro",
+  systemInstruction: SYSTEM_PROMPT,
+  generationConfig: {
+    responseMimeType: "application/json",
+    maxOutputTokens: 4000,
+  },
+});
+
 // ── Context builder ───────────────────────────────────────────────────────────
 
 function buildContextMessage(outputs: AgentOutput[]): string {
@@ -116,20 +124,19 @@ export async function runSuperAgent(
 
   const userMessage = buildContextMessage(outputs);
 
-  const response = await client.messages.create({
-    model: "claude-sonnet-4-20250514",
-    max_tokens: 4000,
-    system: SYSTEM_PROMPT,
-    messages: [{ role: "user", content: userMessage }],
-  });
+  console.log("[SuperAgent] Sending to Gemini for analysis...");
 
-  const rawText = response.content
-    .filter((b): b is Anthropic.TextBlock => b.type === "text")
-    .map((b) => b.text)
-    .join("");
+  const resultResponse = await model.generateContent(userMessage);
+  const text = resultResponse.response.text().trim();
 
-  const clean = rawText.replace(/```json|```/g, "").trim();
-  const result = JSON.parse(clean) as SuperAgentResult;
+  let result: SuperAgentResult;
+  try {
+    result = JSON.parse(text) as SuperAgentResult;
+  } catch {
+    throw new Error(
+      `[SuperAgent] Gemini returned invalid JSON.\nRaw response:\n${text.slice(0, 500)}`,
+    );
+  }
 
   // Attach run metadata
   result.run_timestamp = new Date().toISOString();

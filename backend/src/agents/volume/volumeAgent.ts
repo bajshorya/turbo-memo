@@ -1,11 +1,13 @@
-
-import Anthropic from "@anthropic-ai/sdk";
+import {
+  GoogleGenerativeAI,
+  type GenerativeModel,
+} from "@google/generative-ai";
 import { connectMongo, AgentOutputModel } from "../../db/mongo.js";
 import { VolumePreprocessor } from "./volumePreprocessor.js";
 import type { PreprocessedVolumeData } from "./volumePreprocessor.js";
 import type { VolumeAnalysis, VolumeSignal } from "../../types/volumeTypes.js";
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const client = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 
 // ── System prompt ─────────────────────────────────────────────────────────────
 
@@ -92,7 +94,7 @@ Respond ONLY with a valid JSON object matching this exact shape. No markdown, no
 
 function buildAnalysisPrompt(data: PreprocessedVolumeData): string {
   // We send a structured summary — NOT the raw 40k line JSON
-  // Claude gets everything it needs to do deep analysis in <2000 tokens
+  // Gemini gets everything it needs to do deep analysis in <2000 tokens
 
   const tfTable = data.timeframes
     .map(
@@ -177,32 +179,61 @@ export class VolumeAgent {
   public readonly topic = "swap_volume";
 
   private preprocessor: VolumePreprocessor;
+  private model: GenerativeModel;
 
   constructor(dataFileName = "volume.json") {
     this.preprocessor = new VolumePreprocessor(dataFileName);
+
+    // ✅ FIXED FOR MARCH 2026 — use a current model
+    this.model = client.getGenerativeModel({
+      model: "gemini-2.5-flash", // ← BEST CHOICE (fast + reliable)
+      // model: "gemini-2.5-pro",         // ← use this if you want maximum intelligence
+      systemInstruction: VOLUME_SYSTEM_PROMPT,
+      generationConfig: {
+        responseMimeType: "application/json",
+        maxOutputTokens: 8192,
+        temperature: 0.2,
+      },
+    });
   }
 
-  private async callClaude(prompt: string): Promise<VolumeAnalysis> {
-    const response = await client.messages.create({
-      model: "claude-sonnet-4-20250514",
-      max_tokens: 4000,
-      system: VOLUME_SYSTEM_PROMPT,
-      messages: [{ role: "user", content: prompt }],
-    });
+  // ← Your callGemini, saveToDB, and run() stay 100% unchanged
 
-    const text = response.content
-      .filter((b): b is Anthropic.TextBlock => b.type === "text")
-      .map((b) => b.text)
-      .join("");
-
-    const clean = text.replace(/```json|```/g, "").trim();
+  private async callGemini(
+    prompt: string,
+    retryCount = 0,
+  ): Promise<VolumeAnalysis> {
+    const maxRetries = 3;
 
     try {
-      return JSON.parse(clean) as VolumeAnalysis;
-    } catch {
-      throw new Error(
-        `[VolumeAgent] Claude returned invalid JSON.\nRaw response:\n${clean.slice(0, 500)}`,
-      );
+      const result = await this.model.generateContent(prompt);
+      const text = result.response.text().trim();
+
+      console.log("[VolumeAgent] Raw response length:", text.length);
+
+      try {
+        return JSON.parse(text) as VolumeAnalysis;
+      } catch (error) {
+        // If JSON parsing fails, log and rethrow
+        console.error("[VolumeAgent] Failed to parse JSON response:", error);
+        throw new Error(
+          `JSON parse error: ${error instanceof Error ? error.message : String(error)}`,
+        );
+      }
+    } catch (error: any) {
+      // Handle rate limiting (429 errors)
+      if (error.status === 429 && retryCount < maxRetries) {
+        const waitTime = Math.pow(2, retryCount) * 2000; // Exponential backoff: 2s, 4s, 8s
+        console.log(
+          `[VolumeAgent] Rate limited. Retrying in ${waitTime / 1000} seconds... (attempt ${retryCount + 1}/${maxRetries})`,
+        );
+
+        await new Promise((resolve) => setTimeout(resolve, waitTime));
+        return this.callGemini(prompt, retryCount + 1);
+      }
+
+      // If it's not a rate limit error or we're out of retries, rethrow
+      throw error;
     }
   }
 
@@ -245,7 +276,7 @@ export class VolumeAgent {
     // 1. Connect to MongoDB
     await connectMongo();
 
-    // 2. Load + preprocess the raw JSON (no Claude involved yet)
+    // 2. Load + preprocess the raw JSON (no Gemini involved yet)
     console.log("[VolumeAgent] Loading and preprocessing volume.json...");
     const preprocessed = this.preprocessor.process();
     console.log(
@@ -261,10 +292,10 @@ export class VolumeAgent {
         `All-time orders: ${preprocessed.all_time_orders.toLocaleString()}`,
     );
 
-    // 3. Build prompt and call Claude
-    console.log("[VolumeAgent] Sending to Claude for analysis...");
+    // 3. Build prompt and call Gemini
+    console.log("[VolumeAgent] Sending to Gemini for analysis...");
     const prompt = buildAnalysisPrompt(preprocessed);
-    const analysis = await this.callClaude(prompt);
+    const analysis = await this.callGemini(prompt);
 
     // 4. Log key results
     console.log(`[VolumeAgent] ✓ Analysis complete`);

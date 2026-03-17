@@ -1,5 +1,7 @@
-
-import Anthropic from "@anthropic-ai/sdk";
+import {
+  GoogleGenerativeAI,
+  type GenerativeModel,
+} from "@google/generative-ai";
 import { connectMongo, AgentOutputModel } from "../../db/mongo.js";
 import {
   PreprocessedCategoryVolumeData,
@@ -7,7 +9,7 @@ import {
 } from "./volumeCategoryPreprocessor.js";
 import type { VolumeAnalysis, VolumeSignal } from "../../types/volumeTypes.js";
 
-const client = new Anthropic({ apiKey: process.env.ANTHROPIC_API_KEY });
+const client = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 
 // ── System prompt ─────────────────────────────────────────────────────────────
 
@@ -99,7 +101,7 @@ Respond ONLY with a valid JSON object matching this exact shape. No markdown, no
 
 function buildAnalysisPrompt(data: PreprocessedCategoryVolumeData): string {
   // We send a structured summary — NOT the raw 40k line JSON
-  // Claude gets everything it needs to do category-level analysis in <2000 tokens
+  // Gemini gets everything it needs to do category-level analysis in <2000 tokens
 
   const tfTable = data.timeframes
     .map(
@@ -129,7 +131,7 @@ function buildAnalysisPrompt(data: PreprocessedCategoryVolumeData): string {
     .slice(-14)
     .map(
       (d) =>
-        `  ${d.date}: Top cat=${d.top_category_pct} (${d.top_category_pct}%), Total=${d.total_volume} | ` +
+        `  ${d.date}: Top cat=${d.dominant_category} (${d.top_category_pct}%), Total=$${d.total_volume.toLocaleString()} | ` +
         `${d.category_count} active categories, Diversity=${d.diversity_index.toFixed(2)}`,
     )
     .join("\n");
@@ -195,33 +197,127 @@ export class CategoryVolumeAgent {
   public readonly topic = "category_volume";
 
   private preprocessor: VolumePreprocessor;
+  private model: GenerativeModel;
+  private fallbackModels: string[] = [
+    "gemini-2.5-flash",
+    "gemini-2.0-flash", // Fallback to 2.0 if 2.5 is busy
+    "gemini-1.5-pro", // Then try 1.5 pro
+    "gemini-1.5-flash", // Then 1.5 flash
+  ];
 
   constructor(dataFileName = "category_volume.json") {
     this.preprocessor = new VolumePreprocessor(dataFileName);
+
+    // Initialize with primary model
+    this.model = this.createModel("gemini-2.5-flash");
   }
 
-  private async callClaude(prompt: string): Promise<VolumeAnalysis> {
-    const response = await client.messages.create({
-      model: "claude-sonnet-4-20250514",
-      max_tokens: 4000,
-      system: CATEGORY_VOLUME_SYSTEM_PROMPT,
-      messages: [{ role: "user", content: prompt }],
+  private createModel(modelName: string): GenerativeModel {
+    console.log(`[CategoryVolumeAgent] Initializing model: ${modelName}`);
+    return client.getGenerativeModel({
+      model: modelName,
+      systemInstruction: CATEGORY_VOLUME_SYSTEM_PROMPT,
+      generationConfig: {
+        responseMimeType: "application/json",
+        maxOutputTokens: 8192,
+        temperature: 0.2,
+      },
     });
+  }
 
-    const text = response.content
-      .filter((b): b is Anthropic.TextBlock => b.type === "text")
-      .map((b) => b.text)
-      .join("");
-
-    const clean = text.replace(/```json|```/g, "").trim();
+  private async callGeminiWithModel(
+    prompt: string,
+    model: GenerativeModel,
+    modelName: string,
+    retryCount = 0,
+  ): Promise<VolumeAnalysis> {
+    const maxRetries = 3;
 
     try {
-      return JSON.parse(clean) as VolumeAnalysis;
-    } catch {
-      throw new Error(
-        `[VolumeAgent] Claude returned invalid JSON.\nRaw response:\n${clean.slice(0, 500)}`,
+      const result = await model.generateContent(prompt);
+      const text = result.response.text().trim();
+
+      console.log(
+        `[CategoryVolumeAgent] Raw response length (${modelName}):`,
+        text.length,
       );
+
+      try {
+        return JSON.parse(text) as VolumeAnalysis;
+      } catch (error) {
+        console.error(
+          `[CategoryVolumeAgent] Failed to parse JSON response from ${modelName}:`,
+          error,
+        );
+        throw new Error(
+          `JSON parse error: ${error instanceof Error ? error.message : String(error)}`,
+        );
+      }
+    } catch (error: any) {
+      // Handle rate limiting (429 errors) and service unavailable (503)
+      if (
+        (error.status === 429 || error.status === 503) &&
+        retryCount < maxRetries
+      ) {
+        const waitTime = Math.pow(2, retryCount) * 2000; // Exponential backoff: 2s, 4s, 8s
+        console.log(
+          `[CategoryVolumeAgent] ${error.status === 429 ? "Rate limited" : "Service unavailable"}. Retrying in ${waitTime / 1000} seconds... (attempt ${retryCount + 1}/${maxRetries})`,
+        );
+
+        await new Promise((resolve) => setTimeout(resolve, waitTime));
+        return this.callGeminiWithModel(
+          prompt,
+          model,
+          modelName,
+          retryCount + 1,
+        );
+      }
+
+      // If it's not a retryable error or we're out of retries, rethrow
+      throw error;
     }
+  }
+
+  private async callGemini(prompt: string): Promise<VolumeAnalysis> {
+    // Try primary model first
+    const modelsToTry = [
+      { model: this.model, name: "gemini-2.5-flash" },
+      ...this.fallbackModels.map((name) => ({
+        model: this.createModel(name),
+        name,
+      })),
+    ];
+
+    let lastError: Error | null = null;
+
+    for (let i = 0; i < modelsToTry.length; i++) {
+      const { model, name } = modelsToTry[i];
+
+      try {
+        console.log(
+          `[CategoryVolumeAgent] Trying model: ${name}${i > 0 ? " (fallback)" : ""}`,
+        );
+        return await this.callGeminiWithModel(prompt, model, name);
+      } catch (error: any) {
+        lastError = error;
+        console.log(
+          `[CategoryVolumeAgent] Model ${name} failed:`,
+          error.message,
+        );
+
+        // If this is the last model, we'll throw after the loop
+        if (i === modelsToTry.length - 1) {
+          console.log(
+            `[CategoryVolumeAgent] All models failed. Last error:`,
+            error.message,
+          );
+        } else {
+          console.log(`[CategoryVolumeAgent] Falling back to next model...`);
+        }
+      }
+    }
+
+    throw lastError || new Error("All models failed");
   }
 
   private async saveToDB(
@@ -264,7 +360,7 @@ export class CategoryVolumeAgent {
     // 1. Connect to MongoDB
     await connectMongo();
 
-    // 2. Load + preprocess the raw JSON (no Claude involved yet)
+    // 2. Load + preprocess the raw JSON (no Gemini involved yet)
     console.log(
       "[CategoryVolumeAgent] Loading and preprocessing category_volume.json...",
     );
@@ -282,10 +378,10 @@ export class CategoryVolumeAgent {
         `All-time orders: ${preprocessed.all_time_orders.toLocaleString()}`,
     );
 
-    // 3. Build prompt and call Claude
-    console.log("[CategoryVolumeAgent] Sending to Claude for analysis...");
+    // 3. Build prompt and call Gemini with fallback
+    console.log("[CategoryVolumeAgent] Sending to Gemini for analysis...");
     const prompt = buildAnalysisPrompt(preprocessed);
-    const analysis = await this.callClaude(prompt);
+    const analysis = await this.callGemini(prompt);
 
     // 4. Log key results
     console.log(`[CategoryVolumeAgent] ✓ Analysis complete`);
