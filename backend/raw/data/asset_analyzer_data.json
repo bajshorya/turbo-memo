@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "category": "Aggregate Performance",
+    "metric": "3-Day Total Volume (Mar 14-17)",
+    "value": "$6.26M in 72 hours",
+    "raw_value": 6261216.0,
+    "insight": "Over a single 3-day mid-month period, Garden processed $6.26M across all assets and chains, maintaining a consistent multi-million dollar daily run rate.",
+    "suggested_tweet": "3 days. $6.2m bridged.\n\nwe don't just spike. we sustain.\n\nthe baseline is rising."
+  },
+  {
+    "id": 2,
+    "category": "Aggregate Performance",
+    "metric": "3-Day Total Orders",
+    "value": "2,164 trustless swaps",
+    "raw_value": 2164,
+    "insight": "Garden settled 2,164 atomic swaps in 72 hours, averaging over 720 orders per day. High frequency retail bridging is becoming the norm.",
+    "suggested_tweet": "2,164 trustless swaps in 72 hours.\n\nno wrapped tokens. no multisig delays.\n\njust execution."
+  },
+  {
+    "id": 3,
+    "category": "Asset Dominance",
+    "metric": "USDC on Solana Volume",
+    "value": "$1.98M across 3 days",
+    "raw_value": 1981335.0,
+    "insight": "USDC on Solana was the single most traded asset by volume over this window, pulling nearly $2M, showing Garden's massive utility beyond just Bitcoin.",
+    "suggested_tweet": "nearly $2m in solana usdc bridged in 3 days.\n\ngarden is a bitcoin bridge, but stablecoin routing is catching up fast."
+  },
+  {
+    "id": 4,
+    "category": "Asset Dominance",
+    "metric": "Native BTC Consistency",
+    "value": "$1.49M / 668 orders",
+    "raw_value": 1498764.0,
+    "insight": "Native Bitcoin remains the heartbeat of the protocol, consistently pulling high volume and the highest aggregate order count (668) of any asset in this period.",
+    "suggested_tweet": "668 native bitcoin swaps in 72 hours.\n\nreal btc. real fast.\n\naccept no substitutes."
+  },
+  {
+    "id": 5,
+    "category": "Asset Dominance",
+    "metric": "BTCB on BNB Chain",
+    "value": "$1.67M volume",
+    "raw_value": 1674804.0,
+    "insight": "BNB Chain continues to be a massive liquidity hub. BTCB pulled $1.67M over 3 days, closely tailing Solana USDC for top volume spot.",
+    "suggested_tweet": "$1.6m+ in btcb routed through bnb chain.\n\nbsc liquidity is quiet but massive.\n\nwe route it all."
+  },
+  {
+    "id": 6,
+    "category": "Retail Activity",
+    "metric": "Mar 15-16 Order Spike",
+    "value": "810 orders (lowest volume day)",
+    "raw_value": 810,
+    "insight": "March 15-16 had the lowest volume ($1.26M) but the highest order count (810). This inverted ratio indicates a massive influx of retail, small-size swaps.",
+    "suggested_tweet": "mar 15: lowest volume of the week, but highest order count (810).\n\nretail is awake.\n\ninfrastructure handles $10 swaps and $100k swaps exactly the same."
+  },
+  {
+    "id": 7,
+    "category": "Ecosystem Insights",
+    "metric": "cbBTC on Base",
+    "value": "148 orders in a single day (Mar 15-16)",
+    "raw_value": 148,
+    "insight": "Base is seeing intense retail bridging activity. Mar 15-16 saw 148 orders for cbBTC on Base alone, indicating strong onchain DeFi retail movement.",
+    "suggested_tweet": "148 cbbtc swaps on base in a single day.\n\nl2 retail is moving.\n\ngarden is the rails."
+  },
+  {
+    "id": 8,
+    "category": "Ecosystem Insights",
+    "metric": "HyperEVM (uBTC) Whale Activity",
+    "value": "Avg order > $17k",
+    "raw_value": 17966.0,
+    "insight": "uBTC to HyperEVM saw $89k across just 5 orders in 3 days. Hyperliquid perps traders use Garden to move large chunks of native capital efficiently.",
+    "suggested_tweet": "hyperevm users average $17k+ per swap on garden.\n\nwhales bridging direct to perps.\n\nthe fastest bridge for the fastest l1."
+  },
+  {
+    "id": 9,
+    "category": "Ecosystem Insights",
+    "metric": "Litecoin (LTC) Live",
+    "value": "$10,240 in 1 order",
+    "raw_value": 10240.0,
+    "insight": "A single $10k+ swap for Litecoin on Mar 14-15 proves the newly launched LTC integration is immediately seeing high-value usage.",
+    "suggested_tweet": "someone just bridged $10k of litecoin in a single swap.\n\npeer-to-peer money deserves trustless rails.\n\nltc is live."
+  },
+  {
+    "id": 10,
+    "category": "Peak Performance",
+    "metric": "Mar 14-15 Daily High",
+    "value": "$2.96M volume",
+    "raw_value": 2963057.0,
+    "insight": "March 14-15 was a near-$3M day, driven by a massive $1M spike in Solana USDC and $831k in Native BTC. Large capital was moving aggressively.",
+    "suggested_tweet": "mar 14.\n\nnearly $3m bridged in 24 hours.\n\nbull market volume on trustless infrastructure."
+  },
+  {
+    "id": 11,
+    "category": "Ecosystem Insights",
+    "metric": "SOL Native Bridging",
+    "value": 428,
+    "raw_value": 428,
+    "insight": "Native SOL bridging is incredibly active, pulling 127, 129, and 172 orders consecutively. Retail Solana users treat Garden as a core bridge.",
+    "suggested_tweet": "428 native sol swaps in 3 days.\n\nsolana users don't wait for centralized exchanges.\n\nthey use garden."
+  },
+  {
+    "id": 12,
+    "category": "Network Usage",
+    "metric": "Daily Active Wallets",
+    "value": "1,390 unique wallets interacted",
+    "raw_value": 1390,
+    "insight": "Combining the unique wallets per day (411 + 431 + 548) shows sustained, broad user distribution, peaking at 548 distinct wallets on Mar 16-17.",
+    "suggested_tweet": "over 500 unique wallets interacted with garden today.\n\ndistributed infrastructure.\n\nnot just a few whales. everyone."
+  },
+  {
+    "id": 13,
+    "category": "Ecosystem Insights",
+    "metric": "Ethereum WBTC Whales",
+    "value": "$230k across 5 orders",
+    "raw_value": 230005.0,
+    "insight": "On Mar 14-15, WBTC on Ethereum saw $230k moved in just 5 orders. Average size: $46k. Eth mainnet users remain highly capitalized.",
+    "suggested_tweet": "wbtc swaps on eth mainnet averaging $46k each.\n\nmainnet whales still routing through garden.\n\ntrustless > everything."
+  },
+  {
+    "id": 14,
+    "category": "Ecosystem Insights",
+    "metric": "Spark / Lightning",
+    "value": "~27 orders in 3 days",
+    "raw_value": 27,
+    "insight": "Spark (lightning) routing appeared consistently every day, proving the Breez/Spark integration is actively settling instant micropayments/swaps.",
+    "suggested_tweet": "spark integration is seeing daily flow.\n\ninstant bitcoin to any asset.\n\nthe rails are working."
+  },
+  {
+    "id": 15,
+    "category": "New Chain Adoption",
+    "metric": "Monad Initial Volume",
+    "value": "$19.70 in 1 order",
+    "raw_value": 19.7,
+    "insight": "A small $19 test order to Monad appeared on Mar 14-15. Developers and early adopters are already testing Garden routes to the highly anticipated L1.",
+    "suggested_tweet": "monad volume showing up in the logs.\n\nearly testers are routing through garden.\n\nwe go where the liquidity goes."
+  },
+  {
+    "id": 16,
+    "category": "New Chain Adoption",
+    "metric": "Citrea (cBTC)",
+    "value": "4 orders on Mar 14-15",
+    "raw_value": 49.47,
+    "insight": "Citrea's ZK-rollup testnet/early mainnet users are successfully using Garden to bridge cBTC. 4 orders completed seamlessly.",
+    "suggested_tweet": "citrea cbtc swaps are live and settling.\n\nbitcoin's zk future is routed through garden."
+  },
+  {
+    "id": 17,
+    "category": "New Chain Adoption",
+    "metric": "Botanix (BTC)",
+    "value": "Consistent daily test volume",
+    "raw_value": 285.52,
+    "insight": "Botanix EVM saw small but consistent volume across multiple days ($11, then $273). The Bitcoin EVM ecosystem is warming up its bridge infrastructure.",
+    "suggested_tweet": "botanix native btc swaps executing daily.\n\nthe bitcoin evm ecosystem is spinning up."
+  },
+  {
+    "id": 18,
+    "category": "New Chain Adoption",
+    "metric": "MegaETH (BTC.b)",
+    "value": "13 orders across 3 days",
+    "raw_value": 5090.71,
+    "insight": "MegaETH users bridged over $5k in BTC.b across 13 orders. As new high-performance chains launch, Garden is their day-zero liquidity rail.",
+    "suggested_tweet": "megaeth users moving btc.b through garden.\n\nnew l1s. same trustless bridge."
+  },
+  {
+    "id": 19,
+    "category": "Capital Flow",
+    "metric": "Native BTC Inflow/Outflow",
+    "value": "Destination Vol > Source Vol",
+    "raw_value": 822463.21,
+    "insight": "Across Mar 14-17, Native BTC destination volume consistently outpaced source volume. Users are bridging *back* into native Bitcoin from other chains.",
+    "suggested_tweet": "users are bridging back into native bitcoin.\n\ndestination volume for btc outpacing source volume.\n\nprofits flow back to the king."
+  },
+  {
+    "id": 20,
+    "category": "Capital Flow",
+    "metric": "Solana USDC Outflow",
+    "value": "Source Vol > Destination Vol (Mar 14-15)",
+    "raw_value": 730343.39,
+    "insight": "On Mar 14-15, $730k of USDC left Solana vs only $288k entering. A massive capital rotation event was facilitated entirely through Garden.",
+    "suggested_tweet": "mar 14: $730k of usdc bridged *out* of solana.\n\nwhen capital rotates chains, it takes the fastest route.\n\ngarden."
+  },
+  {
+    "id": 21,
+    "category": "Ecosystem Insights",
+    "metric": "cbBTC on Solana",
+    "value": "224 orders in 3 days",
+    "raw_value": 224,
+    "insight": "cbBTC on Solana is a massive retail hit. 39 orders, then 123 orders, then 62 orders. Coinbase's wrapped asset is finding heavy velocity on SOL via Garden.",
+    "suggested_tweet": "over 200 swaps for cbbtc on solana in 3 days.\n\nthe liquidity fragmentation is real. garden solves it."
+  },
+  {
+    "id": 22,
+    "category": "User Retention",
+    "metric": "Wallet-to-Order Ratio",
+    "value": "1.41 orders per wallet (Mar 16-17)",
+    "raw_value": 1.41,
+    "insight": "On Mar 16-17, 776 orders were placed by 548 unique wallets. This >1.0 ratio proves users are performing multiple bridge actions in a single session.",
+    "suggested_tweet": "average user is placing 1.4 swaps per day.\n\nwhen bridging takes 30 seconds, it stops being a chore and becomes a feature."
+  },
+  {
+    "id": 23,
+    "category": "Asset Breakdown",
+    "metric": "Asset Diversity",
+    "value": "19 distinct assets routed",
+    "raw_value": 19,
+    "insight": "On Mar 14-15, Garden routed 19 different asset pairs across chains. It is no longer just a BTC bridge; it is a comprehensive cross-chain liquidity network.",
+    "suggested_tweet": "19 different assets routed in a single day.\n\nfrom btc to sol to usdc to cbbtc.\n\ntrustless liquidity for everything."
+  },
+  {
+    "id": 24,
+    "category": "Average Order Size",
+    "metric": "USDC Solana Whales",
+    "value": "$56k avg order (Mar 14-15)",
+    "raw_value": 56577.0,
+    "insight": "18 orders accounted for $1.01M in Solana USDC volume. Garden is capturing the whale-tier stablecoin routing market.",
+    "suggested_tweet": "solana usdc swaps averaging $56k each on mar 14.\n\nwhales don't use slow bridges."
+  },
+  {
+    "id": 25,
+    "category": "Aggregate Performance",
+    "metric": "Consistent 500+ Daily Orders",
+    "value": "578, 810, 776 orders",
+    "raw_value": 500,
+    "insight": "Garden hasn't dropped below 500 daily orders in this window. The baseline floor for protocol usage has permanently shifted upward.",
+    "suggested_tweet": "we haven't dropped below 500 daily swaps all week.\n\nscale is the new baseline."
+  },
+  {
+    "id": 26,
+    "category": "Ecosystem Insights",
+    "metric": "Ethereum Stablecoin Volume",
+    "value": "$442k across 82 orders",
+    "raw_value": 442668.0,
+    "insight": "USDT and USDC on Ethereum combined for almost half a million in volume over 3 days. Garden is silently capturing a massive chunk of EVM stablecoin flow.",
+    "suggested_tweet": "nearly half a million in eth stablecoins routed through garden.\n\nthe best btc bridge is also the best stable bridge."
+  },
+  {
+    "id": 27,
+    "category": "Ecosystem Insights",
+    "metric": "Arbitrum Activity",
+    "value": "WBTC and iBTC active daily",
+    "raw_value": 89,
+    "insight": "Arbitrum WBTC saw 89 orders over 3 days. L2 defi users rely heavily on Garden to source Bitcoin liquidity into the Arbitrum ecosystem.",
+    "suggested_tweet": "89 wbtc swaps on arbitrum.\n\nl2 defi needs native btc liquidity. we bring it."
+  },
+  {
+    "id": 28,
+    "category": "Aggregate Performance",
+    "metric": "Mar 16-17 Volume Recovery",
+    "value": "$2.02M (bounce back)",
+    "raw_value": 2029573.0,
+    "insight": "After a retail-heavy, lower-volume day ($1.26M), volume immediately bounced back to $2.02M on Mar 16-17. Capital is flowing continuously without dry spells.",
+    "suggested_tweet": "volume dipped to $1.2m, bounced straight back to $2m+ the next day.\n\nno dry spells in btcfi."
+  },
+  {
+    "id": 29,
+    "category": "Capital Flow",
+    "metric": "Overall Source vs Destination Parity",
+    "value": "Nearly 1:1 ratio globally",
+    "raw_value": 1.0,
+    "insight": "Across Mar 16-17, source volume ($1.016M) perfectly matched destination volume ($1.013M). The market routing is balanced, indicating healthy, two-way organic arbitrage and bridging.",
+    "suggested_tweet": "$1.01m inbound. $1.01m outbound.\n\nperfect liquidity parity across the network.\n\nhealthy markets route through garden."
+  },
+  {
+    "id": 30,
+    "category": "Aggregate Performance",
+    "metric": "Always On Velocity",
+    "value": "1 swap every 2 minutes",
+    "raw_value": 2,
+    "insight": "With 2,164 orders over 72 hours, Garden processes a trustless atomic swap roughly every 2 minutes, 24/7. True infrastructure.",
+    "suggested_tweet": "1 trustless swap every 2 minutes.\n\nfor 72 hours straight.\n\nwe don't close."
+  }
+]

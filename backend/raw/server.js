@@ -30,9 +30,17 @@ app.get("/agent/fees-analyzer", (req, res) => {
   }, 2000);
 });
 
+app.get("/agent/asset-analyzer", (req, res) => {
+  const dataPath = path.join(__dirname, "data", "asset_analyzer_data.json");
+  setTimeout(() => {  
+    res.json(JSON.parse(fs.readFileSync(dataPath, "utf8")));
+  }, 2000);
+});
+
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
   console.log(`  • GET /agent/volume-analyzer`);
   console.log(`  • GET /agent/category-volume-analyzer`);
   console.log(`  • GET /agent/fees-analyzer`);
+  console.log(`  • GET /agent/asset-analyzer`)
 });
