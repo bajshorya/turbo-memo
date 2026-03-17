@@ -5,6 +5,7 @@ import { RefreshCw } from "lucide-react";
 import { useDashboardStore } from "@/lib/store";
 
 export function Controls() {
+<<<<<<< HEAD
   const { fetchAllFeeds } = useDashboardStore();
 
   return (
@@ -41,6 +42,32 @@ export function Controls() {
         >
           <RefreshCw className="w-4 h-4 mr-2" />
           Refresh All
+=======
+  const {
+    nextVolumeItem,
+    nextCategoryItem,
+    fetchVolumeData,
+    fetchCategoryData,
+    apiData,
+    apiDataCategory,
+  } = useDashboardStore();
+
+  return (
+    <div className="border-b border-gray-200 bg-[#e4ebf2]">
+      <div className="flex justify-end px-6 py-3">
+        <Button
+          onClick={() => {
+            if (!apiData.length) fetchVolumeData();
+            else nextVolumeItem();
+
+            if (!apiDataCategory.length) fetchCategoryData();
+            else nextCategoryItem();
+          }}
+          className="h-12 bg-[#f8f8f8] text-[#473c75] rounded-full px-4"
+        >
+          <RefreshCw className="w-4 h-4 mr-2" />
+          Refresh
+>>>>>>> aa8ae4d71b9c59d5fca782e3a2e5e304ed34b4d7
         </Button>
       </div>
     </div>
