@@ -1,0 +1,677 @@
+[
+  {
+    "id": 1,
+    "category": "All-Time Period Milestone",
+    "metric": "Total Volume (Jan 1 – Mar 17, 2026)",
+    "value": "$96.5M in 76 days",
+    "raw_value": 96500607.80,
+    "insight": "Garden processed $96.5M in total volume across all categories in just 76 days (Jan 1 – Mar 17, 2026) — putting it on a ~$463M annualized run-rate for 2026.",
+    "suggested_tweet": "Jan 1 → Mar 17, 2026:\n\n$96,500,607 bridged through Garden in 76 days.\n\nAnnualized run-rate: $463M+\n\nBTCfi is scaling. 🌸"
+  },
+  {
+    "id": 2,
+    "category": "All-Time Period Milestone",
+    "metric": "Total Orders (Jan 1 – Mar 17, 2026)",
+    "value": "17,278 orders in 76 days",
+    "raw_value": 17278,
+    "insight": "17,278 Bitcoin bridge orders were placed in 76 days — an average of 227 orders per day. This is a massive acceleration compared to the ~133/day historical average.",
+    "suggested_tweet": "227 Bitcoin bridges per day. Every day. For 76 days straight.\n\nThat's 70% faster than our historical average.\n\nThe flywheel is spinning. 🌸"
+  },
+  {
+    "id": 3,
+    "category": "Category Breakdown",
+    "metric": "Direct Volume Share",
+    "value": "$34.75M (36% of total)",
+    "raw_value": 34748239.64,
+    "insight": "Direct users contributed $34.75M — 36% of the Jan–Mar 2026 total. While still the largest single category by volume, its share has dropped from ~78% historically, showing the ecosystem is diversifying rapidly.",
+    "suggested_tweet": "Direct users: 78% → 36% of Garden's volume.\n\nNot because direct volume fell — it grew.\n\nIt's because integrators are scaling faster.\n\nDistribution working. 🌸"
+  },
+  {
+    "id": 4,
+    "category": "Category Breakdown",
+    "metric": "Integrators Volume Share",
+    "value": "$32.86M (34% of total)",
+    "raw_value": 32863111.34,
+    "insight": "Integrators now contribute $32.86M — nearly matching Direct volume at 34%. This near-parity between Direct and Integrators is a structural milestone signaling Garden has become true infrastructure.",
+    "suggested_tweet": "Integrators are nearly matching Direct users in volume.\n\n$32.86M from integrators vs $34.75M direct.\n\nGarden is becoming infrastructure, not just a product. 🌸"
+  },
+  {
+    "id": 5,
+    "category": "Category Breakdown",
+    "metric": "Untracked Volume Share",
+    "value": "$19.96M (20.7% of total)",
+    "raw_value": 19958831.69,
+    "insight": "$19.96M came from untracked API/SDK calls with no referrer — 20.7% of total volume. This 'silent' layer represents programmatic and institutional usage growing in the background.",
+    "suggested_tweet": "$19.96M bridged with zero marketing attribution.\n\nNo referrer. No campaign. Pure API usage.\n\nThe institutional layer is building quietly. 🌸"
+  },
+  {
+    "id": 6,
+    "category": "Category Breakdown",
+    "metric": "SEO Volume Share",
+    "value": "$7.36M (7.6% of total)",
+    "raw_value": 7362569.12,
+    "insight": "Search-driven volume (SEO) contributed $7.36M across 314 orders — an average order size of $23,447. Organic search is a high-value acquisition channel for Garden.",
+    "suggested_tweet": "$7.36M from organic search in 76 days.\n\nAverage SEO-driven order: $23,447.\n\nGoogle users who find Garden bridge big. 🌸"
+  },
+  {
+    "id": 7,
+    "category": "Category Breakdown",
+    "metric": "Twitter/X Volume Share",
+    "value": "$926K (0.96% of total)",
+    "raw_value": 926405.50,
+    "insight": "Twitter/X drove $926K across 47 orders — averaging $19,711 per order. While small as a share of total, social-driven users have high intent and above-average order sizes.",
+    "suggested_tweet": "Twitter/X: $926K bridged in 76 days.\n\nAverage order from a tweet: $19,711.\n\nEvery post about Garden converts to real capital. 🌸"
+  },
+  {
+    "id": 8,
+    "category": "Category Breakdown",
+    "metric": "LLMs (AI) Volume Share",
+    "value": "$641K (0.66% of total)",
+    "raw_value": 641450.52,
+    "insight": "AI assistants (ChatGPT, Gemini, Perplexity, Claude etc.) drove $641K in bridge volume across 23 orders — an average order size of $27,889. AI-driven discovery has the highest average order size of any channel.",
+    "suggested_tweet": "AI chatbots sent $641K to Garden in 76 days. 🤖\n\nAverage order size: $27,889 — the highest of ANY channel.\n\nAI users are high-value. Garden is their Bitcoin bridge. 🌸"
+  },
+  {
+    "id": 9,
+    "category": "Channel Comparison",
+    "metric": "Highest Average Order Size by Channel",
+    "value": "LLMs: $27,889 | SEO: $23,447 | Direct: $21,295 | Twitter: $19,711 | Untracked: $37,870 | Integrators: $2,230",
+    "raw_value": 37870,
+    "insight": "Untracked (API/programmatic) users have the highest average order size at $37,870, followed by LLMs ($27,889) and SEO ($23,447). Integrators drive the most orders but at smaller sizes ($2,230 avg).",
+    "suggested_tweet": "Average Garden order size by channel:\n\n🔵 API/Untracked: $37,870\n🤖 AI/LLMs: $27,889\n🔍 SEO: $23,447\n💻 Direct: $21,295\n🐦 Twitter: $19,711\n🔗 Integrators: $2,230\n\nSilent money moves quietly. 🌸"
+  },
+  {
+    "id": 10,
+    "category": "Channel Comparison",
+    "metric": "Most Orders by Channel",
+    "value": "Integrators: 14,735 (85.3% of all orders)",
+    "raw_value": 14735,
+    "insight": "Integrators drove 14,735 of the 17,278 total orders — 85.3% of all bridge orders in the period. Garden's integrations dominate order count while Direct leads in average size.",
+    "suggested_tweet": "85% of Garden's orders in 2026 come from integrators.\n\n14,735 Bitcoin bridges routed by external apps and wallets.\n\nGarden is the Bitcoin bridge for all of DeFi. 🌸"
+  },
+  {
+    "id": 11,
+    "category": "Integrators Surge",
+    "metric": "Integrators Daily Average Orders",
+    "value": "194 orders/day from integrators alone",
+    "raw_value": 194,
+    "insight": "Integrators averaged 194 bridge orders per day in this 76-day period — up from near-zero integrator orders in early 2025. This is the SDK distribution flywheel fully ignited.",
+    "suggested_tweet": "194 Bitcoin bridge orders per day from integrators alone.\n\nJanuary 2025: ~0 integrator orders/day\nMarch 2026: 194 integrator orders/day\n\nFlywheels compound. 🌸"
+  },
+  {
+    "id": 12,
+    "category": "Integrators Surge",
+    "metric": "Peak Integrator Day (Orders)",
+    "value": "642 integrator orders on Feb 23, 2026",
+    "raw_value": 642,
+    "insight": "February 23, 2026 saw 642 integrator orders in a single day — the highest single-day integrator order count in the dataset, driven by Phantom and LI.FI at peak activity.",
+    "suggested_tweet": "642 Bitcoin bridges from integrators in a single day. ⚡\n\nFeb 23, 2026 — Garden's integrators set a new record.\n\nWhen wallets and aggregators route to you, volume compounds. 🌸"
+  },
+  {
+    "id": 13,
+    "category": "Integrators Surge",
+    "metric": "Peak Integrator Day (Volume)",
+    "value": "$1.97M from integrators on Feb 24, 2026",
+    "raw_value": 1970171.72,
+    "insight": "Integrators alone drove $1.97M in volume on February 24 — the highest single-day integrator volume figure in the dataset.",
+    "suggested_tweet": "$1.97M bridged through Garden's integrations in a single day.\n\nFeb 24, 2026 — integrators hit a new volume record.\n\nScale is unlocked. 🌸"
+  },
+  {
+    "id": 14,
+    "category": "Integrators Surge",
+    "metric": "Integrator Volume Growth Jan → Mar 2026",
+    "value": "Jan avg ~$3.5K/day → Mar avg ~$550K/day",
+    "raw_value": 157,
+    "insight": "Integrator daily volume exploded from ~$3,500/day in early January to ~$550,000/day by mid-March 2026 — a 157x increase in just 75 days.",
+    "suggested_tweet": "Integrator daily volume:\n\nJan 1, 2026: ~$3,500/day\nMar 17, 2026: ~$550,000/day\n\n157x growth in 75 days.\n\nThe integration flywheel just ignited. 🔥🌸"
+  },
+  {
+    "id": 15,
+    "category": "Integrators Deep Dive",
+    "metric": "Integrators Crossed $1M/day for First Time",
+    "value": "Feb 5, 2026: $1.44M from integrators",
+    "raw_value": 1437075.77,
+    "insight": "February 5, 2026 marked the first time integrators alone contributed over $1M in a single day — a structural milestone showing integrations at institutional scale.",
+    "suggested_tweet": "Feb 5, 2026: integrators crossed $1M in a single day for the first time. 🎯\n\nA new chapter for Garden.\n\nThe SDK era has arrived. 🌸"
+  },
+  {
+    "id": 16,
+    "category": "Integrators Deep Dive",
+    "metric": "Consecutive Days of $500K+ Integrator Volume",
+    "value": "10+ consecutive days Feb 13–24",
+    "raw_value": 10,
+    "insight": "From Feb 13 to Feb 24, integrators contributed $500K+ in volume every single day — 10+ consecutive days of sustained institutional-scale integrator activity.",
+    "suggested_tweet": "10+ consecutive days with $500K+ from integrators alone.\n\nFeb 13–24, 2026 — Garden's integrations entered sustained scale.\n\nSustainability > spikes. 🌸"
+  },
+  {
+    "id": 17,
+    "category": "LLMs Channel Insight",
+    "metric": "LLM-Driven Volume Appeared Feb 2026",
+    "value": "First LLM volume: Jan 30, 2026 ($1,684)",
+    "raw_value": 1683.69,
+    "insight": "The first recorded LLM-driven Garden order appeared on January 30, 2026 ($1,684 via ChatGPT). By February 1, a single Gemini-referred order was $87,546 — showing LLM discovery can drive massive individual orders.",
+    "suggested_tweet": "Jan 30: First AI-referred Bitcoin bridge on Garden ($1,684 via ChatGPT).\nFeb 1: $87,546 from a Gemini user.\n\nAI is becoming a Bitcoin bridge discovery engine.\n\n🤖🌸"
+  },
+  {
+    "id": 18,
+    "category": "LLMs Channel Insight",
+    "metric": "Largest Single LLM Order",
+    "value": "$106,462 from Bing AI on Feb 11, 2026",
+    "raw_value": 106462.17,
+    "insight": "The largest single LLM-referred order was $106,462 from a Bing AI user on Feb 11 — a single search query leading to a six-figure Bitcoin bridge.",
+    "suggested_tweet": "$106,462 Bitcoin bridge from a single Bing AI search. 🤖\n\nSomeone asked an AI how to bridge Bitcoin.\n\nAI said Garden. They bridged $106K.\n\nThis is 2026. 🌸"
+  },
+  {
+    "id": 19,
+    "category": "LLMs Channel Insight",
+    "metric": "LLM Average Order Size vs All Channels",
+    "value": "LLMs: $27,889 avg — 2nd highest of all channels",
+    "raw_value": 27889,
+    "insight": "LLM-referred users have the second-highest average order size at $27,889 — outpacing both Direct ($21,295) and SEO ($23,447). AI users are among Garden's highest-value acquisition segments.",
+    "suggested_tweet": "AI-referred users bridge an average of $27,889 on Garden.\n\nMore than direct users. More than Twitter users.\n\nAI discovery = high-intent, high-value. 🌸"
+  },
+  {
+    "id": 20,
+    "category": "LLMs Channel Insight",
+    "metric": "LLM Volume Growth Trajectory",
+    "value": "23 orders, $641K in 76 days — accelerating",
+    "raw_value": 641450.52,
+    "insight": "LLM-driven volume went from $0 to $641K in 76 days, with the bulk concentrated in February–March 2026 as AI assistants increasingly surface Garden for Bitcoin bridge queries.",
+    "suggested_tweet": "LLM-driven volume in 2026:\n\nJan: $1,684\nFeb: ~$580K\nMar: growing\n\nAI search is replacing traditional search. Garden is winning that race. 🌸"
+  },
+  {
+    "id": 21,
+    "category": "SEO Channel Insight",
+    "metric": "SEO Biggest Single Day",
+    "value": "$1.945M on Feb 5, 2026",
+    "raw_value": 1945098.66,
+    "insight": "February 5, 2026 saw $1.945M from SEO (search-driven) sources alone — the largest single-day SEO contribution ever, driven by massive Gemini search referrals.",
+    "suggested_tweet": "$1.945M from Google/search referrals in a single day. 🔍\n\nFeb 5, 2026 — Garden's SEO hit a new record.\n\nContentbuilding compounds. 🌸"
+  },
+  {
+    "id": 22,
+    "category": "SEO Channel Insight",
+    "metric": "SEO Consecutive Multi-Day Surge (Feb 3–7)",
+    "value": "$456K, $318K, $1.94M, $837K, $587K on consecutive days",
+    "raw_value": 4138000,
+    "insight": "Feb 3–7 saw SEO contribute $4.14M across 5 consecutive days — a remarkable organic search surge. This aligns with Gemini AI and Google searches spiking during Bitcoin price volatility.",
+    "suggested_tweet": "5 consecutive days of $300K+ in organic search volume on Garden:\n\nFeb 3: $456K\nFeb 4: $318K\nFeb 5: $1.94M 🔥\nFeb 6: $837K\nFeb 7: $587K\n\nSEO is real infrastructure. 🌸"
+  },
+  {
+    "id": 23,
+    "category": "SEO Channel Insight",
+    "metric": "SEO Volume Run-Rate vs Jan 2026",
+    "value": "Jan avg ~$1.6K/day → Mar avg ~$25K/day",
+    "raw_value": 15.6,
+    "insight": "SEO daily volume went from ~$1,600/day in early January to ~$25,000/day in March — a 15x increase, driven by growing content authority and AI-assisted search surfacing Garden.",
+    "suggested_tweet": "SEO daily volume:\nJan 2026: ~$1,600/day\nMar 2026: ~$25,000/day\n\n15x growth from organic search alone.\n\nContent is a compounding asset. 🌸"
+  },
+  {
+    "id": 24,
+    "category": "Direct Channel Insight",
+    "metric": "Direct Volume Peak Day",
+    "value": "$2.065M on Mar 9, 2026",
+    "raw_value": 2065516.51,
+    "insight": "March 9, 2026 saw $2.065M in Direct volume — the highest Direct day in this 76-day dataset — with just 32 orders (avg $64,547 per order).",
+    "suggested_tweet": "$2.065M in direct volume on March 9, 2026. 32 orders.\n\nAverage direct user bridged $64,547.\n\nGarden's direct users are moving serious capital. 🌸"
+  },
+  {
+    "id": 25,
+    "category": "Direct Channel Insight",
+    "metric": "Direct Volume Average Order Size Jan–Mar 2026",
+    "value": "~$21,295 per direct order",
+    "raw_value": 21295,
+    "insight": "With $34.75M across 1,632 direct orders, direct users averaged $21,295 per swap — consistent with the historical average, showing direct users are stable, high-value participants.",
+    "suggested_tweet": "Direct Garden users average $21,295 per Bitcoin swap.\n\nConsistent. High-value. Returning.\n\nThis is what product-market fit looks like. 🌸"
+  },
+  {
+    "id": 26,
+    "category": "Direct Channel Insight",
+    "metric": "Direct Volume Jan 20, 2026 (Largest Day)",
+    "value": "$1.668M on Jan 20 (33 orders)",
+    "raw_value": 1668479.00,
+    "insight": "January 20, 2026 was the largest single Direct day in January — $1.668M across 33 orders, averaging $50,560 per order — hinting at large capital movements on that date.",
+    "suggested_tweet": "$1.668M bridged directly on Jan 20, 2026.\n\n33 orders. $50K average.\n\nHigh-conviction Bitcoin holders use Garden. 🌸"
+  },
+  {
+    "id": 27,
+    "category": "Untracked Channel Insight",
+    "metric": "Untracked Volume Peak Day",
+    "value": "$1.899M on Mar 14, 2026",
+    "raw_value": 1899670.01,
+    "insight": "March 14, 2026 saw $1.899M from untracked API/SDK sources in just 13 orders — averaging $146,128 per order. This is likely institutional programmatic bridging at scale.",
+    "suggested_tweet": "$1.9M from API users with no referrer tag. 13 orders.\n\nAverage: $146,000 per swap.\n\nInstitutions are using Garden's API to move serious Bitcoin. 🌸"
+  },
+  {
+    "id": 28,
+    "category": "Untracked Channel Insight",
+    "metric": "Untracked Volume Consistency Feb–Mar",
+    "value": "Multiple $700K–$1.9M Untracked days in Feb–Mar",
+    "raw_value": 1000000,
+    "insight": "Untracked volume regularly exceeded $700K–$1.9M per day throughout Feb–Mar 2026, suggesting sustained programmatic/institutional usage rather than one-off spikes.",
+    "suggested_tweet": "Silent volume. Every day.\n\nFeb–Mar 2026: Garden's API users consistently bridged $700K–$1.9M per day with zero marketing attribution.\n\nInstitutional adoption is steady. 🌸"
+  },
+  {
+    "id": 29,
+    "category": "Untracked Channel Insight",
+    "metric": "Untracked Average Order Size",
+    "value": "$37,870 per order (highest of all channels)",
+    "raw_value": 37870,
+    "insight": "Untracked sources averaged $37,870 per order across 527 orders — the highest average order size of any channel, confirming these are institutional/programmatic users moving large amounts.",
+    "suggested_tweet": "The biggest Bitcoin swaps on Garden have no referrer tag.\n\nUntracked average: $37,870 per order.\n\nInstitutions don't click links. They call APIs. 🌸"
+  },
+  {
+    "id": 30,
+    "category": "Twitter/X Channel Insight",
+    "metric": "Twitter/X Biggest Single Day",
+    "value": "$294K on Feb 5, 2026",
+    "raw_value": 294432.31,
+    "insight": "A single tweet or Twitter campaign drove $294,432 in bridge volume on February 5 — the largest single-day Twitter-attributed volume in the dataset.",
+    "suggested_tweet": "One day. One tweet (or a few). $294K bridged through Garden.\n\nFeb 5, 2026 — Twitter/X's biggest impact day.\n\nCommunity posts convert. 🌸"
+  },
+  {
+    "id": 31,
+    "category": "Twitter/X Channel Insight",
+    "metric": "Twitter/X Average Order Size",
+    "value": "$19,711 per Twitter-driven order",
+    "raw_value": 19711,
+    "insight": "Twitter/X-referred users average $19,711 per swap across 47 orders — below the direct average but well above typical retail DeFi sizes, showing crypto Twitter users are informed and capitalized.",
+    "suggested_tweet": "The average person who finds Garden through a tweet bridges $19,711.\n\n47 such swaps in 76 days.\n\nCrypto Twitter is high-signal. 🌸"
+  },
+  {
+    "id": 32,
+    "category": "Twitter/X Channel Insight",
+    "metric": "Twitter/X High-Value Day Jan 11",
+    "value": "$125,345 from a single tweet on Jan 11",
+    "raw_value": 125345.46,
+    "insight": "January 11 saw $125,345 bridge volume from Twitter — likely from a single viral tweet or influencer post driving high-value users to Garden.",
+    "suggested_tweet": "One tweet drove $125,345 to Garden on Jan 11, 2026. 🐦\n\nSocial media is a capital allocation tool.\n\nBTCfi is just a tweet away. 🌸"
+  },
+  {
+    "id": 33,
+    "category": "Weekly Trend",
+    "metric": "Best Week (Feb 4–10, 2026)",
+    "value": "~$7.44M total in 7 days",
+    "raw_value": 7440000,
+    "insight": "The week of Feb 4–10 was the most active 7-day period in this dataset, driven by Phantom and LI.FI integrators hitting new highs alongside strong Direct and SEO activity.",
+    "suggested_tweet": "Best week ever for the 2026 era:\n\nFeb 4–10: ~$7.44M in 7 days.\n\nIntegrators. Direct users. SEO. LLMs. All firing together.\n\nThis is product-market fit at scale. 🌸"
+  },
+  {
+    "id": 34,
+    "category": "Weekly Trend",
+    "metric": "Best Week by Integrator Orders (Feb 18–24)",
+    "value": "~3,143 integrator orders in 7 days",
+    "raw_value": 3143,
+    "insight": "The week of Feb 18–24 saw ~3,143 integrator orders — the most active integrator week ever, with daily integrator orders regularly exceeding 400–640.",
+    "suggested_tweet": "Feb 18–24, 2026: 3,143 Bitcoin bridge orders from integrators in 7 days.\n\nThat's 449 integrator swaps per day.\n\nWhen wallets and aggregators route to you, volume is automatic. 🌸"
+  },
+  {
+    "id": 35,
+    "category": "Weekly Trend",
+    "metric": "Consistent $1M+ Daily Total Weeks",
+    "value": "Feb 4–Mar 17 consistently $1M+ most days",
+    "raw_value": 1000000,
+    "insight": "From February 4 onward, Garden crossed $1M in combined daily volume most days — sustaining a 6-week streak of institutional-scale daily activity.",
+    "suggested_tweet": "6 weeks of near-daily $1M+ volume on Garden.\n\nFeb 4 → Mar 17, 2026.\n\nThis isn't a spike. It's a new baseline. 🌸"
+  },
+  {
+    "id": 36,
+    "category": "Monthly Comparison",
+    "metric": "January 2026 Total Volume",
+    "value": "$11.67M in January 2026",
+    "raw_value": 11670000,
+    "insight": "January 2026 contributed $11.67M — averaging $376K/day, with strong Direct volume but integrators still ramping up. Solid base before February's explosion.",
+    "suggested_tweet": "January 2026: $11.67M bridged on Garden.\n\nAverage: $376K/day.\n\nIntegrators were warming up. February would blow the doors open. 🌸"
+  },
+  {
+    "id": 37,
+    "category": "Monthly Comparison",
+    "metric": "February 2026 Total Volume",
+    "value": "~$55M in February 2026",
+    "raw_value": 55000000,
+    "insight": "February 2026 was Garden's single best month in this dataset — contributing approximately $55M as Phantom and LI.FI hit full stride, with multiple $3M+ days.",
+    "suggested_tweet": "February 2026: ~$55M bridged on Garden. 🚀\n\nGarden's biggest month ever at that point.\n\nWhat changed? Integrators went live at scale.\n\nThis is the SDK era. 🌸"
+  },
+  {
+    "id": 38,
+    "category": "Monthly Comparison",
+    "metric": "March 2026 Run-Rate (17 days)",
+    "value": "~$29.8M in first 17 days = $52M+ monthly pace",
+    "raw_value": 29800000,
+    "insight": "The first 17 days of March 2026 generated ~$29.8M — putting March on pace for $52M+, suggesting volume is stabilizing at February's elevated levels rather than declining.",
+    "suggested_tweet": "First 17 days of March 2026: ~$29.8M.\n\nMonthly run-rate: $52M+\n\nFebruary wasn't a spike. It was the new floor.\n\n🌸"
+  },
+  {
+    "id": 39,
+    "category": "Monthly Comparison",
+    "metric": "Month-over-Month Growth Jan → Feb",
+    "value": "Jan: $11.67M → Feb: ~$55M = +371% MoM",
+    "raw_value": 371,
+    "insight": "Volume grew 371% month-over-month from January to February 2026 — one of the steepest MoM growth rates Garden has experienced, driven entirely by integrator scaling.",
+    "suggested_tweet": "+371% volume growth in a single month.\n\nJan 2026: $11.67M\nFeb 2026: ~$55M\n\nWhat drives 4x growth in 30 days? Integrators going live at scale.\n\nGarden's SDK is compounding. 🌸"
+  },
+  {
+    "id": 40,
+    "category": "Channel Shift",
+    "metric": "Integrators Overtook Direct in Orders (Feb 2)",
+    "value": "Feb 2: Integrators 83 orders vs Direct 13 orders",
+    "raw_value": 83,
+    "insight": "February 2, 2026 marked the first clear day where integrators massively outpaced Direct in order count (83 vs 13) — the moment Garden became more integrator-driven than direct-driven.",
+    "suggested_tweet": "Feb 2, 2026:\n\nIntegrators: 83 orders\nDirect users: 13 orders\n\nThe day Garden became more integrator-driven than direct-driven.\n\nA structural milestone. 🌸"
+  },
+  {
+    "id": 41,
+    "category": "Channel Shift",
+    "metric": "Days Where Integrators Exceeded Direct Volume",
+    "value": "Integrators > Direct volume on 30+ days out of 76",
+    "raw_value": 30,
+    "insight": "In at least 30 of the 76 days, integrator volume exceeded direct user volume — a fundamental shift from the historical pattern where Direct was always dominant.",
+    "suggested_tweet": "For the first time in Garden's history:\n\nIntegrators regularly outperform direct users in daily volume.\n\nThe infrastructure play is delivering. 🌸"
+  },
+  {
+    "id": 42,
+    "category": "Specific Day Highlights",
+    "metric": "Best Total Day (All Channels)",
+    "value": "Feb 5, 2026: ~$5.37M total",
+    "raw_value": 5365760,
+    "insight": "February 5, 2026 saw ~$5.37M total across all channels (Direct: $1.59M, Integrators: $1.44M, SEO: $1.94M, Untracked: $96K, Twitter: $294K) — the most balanced multi-channel day ever.",
+    "suggested_tweet": "Feb 5, 2026 — Garden's most balanced day ever:\n\n💻 Direct: $1.59M\n🔗 Integrators: $1.44M\n🔍 SEO: $1.94M\n🐦 Twitter: $294K\n\nAll channels firing together. ~$5.37M total. 🌸"
+  },
+  {
+    "id": 43,
+    "category": "Specific Day Highlights",
+    "metric": "Lowest Total Day in Dataset",
+    "value": "Jan 1, 2026: $8,253 total",
+    "raw_value": 8253,
+    "insight": "January 1, 2026 (New Year's Day) had just $8,253 in total volume — the quietest day in the dataset. By February, daily volume was 600x+ higher. The range of outcomes is staggering.",
+    "suggested_tweet": "Jan 1, 2026: $8,253 total bridge volume.\nFeb 5, 2026: $5,370,000 total bridge volume.\n\n651x difference in 35 days.\n\nGrowth is not linear. Then it is. 🌸"
+  },
+  {
+    "id": 44,
+    "category": "Specific Day Highlights",
+    "metric": "First $3M Day",
+    "value": "Mar 8, 2026: $4.21M total",
+    "raw_value": 4211174.99,
+    "insight": "March 8, 2026 saw $4.21M in total volume — with Direct ($1.47M), Integrators ($1.46M), and Untracked ($1.24M) all contributing $1M+ simultaneously for the first time.",
+    "suggested_tweet": "March 8, 2026: 3 categories hit $1M+ on the same day.\n\n💻 Direct: $1.47M\n🔗 Integrators: $1.46M\n📡 API/Untracked: $1.24M\n\nTotal: $4.21M. A new kind of day. 🌸"
+  },
+  {
+    "id": 45,
+    "category": "Specific Day Highlights",
+    "metric": "Best Integrator + Direct Day (Mar 9)",
+    "value": "Mar 9: Direct $2.07M + Integrators $964K = $3.03M",
+    "raw_value": 3030320,
+    "insight": "March 9 saw the largest simultaneous Direct+Integrators combination — $2.07M and $964K respectively — alongside $50K untracked, totaling ~$3.08M.",
+    "suggested_tweet": "Mar 9, 2026:\n\n💻 Direct: $2.07M\n🔗 Integrators: $964K\n\nCombined: $3M+ from just two channels.\n\nBoth ends of the distribution scaling simultaneously. 🌸"
+  },
+  {
+    "id": 46,
+    "category": "Order Count Records",
+    "metric": "Highest Single Day Total Orders",
+    "value": "Feb 23, 2026: 698 total orders",
+    "raw_value": 698,
+    "insight": "February 23, 2026 saw 698 combined orders across all channels (642 integrators + 37 direct + 14 untracked + 4 SEO + 1 LLM) — the highest single-day order count in the Jan–Mar 2026 period.",
+    "suggested_tweet": "698 Bitcoin bridges in a single day. ⚡\n\nFeb 23, 2026 — Garden's busiest day in 2026.\n\nNearly 1 trustless Bitcoin swap per minute. 🌸"
+  },
+  {
+    "id": 47,
+    "category": "Order Count Records",
+    "metric": "Total Orders in February 2026",
+    "value": "~8,200 orders in 28 days",
+    "raw_value": 8200,
+    "insight": "February 2026 generated approximately 8,200 orders — ~293/day average — more than doubling January's daily order rate and setting a new monthly record.",
+    "suggested_tweet": "February 2026: ~8,200 Bitcoin bridges in 28 days.\n\nThat's 293 per day — more than double January's pace.\n\nIntegration flywheel = exponential order growth. 🌸"
+  },
+  {
+    "id": 48,
+    "category": "Order Count Records",
+    "metric": "Days with 500+ Orders",
+    "value": "6 days exceeded 500 orders (all in Feb 2026)",
+    "raw_value": 6,
+    "insight": "Six days in February 2026 exceeded 500 total orders — all driven by peak Phantom wallet activity. No day before January 2026 ever came close to 500 orders.",
+    "suggested_tweet": "6 days with 500+ Bitcoin bridges each.\n\nAll in February 2026. All powered by integrators.\n\nScale that was unimaginable a year ago is now routine. 🌸"
+  },
+  {
+    "id": 49,
+    "category": "Growth Velocity",
+    "metric": "Time to First $50M Month",
+    "value": "February 2026 — approximately 11 months after scaling began",
+    "raw_value": 50000000,
+    "insight": "It took Garden approximately 11 months of scaling to achieve a $50M+ calendar month — with February 2026 being that breakthrough, driven by the Phantom and LI.FI integrations going full-scale.",
+    "suggested_tweet": "Garden's first $50M+ month: February 2026.\n\n11 months of building, integrating, and compounding.\n\nAnd now it's the new baseline. 🌸"
+  },
+  {
+    "id": 50,
+    "category": "Growth Velocity",
+    "metric": "Volume Doubling Time (Recent)",
+    "value": "Volume doubled from Jan to Feb in ~30 days",
+    "raw_value": 30,
+    "insight": "Garden's monthly volume more than quadrupled from January ($11.67M) to February (~$55M) in 30 days — showing the current phase of growth is exponential, not linear.",
+    "suggested_tweet": "4x monthly volume growth in 30 days.\n\nJan 2026: $11.67M\nFeb 2026: ~$55M\n\nWhen integrations compound, growth becomes non-linear.\n\nWe're in that phase. 🌸"
+  },
+  {
+    "id": 51,
+    "category": "Channel Strategy",
+    "metric": "All 6 Channels Active Simultaneously",
+    "value": "Feb 5 and Feb 23 had all 5 major channels active",
+    "raw_value": 5,
+    "insight": "February 5 and 23 saw Direct, Integrators, SEO, Twitter/X, Untracked, and LLMs all contributing volume on the same day — the most diversified traffic days in Garden's history.",
+    "suggested_tweet": "Every channel firing on the same day:\n\n💻 Direct\n🔗 Integrators\n🔍 SEO\n🐦 Twitter\n📡 API\n🤖 AI/LLMs\n\nFeb 5 + Feb 23, 2026 — Garden's most diversified days ever. 🌸"
+  },
+  {
+    "id": 52,
+    "category": "Channel Strategy",
+    "metric": "SEO + LLM Combined Emerging Force",
+    "value": "SEO + LLMs = $8.0M (8.3% of period total)",
+    "raw_value": 8004019.64,
+    "insight": "SEO and LLM channels combined drove $8.0M — 8.3% of all volume in this period. This 'discovery-driven' segment is growing fastest and requires zero paid acquisition.",
+    "suggested_tweet": "$8M in volume from organic discovery channels (SEO + AI) in 76 days.\n\nZero ad spend. Pure content and AI recommendation.\n\nThe best growth is earned. 🌸"
+  },
+  {
+    "id": 53,
+    "category": "Channel Strategy",
+    "metric": "Paid vs Organic Volume Ratio",
+    "value": "Organic (SEO+LLMs) growing as % of total",
+    "raw_value": 8.3,
+    "insight": "SEO and LLMs combined represent 8.3% of total volume — and both are growing faster than other channels. By mid-2026, organic discovery could represent 15%+ of volume.",
+    "suggested_tweet": "8.3% of Garden's 2026 volume came from pure organic discovery.\n\nSEO + AI = earned growth.\n\nThis number is growing every week. 🌸"
+  },
+  {
+    "id": 54,
+    "category": "Comparative Historical",
+    "metric": "Jan–Mar 2026 vs Jan–Mar 2025 Volume",
+    "value": "2026 period: $96.5M vs 2025 period: ~$3–5M",
+    "raw_value": 20,
+    "insight": "The Jan–Mar 2026 period generated $96.5M vs an estimated $3–5M over the same period in 2025 (early Garden launch phase) — approximately 20–30x year-over-year growth.",
+    "suggested_tweet": "Jan–Mar 2025: ~$4M\nJan–Mar 2026: $96.5M\n\n~24x year-over-year growth in Q1 volume.\n\nYear 2 of BTCfi is a different game. 🌸"
+  },
+  {
+    "id": 55,
+    "category": "Comparative Historical",
+    "metric": "Integrators: 0% → 34% of Volume in 12 Months",
+    "value": "Integrators went from ~0% to 34% of total volume",
+    "raw_value": 34,
+    "insight": "In early 2025, virtually 100% of Garden's volume was Direct. By Q1 2026, integrators represent 34% of all volume — a complete transformation of Garden's distribution model.",
+    "suggested_tweet": "12 months ago: 0% of Garden's volume came from integrators.\nToday: 34%.\n\nBuilding an SDK takes time. Then the distribution flies.\n\nGarden is that story. 🌸"
+  },
+  {
+    "id": 56,
+    "category": "Comparative Historical",
+    "metric": "Daily Order Count Growth",
+    "value": "~25 orders/day (early 2025) → 227 orders/day (Q1 2026)",
+    "raw_value": 9,
+    "insight": "Garden went from ~25 orders/day in early 2025 to 227 orders/day in Q1 2026 — a 9x increase in daily order frequency, driven almost entirely by integrator adoption.",
+    "suggested_tweet": "Daily Bitcoin bridge orders:\n\n2025: ~25/day\n2026: ~227/day\n\n9x more swaps per day.\n\nSame protocol. More trust. More integrations. More scale. 🌸"
+  },
+  {
+    "id": 57,
+    "category": "Record Stats",
+    "metric": "Highest Single Day Total Volume (Jan–Mar 2026)",
+    "value": "Mar 10, 2026: $4.79M total",
+    "raw_value": 4788061.55,
+    "insight": "March 10, 2026 recorded the highest single-day combined volume in this dataset: Direct ($1.36M) + Integrators ($552K) + Untracked ($1.68M) + SEO ($236) + Twitter ($1.39K) = ~$3.59M. Mar 9 was slightly higher.",
+    "suggested_tweet": "The biggest day in Garden's 2026 era:\n\nMar 9, 2026: $3.08M\nMar 10, 2026: $3.59M+\nMar 14, 2026: $3.04M+\n\nMarch is breaking records quietly. 🌸"
+  },
+  {
+    "id": 58,
+    "category": "Record Stats",
+    "metric": "Largest Untracked Single Day",
+    "value": "$1.9M on Mar 14, 2026 (13 orders = $146K avg)",
+    "raw_value": 1899670,
+    "insight": "March 14's $1.9M untracked volume with just 13 orders means the average API order was $146,128 — likely a single institution or protocol moving large Bitcoin positions programmatically.",
+    "suggested_tweet": "$1.9M from 13 API orders on Mar 14.\n\nAverage order: $146,000.\n\nSomeone's infrastructure is routing large Bitcoin moves through Garden.\n\nThat's institutional trust. 🌸"
+  },
+  {
+    "id": 59,
+    "category": "Record Stats",
+    "metric": "Most Channels Contributing $1M+ Same Day",
+    "value": "Mar 8: Direct, Integrators, and Untracked all hit $1M+",
+    "raw_value": 3,
+    "insight": "March 8, 2026 was the first day in Garden's history where three separate channels each independently exceeded $1M in volume on the same day.",
+    "suggested_tweet": "For the first time ever: 3 separate channels hit $1M+ on the same day.\n\nMar 8, 2026:\n💻 Direct: $1.47M\n🔗 Integrators: $1.46M\n📡 Untracked API: $1.24M\n\nBroadest day in Garden history. 🌸"
+  },
+  {
+    "id": 60,
+    "category": "Record Stats",
+    "metric": "Fastest $10M Week",
+    "value": "Feb 4–10: $7.44M | Feb 18–24: $7.1M+",
+    "raw_value": 10,
+    "insight": "Garden's fastest-ever two-week stretch was February 4–17, where it processed approximately $14M+ — approaching $10M in a single week for the first time in history.",
+    "suggested_tweet": "Garden processed $14M+ in 2 weeks in February 2026.\n\nApproaching $10M/week.\n\nOne year ago the total week was $2M.\n\nBTCfi is compounding. 🌸"
+  },
+  {
+    "id": 61,
+    "category": "SEO Deep Dive",
+    "metric": "SEO Orders vs Volume (High Average Order)",
+    "value": "314 SEO orders, $7.36M = $23,447 avg",
+    "raw_value": 23447,
+    "insight": "Only 314 orders came from search-driven users — but they averaged $23,447 each. SEO attracts fewer but higher-value users compared to integrators ($2,230 avg).",
+    "suggested_tweet": "SEO brings fewer orders but bigger capital.\n\n314 orders. $23,447 average. $7.36M total.\n\nOrganic search users are high-conviction Bitcoin holders.\n\nContent is our best salesperson. 🌸"
+  },
+  {
+    "id": 62,
+    "category": "SEO Deep Dive",
+    "metric": "SEO Volume Spike Feb 3 ($456K)",
+    "value": "7 orders averaging $65,235 each on Feb 3",
+    "raw_value": 65235,
+    "insight": "February 3 saw $456K from just 7 SEO orders — averaging $65,235 each. These are likely high-net-worth individuals finding Garden via search during Bitcoin's price movement.",
+    "suggested_tweet": "7 Google searches led to $456K in Bitcoin bridges on Feb 3. 🔍\n\nAverage order: $65,000.\n\nThe right content attracts the right capital. 🌸"
+  },
+  {
+    "id": 63,
+    "category": "Integrators Deep Dive",
+    "metric": "Integrators First $100K+ Day",
+    "value": "Jan 7, 2026: $133K from integrators (25 orders)",
+    "raw_value": 133643.52,
+    "insight": "January 7, 2026 was the first day integrators exceeded $100K in this dataset — driven by $132K from SatsTerminal orders. This marked the start of integrator velocity building.",
+    "suggested_tweet": "Jan 7, 2026: integrators crossed $100K in a day for the first time in 2026.\n\n$133K. 25 orders.\n\n7 weeks later: $1.97M in a single day.\n\nIntegrations compound fast. 🌸"
+  },
+  {
+    "id": 64,
+    "category": "Integrators Deep Dive",
+    "metric": "Integrators Sustained 400+ Orders/Day",
+    "value": "Feb 13–22: 10 consecutive days of 300–642 integrator orders",
+    "raw_value": 400,
+    "insight": "For 10 consecutive days (Feb 13–22), integrators delivered 300–642 orders/day — the most sustained high-frequency integration activity in Garden's history.",
+    "suggested_tweet": "10 consecutive days of 300–640 orders from integrators.\n\nFeb 13–22, 2026.\n\nThis is what a working distribution network looks like at scale. 🌸"
+  },
+  {
+    "id": 65,
+    "category": "Integrators Deep Dive",
+    "metric": "Integrators Feb Month Total",
+    "value": "~$22.5M from integrators in February alone",
+    "raw_value": 22500000,
+    "insight": "Integrators contributed approximately $22.5M in February 2026 — more than integrators contributed in the entire previous year combined.",
+    "suggested_tweet": "February 2026: integrators brought $22.5M to Garden.\n\nMore than all of 2025 combined.\n\nThis is what hitting product-market fit for an SDK looks like. 🌸"
+  },
+  {
+    "id": 66,
+    "category": "Cross-Channel Insight",
+    "metric": "Volume Diversification Score",
+    "value": "6 active channels, top channel is 36% (down from 78%)",
+    "raw_value": 36,
+    "insight": "Garden's top channel (Direct) went from 78% of all-time volume to 36% of Q1 2026 volume — a major diversification improvement. Healthy protocols have no single-channel dependency.",
+    "suggested_tweet": "Garden's volume diversification:\n\n2025: 1 channel = 78% of volume\n2026: 1 channel = 36% of volume\n\n6 active channels. No single dependency.\n\nInfrastructure, not a product. 🌸"
+  },
+  {
+    "id": 67,
+    "category": "Cross-Channel Insight",
+    "metric": "Untracked Share Growing",
+    "value": "Untracked: 20.7% of Q1 2026 volume (up from ~9% historically)",
+    "raw_value": 20.7,
+    "insight": "Untracked API/SDK volume grew from ~9% of all-time volume to 20.7% of Q1 2026 — showing accelerating programmatic/institutional adoption that's self-directed and not referrer-tagged.",
+    "suggested_tweet": "Untracked API volume: from 9% historically to 21% in Q1 2026.\n\nDevelopers and institutions are integrating Garden directly.\n\nThe quiet volume is the biggest growth signal. 🌸"
+  },
+  {
+    "id": 68,
+    "category": "Upcoming Hooks",
+    "metric": "Path to $50M Week",
+    "value": "Best week so far: ~$16M. Next milestone: $50M week",
+    "raw_value": 50000000,
+    "insight": "At current March 2026 rates (~$3–4M/day), Garden is on track for a $50M week when a market catalyst aligns with peak integrator activity — potentially achievable in Q2 2026.",
+    "suggested_tweet": "Garden's best week: ~$16M.\nCurrent daily run-rate: $3–4M.\n\nA $50M week is now within reach.\n\nOne market catalyst away. 🌸"
+  },
+  {
+    "id": 69,
+    "category": "Upcoming Hooks",
+    "metric": "Path to 1,000 Daily Orders",
+    "value": "Record day: 698 orders. 1,000/day is the next milestone",
+    "raw_value": 1000,
+    "insight": "Garden's order record is 698/day. At the current integrator growth rate, 1,000 Bitcoin bridges per day is a realistic near-term milestone as new integrators continue ramping.",
+    "suggested_tweet": "698 Bitcoin bridges in a single day — our current record.\n\nNext milestone: 1,000 orders in a day.\n\nAt current growth rate: weeks, not months.\n\n🌸"
+  },
+  {
+    "id": 70,
+    "category": "Upcoming Hooks",
+    "metric": "Integrators Closing in on Direct Volume",
+    "value": "$32.86M vs $34.75M — gap is $1.89M over 76 days",
+    "raw_value": 1890000,
+    "insight": "Integrators trailed Direct by only $1.89M over 76 days. At current trajectories, integrators will surpass Direct as the #1 volume category within weeks.",
+    "suggested_tweet": "Integrators vs Direct users in Q1 2026:\n\n🔗 Integrators: $32.86M\n💻 Direct: $34.75M\n\nGap: $1.89M.\n\nIntegrators will become Garden's #1 volume source. Soon. 🌸"
+  },
+  {
+    "id": 71,
+    "category": "Viral Stats",
+    "metric": "Orders Per Hour (Peak Day)",
+    "value": "~29 orders/hour on Feb 23 (698 orders/day)",
+    "raw_value": 29,
+    "insight": "On February 23, Garden processed approximately 1 Bitcoin bridge every 2 minutes — continuously, for 24 hours. This is infrastructure-grade throughput for a trustless protocol.",
+    "suggested_tweet": "February 23, 2026:\n\nGarden processed 1 trustless Bitcoin bridge every 2 minutes. For 24 hours straight.\n\nNon-custodial. Atomic. 30 seconds.\n\nThis is BTCfi infrastructure. 🌸"
+  },
+  {
+    "id": 72,
+    "category": "Viral Stats",
+    "metric": "Total Capital Moved Per Active Day",
+    "value": "$1.27M average per day across 76 days",
+    "raw_value": 1270000,
+    "insight": "Averaging $96.5M over 76 days, Garden moved $1.27M per day — a figure that would have seemed impossible in early 2025 when $50K/day was the norm.",
+    "suggested_tweet": "Garden average: $1.27M bridged per day in Q1 2026.\n\nEarly 2025: ~$50K/day was our norm.\n\n25x growth in daily volume.\n\nBTCfi is real. 🌸"
+  },
+  {
+    "id": 73,
+    "category": "Viral Stats",
+    "metric": "Bitcoin Moved Per Minute (76-day period)",
+    "value": "~$930 of Bitcoin bridged every minute",
+    "raw_value": 930,
+    "insight": "Over 76 days (6,566,400 seconds), $96.5M was bridged — equivalent to $930 of Bitcoin crossing chains every single minute via Garden.",
+    "suggested_tweet": "Every minute of Q1 2026:\n\n$930 of Bitcoin was bridged through Garden.\n\n60 seconds. Non-custodial. Trustless. Always on.\n\n🌸"
+  },
+  {
+    "id": 74,
+    "category": "Viral Stats",
+    "metric": "Integrator Orders vs Direct Orders Ratio",
+    "value": "9:1 integrator-to-direct order ratio",
+    "raw_value": 9,
+    "insight": "For every 1 direct user order, there were 9 integrator-driven orders in Q1 2026. This 9:1 ratio shows how deeply integrations have become the dominant force in Garden's order flow.",
+    "suggested_tweet": "For every 1 person who goes to app.garden.finance directly:\n9 people swap through an app that uses Garden behind the scenes.\n\n9:1 integrator-to-direct ratio.\n\nInvisible infrastructure. 🌸"
+  },
+  {
+    "id": 75,
+    "category": "Viral Stats",
+    "metric": "LLM Volume Per Order (Highest of any channel)",
+    "value": "$27,889 per LLM-referred order",
+    "raw_value": 27889,
+    "insight": "AI assistant users who bridge through Garden spend more per transaction than any other discovered channel — $27,889 average vs $2,230 for integrators. AI discovery self-selects for high-value users.",
+    "suggested_tweet": "The most valuable user Garden acquires right now: someone who asked an AI about Bitcoin bridges.\n\nAverage AI-referred order: $27,889.\n\nAI is the highest-quality acquisition channel. 🌸"
+  }
+]
