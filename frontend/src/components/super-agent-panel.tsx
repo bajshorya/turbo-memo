@@ -1,107 +1,69 @@
 "use client";
 
 import { useDashboardStore } from "@/lib/store";
+import { AgentCard } from "./agent-card";
 
 export function SuperAgentPanel() {
-  const { volumeFeed, categoryFeed, feesFeed, assetFeed } = useDashboardStore();
-
-  // Aggregate: take the top card from each feed
-  const topCards = [
-    { agent: "Volume Analyzer", item: volumeFeed.data[0] ?? null },
-    { agent: "Category Volume", item: categoryFeed.data[0] ?? null },
-    { agent: "Fees Analyzer", item: feesFeed.data[0] ?? null },
-    { agent: "Asset Analyzer", item: assetFeed.data[0] ?? null },
-  ];
-
-  const allLoading =
-    volumeFeed.loading && categoryFeed.loading && feesFeed.loading && assetFeed.loading;
+  const { superAgentFeed } = useDashboardStore();
+  const { data, currentIndex, loading, error } = superAgentFeed;
+  const currentItem = data[currentIndex] ?? null;
 
   return (
-    <div className="w-80 min-w-72 space-y-4 shrink-0">
+    <div className="w-1/2 shrink-0 flex flex-col">
       {/* Header */}
-      <div className="bg-[#1a1a3e] rounded-2xl p-5">
+      <div className="bg-[#1a1a3e] rounded-2xl p-5 mb-4">
         <div className="flex items-center gap-2 mb-1">
           <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
           <h3 className="text-sm font-semibold text-white">Super Agent</h3>
         </div>
         <p className="text-xs text-gray-300">
-          Aggregated view of the top card from each sub-agent feed.
+          Aggregated insights from all sub-agents.
         </p>
       </div>
 
-      {/* Aggregated cards */}
-      {allLoading ? (
-        <div className="flex items-center justify-center py-12">
-          <div className="w-6 h-6 border-2 border-[#1a1a3e] border-t-transparent rounded-full animate-spin" />
-        </div>
-      ) : (
-        <div className="space-y-3">
-          {topCards.map(({ agent, item }) => (
-            <div
-              key={agent}
-              className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4"
-            >
-              <div className="flex items-center gap-2 mb-3">
-                <div className="bg-purple-100 rounded-full px-2.5 py-0.5">
-                  <span className="text-[10px] font-semibold text-purple-700">
-                    {agent}
-                  </span>
-                </div>
-              </div>
-
-              {item ? (
-                <>
-                  <p className="text-xs font-medium text-[#1a1a3e] mb-1">
-                    {item.metric}
-                  </p>
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-[10px] text-gray-400">
-                      {item.category}
-                    </span>
-                    <span className="text-[10px] font-semibold text-[#1a1a3e] ml-auto bg-gray-100 rounded-full px-2 py-0.5">
-                      {item.value}
-                    </span>
-                  </div>
-                  <p className="text-[11px] text-gray-600 leading-relaxed line-clamp-3">
-                    {item.insight}
-                  </p>
-
-                  {/* Quick tweet preview */}
-                  <div className="mt-3 bg-gray-50 rounded-xl p-3 border border-gray-100">
-                    <p className="text-[11px] text-[#1a1a3e] whitespace-pre-line line-clamp-3 leading-relaxed">
-                      {item.suggested_tweet}
-                    </p>
-                  </div>
-                </>
-              ) : (
-                <p className="text-xs text-gray-400">Loading…</p>
-              )}
+      {/* Card area */}
+      <div className="flex-1 relative" style={{ minHeight: 460 }}>
+        {loading && (
+          <div className="absolute inset-0 flex items-center justify-center z-10">
+            <div className="flex flex-col items-center gap-3">
+              <div className="w-8 h-8 border-2 border-[#1a1a3e] border-t-transparent rounded-full animate-spin" />
+              <span className="text-xs text-gray-500">Loading…</span>
             </div>
-          ))}
+          </div>
+        )}
+
+        {error && (
+          <div className="absolute inset-0 flex items-center justify-center z-10">
+            <div className="bg-red-50 text-red-600 text-xs rounded-xl px-4 py-3 border border-red-200">
+              {error}
+            </div>
+          </div>
+        )}
+
+        {!loading && !error && !currentItem && (
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="flex flex-col items-center gap-3 text-gray-400">
+              <div className="w-16 h-16 rounded-2xl border-2 border-dashed border-gray-300 flex items-center justify-center">
+                <span className="text-2xl">?</span>
+              </div>
+              <span className="text-xs">Waiting for data…</span>
+            </div>
+          </div>
+        )}
+
+        {currentItem && !loading && (
+          <AgentCard item={currentItem} />
+        )}
+      </div>
+
+      {/* Card counter */}
+      {data.length > 0 && !loading && (
+        <div className="text-center mt-2">
+          <span className="text-xs text-gray-400">
+            {currentIndex + 1} / {data.length}
+          </span>
         </div>
       )}
-
-      {/* Stats */}
-      <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4">
-        <h4 className="text-xs font-semibold text-[#1a1a3e] mb-3">
-          Feed Stats
-        </h4>
-        <div className="space-y-2">
-          {[
-            { label: "Volume", count: volumeFeed.data.length },
-            { label: "Category", count: categoryFeed.data.length },
-            { label: "Fees", count: feesFeed.data.length },
-            { label: "Asset", count: assetFeed.data.length },
-          ].map(({ label, count }) => (
-            <div key={label} className="flex items-center justify-between">
-              <span className="text-[11px] text-gray-500">{label}</span>
-              <span className="text-[11px] font-semibold text-[#1a1a3e]">
-                {count} cards
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
     </div>
   );
 }

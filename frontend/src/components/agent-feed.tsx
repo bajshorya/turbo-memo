@@ -1,56 +1,34 @@
 "use client";
 
-import { useState } from "react";
-import {
-  motion,
-  useMotionValue,
-  useTransform,
-  AnimatePresence,
-  type PanInfo,
-} from "motion/react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { AgentCard } from "./agent-card";
 import type { AgentDataItem } from "@/lib/store";
 
 interface AgentFeedProps {
   title: string;
   data: AgentDataItem[];
+  currentIndex: number;
   loading: boolean;
   error: string | null;
-  onSwipe: () => void;
+  onNext: () => void;
+  onPrev: () => void;
 }
 
-const SWIPE_THRESHOLD = 100;
-const VISIBLE_CARDS = 3;
+const MAX_CARDS = 5;
 
 export function AgentFeed({
   title,
   data,
+  currentIndex,
   loading,
   error,
-  onSwipe,
+  onNext,
+  onPrev,
 }: AgentFeedProps) {
-  const [exitDirection, setExitDirection] = useState<"left" | "right" | null>(
-    null,
-  );
-  const [swiping, setSwiping] = useState(false);
-
-  const handleDragEnd = (_: any, info: PanInfo) => {
-    const offset = info.offset.x;
-    if (Math.abs(offset) > SWIPE_THRESHOLD) {
-      setExitDirection(offset > 0 ? "right" : "left");
-      setSwiping(true);
-
-      // After animation completes, advance and reset
-      setTimeout(() => {
-        onSwipe();
-        setSwiping(false);
-        setExitDirection(null);
-      }, 300);
-    }
-  };
-
-  // Stack: show top 3 cards
-  const visibleCards = data.slice(0, VISIBLE_CARDS);
+  const maxIndex = Math.min(data.length - 1, MAX_CARDS - 1);
+  const currentItem = data[currentIndex] ?? null;
+  const canGoBack = currentIndex > 0;
+  const canGoForward = currentIndex < maxIndex && data.length > 0;
 
   return (
     <div className="flex flex-col gap-3 min-w-0 flex-1">
@@ -61,11 +39,11 @@ export function AgentFeed({
           {title}
         </h3>
         <span className="text-xs text-gray-400 ml-auto">
-          {data.length} cards
+          {data.length > 0 ? `${currentIndex + 1} / ${Math.min(data.length, MAX_CARDS)}` : "0"}
         </span>
       </div>
 
-      {/* Card Stack */}
+      {/* Card Display */}
       <div className="relative" style={{ minHeight: 460 }}>
         {loading && (
           <div className="absolute inset-0 flex items-center justify-center z-10">
@@ -90,84 +68,30 @@ export function AgentFeed({
           </div>
         )}
 
-        <AnimatePresence mode="popLayout">
-          {visibleCards.map((item, index) => {
-            const isTop = index === 0;
-            return (
-              <SwipeableCard
-                key={`${item.id}-${item.category}-${index}`}
-                item={item}
-                index={index}
-                isTop={isTop && !swiping}
-                exitDirection={isTop ? exitDirection : null}
-                onDragEnd={isTop ? handleDragEnd : undefined}
-              />
-            );
-          })}
-        </AnimatePresence>
-
-        {/* Swipe hint */}
-        {data.length > 1 && !loading && (
-          <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 flex items-center gap-1 text-[10px] text-gray-400">
-            <span>← swipe →</span>
-          </div>
+        {currentItem && !loading && (
+          <AgentCard item={currentItem} />
         )}
       </div>
+
+      {/* Navigation Arrows */}
+      {data.length > 1 && !loading && (
+        <div className="flex items-center justify-center gap-4 mt-1">
+          <button
+            onClick={onPrev}
+            disabled={!canGoBack}
+            className="w-9 h-9 rounded-full border border-gray-200 bg-white flex items-center justify-center hover:bg-gray-50 disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer"
+          >
+            <ChevronLeft className="w-4 h-4 text-[#1a1a3e]" />
+          </button>
+          <button
+            onClick={onNext}
+            disabled={!canGoForward}
+            className="w-9 h-9 rounded-full border border-gray-200 bg-white flex items-center justify-center hover:bg-gray-50 disabled:opacity-30 disabled:cursor-not-allowed transition-colors cursor-pointer"
+          >
+            <ChevronRight className="w-4 h-4 text-[#1a1a3e]" />
+          </button>
+        </div>
+      )}
     </div>
-  );
-}
-
-// ── Individual swipeable card ──────────────────────
-function SwipeableCard({
-  item,
-  index,
-  isTop,
-  exitDirection,
-  onDragEnd,
-}: {
-  item: AgentDataItem;
-  index: number;
-  isTop: boolean;
-  exitDirection: "left" | "right" | null;
-  onDragEnd?: (_: any, info: PanInfo) => void;
-}) {
-  const x = useMotionValue(0);
-  const rotate = useTransform(x, [-200, 200], [-12, 12]);
-  const cardOpacity = useTransform(
-    x,
-    [-200, -100, 0, 100, 200],
-    [0.5, 0.8, 1, 0.8, 0.5],
-  );
-
-  // Stack offset: cards behind get progressively smaller + lower
-  const scale = 1 - index * 0.04;
-  const yOffset = index * 8;
-
-  return (
-    <motion.div
-      className="absolute top-0 left-0 right-0"
-      style={{
-        x: isTop ? x : 0,
-        rotate: isTop ? rotate : 0,
-        scale,
-        y: yOffset,
-        zIndex: 10 - index,
-        cursor: isTop ? "grab" : "default",
-        opacity: isTop ? cardOpacity : 1 - index * 0.15,
-      }}
-      drag={isTop ? "x" : false}
-      dragConstraints={{ left: 0, right: 0 }}
-      dragElastic={0.7}
-      onDragEnd={onDragEnd}
-      animate={
-        exitDirection && isTop
-          ? { x: exitDirection === "left" ? -500 : 500, opacity: 0 }
-          : {}
-      }
-      transition={{ type: "spring", stiffness: 300, damping: 25 }}
-      whileTap={isTop ? { scale: scale * 0.98 } : undefined}
-    >
-      <AgentCard item={item} />
-    </motion.div>
   );
 }

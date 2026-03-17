@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "category": "Super: All-Time Milestone",
+    "metric": "Total Cumulative Volume",
+    "value": "$1.03 Billion",
+    "raw_value": 1032909569.96,
+    "insight": "Garden has processed over $1 billion in total cross-chain Bitcoin bridge volume since inception (Mar 2025 – Mar 2026), cementing its position as a major BTCfi infrastructure player.",
+    "suggested_tweet": "$1,000,000,000.\n\ngarden just crossed $1b in cumulative volume.\n\nnative btc. trustless. 30 seconds.\n\nbtcfi is here."
+  },
+  {
+    "id": 2,
+    "category": "Super: Viral Stats",
+    "metric": "Integrator Orders vs Direct Orders Ratio",
+    "value": "9:1 integrator-to-direct order ratio",
+    "raw_value": 9,
+    "insight": "For every 1 direct user order, there were 9 integrator-driven orders in Q1 2026. This 9:1 ratio shows how deeply integrations have become the dominant force in Garden's order flow.",
+    "suggested_tweet": "for every 1 person who uses our frontend, 9 people use an app powered by garden.\n\ninvisible infrastructure."
+  },
+  {
+    "id": 3,
+    "category": "Super: Recent Momentum",
+    "metric": "Q1 2026 Resurgence",
+    "value": "$55.1K in a single week",
+    "raw_value": 55158.34,
+    "insight": "Volume bottomed out in late December 2025 ($590) but has aggressively rebounded, hitting over $55k in the first week of March 2026. A massive 93x increase from the bottom.",
+    "suggested_tweet": "we were quiet in december.\n\nnow we're doing $55k+ a week again.\n\nback to building the best bitcoin bridge. 🌸"
+  },
+  {
+    "id": 4,
+    "category": "Super: Aggregate Performance",
+    "metric": "3-Day Total Volume (Mar 14-17)",
+    "value": "$6.26M in 72 hours",
+    "raw_value": 6261216,
+    "insight": "Over a single 3-day mid-month period, Garden processed $6.26M across all assets and chains, maintaining a consistent multi-million dollar daily run rate.",
+    "suggested_tweet": "3 days. $6.2m bridged.\n\nwe don't just spike. we sustain.\n\nthe baseline is rising."
+  },
+  {
+    "id": 5,
+    "category": "Super: All-Time Milestone",
+    "metric": "Total Order Count",
+    "value": "48,476 orders",
+    "raw_value": 48476,
+    "insight": "Garden has fulfilled 48,476 cross-chain swap orders in approximately 12 months — averaging ~133 orders per day across the entire period.",
+    "suggested_tweet": "48,476 trustless btc swaps.\n\nall non-custodial. all settled on-chain.\n\nthe backbone of btcfi."
+  }
+]

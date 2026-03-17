@@ -14,13 +14,17 @@ export default function Home() {
     feesFeed,
     assetFeed,
     fetchAllFeeds,
-    advanceVolume,
-    advanceCategory,
-    advanceFees,
-    advanceAsset,
+    nextVolume,
+    prevVolume,
+    nextCategory,
+    prevCategory,
+    nextFees,
+    prevFees,
+    nextAsset,
+    prevAsset,
   } = useDashboardStore();
 
-  // ✅ LOAD ALL ON START
+  // Load all on start
   useEffect(() => {
     fetchAllFeeds();
   }, [fetchAllFeeds]);
@@ -30,40 +34,48 @@ export default function Home() {
       <Header />
       <Controls />
 
-      <div className="flex gap-6 p-6">
-        {/* Left — 4 Sub-Agent Feeds */}
-        <div className="flex-1 flex gap-5 min-w-0">
+      <div className="flex gap-6 p-6 min-h-[calc(100vh-120px)]">
+        {/* Left — Sub-Agent Feeds */}
+        <div className="w-1/2 grid grid-cols-2 gap-4">
           <AgentFeed
             title="Volume Analyzer"
             data={volumeFeed.data}
+            currentIndex={volumeFeed.currentIndex}
             loading={volumeFeed.loading}
             error={volumeFeed.error}
-            onSwipe={advanceVolume}
+            onNext={nextVolume}
+            onPrev={prevVolume}
           />
           <AgentFeed
             title="Category Volume"
             data={categoryFeed.data}
+            currentIndex={categoryFeed.currentIndex}
             loading={categoryFeed.loading}
             error={categoryFeed.error}
-            onSwipe={advanceCategory}
+            onNext={nextCategory}
+            onPrev={prevCategory}
           />
           <AgentFeed
             title="Fees Analyzer"
             data={feesFeed.data}
+            currentIndex={feesFeed.currentIndex}
             loading={feesFeed.loading}
             error={feesFeed.error}
-            onSwipe={advanceFees}
+            onNext={nextFees}
+            onPrev={prevFees}
           />
           <AgentFeed
             title="Asset Analyzer"
             data={assetFeed.data}
+            currentIndex={assetFeed.currentIndex}
             loading={assetFeed.loading}
             error={assetFeed.error}
-            onSwipe={advanceAsset}
+            onNext={nextAsset}
+            onPrev={prevAsset}
           />
         </div>
 
-        {/* Right — Super Agent */}
+        {/* Right — Super Agent (full right half) */}
         <SuperAgentPanel />
       </div>
     </div>

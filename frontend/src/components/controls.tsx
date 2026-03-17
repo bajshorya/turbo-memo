@@ -1,11 +1,37 @@
 "use client";
 
+import { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
 import { RefreshCw } from "lucide-react";
 import { useDashboardStore } from "@/lib/store";
 
+const COOLDOWN_MS = 15_000;
+
 export function Controls() {
-  const { fetchAllFeeds } = useDashboardStore();
+  const { fetchAllFeeds, lastRefreshTime } = useDashboardStore();
+  const [remaining, setRemaining] = useState(0);
+
+  useEffect(() => {
+    if (lastRefreshTime === 0) return;
+
+    const tick = () => {
+      const elapsed = Date.now() - lastRefreshTime;
+      const left = Math.max(0, COOLDOWN_MS - elapsed);
+      setRemaining(left);
+    };
+
+    tick();
+    const id = setInterval(tick, 500);
+    return () => clearInterval(id);
+  }, [lastRefreshTime]);
+
+  const onRefresh = useCallback(() => {
+    if (remaining > 0) return;
+    fetchAllFeeds();
+  }, [remaining, fetchAllFeeds]);
+
+  const disabled = remaining > 0;
+  const seconds = Math.ceil(remaining / 1000);
 
   return (
     <div className="border-b border-gray-200 bg-[#e4ebf2]">
@@ -36,11 +62,12 @@ export function Controls() {
         <Button
           variant="ghost"
           size="sm"
-          onClick={() => fetchAllFeeds()}
-          className="h-10 bg-[#f8f8f8] text-[#473c75] hover:bg-gray-50 rounded-full px-4 font-medium"
+          onClick={onRefresh}
+          disabled={disabled}
+          className="h-10 bg-[#f8f8f8] text-[#473c75] hover:bg-gray-50 rounded-full px-4 font-medium disabled:opacity-50 disabled:cursor-not-allowed"
         >
-          <RefreshCw className="w-4 h-4 mr-2" />
-          Refresh All
+          <RefreshCw className={`w-4 h-4 mr-2 ${disabled ? "" : ""}`} />
+          {disabled ? `Refresh (${seconds}s)` : "Refresh All"}
         </Button>
       </div>
     </div>

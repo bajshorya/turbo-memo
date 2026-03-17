@@ -32,7 +32,14 @@ app.get("/agent/fees-analyzer", (req, res) => {
 
 app.get("/agent/asset-analyzer", (req, res) => {
   const dataPath = path.join(__dirname, "data", "asset_analyzer_data.json");
-  setTimeout(() => {  
+  setTimeout(() => {
+    res.json(JSON.parse(fs.readFileSync(dataPath, "utf8")));
+  }, 2000);
+});
+
+app.get("/agent/super-agent", (req, res) => {
+  const dataPath = path.join(__dirname, "data", "super_agent_data.json");
+  setTimeout(() => {
     res.json(JSON.parse(fs.readFileSync(dataPath, "utf8")));
   }, 2000);
 });
@@ -42,5 +49,6 @@ app.listen(PORT, () => {
   console.log(`  • GET /agent/volume-analyzer`);
   console.log(`  • GET /agent/category-volume-analyzer`);
   console.log(`  • GET /agent/fees-analyzer`);
-  console.log(`  • GET /agent/asset-analyzer`)
+  console.log(`  • GET /agent/asset-analyzer`);
+  console.log(`  • GET /agent/super-agent`);
 });

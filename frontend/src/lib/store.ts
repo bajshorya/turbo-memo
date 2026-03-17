@@ -3,16 +3,6 @@ import { create } from "zustand";
 const BASE_URL =
   process.env.NEXT_PUBLIC_API_BASE_URL || "http://localhost:3001";
 
-// Fisher-Yates shuffle
-function shuffle<T>(arr: T[]): T[] {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-
 export interface AgentDataItem {
   id: number;
   category: string;
@@ -31,26 +21,37 @@ interface AgentFeedState {
 }
 
 interface DashboardState {
-  // Per-agent feed state
   volumeFeed: AgentFeedState;
   categoryFeed: AgentFeedState;
   feesFeed: AgentFeedState;
   assetFeed: AgentFeedState;
+  superAgentFeed: AgentFeedState;
+
+  // Refresh cooldown
+  lastRefreshTime: number;
 
   // Fetch actions
   fetchVolumeData: () => Promise<void>;
   fetchCategoryData: () => Promise<void>;
   fetchFeesData: () => Promise<void>;
   fetchAssetData: () => Promise<void>;
+  fetchSuperAgentData: () => Promise<void>;
   fetchAllFeeds: () => Promise<void>;
 
-  // Swipe / advance actions
-  advanceVolume: () => void;
-  advanceCategory: () => void;
-  advanceFees: () => void;
-  advanceAsset: () => void;
+  // Navigate actions (forward/backward) — sub agents only
+  nextVolume: () => void;
+  prevVolume: () => void;
+  nextCategory: () => void;
+  prevCategory: () => void;
+  nextFees: () => void;
+  prevFees: () => void;
+  nextAsset: () => void;
+  prevAsset: () => void;
 
-  // Search / filter (kept from original)
+  // Check if all sub-agents are at max
+  allSubAgentsAtMax: () => boolean;
+
+  // Search / filter
   selectedExchange: string;
   searchQuery: string;
   setSelectedExchange: (exchange: string) => void;
@@ -64,21 +65,32 @@ const defaultFeed: AgentFeedState = {
   error: null,
 };
 
+const MAX_CARDS = 5;
+const REFRESH_COOLDOWN = 15_000; // 15 seconds
+
 async function fetchFeed(endpoint: string): Promise<AgentDataItem[]> {
   const res = await fetch(`${BASE_URL}${endpoint}`);
   if (!res.ok) throw new Error(`Failed to fetch ${endpoint}`);
   const data: AgentDataItem[] = await res.json();
-  return shuffle(data);
+  return data;
+}
+
+function isAtMax(feed: AgentFeedState): boolean {
+  if (feed.data.length === 0) return false;
+  const maxIndex = Math.min(feed.data.length - 1, MAX_CARDS - 1);
+  return feed.currentIndex >= maxIndex;
 }
 
 export const useDashboardStore = create<DashboardState>((set, get) => ({
   selectedExchange: "all-dex",
   searchQuery: "",
+  lastRefreshTime: 0,
 
   volumeFeed: { ...defaultFeed },
   categoryFeed: { ...defaultFeed },
   feesFeed: { ...defaultFeed },
   assetFeed: { ...defaultFeed },
+  superAgentFeed: { ...defaultFeed },
 
   // ── Fetch ──────────────────────────────────────────
   fetchVolumeData: async () => {
@@ -121,39 +133,113 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
     }
   },
 
+  fetchSuperAgentData: async () => {
+    set({ superAgentFeed: { ...defaultFeed, loading: true } });
+    try {
+      const data = await fetchFeed("/agent/super-agent");
+      set({ superAgentFeed: { data, currentIndex: 0, loading: false, error: null } });
+    } catch (e: any) {
+      set({ superAgentFeed: { ...defaultFeed, loading: false, error: e.message } });
+    }
+  },
+
   fetchAllFeeds: async () => {
-    const { fetchVolumeData, fetchCategoryData, fetchFeesData, fetchAssetData } = get();
-    await Promise.all([fetchVolumeData(), fetchCategoryData(), fetchFeesData(), fetchAssetData()]);
+    const now = Date.now();
+    const { lastRefreshTime } = get();
+    // Enforce 15s cooldown (skip on first load when lastRefreshTime is 0)
+    if (lastRefreshTime > 0 && now - lastRefreshTime < REFRESH_COOLDOWN) {
+      return;
+    }
+    set({ lastRefreshTime: now });
+    const { fetchVolumeData, fetchCategoryData, fetchFeesData, fetchAssetData, fetchSuperAgentData } = get();
+    await Promise.all([fetchVolumeData(), fetchCategoryData(), fetchFeesData(), fetchAssetData(), fetchSuperAgentData()]);
   },
 
-  // ── Advance (swipe) ───────────────────────────────
-  advanceVolume: () => {
-    const { volumeFeed } = get();
+  // ── Navigate (next/prev with max 5 cap) ───────────
+  nextVolume: () => {
+    const state = get();
+    const { volumeFeed } = state;
     if (!volumeFeed.data.length) return;
-    // Move the front card to the back of the deck
-    const newData = [...volumeFeed.data.slice(1), volumeFeed.data[0]];
-    set({ volumeFeed: { ...volumeFeed, data: newData } });
+    const maxIndex = Math.min(volumeFeed.data.length - 1, MAX_CARDS - 1);
+    if (volumeFeed.currentIndex < maxIndex) {
+      const updated = { ...volumeFeed, currentIndex: volumeFeed.currentIndex + 1 };
+      set({ volumeFeed: updated });
+      // Check if all at max after update
+      if (isAtMax(updated) && isAtMax(state.categoryFeed) && isAtMax(state.feesFeed) && isAtMax(state.assetFeed)) {
+        get().fetchAllFeeds();
+      }
+    }
+  },
+  prevVolume: () => {
+    const { volumeFeed } = get();
+    if (volumeFeed.currentIndex > 0) {
+      set({ volumeFeed: { ...volumeFeed, currentIndex: volumeFeed.currentIndex - 1 } });
+    }
   },
 
-  advanceCategory: () => {
-    const { categoryFeed } = get();
+  nextCategory: () => {
+    const state = get();
+    const { categoryFeed } = state;
     if (!categoryFeed.data.length) return;
-    const newData = [...categoryFeed.data.slice(1), categoryFeed.data[0]];
-    set({ categoryFeed: { ...categoryFeed, data: newData } });
+    const maxIndex = Math.min(categoryFeed.data.length - 1, MAX_CARDS - 1);
+    if (categoryFeed.currentIndex < maxIndex) {
+      const updated = { ...categoryFeed, currentIndex: categoryFeed.currentIndex + 1 };
+      set({ categoryFeed: updated });
+      if (isAtMax(state.volumeFeed) && isAtMax(updated) && isAtMax(state.feesFeed) && isAtMax(state.assetFeed)) {
+        get().fetchAllFeeds();
+      }
+    }
+  },
+  prevCategory: () => {
+    const { categoryFeed } = get();
+    if (categoryFeed.currentIndex > 0) {
+      set({ categoryFeed: { ...categoryFeed, currentIndex: categoryFeed.currentIndex - 1 } });
+    }
   },
 
-  advanceFees: () => {
-    const { feesFeed } = get();
+  nextFees: () => {
+    const state = get();
+    const { feesFeed } = state;
     if (!feesFeed.data.length) return;
-    const newData = [...feesFeed.data.slice(1), feesFeed.data[0]];
-    set({ feesFeed: { ...feesFeed, data: newData } });
+    const maxIndex = Math.min(feesFeed.data.length - 1, MAX_CARDS - 1);
+    if (feesFeed.currentIndex < maxIndex) {
+      const updated = { ...feesFeed, currentIndex: feesFeed.currentIndex + 1 };
+      set({ feesFeed: updated });
+      if (isAtMax(state.volumeFeed) && isAtMax(state.categoryFeed) && isAtMax(updated) && isAtMax(state.assetFeed)) {
+        get().fetchAllFeeds();
+      }
+    }
+  },
+  prevFees: () => {
+    const { feesFeed } = get();
+    if (feesFeed.currentIndex > 0) {
+      set({ feesFeed: { ...feesFeed, currentIndex: feesFeed.currentIndex - 1 } });
+    }
   },
 
-  advanceAsset: () => {
-    const { assetFeed } = get();
+  nextAsset: () => {
+    const state = get();
+    const { assetFeed } = state;
     if (!assetFeed.data.length) return;
-    const newData = [...assetFeed.data.slice(1), assetFeed.data[0]];
-    set({ assetFeed: { ...assetFeed, data: newData } });
+    const maxIndex = Math.min(assetFeed.data.length - 1, MAX_CARDS - 1);
+    if (assetFeed.currentIndex < maxIndex) {
+      const updated = { ...assetFeed, currentIndex: assetFeed.currentIndex + 1 };
+      set({ assetFeed: updated });
+      if (isAtMax(state.volumeFeed) && isAtMax(state.categoryFeed) && isAtMax(state.feesFeed) && isAtMax(updated)) {
+        get().fetchAllFeeds();
+      }
+    }
+  },
+  prevAsset: () => {
+    const { assetFeed } = get();
+    if (assetFeed.currentIndex > 0) {
+      set({ assetFeed: { ...assetFeed, currentIndex: assetFeed.currentIndex - 1 } });
+    }
+  },
+
+  allSubAgentsAtMax: () => {
+    const { volumeFeed, categoryFeed, feesFeed, assetFeed } = get();
+    return isAtMax(volumeFeed) && isAtMax(categoryFeed) && isAtMax(feesFeed) && isAtMax(assetFeed);
   },
 
   // ── Filter ────────────────────────────────────────
