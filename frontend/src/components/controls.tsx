@@ -34,7 +34,7 @@ export function Controls() {
   const seconds = Math.ceil(remaining / 1000);
 
   return (
-    <div className="border-b border-gray-200 bg-[#e4ebf2]">
+    <div className="border-b border-gray-200 bg-[#EBF0F5] rounded-[20px]">
       <div className="flex items-center justify-between px-6 py-3">
         {/* Left */}
         <div className="flex items-center gap-3">
@@ -67,7 +67,7 @@ export function Controls() {
           className="h-10 bg-[#f8f8f8] text-[#473c75] hover:bg-gray-50 rounded-full px-4 font-medium disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <RefreshCw className={`w-4 h-4 mr-2 ${disabled ? "" : ""}`} />
-          {disabled ? `Refresh (${seconds}s)` : "Refresh All"}
+          {disabled ? `Refresh` : "Refresh All"}
         </Button>
       </div>
     </div>
