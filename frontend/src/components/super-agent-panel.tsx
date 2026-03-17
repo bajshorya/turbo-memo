@@ -4,7 +4,7 @@ import { useDashboardStore } from "@/lib/store";
 import { AgentCard } from "./agent-card";
 import { SuperAgentPanelSkeleton } from "./super-agent-panel-skeleton";
 
-export function SuperAgentPanel() {
+export function  SuperAgentPanel() {
   const { superAgentFeed, volumeFeed, categoryFeed, feesFeed, assetFeed } = useDashboardStore();
   const { data, currentIndex, loading, error } = superAgentFeed;
   const currentItem = data[currentIndex] ?? null;
@@ -19,17 +19,6 @@ export function SuperAgentPanel() {
 
   return (
     <div className="w-1/3 shrink-0 flex flex-col">
-      {/* Header */}
-      <div className="bg-[#1a1a3e] rounded-2xl p-5 mb-4">
-        <div className="flex items-center gap-2 mb-1">
-          <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-          <h3 className="text-sm font-semibold text-white">Super Agent</h3>
-        </div>
-        <p className="text-xs text-gray-300">
-          Aggregated insights from all sub-agents.
-        </p>
-      </div>
-
       {/* Card area */}
       <div className="flex-1 relative" style={{ minHeight: 460 }}>
         {error && (
@@ -42,7 +31,7 @@ export function SuperAgentPanel() {
 
         {!error && !currentItem && (
           <div className="absolute inset-0 flex items-center justify-center">
-            <div className="flex flex-col items-center gap-3 text-gray-400">
+            <div className="flex flex-col items-center gap-2 text-gray-400">
               <div className="w-16 h-16 rounded-2xl border-2 border-dashed border-gray-300 flex items-center justify-center">
                 <span className="text-2xl">?</span>
               </div>

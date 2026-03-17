@@ -33,7 +33,7 @@ export function AgentCard({ item }: AgentCardProps) {
       <div className="px-5 pb-3">
         <p className="text-xs text-gray-500 mb-1">Insight</p>
         <div className="bg-gray-50 border border-gray-100 rounded-xl px-4 py-3">
-          <p className="text-sm text-[#1a1a3e] leading-relaxed">
+          <p className="text-sm text-[#1a1a3e] ">
             {item.insight}
           </p>
         </div>
@@ -44,17 +44,13 @@ export function AgentCard({ item }: AgentCardProps) {
         <p className="text-xs text-gray-500 mb-1">Suggested Tweet</p>
         <div className="bg-gray-50 border border-gray-100 rounded-xl p-4">
           <div className="flex items-center gap-2 mb-2">
-            <div className="w-7 h-7 rounded-full bg-[#1da1f2] flex items-center justify-center text-white text-[10px] font-bold">
-              G
-            </div>
+          
             <div className="flex flex-col leading-tight">
-              <span className="text-xs font-semibold text-[#1a1a3e]">
-                Garden Finance
-              </span>
+              
               <span className="text-[10px] text-gray-400">@garden_finance</span>
             </div>
           </div>
-          <p className="text-sm text-[#1a1a3e] whitespace-pre-line leading-relaxed">
+          <p className="text-sm text-[#1a1a3e] ">
             {item.suggested_tweet}
           </p>
 
