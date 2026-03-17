@@ -1,0 +1,1429 @@
+{
+  "metadata": {
+    "fetched_at": "2026-03-17T19:36:53.332Z",
+    "source": "https://midgard.ninerealms.com/v2",
+    "rune_price_usd": 0.4492689883422746,
+    "days_of_historical_data": 90,
+    "historical_date_range": {
+      "from": "2025-12-18",
+      "to": "2026-03-17"
+    }
+  },
+  "summary": {
+    "total_volume_all_time_usd": 22258818832.41961,
+    "total_swaps_all_time": 67099085,
+    "unique_swappers": 0,
+    "avg_swap_size_all_time_usd": 331.7305866752074,
+    "volume_24h_usd": 67002548.441638894,
+    "volume_7d_usd": 146668362.13171405,
+    "volume_30d_usd": 1089629351.3410342,
+    "volume_90d_usd": 2693462569.339307,
+    "swaps_24h": 84571,
+    "swaps_30d": 1904974,
+    "swaps_7d": 0,
+    "swaps_30d_hist": 0,
+    "swaps_90d": 0,
+    "volume_growth_30d_pct": 26.08133957910142,
+    "peak_daily_volume_usd": 118949163.84122357,
+    "peak_daily_volume_date": "2026-02-25",
+    "active_pools": 41,
+    "pool_count": 44,
+    "active_nodes": 101,
+    "total_staked_usd": 77603811.12893942
+  },
+  "network": {
+    "rune_price_usd": 0.4492689883422746,
+    "rune_supply": 0,
+    "bonding_apy": 0.2535307567951235,
+    "liquidity_apy": 0,
+    "pool_share_factor": 0,
+    "daily_active_users": 0,
+    "monthly_active_users": 0
+  },
+  "growth": {
+    "volume_24h_usd": 67002548.441638894,
+    "volume_7d_usd": 146668362.13171405,
+    "volume_30d_usd": 1089629351.3410342,
+    "volume_90d_usd": 2693462569.339307,
+    "volume_growth_30d_pct": 26.08133957910142,
+    "swaps_24h": 84571,
+    "swaps_30d": 1904974
+  },
+  "timeframes": [
+    {
+      "label": "last_7d",
+      "total_volume_usd": 146668362.13171405,
+      "total_swaps": 0,
+      "avg_daily_volume_usd": 20952623.161673434,
+      "avg_daily_swaps": 0,
+      "peak_day_volume_usd": 35336324.22174981,
+      "peak_day_date": "2026-03-11"
+    },
+    {
+      "label": "last_30d",
+      "total_volume_usd": 1089629351.3410342,
+      "total_swaps": 0,
+      "avg_daily_volume_usd": 36320978.37803447,
+      "avg_daily_swaps": 0,
+      "peak_day_volume_usd": 118949163.84122357,
+      "peak_day_date": "2026-02-25"
+    },
+    {
+      "label": "last_90d",
+      "total_volume_usd": 2693462569.339307,
+      "total_swaps": 0,
+      "avg_daily_volume_usd": 29927361.881547853,
+      "avg_daily_swaps": 0,
+      "peak_day_volume_usd": 118949163.84122357,
+      "peak_day_date": "2026-02-25"
+    }
+  ],
+  "assets": {
+    "count": 35,
+    "top_by_24h_volume": [
+      {
+        "name": "ETH",
+        "volume_24h_usd": 23462143.19216398,
+        "volume_24h_share_pct": 35.01679225320835
+      },
+      {
+        "name": "BTC",
+        "volume_24h_usd": 22871184.16121171,
+        "volume_24h_share_pct": 34.1347973967485
+      },
+      {
+        "name": "BCH",
+        "volume_24h_usd": 4521891.02923911,
+        "volume_24h_share_pct": 6.7488343867663545
+      },
+      {
+        "name": "USDC",
+        "volume_24h_usd": 3720669.0146687003,
+        "volume_24h_share_pct": 5.5530261179684945
+      },
+      {
+        "name": "USDT",
+        "volume_24h_usd": 3583922.0822575497,
+        "volume_24h_share_pct": 5.348933981786151
+      },
+      {
+        "name": "BNB",
+        "volume_24h_usd": 2704881.1341436,
+        "volume_24h_share_pct": 4.0369824686588265
+      },
+      {
+        "name": "XRP",
+        "volume_24h_usd": 1742221.37607141,
+        "volume_24h_share_pct": 2.6002315084909555
+      },
+      {
+        "name": "WBTC",
+        "volume_24h_usd": 1406697.79666701,
+        "volume_24h_share_pct": 2.099469093914067
+      },
+      {
+        "name": "DAI",
+        "volume_24h_usd": 583656.0557945,
+        "volume_24h_share_pct": 0.871095308117841
+      },
+      {
+        "name": "ATOM",
+        "volume_24h_usd": 548310.62495496,
+        "volume_24h_share_pct": 0.8183429402428685
+      },
+      {
+        "name": "DOGE",
+        "volume_24h_usd": 431168.77018017,
+        "volume_24h_share_pct": 0.6435110010117453
+      },
+      {
+        "name": "LTC",
+        "volume_24h_usd": 410411.24357596,
+        "volume_24h_share_pct": 0.6125307963971546
+      },
+      {
+        "name": "TWT",
+        "volume_24h_usd": 245202.10308687,
+        "volume_24h_share_pct": 0.36595936839693183
+      },
+      {
+        "name": "TCY",
+        "volume_24h_usd": 234575.44089834,
+        "volume_24h_share_pct": 0.3500992818245739
+      },
+      {
+        "name": "AVAX",
+        "volume_24h_usd": 123527.93996106,
+        "volume_24h_share_pct": 0.18436304712895554
+      },
+      {
+        "name": "RUJI",
+        "volume_24h_usd": 119567.72935492,
+        "volume_24h_share_pct": 0.1784525098460499
+      },
+      {
+        "name": "BUSD",
+        "volume_24h_usd": 101407.32059703,
+        "volume_24h_share_pct": 0.1513484530895995
+      },
+      {
+        "name": "TRX",
+        "volume_24h_usd": 50052.09763671,
+        "volume_24h_share_pct": 0.074701781948349
+      },
+      {
+        "name": "SOL",
+        "volume_24h_usd": 44250.71443292,
+        "volume_24h_share_pct": 0.06604333038386385
+      },
+      {
+        "name": "THOR",
+        "volume_24h_usd": 28002.14159917,
+        "volume_24h_share_pct": 0.04179265154900885
+      }
+    ]
+  },
+  "pools": {
+    "count": 44,
+    "top_by_24h_volume": [
+      {
+        "asset": "ETH.ETH",
+        "chain": "ETH",
+        "volume_24h_usd": 23306396.74387943,
+        "volume_24h_share_pct": 34.78434370922467,
+        "liquidity_usd": 25960490.12030892,
+        "status": "available"
+      },
+      {
+        "asset": "BTC.BTC",
+        "chain": "BTC",
+        "volume_24h_usd": 22871184.16121171,
+        "volume_24h_share_pct": 34.1347973967485,
+        "liquidity_usd": 65225466.884405,
+        "status": "available"
+      },
+      {
+        "asset": "BCH.BCH",
+        "chain": "BCH",
+        "volume_24h_usd": 4521891.02923911,
+        "volume_24h_share_pct": 6.7488343867663545,
+        "liquidity_usd": 6938146.1100562,
+        "status": "available"
+      },
+      {
+        "asset": "ETH.USDC-0XA0B86991C6218B36C1D19D4A2E9EB0CE3606EB48",
+        "chain": "ETH",
+        "volume_24h_usd": 3405923.75682948,
+        "volume_24h_share_pct": 5.083274944080874,
+        "liquidity_usd": 13291215.88692864,
+        "status": "available"
+      },
+      {
+        "asset": "BSC.BNB",
+        "chain": "BSC",
+        "volume_24h_usd": 2704881.1341436,
+        "volume_24h_share_pct": 4.0369824686588265,
+        "liquidity_usd": 5934619.409577,
+        "status": "available"
+      },
+      {
+        "asset": "ETH.USDT-0XDAC17F958D2EE523A2206206994597C13D831EC7",
+        "chain": "ETH",
+        "volume_24h_usd": 1784260.42051047,
+        "volume_24h_share_pct": 2.6629739644375037,
+        "liquidity_usd": 11118973.95226656,
+        "status": "available"
+      },
+      {
+        "asset": "XRP.XRP",
+        "chain": "XRP",
+        "volume_24h_usd": 1742221.37607141,
+        "volume_24h_share_pct": 2.6002315084909555,
+        "liquidity_usd": 2144626.4990551,
+        "status": "available"
+      },
+      {
+        "asset": "ETH.WBTC-0X2260FAC5E5542A773AA44FBCFEDF7C193BC2C599",
+        "chain": "ETH",
+        "volume_24h_usd": 1406697.79666701,
+        "volume_24h_share_pct": 2.099469093914067,
+        "liquidity_usd": 6576833.10230276,
+        "status": "available"
+      },
+      {
+        "asset": "TRON.USDT-TR7NHQJEKQXGTCI8Q8ZY4PL8OTSZGJLJ6T",
+        "chain": "TRON",
+        "volume_24h_usd": 1332176.30034465,
+        "volume_24h_share_pct": 1.9882472104848565,
+        "liquidity_usd": 431431.74778552,
+        "status": "available"
+      },
+      {
+        "asset": "ETH.DAI-0X6B175474E89094C44DA98B954EEDEAC495271D0F",
+        "chain": "ETH",
+        "volume_24h_usd": 583656.0557945,
+        "volume_24h_share_pct": 0.871095308117841,
+        "liquidity_usd": 625288.60841854,
+        "status": "available"
+      },
+      {
+        "asset": "GAIA.ATOM",
+        "chain": "GAIA",
+        "volume_24h_usd": 548310.62495496,
+        "volume_24h_share_pct": 0.8183429402428685,
+        "liquidity_usd": 667641.28828322,
+        "status": "available"
+      },
+      {
+        "asset": "DOGE.DOGE",
+        "chain": "DOGE",
+        "volume_24h_usd": 431168.77018017,
+        "volume_24h_share_pct": 0.6435110010117453,
+        "liquidity_usd": 4692413.60941938,
+        "status": "available"
+      },
+      {
+        "asset": "BSC.USDT-0X55D398326F99059FF775485246999027B3197955",
+        "chain": "BSC",
+        "volume_24h_usd": 424858.43136869,
+        "volume_24h_share_pct": 0.6340929431046247,
+        "liquidity_usd": 381388.20405158,
+        "status": "available"
+      },
+      {
+        "asset": "LTC.LTC",
+        "chain": "LTC",
+        "volume_24h_usd": 410411.24357596,
+        "volume_24h_share_pct": 0.6125307963971546,
+        "liquidity_usd": 3788614.74592256,
+        "status": "available"
+      },
+      {
+        "asset": "BSC.TWT-0X4B0F1812E5DF2A09796481FF14017E6005508003",
+        "chain": "BSC",
+        "volume_24h_usd": 245202.10308687,
+        "volume_24h_share_pct": 0.36595936839693183,
+        "liquidity_usd": 85580.4165334,
+        "status": "available"
+      },
+      {
+        "asset": "THOR.TCY",
+        "chain": "THOR",
+        "volume_24h_usd": 234575.44089834,
+        "volume_24h_share_pct": 0.3500992818245739,
+        "liquidity_usd": 1082392.15297868,
+        "status": "available"
+      },
+      {
+        "asset": "BSC.USDC-0X8AC76A51CC950D9822D68B83FE1AD97B32CD580D",
+        "chain": "BSC",
+        "volume_24h_usd": 153480.45632211,
+        "volume_24h_share_pct": 0.2290665950651053,
+        "liquidity_usd": 827704.9638084,
+        "status": "available"
+      },
+      {
+        "asset": "BASE.ETH",
+        "chain": "BASE",
+        "volume_24h_usd": 131789.07053259,
+        "volume_24h_share_pct": 0.1966926237848729,
+        "liquidity_usd": 299666.05426602,
+        "status": "available"
+      },
+      {
+        "asset": "AVAX.AVAX",
+        "chain": "AVAX",
+        "volume_24h_usd": 123527.93996106,
+        "volume_24h_share_pct": 0.18436304712895554,
+        "liquidity_usd": 3114021.6058157,
+        "status": "available"
+      },
+      {
+        "asset": "THOR.RUJI",
+        "chain": "THOR",
+        "volume_24h_usd": 119567.72935492,
+        "volume_24h_share_pct": 0.1784525098460499,
+        "liquidity_usd": 1519322.01680348,
+        "status": "available"
+      }
+    ],
+    "all": [
+      {
+        "asset": "ETH.ETH",
+        "chain": "ETH",
+        "volume_24h_usd": 23306396.74387943,
+        "volume_24h_share_pct": 34.78434370922467,
+        "liquidity_usd": 25960490.12030892,
+        "status": "available"
+      },
+      {
+        "asset": "BTC.BTC",
+        "chain": "BTC",
+        "volume_24h_usd": 22871184.16121171,
+        "volume_24h_share_pct": 34.1347973967485,
+        "liquidity_usd": 65225466.884405,
+        "status": "available"
+      },
+      {
+        "asset": "BCH.BCH",
+        "chain": "BCH",
+        "volume_24h_usd": 4521891.02923911,
+        "volume_24h_share_pct": 6.7488343867663545,
+        "liquidity_usd": 6938146.1100562,
+        "status": "available"
+      },
+      {
+        "asset": "ETH.USDC-0XA0B86991C6218B36C1D19D4A2E9EB0CE3606EB48",
+        "chain": "ETH",
+        "volume_24h_usd": 3405923.75682948,
+        "volume_24h_share_pct": 5.083274944080874,
+        "liquidity_usd": 13291215.88692864,
+        "status": "available"
+      },
+      {
+        "asset": "BSC.BNB",
+        "chain": "BSC",
+        "volume_24h_usd": 2704881.1341436,
+        "volume_24h_share_pct": 4.0369824686588265,
+        "liquidity_usd": 5934619.409577,
+        "status": "available"
+      },
+      {
+        "asset": "ETH.USDT-0XDAC17F958D2EE523A2206206994597C13D831EC7",
+        "chain": "ETH",
+        "volume_24h_usd": 1784260.42051047,
+        "volume_24h_share_pct": 2.6629739644375037,
+        "liquidity_usd": 11118973.95226656,
+        "status": "available"
+      },
+      {
+        "asset": "XRP.XRP",
+        "chain": "XRP",
+        "volume_24h_usd": 1742221.37607141,
+        "volume_24h_share_pct": 2.6002315084909555,
+        "liquidity_usd": 2144626.4990551,
+        "status": "available"
+      },
+      {
+        "asset": "ETH.WBTC-0X2260FAC5E5542A773AA44FBCFEDF7C193BC2C599",
+        "chain": "ETH",
+        "volume_24h_usd": 1406697.79666701,
+        "volume_24h_share_pct": 2.099469093914067,
+        "liquidity_usd": 6576833.10230276,
+        "status": "available"
+      },
+      {
+        "asset": "TRON.USDT-TR7NHQJEKQXGTCI8Q8ZY4PL8OTSZGJLJ6T",
+        "chain": "TRON",
+        "volume_24h_usd": 1332176.30034465,
+        "volume_24h_share_pct": 1.9882472104848565,
+        "liquidity_usd": 431431.74778552,
+        "status": "available"
+      },
+      {
+        "asset": "ETH.DAI-0X6B175474E89094C44DA98B954EEDEAC495271D0F",
+        "chain": "ETH",
+        "volume_24h_usd": 583656.0557945,
+        "volume_24h_share_pct": 0.871095308117841,
+        "liquidity_usd": 625288.60841854,
+        "status": "available"
+      },
+      {
+        "asset": "GAIA.ATOM",
+        "chain": "GAIA",
+        "volume_24h_usd": 548310.62495496,
+        "volume_24h_share_pct": 0.8183429402428685,
+        "liquidity_usd": 667641.28828322,
+        "status": "available"
+      },
+      {
+        "asset": "DOGE.DOGE",
+        "chain": "DOGE",
+        "volume_24h_usd": 431168.77018017,
+        "volume_24h_share_pct": 0.6435110010117453,
+        "liquidity_usd": 4692413.60941938,
+        "status": "available"
+      },
+      {
+        "asset": "BSC.USDT-0X55D398326F99059FF775485246999027B3197955",
+        "chain": "BSC",
+        "volume_24h_usd": 424858.43136869,
+        "volume_24h_share_pct": 0.6340929431046247,
+        "liquidity_usd": 381388.20405158,
+        "status": "available"
+      },
+      {
+        "asset": "LTC.LTC",
+        "chain": "LTC",
+        "volume_24h_usd": 410411.24357596,
+        "volume_24h_share_pct": 0.6125307963971546,
+        "liquidity_usd": 3788614.74592256,
+        "status": "available"
+      },
+      {
+        "asset": "BSC.TWT-0X4B0F1812E5DF2A09796481FF14017E6005508003",
+        "chain": "BSC",
+        "volume_24h_usd": 245202.10308687,
+        "volume_24h_share_pct": 0.36595936839693183,
+        "liquidity_usd": 85580.4165334,
+        "status": "available"
+      },
+      {
+        "asset": "THOR.TCY",
+        "chain": "THOR",
+        "volume_24h_usd": 234575.44089834,
+        "volume_24h_share_pct": 0.3500992818245739,
+        "liquidity_usd": 1082392.15297868,
+        "status": "available"
+      },
+      {
+        "asset": "BSC.USDC-0X8AC76A51CC950D9822D68B83FE1AD97B32CD580D",
+        "chain": "BSC",
+        "volume_24h_usd": 153480.45632211,
+        "volume_24h_share_pct": 0.2290665950651053,
+        "liquidity_usd": 827704.9638084,
+        "status": "available"
+      },
+      {
+        "asset": "BASE.ETH",
+        "chain": "BASE",
+        "volume_24h_usd": 131789.07053259,
+        "volume_24h_share_pct": 0.1966926237848729,
+        "liquidity_usd": 299666.05426602,
+        "status": "available"
+      },
+      {
+        "asset": "AVAX.AVAX",
+        "chain": "AVAX",
+        "volume_24h_usd": 123527.93996106,
+        "volume_24h_share_pct": 0.18436304712895554,
+        "liquidity_usd": 3114021.6058157,
+        "status": "available"
+      },
+      {
+        "asset": "THOR.RUJI",
+        "chain": "THOR",
+        "volume_24h_usd": 119567.72935492,
+        "volume_24h_share_pct": 0.1784525098460499,
+        "liquidity_usd": 1519322.01680348,
+        "status": "available"
+      },
+      {
+        "asset": "AVAX.USDC-0XB97EF9EF8734C71904D8002F8B6BC66DD9C48A6E",
+        "chain": "AVAX",
+        "volume_24h_usd": 106522.01087784,
+        "volume_24h_share_pct": 0.15898202882629706,
+        "liquidity_usd": 1165162.80785766,
+        "status": "available"
+      },
+      {
+        "asset": "BSC.BUSD-0XE9E7CEA3DEDCA5984780BAFC599BD69ADD087D56",
+        "chain": "BSC",
+        "volume_24h_usd": 101407.32059703,
+        "volume_24h_share_pct": 0.1513484530895995,
+        "liquidity_usd": 343145.45446274,
+        "status": "available"
+      },
+      {
+        "asset": "BASE.USDC-0X833589FCD6EDB6E08F4C7C32D4F71B54BDA02913",
+        "chain": "BASE",
+        "volume_24h_usd": 54742.79063927,
+        "volume_24h_share_pct": 0.0817025499962177,
+        "liquidity_usd": 359073.41935444,
+        "status": "available"
+      },
+      {
+        "asset": "TRON.TRX",
+        "chain": "TRON",
+        "volume_24h_usd": 50052.09763671,
+        "volume_24h_share_pct": 0.074701781948349,
+        "liquidity_usd": 418022.12626192,
+        "status": "available"
+      },
+      {
+        "asset": "AVAX.USDT-0X9702230A8EA53601F5CD2DC00FDBC13D4DF4A8C7",
+        "chain": "AVAX",
+        "volume_24h_usd": 42626.93003374,
+        "volume_24h_share_pct": 0.0636198637591662,
+        "liquidity_usd": 416825.9807466,
+        "status": "available"
+      },
+      {
+        "asset": "ETH.THOR-0XA5F2211B9B8170F694421F2046281775E8468044",
+        "chain": "ETH",
+        "volume_24h_usd": 28002.14159917,
+        "volume_24h_share_pct": 0.04179265154900885,
+        "liquidity_usd": 1480642.35564214,
+        "status": "available"
+      },
+      {
+        "asset": "AVAX.SOL-0XFE6B19286885A4F7F55ADAD09C3CD1F906D2478F",
+        "chain": "AVAX",
+        "volume_24h_usd": 27214.53835868,
+        "volume_24h_share_pct": 0.04061716903556979,
+        "liquidity_usd": 164154.79362798,
+        "status": "available"
+      },
+      {
+        "asset": "BSC.ETH-0X2170ED0880AC9A755FD29B2688956BD959F933F8",
+        "chain": "BSC",
+        "volume_24h_usd": 23957.37775196,
+        "volume_24h_share_pct": 0.03575592019880788,
+        "liquidity_usd": 322367.52628174,
+        "status": "available"
+      },
+      {
+        "asset": "SOL.SOL",
+        "chain": "SOL",
+        "volume_24h_usd": 17036.17607424,
+        "volume_24h_share_pct": 0.02542616134829407,
+        "liquidity_usd": 5920.51528,
+        "status": "available"
+      },
+      {
+        "asset": "ETH.LUSD-0X5F98805A4E8BE255A32880FDEC7F6728C6568BA0",
+        "chain": "ETH",
+        "volume_24h_usd": 15520.29503252,
+        "volume_24h_share_pct": 0.023163738385322184,
+        "liquidity_usd": 428425.51368896,
+        "status": "available"
+      },
+      {
+        "asset": "ETH.LINK-0X514910771AF9CA656AF840DFF83E8264ECF986CA",
+        "chain": "ETH",
+        "volume_24h_usd": 13038.05363523,
+        "volume_24h_share_pct": 0.019459041392412873,
+        "liquidity_usd": 69704.54948302,
+        "status": "available"
+      },
+      {
+        "asset": "BASE.VVV-0XACFE6019ED1A7DC6F7B508C02D1B04EC88CC21BF",
+        "chain": "BASE",
+        "volume_24h_usd": 12502.81115934,
+        "volume_24h_share_pct": 0.01866020241040578,
+        "liquidity_usd": 25568.87108882,
+        "status": "available"
+      },
+      {
+        "asset": "ETH.GUSD-0X056FD409E1D7A124BD7017459DFEA2F387B6D5CD",
+        "chain": "ETH",
+        "volume_24h_usd": 10859.0179611,
+        "volume_24h_share_pct": 0.016206873042386605,
+        "liquidity_usd": 390286.23335126,
+        "status": "available"
+      },
+      {
+        "asset": "BSC.BTCB-0X7130D2A12B9BCBFAE4F2634D864A1EE1CE3EAD9C",
+        "chain": "BSC",
+        "volume_24h_usd": 7540.52921191,
+        "volume_24h_share_pct": 0.011254093146140573,
+        "liquidity_usd": 343480.84323792,
+        "status": "available"
+      },
+      {
+        "asset": "ETH.AAVE-0X7FC66500C84A76AD7E9C93437BFC5AC33E2DDAE9",
+        "chain": "ETH",
+        "volume_24h_usd": 5803.91622382,
+        "volume_24h_share_pct": 0.008662232047599465,
+        "liquidity_usd": 60092.95356868,
+        "status": "available"
+      },
+      {
+        "asset": "ETH.FOX-0XC770EEFAD204B5180DF6A14EE197D99D808EE52D",
+        "chain": "ETH",
+        "volume_24h_usd": 1821.74546933,
+        "volume_24h_share_pct": 0.002718919670520878,
+        "liquidity_usd": 34954.46493738,
+        "status": "available"
+      },
+      {
+        "asset": "ETH.USDP-0X8E870D67F660D95D5BE530380D0EC0BD388289E1",
+        "chain": "ETH",
+        "volume_24h_usd": 1441.55751047,
+        "volume_24h_share_pct": 0.0021514965385617192,
+        "liquidity_usd": 391593.14270192,
+        "status": "available"
+      },
+      {
+        "asset": "ETH.VTHOR-0X815C23ECA83261B6EC689B60CC4A58B54BC24D8D",
+        "chain": "ETH",
+        "volume_24h_usd": 278.54693949,
+        "volume_24h_share_pct": 0.0004157258879975621,
+        "liquidity_usd": 45065.9250404,
+        "status": "available"
+      },
+      {
+        "asset": "BASE.CBBTC-0XCBB7C0000AB88B473B1F5AFD9EF808440EED33BF",
+        "chain": "BASE",
+        "volume_24h_usd": 0,
+        "volume_24h_share_pct": 0,
+        "liquidity_usd": 248.86644708,
+        "status": "staged"
+      },
+      {
+        "asset": "ETH.DPI-0X1494CA1F11D487C2BBE4543E90080AEBA4BA3C2B",
+        "chain": "ETH",
+        "volume_24h_usd": 0,
+        "volume_24h_share_pct": 0,
+        "liquidity_usd": 5373.90233132,
+        "status": "staged"
+      },
+      {
+        "asset": "ETH.SNX-0XC011A73EE8576FB46F5E1C5751CA3B9FE0AF2A6F",
+        "chain": "ETH",
+        "volume_24h_usd": 0,
+        "volume_24h_share_pct": 0,
+        "liquidity_usd": 10432.69022388,
+        "status": "staged"
+      },
+      {
+        "asset": "ETH.TGT-0X108A850856DB3F85D0269A2693D896B394C80325",
+        "chain": "ETH",
+        "volume_24h_usd": 0,
+        "volume_24h_share_pct": 0,
+        "liquidity_usd": 73201.03566046,
+        "status": "available"
+      },
+      {
+        "asset": "ETH.XRUNE-0X69FA0FEE221AD11012BAB0FDB45D444D3D2CE71C",
+        "chain": "ETH",
+        "volume_24h_usd": 0,
+        "volume_24h_share_pct": 0,
+        "liquidity_usd": 361414.43772718,
+        "status": "available"
+      },
+      {
+        "asset": "ETH.YFI-0X0BC529C00C6401AEF6D220BE8C6EA1667F6AD93E",
+        "chain": "ETH",
+        "volume_24h_usd": 0,
+        "volume_24h_share_pct": 0,
+        "liquidity_usd": 25605.96586888,
+        "status": "available"
+      }
+    ]
+  },
+  "historical": {
+    "daily": [
+      {
+        "date": "2025-12-18",
+        "volume_usd": 23864552.789438665,
+        "volume_rune": 53118629.17023222,
+        "swap_count": 0,
+        "fees_usd": 28121.960419131112,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2025-12-19",
+        "volume_usd": 14724604.021355893,
+        "volume_rune": 32774583.6090026,
+        "swap_count": 0,
+        "fees_usd": 16605.13642818421,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2025-12-20",
+        "volume_usd": 19273980.085135993,
+        "volume_rune": 42900757.86502351,
+        "swap_count": 0,
+        "fees_usd": 20614.443576422847,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2025-12-21",
+        "volume_usd": 6814057.099135984,
+        "volume_rune": 15166987.43057847,
+        "swap_count": 0,
+        "fees_usd": 7236.530297213322,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2025-12-22",
+        "volume_usd": 17359271.453863513,
+        "volume_rune": 38638926.57696282,
+        "swap_count": 0,
+        "fees_usd": 17960.106192113897,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2025-12-23",
+        "volume_usd": 17331503.582268726,
+        "volume_rune": 38577119.79235201,
+        "swap_count": 0,
+        "fees_usd": 18169.521142193422,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2025-12-24",
+        "volume_usd": 19791244.974237878,
+        "volume_rune": 44052105.72682565,
+        "swap_count": 0,
+        "fees_usd": 22163.150722698923,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2025-12-25",
+        "volume_usd": 22621499.73119601,
+        "volume_rune": 50351794.39975472,
+        "swap_count": 0,
+        "fees_usd": 25727.74282603272,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2025-12-26",
+        "volume_usd": 19686498.26911114,
+        "volume_rune": 43818956.52702613,
+        "swap_count": 0,
+        "fees_usd": 24341.66838766872,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2025-12-27",
+        "volume_usd": 16849373.73299099,
+        "volume_rune": 37503976.8383798,
+        "swap_count": 0,
+        "fees_usd": 17843.7224853275,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2025-12-28",
+        "volume_usd": 15426276.927200137,
+        "volume_rune": 34336393.84752651,
+        "swap_count": 0,
+        "fees_usd": 19284.5039318174,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2025-12-29",
+        "volume_usd": 25959737.603975087,
+        "volume_rune": 57782171.21053038,
+        "swap_count": 0,
+        "fees_usd": 30067.463417317165,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2025-12-30",
+        "volume_usd": 24750816.440963402,
+        "volume_rune": 55091308.51049761,
+        "swap_count": 0,
+        "fees_usd": 30738.30600014792,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2025-12-31",
+        "volume_usd": 39702202.13510566,
+        "volume_rune": 88370671.39131942,
+        "swap_count": 0,
+        "fees_usd": 48393.779409220835,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-01",
+        "volume_usd": 9921279.160139522,
+        "volume_rune": 22083160.46194806,
+        "swap_count": 0,
+        "fees_usd": 12627.385760489047,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-02",
+        "volume_usd": 12294872.606196018,
+        "volume_rune": 27366395.02219369,
+        "swap_count": 0,
+        "fees_usd": 13040.583897482747,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-03",
+        "volume_usd": 8769013.322824461,
+        "volume_rune": 19518403.34045894,
+        "swap_count": 0,
+        "fees_usd": 9169.805984924908,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-04",
+        "volume_usd": 9618185.274106335,
+        "volume_rune": 21408522.56372243,
+        "swap_count": 0,
+        "fees_usd": 10239.08451035087,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-05",
+        "volume_usd": 11139615.202085277,
+        "volume_rune": 24794979.15756114,
+        "swap_count": 0,
+        "fees_usd": 12152.880084544084,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-06",
+        "volume_usd": 19298770.726353433,
+        "volume_rune": 42955937.81703603,
+        "swap_count": 0,
+        "fees_usd": 20045.6657865362,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-07",
+        "volume_usd": 7849518.752517326,
+        "volume_rune": 17471757.35739229,
+        "swap_count": 0,
+        "fees_usd": 8577.083254072613,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-08",
+        "volume_usd": 12400543.787037715,
+        "volume_rune": 27601601.95519747,
+        "swap_count": 0,
+        "fees_usd": 14314.856621623174,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-09",
+        "volume_usd": 10943251.445816372,
+        "volume_rune": 24357905.24112312,
+        "swap_count": 0,
+        "fees_usd": 11807.57107996076,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-10",
+        "volume_usd": 8648458.32757884,
+        "volume_rune": 19250067.44732185,
+        "swap_count": 0,
+        "fees_usd": 9594.403276455821,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-11",
+        "volume_usd": 11839646.446126787,
+        "volume_rune": 26353135.32281195,
+        "swap_count": 0,
+        "fees_usd": 13323.107142603923,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-12",
+        "volume_usd": 26229134.087640606,
+        "volume_rune": 58381804.14905023,
+        "swap_count": 0,
+        "fees_usd": 28078.34971950382,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-13",
+        "volume_usd": 113907490.84879938,
+        "volume_rune": 253539625.04533967,
+        "swap_count": 0,
+        "fees_usd": 128423.66622815299,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-14",
+        "volume_usd": 35041720.172973596,
+        "volume_rune": 77997193.40137748,
+        "swap_count": 0,
+        "fees_usd": 47986.00175859533,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-15",
+        "volume_usd": 74668825.7889879,
+        "volume_rune": 166200712.1045747,
+        "swap_count": 0,
+        "fees_usd": 78271.85686543566,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-16",
+        "volume_usd": 82879977.57113555,
+        "volume_rune": 184477406.01226103,
+        "swap_count": 0,
+        "fees_usd": 104344.84702524361,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-17",
+        "volume_usd": 9455162.96787238,
+        "volume_rune": 21045661.31475112,
+        "swap_count": 0,
+        "fees_usd": 9806.616980207331,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-18",
+        "volume_usd": 4648255.324744441,
+        "volume_rune": 10346263.47546423,
+        "swap_count": 0,
+        "fees_usd": 4997.1550387134685,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-19",
+        "volume_usd": 10863280.132706877,
+        "volume_rune": 24179902.0510864,
+        "swap_count": 0,
+        "fees_usd": 12492.881202569533,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-20",
+        "volume_usd": 8414995.2412221,
+        "volume_rune": 18730416.43108283,
+        "swap_count": 0,
+        "fees_usd": 8811.957297506418,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-21",
+        "volume_usd": 26059536.505531028,
+        "volume_rune": 58004307.40097652,
+        "swap_count": 0,
+        "fees_usd": 27609.272387174417,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-22",
+        "volume_usd": 42812864.622964844,
+        "volume_rune": 95294502.2556241,
+        "swap_count": 0,
+        "fees_usd": 46553.05297816836,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-23",
+        "volume_usd": 16198543.9001288,
+        "volume_rune": 36055335.04526686,
+        "swap_count": 0,
+        "fees_usd": 17655.31754371106,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-24",
+        "volume_usd": 9390125.218624162,
+        "volume_rune": 20900897.81908186,
+        "swap_count": 0,
+        "fees_usd": 10803.326365163433,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-25",
+        "volume_usd": 29874241.244185664,
+        "volume_rune": 66495222.28190395,
+        "swap_count": 0,
+        "fees_usd": 41651.55039143037,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-26",
+        "volume_usd": 26730378.221353937,
+        "volume_rune": 59497492.40423748,
+        "swap_count": 0,
+        "fees_usd": 28222.090515735345,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-27",
+        "volume_usd": 13122707.622029312,
+        "volume_rune": 29209021.68308979,
+        "swap_count": 0,
+        "fees_usd": 13762.111063290355,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-28",
+        "volume_usd": 18377047.87333889,
+        "volume_rune": 40904332.0375774,
+        "swap_count": 0,
+        "fees_usd": 18908.869644784503,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-29",
+        "volume_usd": 41184270.64457928,
+        "volume_rune": 91669515.84293,
+        "swap_count": 0,
+        "fees_usd": 42109.66780654655,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-30",
+        "volume_usd": 51722936.82843685,
+        "volume_rune": 115126879.82156438,
+        "swap_count": 0,
+        "fees_usd": 52930.501842058366,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-01-31",
+        "volume_usd": 57685589.178804904,
+        "volume_rune": 128398778.18332136,
+        "swap_count": 0,
+        "fees_usd": 63196.8415030938,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-01",
+        "volume_usd": 11933163.2636539,
+        "volume_rune": 26561288.61171839,
+        "swap_count": 0,
+        "fees_usd": 12710.822139375547,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-02",
+        "volume_usd": 18421277.19269361,
+        "volume_rune": 41002779.33864289,
+        "swap_count": 0,
+        "fees_usd": 20247.914394552987,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-03",
+        "volume_usd": 17225452.82390417,
+        "volume_rune": 38341067.98126248,
+        "swap_count": 0,
+        "fees_usd": 18525.03648666883,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-04",
+        "volume_usd": 13592978.36890576,
+        "volume_rune": 30255768.19593428,
+        "swap_count": 0,
+        "fees_usd": 15718.482552684118,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-05",
+        "volume_usd": 109158131.74560085,
+        "volume_rune": 242968320.9348048,
+        "swap_count": 0,
+        "fees_usd": 123695.7918433338,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-06",
+        "volume_usd": 73265393.27688144,
+        "volume_rune": 163076898.6464393,
+        "swap_count": 0,
+        "fees_usd": 79885.68428233762,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-07",
+        "volume_usd": 31387292.184063524,
+        "volume_rune": 69863028.60537346,
+        "swap_count": 0,
+        "fees_usd": 35226.91486226672,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-08",
+        "volume_usd": 30143491.74824831,
+        "volume_rune": 67094530.29347211,
+        "swap_count": 0,
+        "fees_usd": 32226.4984889745,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-09",
+        "volume_usd": 35240781.663216576,
+        "volume_rune": 78440272.03669012,
+        "swap_count": 0,
+        "fees_usd": 37024.76574002684,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-10",
+        "volume_usd": 21623564.95635393,
+        "volume_rune": 48130553.2263448,
+        "swap_count": 0,
+        "fees_usd": 22765.386657339444,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-11",
+        "volume_usd": 46020973.60814678,
+        "volume_rune": 102435233.2395705,
+        "swap_count": 0,
+        "fees_usd": 48105.82816109738,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-12",
+        "volume_usd": 22751192.532341734,
+        "volume_rune": 50640469.568776,
+        "swap_count": 0,
+        "fees_usd": 25362.42901846836,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-13",
+        "volume_usd": 46241828.92150465,
+        "volume_rune": 102926821.39519368,
+        "swap_count": 0,
+        "fees_usd": 61823.3979971066,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-14",
+        "volume_usd": 9630924.775750699,
+        "volume_rune": 21436878.63096707,
+        "swap_count": 0,
+        "fees_usd": 9980.22297428831,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-15",
+        "volume_usd": 11050913.044184797,
+        "volume_rune": 24597542.52115368,
+        "swap_count": 0,
+        "fees_usd": 11600.171164474648,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-16",
+        "volume_usd": 52661280.66720928,
+        "volume_rune": 117215481.22322078,
+        "swap_count": 0,
+        "fees_usd": 56825.19510218417,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-17",
+        "volume_usd": 36877587.861901574,
+        "volume_rune": 82083537.5216383,
+        "swap_count": 0,
+        "fees_usd": 38043.12955786532,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-18",
+        "volume_usd": 26684446.18105048,
+        "volume_rune": 59395255.12212963,
+        "swap_count": 0,
+        "fees_usd": 32147.671662746914,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-19",
+        "volume_usd": 16945507.65227116,
+        "volume_rune": 37717955.37189685,
+        "swap_count": 0,
+        "fees_usd": 17815.57383016368,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-20",
+        "volume_usd": 34933011.37913011,
+        "volume_rune": 77755225.23383357,
+        "swap_count": 0,
+        "fees_usd": 36265.53974834557,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-21",
+        "volume_usd": 35466941.82843821,
+        "volume_rune": 78943667.93333574,
+        "swap_count": 0,
+        "fees_usd": 36800.194840545926,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-22",
+        "volume_usd": 31675011.23049309,
+        "volume_rune": 70503444.60090256,
+        "swap_count": 0,
+        "fees_usd": 32878.636310040536,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-23",
+        "volume_usd": 47049334.62646523,
+        "volume_rune": 104724198.30282342,
+        "swap_count": 0,
+        "fees_usd": 53758.51896735265,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-24",
+        "volume_usd": 63492753.58451783,
+        "volume_rune": 141324585.56464177,
+        "swap_count": 0,
+        "fees_usd": 79061.25283011662,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-25",
+        "volume_usd": 118949163.84122357,
+        "volume_rune": 264761572.52724156,
+        "swap_count": 0,
+        "fees_usd": 149746.18674854565,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-26",
+        "volume_usd": 20571608.151203193,
+        "volume_rune": 45789067.76341028,
+        "swap_count": 0,
+        "fees_usd": 22156.31744713517,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-27",
+        "volume_usd": 16582488.703931708,
+        "volume_rune": 36909933.9910334,
+        "swap_count": 0,
+        "fees_usd": 17367.321986541454,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-02-28",
+        "volume_usd": 15274546.902504316,
+        "volume_rune": 33998667.38824946,
+        "swap_count": 0,
+        "fees_usd": 16127.405613319477,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-03-01",
+        "volume_usd": 21016202.99344819,
+        "volume_rune": 46778663.87126868,
+        "swap_count": 0,
+        "fees_usd": 22339.55861765303,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-03-02",
+        "volume_usd": 53065206.89059143,
+        "volume_rune": 118114555.57258232,
+        "swap_count": 0,
+        "fees_usd": 56493.99604856996,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-03-03",
+        "volume_usd": 40185936.01900672,
+        "volume_rune": 89447384.66655783,
+        "swap_count": 0,
+        "fees_usd": 41943.642421872806,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-03-04",
+        "volume_usd": 52879410.73258284,
+        "volume_rune": 117701003.418239,
+        "swap_count": 0,
+        "fees_usd": 55549.50838939882,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-03-05",
+        "volume_usd": 89721316.53405368,
+        "volume_rune": 199705118.452778,
+        "swap_count": 0,
+        "fees_usd": 94409.11649722519,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-03-06",
+        "volume_usd": 24760032.32088981,
+        "volume_rune": 55111821.5665187,
+        "swap_count": 0,
+        "fees_usd": 30556.63079439158,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-03-07",
+        "volume_usd": 26442756.30223631,
+        "volume_rune": 58857292.59837306,
+        "swap_count": 0,
+        "fees_usd": 28356.97480823058,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-03-08",
+        "volume_usd": 24635685.14547206,
+        "volume_rune": 54835044.89453748,
+        "swap_count": 0,
+        "fees_usd": 26137.790902768145,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-03-09",
+        "volume_usd": 31057691.49980468,
+        "volume_rune": 69129390.86760078,
+        "swap_count": 0,
+        "fees_usd": 33774.62918075899,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-03-10",
+        "volume_usd": 62033068.1608946,
+        "volume_rune": 138075562.23674813,
+        "swap_count": 0,
+        "fees_usd": 62799.978755377386,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-03-11",
+        "volume_usd": 35336324.22174981,
+        "volume_rune": 78652934.29696713,
+        "swap_count": 0,
+        "fees_usd": 36675.23232242119,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-03-12",
+        "volume_usd": 24327352.732782576,
+        "volume_rune": 54148746.88445853,
+        "swap_count": 0,
+        "fees_usd": 27595.355338606194,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-03-13",
+        "volume_usd": 16954846.329019755,
+        "volume_rune": 37738741.75375475,
+        "swap_count": 0,
+        "fees_usd": 17476.4754271529,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-03-14",
+        "volume_usd": 26003345.60580914,
+        "volume_rune": 57879235.5594296,
+        "swap_count": 0,
+        "fees_usd": 26332.74679389788,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-03-15",
+        "volume_usd": 15380719.847496068,
+        "volume_rune": 34234991.16698057,
+        "swap_count": 0,
+        "fees_usd": 15844.966839820881,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-03-16",
+        "volume_usd": 28665773.394856717,
+        "volume_rune": 63805368.58470579,
+        "swap_count": 0,
+        "fees_usd": 29210.101030967726,
+        "synth_volume_usd": 0
+      },
+      {
+        "date": "2026-03-17",
+        "volume_usd": 0,
+        "volume_rune": 0,
+        "swap_count": 0,
+        "fees_usd": 0,
+        "synth_volume_usd": 0
+      }
+    ]
+  }
+}

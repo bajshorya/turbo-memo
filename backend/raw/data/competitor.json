@@ -1,0 +1,691 @@
+[
+  {
+    "id": 1,
+    "category": "Scale Comparison",
+    "metric": "All-Time Volume: Garden vs THORChain",
+    "value": "$1.03B vs $22.27B — Garden is 2% of THORChain's scale",
+    "raw_value": 1032909569.96,
+    "insight": "Garden has processed $1.03B in all-time volume vs THORChain's $22.27B — Garden is currently at roughly 4.6% of THORChain's cumulative scale, but Garden is less than 12 months old while THORChain has been running since 2021.",
+    "suggested_tweet": "garden: $1.03b all-time.\nthorchain: $22.27b all-time.\n\nwe're 4 years younger.\n\nthe gap is closing."
+  },
+  {
+    "id": 2,
+    "category": "Order Size",
+    "metric": "Garden avg order 64x larger than THORChain",
+    "value": "$21,308 avg (Garden) vs $332 avg (THORChain)",
+    "raw_value": 21308,
+    "insight": "Garden's average swap is $21,308 vs THORChain's $332 per swap. Garden processes 64x larger orders on average — a signal that Garden attracts high-net-worth and institutional Bitcoin movers rather than retail frequency traders.",
+    "suggested_tweet": "average swap size:\n\nthorchain: $332\ngarden: $21,308\n\n64x larger per swap.\n\nwe move serious capital."
+  },
+  {
+    "id": 3,
+    "category": "Scale Comparison",
+    "metric": "THORChain's 30-Day Volume Exceeds Garden's Entire History",
+    "value": "THORChain 30d: $1.09B | Garden all-time: $1.03B",
+    "raw_value": 1089629351.34,
+    "insight": "THORChain processed $1.09B in a single 30-day window — more than Garden's entire cumulative volume across 374 days. That's the scale gap Garden is racing to close.",
+    "suggested_tweet": "thorchain does in 30 days what took garden 374 days.\n\n$1.09b vs $1.03b.\n\nwe know. we're coming."
+  },
+  {
+    "id": 4,
+    "category": "Growth Rate",
+    "metric": "Garden Growing 14x Faster Than THORChain",
+    "value": "Garden MoM growth 371% vs THORChain 30d growth 26%",
+    "raw_value": 371,
+    "insight": "Garden's January-to-February 2026 growth was 371% month-over-month. THORChain's last 30-day growth rate was 26%. Garden's growth velocity is 14x faster — compressing the scale gap at an accelerating rate.",
+    "suggested_tweet": "thorchain 30d growth: 26%.\ngarden jan → feb growth: 371%.\n\n14x faster growth velocity.\n\ncompounding is a drug."
+  },
+  {
+    "id": 5,
+    "category": "Daily Volume",
+    "metric": "THORChain 24h Volume vs Garden Q1 Daily Average",
+    "value": "THORChain: $65.4M/day | Garden Q1 avg: $1.27M/day",
+    "raw_value": 65430000,
+    "insight": "THORChain's single 24-hour volume ($65.4M) equals approximately 53 days of Garden's Q1 2026 daily average ($1.27M). This is the current scale gap — but Garden's daily rate is accelerating month over month.",
+    "suggested_tweet": "thorchain does in 24 hours what garden does in 53 days.\n\n$65.4m vs $1.27m daily.\n\nthat gap is the opportunity."
+  },
+  {
+    "id": 6,
+    "category": "Order Volume",
+    "metric": "THORChain Swap Count 1,384x Larger",
+    "value": "THORChain: 67.1M all-time swaps | Garden: 48,476",
+    "raw_value": 67100000,
+    "insight": "THORChain has processed 67.1 million all-time swaps vs Garden's 48,476. THORChain handles 1,384x more order count — but at $332 per swap vs Garden's $21,308, the per-trade quality difference is significant.",
+    "suggested_tweet": "thorchain: 67 million swaps.\ngarden: 48,476 swaps.\n\n1,384x more orders.\n\nbut garden moves 64x more capital per swap.\n\ndifferent game."
+  },
+  {
+    "id": 7,
+    "category": "Daily Swap Frequency",
+    "metric": "THORChain Processes 372x More Swaps Per Day",
+    "value": "THORChain: 84,571 swaps/day | Garden Q1 avg: 227/day",
+    "raw_value": 84571,
+    "insight": "THORChain processes 84,571 swaps per day vs Garden's Q1 2026 daily average of 227. The frequency gap is 372x — reflecting THORChain's AMM model optimized for high-volume retail DeFi vs Garden's atomic swap model optimized for high-value precise bridging.",
+    "suggested_tweet": "thorchain: 84,571 swaps today.\ngarden: 227 swaps today.\n\n372x difference in frequency.\n64x difference in order size — in garden's favor.\n\ndifferent protocols. different users."
+  },
+  {
+    "id": 8,
+    "category": "BTC Dominance",
+    "metric": "THORChain BTC Pool: 34% Share | Garden BTC: 24%",
+    "value": "THORChain BTC 24h: $22.87M | Garden BTC 3-day: $1.49M",
+    "raw_value": 22871184.16,
+    "insight": "THORChain's BTC pool alone processed $22.87M in 24 hours — vs Garden's ~$0.5M/day in BTC volume. Yet Bitcoin's share of total volume is actually higher on THORChain (34%) than Garden's recent 3-day sample (24%), suggesting Garden users are increasingly routing non-BTC assets through BTC bridge infrastructure.",
+    "suggested_tweet": "thorchain btc pool: $22.87m in 24 hours.\ngarden btc: ~$500k/day.\n\nbut garden's btc share has dropped to 24% as stablecoins and solana dominate.\n\nthe btc bridge is becoming a cross-chain router."
+  },
+  {
+    "id": 9,
+    "category": "Peak Day Comparison",
+    "metric": "THORChain Peak Day 22x Garden's Best Day",
+    "value": "THORChain peak (90d): $118.9M | Garden all-time best: $5.37M",
+    "raw_value": 118949163.84,
+    "insight": "THORChain's peak day in the last 90 days was $118.9M (Feb 25, 2026) — 22x larger than Garden's all-time best day of $5.37M (Feb 5, 2026). Both protocols hit their peaks in the same February 2026 window, confirming macro crypto market conditions drove both simultaneously.",
+    "suggested_tweet": "feb 2026 was huge for both.\n\nthorchain peak day: $118.9m.\ngarden peak day: $5.37m.\n\nsame macro. different scale.\n\ngarden's best day is still ahead."
+  },
+  {
+    "id": 10,
+    "category": "Protocol Architecture",
+    "metric": "41 Multi-Asset Pools vs 1 Bitcoin-Focused Protocol",
+    "value": "THORChain: 41 active pools across 12+ chains | Garden: BTC-native atomic swaps",
+    "raw_value": 41,
+    "insight": "THORChain supports 41 active liquidity pools across 12+ chains (ETH, BTC, BSC, AVAX, DOGE, XRP, etc.) via an AMM model. Garden is a Bitcoin-first atomic swap protocol expanding to multi-chain. Different architectural bets — both working.",
+    "suggested_tweet": "thorchain: 41 pools. 12 chains. amm model.\ngarden: 1 mission. bitcoin-native. atomic swaps.\n\ndifferent architectures.\n\nboth are making btc cross-chain a reality."
+  },
+  {
+    "id": 11,
+
+    "category": "Stablecoin Volume",
+    "metric": "THORChain Stablecoin 24h vs Garden Stablecoin 24h",
+    "value": "THORChain stables 24h: ~$7.3M | Garden stables 3-day: ~$2.4M",
+    "raw_value": 7300000,
+    "insight": "THORChain's Ethereum stablecoins alone (USDC + USDT) processed $7.3M in 24 hours. Garden processed ~$2.4M in stablecoins over 3 days (~$0.8M/day). Stablecoin bridging is THORChain's second-largest category and Garden's fastest-growing one.",
+    "suggested_tweet": "thorchain stablecoins 24h: $7.3m.\ngarden stablecoins daily: ~$800k.\n\nbut garden's stable volume was near zero 6 months ago.\n\nthe category is exploding."
+  },
+  {
+    "id": 12,
+
+    "category": "Protocol Security",
+    "metric": "101 Validator Nodes vs Atomic Swap Trustlessness",
+    "value": "THORChain: 101 active validator nodes | Garden: no validator set required",
+    "raw_value": 101,
+    "insight": "THORChain is secured by 101 active validator nodes bonding RUNE collateral. Garden uses atomic swaps — cryptographic primitives that require zero validators, zero multisig, and zero custodians. Different security models with different tradeoffs.",
+    "suggested_tweet": "thorchain security: 101 bonded validator nodes.\ngarden security: cryptographic atomic swaps.\n\nno validators needed.\n\nmath doesn't have downtime."
+  },
+  {
+    "id": 13,
+
+    "category": "Market Capture",
+    "metric": "Garden Captured 4.6% of THORChain's Lifetime Volume in 12 Months",
+    "value": "$1.03B / $22.27B = 4.6% parity in <12 months",
+    "raw_value": 4.64,
+    "insight": "Garden reached $1.03B in cumulative volume — 4.6% of THORChain's $22.27B total — in under 12 months of scaled operation, compared to THORChain's 4+ year history. The compression rate is accelerating.",
+    "suggested_tweet": "garden is 12 months old.\nthorchain is 4+ years old.\n\ngarden is already at 4.6% of thorchain's lifetime volume.\n\nand the growth rate is 14x faster."
+  },
+  {
+    "id": 14,
+
+    "category": "Growth Trajectory",
+    "metric": "At Current Rate, Garden Closes THORChain Gap by 2027",
+    "value": "Garden annualized run rate: $463M/year vs THORChain: ~$13B/year implied",
+    "raw_value": 463000000,
+    "insight": "Garden's Q1 2026 run rate annualizes to $463M/year. THORChain's 30-day rate implies ~$13B/year. The scale gap is still 28x — but Garden's growth trajectory (371% MoM vs THORChain's 26%) means the gap compresses dramatically as integrators scale.",
+    "suggested_tweet": "garden annualized run rate: $463m/year.\nthorchain implied annual: ~$13b.\n\n28x gap today.\n\nbut garden is growing 14x faster.\n\ndo the math."
+  },
+  {
+    "id": 15,
+    "category": "Order Quality",
+    "metric": "Garden Untracked API Orders Average $37,870 — 114x THORChain Average",
+    "value": "Garden untracked avg: $37,870 | THORChain avg: $332",
+    "raw_value": 37870,
+    "insight": "Garden's untracked API/institutional orders average $37,870 per swap — 114x larger than THORChain's average of $332. This reflects two completely different user segments: THORChain serves high-frequency DeFi retail; Garden serves high-value institutional Bitcoin movers.",
+    "suggested_tweet": "thorchain avg swap: $332.\ngarden institutional api avg swap: $37,870.\n\n114x larger.\n\nwhen institutions move bitcoin, they move it through garden."
+  },
+  {
+    "id": 16,
+
+    "category": "BCH Insight",
+    "metric": "THORChain BCH Larger Than Most Protocols' Total BTC Volume",
+    "value": "THORChain BCH 24h: $4.52M — 6.75% of total volume",
+    "raw_value": 4521891.03,
+    "insight": "THORChain's Bitcoin Cash pool alone processed $4.52M in 24 hours — 6.75% of its total daily volume. That single BCH pool moves more per day than Garden's entire protocol on most days. A reminder of THORChain's liquidity depth across the entire UTXO chain ecosystem.",
+    "suggested_tweet": "thorchain's bitcoin cash pool alone: $4.52m today.\n\na single alt-btc pool doing more daily volume than most bridge protocols combined.\n\nthat's liquidity depth."
+  },
+  {
+    "id": 17,
+
+    "category": "February 2026 Convergence",
+    "metric": "Both Protocols Hit All-Time or 90-Day Peaks in February 2026",
+    "value": "THORChain peak: $118.9M (Feb 25) | Garden peak: $5.37M (Feb 5)",
+    "raw_value": 118949163.84,
+    "insight": "Both Garden and THORChain hit their highest recent volume in February 2026 — with THORChain peaking on Feb 25 and Garden on Feb 5. The macro Bitcoin market is lifting all boats, but Garden's Feb peak also coincided with Phantom and LI.FI integrations hitting full stride.",
+    "suggested_tweet": "february 2026 was the biggest month for bitcoin bridging ever.\n\nthorchain: $118.9m peak day.\ngarden: $5.37m peak day. first $50m+ month.\n\nbullish for the whole space."
+  },
+  {
+    "id": 18,
+
+    "category": "Liquidity",
+    "metric": "THORChain BTC Pool Liquidity Alone Exceeds Garden's Monthly Volume",
+    "value": "THORChain BTC pool TVL: $65.2M | Garden Feb 2026 total: $55M",
+    "raw_value": 65225466.88,
+    "insight": "THORChain's Bitcoin pool holds $65.2M in liquidity — more than Garden processed in its best-ever calendar month (February 2026 at ~$55M). Deep liquidity enables deep volume; as Garden's TVL grows, its volume capacity will follow.",
+    "suggested_tweet": "thorchain btc pool tvl: $65.2m.\ngarden's best month ever: $55m.\n\nliquidity drives volume.\n\nbuilding the deepest native btc liquidity layer."
+  },
+  {
+    "id": 19,
+
+    "category": "Integrator Moat",
+    "metric": "Garden's Integrator Model Is Its Key Differentiation vs THORChain",
+    "value": "Garden: 85% orders from integrators in Q1 2026 | THORChain: AMM-based, no comparable SDK layer",
+    "raw_value": 85,
+    "insight": "In Q1 2026, 85% of Garden's orders came from integrators (Phantom, LI.FI, Rango, etc.) using its SDK/API. THORChain operates primarily as an AMM — accessible to aggregators but without a comparable native SDK distribution model. Garden's integrator flywheel is its structural moat.",
+    "suggested_tweet": "85% of garden's q1 orders came from integrators.\n\nthorchain is an amm. garden is infrastructure.\n\ndifferent distribution strategies.\n\nboth btc cross-chain. one has an sdk flywheel."
+  },
+  {
+    "id": 20,
+
+    "category": "XRP Insight",
+    "metric": "THORChain XRP Pool: $1.74M/day — A Category Garden Doesn't Touch",
+    "value": "THORChain XRP 24h: $1.74M (2.6% of volume)",
+    "raw_value": 1742221.38,
+    "insight": "THORChain's XRP pool alone processes $1.74M per day — more than Garden's total daily average for most of Q1 2026. THORChain supports XRP, DOGE, BCH, ATOM and other non-EVM chains natively. Garden currently focuses on BTC, EVM chains, and Solana — a deliberate scope difference.",
+    "suggested_tweet": "thorchain's xrp pool: $1.74m/day.\ndoge pool: $431k/day.\natom pool: $548k/day.\n\ngarden doesn't touch these. yet.\n\naddressable market is massive."
+  },
+  {
+    "id": 21,
+
+    "category": "Efficiency Narrative",
+    "metric": "Garden Moves More USD Per Swap Than Any Major Bridge Protocol",
+    "value": "Garden: $21,308/swap | THORChain: $332/swap | Industry DeFi avg: <$1,000",
+    "raw_value": 21308,
+    "insight": "Among major cross-chain protocols, Garden's average swap size of $21,308 is exceptional. THORChain averages $332. Standard DEX bridges average well under $1,000. Garden's atomic swap model naturally filters for high-conviction, high-value capital movement.",
+    "suggested_tweet": "average swap sizes across cross-chain protocols:\n\nthorchain: $332\nstandard defi bridges: <$1k\ngarden: $21,308\n\natomic swaps attract capital. not just transactions."
+  },
+  {
+    "id": 22,
+
+    "category": "Volume Per Pool",
+    "metric": "THORChain Generates $1.6M per Pool per Day | Garden ~$36K per Asset",
+    "value": "THORChain: $65.4M / 41 pools = $1.6M/pool/day | Garden: $1.27M / 35 assets = $36K/asset/day",
+    "raw_value": 1595122,
+    "insight": "THORChain averages $1.6M per pool per day across 41 pools. Garden averages $36K per asset per day across 35 assets. The per-asset productivity gap is 44x — reflecting THORChain's deep liquidity provisioning model vs Garden's early-stage distribution growth.",
+    "suggested_tweet": "thorchain: $1.6m per pool per day.\ngarden: $36k per asset per day.\n\n44x productivity gap.\n\nclosing it is the entire game plan."
+  },
+  {
+    "id": 23,
+
+    "category": "AI Discovery",
+    "metric": "Garden is Being Recommended by AI — THORChain Is Not in the Conversation",
+    "value": "Garden AI-driven volume: $641K from ChatGPT, Gemini, Bing AI, Claude in 76 days",
+    "raw_value": 641450.52,
+    "insight": "Garden recorded $641K in volume directly attributed to AI assistants (ChatGPT, Gemini, Bing AI, Perplexity, Claude) in just 76 days. A $106K single order came from a Bing AI referral. THORChain has no comparable AI-discovery data, suggesting Garden is winning the next-generation search distribution channel.",
+    "suggested_tweet": "ai chatbots are recommending garden for bitcoin bridging.\n\n$641k in volume from chatgpt, gemini, bing ai, and claude in 76 days.\n\nthochain isn't even in these conversations.\n\nposition yourself where discovery is going."
+  },
+  {
+    "id": 24,
+
+    "category": "Retail vs Institutional",
+    "metric": "THORChain = Retail Frequency | Garden = Institutional Size",
+    "value": "THORChain: 84,571 swaps/day at $332 each | Garden: 227 swaps/day at $21,308 each",
+    "raw_value": 332,
+    "insight": "The data tells a clear story: THORChain is the retail DeFi liquidity layer — high frequency, small size. Garden is the institutional Bitcoin bridge — low frequency, enormous size. Both are growing. They serve fundamentally different capital segments.",
+    "suggested_tweet": "two ways to do cross-chain btc:\n\nthorchain: 84k swaps/day. $332 each.\ngarden: 227 swaps/day. $21k each.\n\nretail frequency vs institutional size.\n\nboth valid. different users."
+  },
+  {
+    "id": 25,
+
+    "category": "30-Day Growth",
+    "metric": "THORChain Growing at 26% 30-Day Rate on a $1.09B/Month Base",
+    "value": "THORChain 30d growth: 26% on $1.09B = $283M absolute monthly increase",
+    "raw_value": 283303783,
+    "insight": "THORChain's 26% 30-day growth rate sounds modest — but on a $1.09B/month base, that's $283M in absolute new monthly volume being added. In absolute dollar terms, THORChain adds more monthly volume in its growth than Garden processes all-time. The scale makes even modest percentage growth massive.",
+    "suggested_tweet": "thorchain 30d growth: 26%.\n\nsounds modest. but 26% of $1.09b = $283m in new monthly volume.\n\nmore absolute growth per month than garden's entire lifetime.\n\nscale changes the math."
+  },
+  {
+    "id": 26,
+
+    "category": "BTC Bridge Focus",
+    "metric": "Garden Is the Purest Bitcoin Bridge | THORChain Is a Multi-Asset DEX",
+    "value": "Garden: 100% Bitcoin-native focus | THORChain: BTC is 34% of volume, ETH leads at 35%",
+    "raw_value": 34.13,
+    "insight": "On THORChain, ETH is actually the #1 volume asset at 35% — barely edging out BTC at 34%. THORChain is a general-purpose cross-chain DEX where Bitcoin happens to be a major asset. Garden's entire protocol exists specifically to enable trustless Bitcoin bridging. Two very different missions.",
+    "suggested_tweet": "thorchain's top volume asset: eth (35%).\nbtc is second at 34%.\n\nthorchain is a multi-asset dex.\ngarden is a bitcoin bridge.\n\ndifferent missions. garden's is clearer."
+  },
+  {
+    "id": 27,
+
+    "category": "Infrastructure Depth",
+    "metric": "THORChain Liquidity Pool Depth: $65M BTC, $26M ETH, $13M USDC",
+    "value": "THORChain top 3 pools by TVL: BTC $65.2M, ETH $26.0M, USDC $13.3M",
+    "raw_value": 65225466.88,
+    "insight": "THORChain's top 3 liquidity pools hold $104.5M combined. This deep liquidity is what enables $65M+ daily volume. Garden's path to THORChain-scale volume runs directly through building comparable or deeper on-chain liquidity for Bitcoin bridging.",
+    "suggested_tweet": "thorchain's btc pool alone: $65.2m TVL.\neth pool: $26m. usdc: $13.3m.\n\ntotal top-3: $104.5m in pooled liquidity.\n\ndeep liquidity = deep volume.\n\nbuilding towards this."
+  },
+  {
+    "id": 28,
+
+    "category": "Convergence Timeline",
+    "metric": "Garden Could Reach THORChain's Monthly Volume Run Rate by Late 2026",
+    "value": "Garden March pace: $52M+/month | THORChain 30d: $1.09B/month",
+    "raw_value": 52000000,
+    "insight": "At Garden's current March 2026 pace (~$52M/month) and its demonstrated growth trajectory (371% MoM peak), reaching $100M/month is realistic by mid-2026. THORChain's $1.09B/month scale is a longer-term target — but Garden in Q1 2025 was doing $3M/month. The compounding is real.",
+    "suggested_tweet": "garden monthly volume:\n\nq1 2025: $3m/month\njanuary 2026: $11.6m\nfebruary 2026: $55m\nmarch 2026 pace: $52m+\n\nthorchain runs at $1.09b/month.\n\nwe have a direction. and it's up."
+  },
+  {
+    "id": 29,
+
+    "category": "BCH Surprise",
+    "metric": "THORChain BCH Daily Volume Beats Garden's Best Week",
+    "value": "THORChain BCH 24h: $4.52M | Garden's best 7-day total: $7.4M",
+    "raw_value": 4521891.03,
+    "insight": "THORChain's Bitcoin Cash pool moved $4.52M in a single day — close to two-thirds of Garden's all-time best 7-day total ($7.4M in the week of Feb 4–10, 2026). A single THORChain alt-coin pool outpaces Garden's best weekly run.",
+    "suggested_tweet": "thorchain's bitcoin cash pool: $4.52m today.\ngarden's best week ever: $7.4m.\n\nthe scale of what we're building toward is real."
+  },
+  {
+    "id": 30,
+
+    "category": "Competitive Moat",
+    "metric": "Garden's Integrator Network Has No Direct THORChain Parallel",
+    "value": "Garden: 112 unique integrators, 14,735 integrator orders in 76 days | THORChain: AMM routing, no SDK layer",
+    "raw_value": 112,
+    "insight": "Garden has onboarded 112 unique integrators — wallets, aggregators, AI tools, fintech apps — into its SDK distribution network, driving 85% of Q1 2026 order flow. THORChain operates as an AMM accessed by aggregators passively. Garden's intentional SDK-first distribution strategy creates a compounding network effect THORChain isn't designed to replicate.",
+    "suggested_tweet": "garden: 112 unique integrators driving 85% of orders.\nthorchain: amm model. aggregators route in passively.\n\ngarden is building a distribution network.\nthorchain is building a liquidity network.\n\nboth matter. ours compounds differently."
+  },
+  {
+    "id": 31,
+
+    "category": "Historical Context",
+    "metric": "THORChain All-Time Swaps vs Garden's 2026 Daily Run Rate",
+    "value": "THORChain: 67.1M all-time swaps | Garden Q1 peak: 698 swaps/day",
+    "raw_value": 67100000,
+    "insight": "THORChain has processed 67.1 million all-time swaps. At Garden's February 2026 peak of 698 orders/day, it would take Garden 263 years to match that count. The order frequency model is fundamentally different — Garden optimizes for capital efficiency, not transaction count.",
+    "suggested_tweet": "thorchain: 67 million all-time swaps.\ngarden's best day: 698.\n\nat that pace it would take 263 years.\n\nbut we move 64x more capital per swap.\n\ngarden optimizes for capital, not count."
+  },
+  {
+    "id": 32,
+
+    "category": "ETH Dominance",
+    "metric": "THORChain ETH + ETH Tokens = 55% of Daily Volume",
+    "value": "ETH chain assets: $23.3M ETH + $3.4M USDC + $1.8M USDT + $1.4M WBTC + others ≈ $32M/day",
+    "raw_value": 32000000,
+    "insight": "When you combine all Ethereum-chain assets (ETH, USDC, USDT, WBTC, DAI, AAVE), THORChain's ETH ecosystem processes roughly $32M+ per day — nearly half its total. Garden's Ethereum chain assets are growing but still a fraction of this. ETH-BTC bridging is the most contested battleground.",
+    "suggested_tweet": "thorchain ethereum ecosystem: ~$32m+/day.\ngarden ethereum assets: growing fast.\n\neth-btc bridging is the biggest prize.\n\nwe're focused on it."
+  },
+  {
+    "id": 33,
+
+    "category": "Solana Opportunity",
+    "metric": "THORChain Has No Solana Pool | Garden's Solana Volume Is Exploding",
+    "value": "Garden USDC on Solana 3-day: $1.98M | THORChain SOL pool (AVAX.SOL): minimal",
+    "raw_value": 1981335,
+    "insight": "THORChain has no native Solana pool. Garden processed $1.98M in Solana USDC alone over 3 days in March 2026, plus 428 native SOL swaps. Garden has a significant first-mover advantage in Solana-to-Bitcoin bridging that THORChain cannot currently serve.",
+    "suggested_tweet": "thorchain has no native solana pool.\n\ngarden processed $1.98m in solana usdc in 3 days.\n\nsolana ↔ bitcoin is a market thorchain can't touch.\n\ngarden owns it."
+  },
+  {
+    "id": 34,
+
+    "category": "LTC Insight",
+    "metric": "THORChain LTC Pool 24h vs Garden's First LTC Swap",
+    "value": "THORChain LTC 24h: $410K | Garden LTC launch: $10,240 first swap",
+    "raw_value": 410411.24,
+    "insight": "THORChain's Litecoin pool processed $410K in 24 hours. Garden just launched Litecoin support with a single $10,240 inaugural swap. A reminder of where protocols start — and where they go. THORChain's LTC pool today is Garden's LTC opportunity tomorrow.",
+    "suggested_tweet": "thorchain ltc pool today: $410k/day.\ngarden ltc: first swap was $10,240.\n\neverything starts somewhere.\n\nltc is live."
+  },
+  {
+    "id": 35,
+
+    "category": "Capital Efficiency",
+    "metric": "Garden Generates More USD Per Swap With Less Infrastructure",
+    "value": "Garden: $21,308/swap with 0 validators | THORChain: $332/swap with 101 validators",
+    "raw_value": 21308,
+    "insight": "Garden delivers 64x more USD value per swap with zero validators required — just cryptographic atomic swaps. THORChain requires 101 bonded validator nodes to process at $332/swap. From a capital efficiency standpoint, Garden's architecture delivers more value per transaction with less operational overhead.",
+    "suggested_tweet": "thorchain: $332/swap. 101 validators bonding billions.\ngarden: $21,308/swap. zero validators. pure cryptography.\n\natomic swaps are the most capital-efficient model ever invented."
+  },
+  {
+    "id": 36,
+
+    "category": "Bridge Market Rank",
+    "metric": "Garden is #24 of 80 Bridges Globally on DeFiLlama",
+    "value": "#24 of 80 bridges — top 30% globally",
+    "raw_value": 24,
+    "insight": "Garden ranks #24 out of 80 tracked bridges on DeFiLlama by daily volume — placing it in the top 30% of all cross-chain bridge protocols globally. 56 bridges sit below Garden in daily volume. For a protocol under 12 months old, top-30% placement in a market with 80 competitors is a significant infrastructure milestone.",
+    "suggested_tweet": "garden is ranked #24 of 80 bridges globally.\n\ntop 30%.\n56 bridges below us.\n\n12 months old.\n\nthe climb is just starting."
+  },
+  {
+    "id": 37,
+
+    "category": "Bridge Market Share",
+    "metric": "Garden Holds 0.13% of the $1.28B/Day Bridge Market",
+    "value": "Garden: $1.63M/day | Total bridge market: $1.28B/day",
+    "raw_value": 0.127,
+    "insight": "The total cross-chain bridge market processes $1.28 billion per day across 80 protocols. Garden's $1.63M daily volume represents 0.13% of that market. Every 1% of market share captured equals $12.8M/day in additional volume — making Garden's TAM expansion story enormous.",
+    "suggested_tweet": "total bridge market: $1.28b/day.\n\ngarden's current share: 0.13%.\n\nevery 1% of this market = $12.8m/day.\n\nwe're at 0.13.\n\nwhere do you think we're going."
+  },
+  {
+    "id": 38,
+
+    "category": "Market Sentiment vs Volume",
+    "metric": "Garden Doing $1.6M/Day During 'Fear' Market (F&G: 28)",
+    "value": "Fear & Greed: 28 (Fear) | Garden daily: $1.63M",
+    "raw_value": 28,
+    "insight": "The market Fear & Greed index sits at 28 (Fear) — recovering from 15 (Extreme Fear) just one week ago. Despite the worst fear readings in months, Garden is processing $1.63M per day. Bitcoin bridges don't stop when sentiment tanks — they often accelerate as traders move capital to safety.",
+    "suggested_tweet": "fear & greed: 28.\nmarket in fear.\n\ngarden still doing $1.6m/day.\n\nbitcoin bridging doesn't stop when sentiment does.\n\ncounterparty-free infrastructure runs regardless."
+  },
+  {
+    "id": 39,
+
+    "category": "BTC Dominance Tailwind",
+    "metric": "BTC Dominance at 56.82% — Bitcoin Season Is Garden's Season",
+    "value": "BTC dominance: 56.82% | ETH dominance: 10.67%",
+    "raw_value": 56.82,
+    "insight": "Bitcoin dominance stands at 56.82% — the highest since the 2021 cycle — while ETH has fallen to 10.67% dominance. When BTC dominance rises, capital concentrates in Bitcoin. Garden, as the primary trustless Bitcoin bridge, sits at the exact intersection of where capital is moving.",
+    "suggested_tweet": "btc dominance: 56.82%.\neth dominance: 10.67%.\n\nbitcoin season is here.\n\nwhen capital flows to btc, it needs a way to move.\n\nthat's garden."
+  },
+  {
+    "id": 40,
+
+    "category": "BTC Price Context",
+    "metric": "BTC at $74,499 — 41% Below ATH With +6.4% Weekly Gain",
+    "value": "BTC: $74,499 | ATH: $126,080 | 7d: +6.4%",
+    "raw_value": 74499,
+    "insight": "Bitcoin is at $74,499 — 40.9% below its all-time high of $126,080 (Oct 2025) — yet gained +6.4% in the last 7 days despite the Fear environment. This price point is a prime accumulation zone. When BTC recovers toward ATH, cross-chain bridge volume historically surges with it. Garden is positioned for that inflection.",
+    "suggested_tweet": "btc: $74,499.\n41% below ath.\n+6.4% this week.\n\naccumulation season for bitcoin.\n\nwhen it runs back to $126k, bridge volume follows.\n\ngarden is the rail for that move."
+  },
+  {
+    "id": 41,
+
+    "category": "TAM Context",
+    "metric": "Bridge Market Is 11.2% of All DeFi Volume — A $1.28B/Day Sector",
+    "value": "Bridge market: $1.28B/day = 11.2% of all DeFi 24h volume",
+    "raw_value": 1284706448.98,
+    "insight": "The cross-chain bridge sector processes $1.28B per day — representing 11.2% of total DeFi's $11.5B daily volume. Cross-chain bridging is no longer a niche vertical; it's one of DeFi's core infrastructure layers. Garden is building in one of the highest-value sub-sectors of the entire crypto ecosystem.",
+    "suggested_tweet": "cross-chain bridges: $1.28b/day.\n11.2% of all defi volume.\n\nthis isn't a niche.\n\nit's infrastructure.\n\ngarden is in the right category at the right time."
+  },
+  {
+    "id": 42,
+
+    "category": "Competitive Landscape",
+    "metric": "Top 3 Bridges Control 66.5% of the Market — Long Tail Is Open",
+    "value": "LayerZero + CCTP + USDT0 = $854M/day (66.5%) | Rest of 77 bridges = $430M/day",
+    "raw_value": 66.5,
+    "insight": "LayerZero ($323M), Circle CCTP ($291M), and USDT0 ($241M) together control 66.5% of the entire bridge market. The remaining 77 bridges — including Garden — compete for $430M/day. The long tail of bridge volume is still enormous, and Garden's Bitcoin-specific niche within it has no direct competitor.",
+    "suggested_tweet": "top 3 bridges control 66% of the market.\n\nthat leaves $430m/day split among 77 protocols.\n\ngarden's slice: bitcoin-native bridging.\n\nno one else owns this niche the way we do."
+  },
+  {
+    "id": 43,
+
+    "category": "Path to Top 10",
+    "metric": "Garden Needs 27x Growth to Enter Top 10 Bridges",
+    "value": "Top-10 threshold: ~$44M/day | Garden: $1.63M/day | Gap: 27x",
+    "raw_value": 27,
+    "insight": "To crack the top 10 bridges globally, Garden needs approximately $44M/day — the daily volume of Relay (currently rank 7). That's 27x current daily volume. Garden's best single day was $5.37M — already 12% of the top-10 threshold. At February 2026's growth trajectory, the top 10 is a realistic 12–18 month target.",
+    "suggested_tweet": "top 10 bridge threshold: ~$44m/day.\ngarden today: $1.6m/day.\n\ngarden's best day ever: $5.4m — already 12% of the way there.\n\n27x to go.\n\nwe've done 157x integrator growth in 75 days.\n\nmath checks out."
+  },
+  {
+    "id": 44,
+
+    "category": "Hyperliquid Opportunity",
+    "metric": "Hyperliquid is #2 Trending Globally — Garden Supports HyperEVM",
+    "value": "Hyperliquid bridge: $80.8M/day | Garden supports Hyperliquid chain",
+    "raw_value": 80807051.4,
+    "insight": "Hyperliquid is the #2 trending coin on CoinGecko today. The Hyperliquid bridge processes $80.8M per day. Garden already supports HyperEVM as one of its 16 chains. As Hyperliquid's DeFi ecosystem grows, Garden is positioned as the trustless Bitcoin onramp into the fastest perp DEX on-chain.",
+    "suggested_tweet": "hyperliquid: #2 trending globally today.\nhyperliquid bridge doing $80.8m/day.\n\ngarden supports hyperevm.\n\nwhen traders want native btc on hyperliquid, garden is the route.\n\nalready live."
+  },
+  {
+    "id": 45,
+
+    "category": "Chains Coverage",
+    "metric": "Garden Supports 16 Chains — Matches Circle CCTP, the #2 Bridge",
+    "value": "Garden: 16 chains | Circle CCTP (rank #2): 16 chains | Wormhole (rank #6): 27 chains",
+    "raw_value": 16,
+    "insight": "Garden supports 16 chains — matching Circle CCTP (#2 globally) in chain count, despite being a fraction of its volume. Garden's 16 chains include Bitcoin, Ethereum, Arbitrum, Base, Solana, BSC, Tron, Hyperliquid, Berachain, StarkNet, Monad, Citrea, Botanix, Corn, Unichain, and MegaETH — the most aggressive multi-chain expansion of any Bitcoin bridge.",
+    "suggested_tweet": "garden supports 16 chains.\n\nso does circle cctp — the #2 bridge in the world.\n\nbut cctp doesn't support bitcoin.\n\ngarden does.\n\nethereum. solana. hyperliquid. monad. citrea. and 11 more."
+  },
+  {
+    "id": 46,
+
+    "category": "RUNE Comparison",
+    "metric": "Garden's All-Time Volume Is 6.6x RUNE's Entire Market Cap",
+    "value": "Garden all-time volume: $1.03B | RUNE market cap: $157M",
+    "raw_value": 6.57,
+    "insight": "RUNE (THORChain's token) has a market cap of $157M at rank #156. Garden has processed $1.03B in cumulative bridge volume — 6.6x larger than RUNE's entire market cap. A protocol whose throughput is 6.6x the market cap of a competing chain's token is either deeply undervalued or the market hasn't fully priced in its infrastructure role yet.",
+    "suggested_tweet": "rune market cap: $157m.\ngarden all-time volume: $1.03b.\n\nwe've moved 6.6x more capital than the entire market cap of our closest competitor's token.\n\nprice discovery hasn't caught up."
+  },
+  {
+    "id": 47,
+
+    "category": "RUNE Trading Activity",
+    "metric": "RUNE's 24h Volume/MCap Ratio Is 23% — Unusually High Speculation",
+    "value": "RUNE: $36.3M 24h volume on $157M mcap = 23.1% ratio",
+    "raw_value": 23.1,
+    "insight": "RUNE's 24-hour trading volume ($36.3M) is 23.1% of its market cap ($157M) — an extremely high turnover ratio suggesting speculative trading rather than fundamental utility. For context, Bitcoin's ratio is 3.5%. High volume-to-mcap ratios often indicate a token being actively traded rather than held as utility — a fragile foundation.",
+    "suggested_tweet": "rune's 24h volume is 23% of its market cap.\nbtc's ratio: 3.5%.\n\nhigh turnover = speculation, not utility.\n\nprotocols built on speculation are fragile.\n\nprotocols built on bridging real bitcoin aren't."
+  },
+  {
+    "id": 48,
+
+    "category": "Stargate Decline",
+    "metric": "Stargate TVL Down -9.3% in 30 Days While Garden Is Growing",
+    "value": "Stargate TVL: $123.3M (-9.3% 30d) | Garden volume: growing +371% MoM",
+    "raw_value": -9.25,
+    "insight": "Stargate Finance (rank #13 bridge) has seen its TVL fall -9.3% over the last 30 days, from $135.8M to $123.3M. Meanwhile, Garden grew +371% month-over-month in volume. The incumbent bridge protocols are losing ground as newer, more capital-efficient architectures gain traction.",
+    "suggested_tweet": "stargate tvl: down 9.3% in 30 days.\ngarden volume: up 371% in 30 days.\n\nincumbent bridges are bleeding.\n\nnative atomic swaps don't need tvl to scale.\n\nefficiency wins."
+  },
+  {
+    "id": 49,
+
+    "category": "Bridge Architecture",
+    "metric": "Garden Beats Stargate's Daily Volume Without Needing $123M in TVL",
+    "value": "Stargate daily: $14M on $123M TVL | Garden daily: $1.63M on ~$0 protocol TVL",
+    "raw_value": 0,
+    "insight": "Stargate Finance needs $123.3M locked in TVL to facilitate $14M/day in bridge volume — a capital efficiency ratio of ~11x. Garden processes $1.63M/day via atomic swaps with essentially zero protocol-locked TVL. Garden's architecture doesn't require capital to be locked — it's settled peer-to-peer. As volume scales, this TVL-free model becomes an enormous competitive advantage.",
+    "suggested_tweet": "stargate: $123m tvl to do $14m/day.\ngarden: near-zero tvl to do $1.6m/day.\n\natomic swaps don't need to lock capital.\n\nmore volume per dollar of liquidity committed.\n\nefficiency is the moat."
+  },
+  {
+    "id": 50,
+
+    "category": "Bitcoin Macro",
+    "metric": "95.25% of All Bitcoin Has Been Mined — Supply Scarcity Is Real",
+    "value": "Circulating supply: 20.0M BTC | Max supply: 21M BTC | 95.25% mined",
+    "raw_value": 95.25,
+    "insight": "95.25% of all Bitcoin that will ever exist has already been mined — 20.0M of 21M BTC. As the circulating supply approaches its hard cap, each BTC becomes more scarce. The infrastructure that moves this finite asset between chains without wrapping or custodying it — Garden — becomes increasingly critical as demand grows against a fixed supply.",
+    "suggested_tweet": "95.25% of all bitcoin has been mined.\n\n20 million of 21 million.\n\nnative btc is the scarcest asset ever created.\n\ngarden moves it trustlessly between chains.\n\ninfrastructure for finite money."
+  },
+  {
+    "id": 51,
+
+    "category": "Market Cap Context",
+    "metric": "Crypto Market at $2.62T — Bridge Market Captures Only 0.049% of That Daily",
+    "value": "Total crypto MCap: $2.62T | Bridge market daily: $1.28B = 0.049% daily turnover",
+    "raw_value": 2623951412335.77,
+    "insight": "The total crypto market cap is $2.62 trillion. The entire bridge market processes only $1.28B per day — 0.049% daily turnover of the total market cap. This is extremely low relative to traditional finance, suggesting bridges are still in early infrastructure stages. The bridge market has massive room to grow as cross-chain activity matures.",
+    "suggested_tweet": "total crypto market: $2.62 trillion.\ntotal bridge volume: $1.28b/day.\n\nbridges are moving 0.05% of the market cap daily.\n\nthat number will be 10x this within 5 years.\n\ngarden is early infrastructure for a much bigger market."
+  },
+  {
+    "id": 52,
+
+    "category": "Fear & Greed Recovery",
+    "metric": "Fear & Greed Doubled in 7 Days: 15 → 28",
+    "value": "F&G: 15 (Extreme Fear) 7 days ago → 28 (Fear) today | Trend: improving",
+    "raw_value": 28,
+    "insight": "The market Fear & Greed index improved from 15 (Extreme Fear) to 28 (Fear) in just 7 days — nearly doubling in sentiment score. Historically, moving from Extreme Fear toward Fear is the early stage of a recovery. Garden's volume tends to accelerate as market sentiment improves and traders begin moving capital cross-chain again.",
+    "suggested_tweet": "fear & greed 7 days ago: 15 (extreme fear).\nfear & greed today: 28 (fear).\n\nsentiment is recovering.\n\nvolume follows sentiment.\n\ngarden is already processing $1.6m/day in fear.\n\nimagine what greed looks like."
+  },
+  {
+    "id": 53,
+
+    "category": "BTC Volume Context",
+    "metric": "Garden Processes ~22 BTC Per Day — Even During Market Fear",
+    "value": "Garden daily volume: $1.63M ÷ $74,499 BTC = ~21.9 BTC/day equivalent",
+    "raw_value": 21.9,
+    "insight": "At $74,499/BTC, Garden's $1.63M daily volume represents approximately 21.9 BTC-equivalent moving cross-chain per day — even during a Fear market environment. This is real Bitcoin capital in motion, not paper trading. Each BTC routed is a trustless atomic swap with no custodian, no wrapped token, no intermediary.",
+    "suggested_tweet": "~22 bitcoin equivalent bridged through garden today.\n\ntrustless. atomic. no custodian.\n\nduring a fear market.\n\nwhat happens when greed returns?"
+  },
+  {
+    "id": 54,
+
+    "category": "Competitive Moat vs Top Bridges",
+    "metric": "Garden Is the Only Top-30 Bridge That Is Bitcoin-Native",
+    "value": "Top 30 bridges: 0 others are Bitcoin-native atomic swap protocols",
+    "raw_value": 24,
+    "insight": "Of the top 30 bridges by daily volume on DeFiLlama, none operate as Bitcoin-native atomic swap protocols. LayerZero, CCTP, Wormhole, Chainlink CCIP, Relay, Across, Stargate — all are EVM-to-EVM or stablecoin focused. Garden's rank #24 with a Bitcoin-native model is a category-defining position with zero direct competition in the top 30.",
+    "suggested_tweet": "top 30 bridges globally:\n\nnone are bitcoin-native atomic swap protocols.\n\nexcept garden.\n\n#24 in a category we own alone."
+  },
+  {
+    "id": 55,
+
+    "category": "Volume Per Chain",
+    "metric": "Garden Spans 16 Chains With $1.63M/Day — $102K Per Chain Per Day",
+    "value": "Garden: $1.63M / 16 chains = $102K avg per chain per day",
+    "raw_value": 101882,
+    "insight": "Garden's $1.63M daily volume spread across 16 chains averages $102K per chain per day. This is still early-stage but the chain diversification is exceptional — Bitcoin, Ethereum, Solana, Hyperliquid, Berachain, StarkNet, Monad, Citrea, Botanix, and more. As volume concentrates in top chains, individual chain productivity will increase dramatically.",
+    "suggested_tweet": "garden: 16 chains. $1.63m/day.\n\n$102k average volume per chain per day.\n\nbut volume concentrates. as top chains scale, the math changes fast.\n\n16 bets on the chains that matter."
+  },
+  {
+    "id": 56,
+
+    "category": "Solana Context",
+    "metric": "SOL +10% 7d — Solana Users Are Active and Garden Routes It",
+    "value": "SOL: $94.72 | 7d: +10.1% | Garden: top Solana bridge for BTC",
+    "raw_value": 94.71756359371531,
+    "insight": "Solana is up +10.1% in 7 days despite the broader fear environment — one of the stronger performers in the market. Garden is processing Solana USDC and native SOL swaps daily. As Solana recovers, cross-chain activity between Solana and Bitcoin historically spikes. Garden owns this routing exclusively among trustless bridges.",
+    "suggested_tweet": "solana: +10.1% this week.\nmarket in fear. sol outperforming.\n\nsolana users bridge btc through garden.\n\n$1.98m in solana usdc bridged in just 3 days last week.\n\nwhen sol runs, garden volume follows."
+  },
+  {
+    "id": 57,
+
+    "category": "ETH Recovery Tailwind",
+    "metric": "ETH Up +13.99% in 7 Days — EVM Activity Returning",
+    "value": "ETH: $2,321 | 7d: +13.99% | 30d: +19.87%",
+    "raw_value": 2321.7452731738713,
+    "insight": "Ethereum gained +13.99% in 7 days and +19.87% in 30 days — outperforming BTC on a percentage basis in the recent recovery. As ETH recovers, EVM-chain DeFi activity increases, driving more need for Bitcoin bridging into ETH-based protocols. Garden's ETH pool is its highest-volume asset pair.",
+    "suggested_tweet": "eth: +13.99% this week.\n+19.87% this month.\n\neth recovering = defi heating up.\n\nheated defi = more btc bridging demand.\n\ngarden's eth volume is its largest category.\n\ntiming is everything."
+  },
+  {
+    "id": 58,
+
+    "category": "Market Volume Context",
+    "metric": "Total Crypto 24h Volume $129B — Bridge Market Is 1% of That",
+    "value": "Total crypto 24h volume: $129.4B | Bridge market: $1.28B = 0.99%",
+    "raw_value": 129396624285.5,
+    "insight": "Total cryptocurrency 24-hour trading volume is $129.4 billion. The entire cross-chain bridge sector captures only $1.28B — less than 1% of total crypto volume. As crypto matures, cross-chain bridging should capture an increasing share of total volume. Moving from 1% to even 3% of total crypto volume would mean a $2.6B/day bridge market — more than doubling today's total.",
+    "suggested_tweet": "crypto trades $129b/day.\nbridges move $1.28b/day.\n\nthat's less than 1%.\n\nwhen bridges become as normal as exchanges, that number goes to 10%.\n\n$12.9b/day in bridge volume.\n\ngarden should be routing billions of that."
+  },
+  {
+    "id": 59,
+
+    "category": "Competitor Weakness",
+    "metric": "LayerZero Holds 25% of Bridge Market but Has Zero Bitcoin Support",
+    "value": "LayerZero: $323M/day (25.15% market share) | Bitcoin support: none",
+    "raw_value": 323135309.35,
+    "insight": "LayerZero is the #1 bridge globally at $323M/day and 25.15% market share — but it supports zero native Bitcoin functionality. Neither does CCTP (#2) or USDT0 (#3). The top 3 bridges collectively control 66% of bridge volume and none of them can touch native Bitcoin. Garden has no competition from the market leaders in its core use case.",
+    "suggested_tweet": "top 3 bridges control 66% of the market:\n\nlayerzero: $323m/day\ncctp: $291m/day\nusdt0: $241m/day\n\nnone of them support native bitcoin.\n\ngarden's entire market is uncontested by the leaders."
+  },
+  {
+    "id": 60,
+
+    "category": "RUNE Price vs Garden Volume",
+    "metric": "RUNE at $0.448 — Down 41% from Highs — While Garden Volume Grows",
+    "value": "RUNE: $0.448 | 24h: -1.48% | Garden volume growing 371% MoM",
+    "raw_value": 0.44774628966305663,
+    "insight": "RUNE is trading at $0.448 — rank #156 — and declined -1.48% in 24 hours while the broader market recovered. Meanwhile Garden grew its monthly volume 371% from January to February 2026. A competing Bitcoin bridge protocol's token is underperforming while Garden's fundamental metrics accelerate — a divergence worth noting.",
+    "suggested_tweet": "rune: -1.48% today. rank #156.\ngarden volume: +371% last month.\n\ntokens and volume can diverge.\n\nbut eventually, volume wins.\n\nwe're on the right side of this trade."
+  },
+  {
+    "id": 61,
+
+    "category": "New Chain Advantage",
+    "metric": "Garden Supports Monad, Citrea, Botanix, MegaETH — Chains Not Yet on Any Other Bridge",
+    "value": "Garden chains include: Monad, Citrea, Botanix, Corn, MegaETH — first-mover positions",
+    "raw_value": 5,
+    "insight": "Garden's 16-chain list includes several chains that no other top-30 bridge supports: Monad (high-performance L1), Citrea (Bitcoin ZK-rollup), Botanix (Bitcoin EVM), Corn (BTC yield chain), and MegaETH. These are the next generation of blockchains. Garden's day-zero presence on these chains means it owns the Bitcoin bridge route before volume even develops.",
+    "suggested_tweet": "garden is already live on:\nmonad. citrea. botanix. megaeth. corn.\n\nnone of these are on layerzero, wormhole, or across.\n\nday-zero bitcoin bridge on the chains of tomorrow.\n\nfirst mover is the only moat that compounds."
+  },
+  {
+    "id": 62,
+
+    "category": "DeFi Volume Context",
+    "metric": "DeFi 24h Volume $11.5B — Garden Moving 0.014% of All DeFi Daily",
+    "value": "DeFi 24h: $11.5B | Garden: $1.63M = 0.014% of DeFi volume",
+    "raw_value": 11520583740.36,
+    "insight": "Total DeFi volume is $11.5B per day. Garden's $1.63M represents 0.014% of all DeFi activity — micro-share today, but in a $11.5B addressable market. Moving from 0.014% to just 0.1% of DeFi volume would mean ~$11.5M/day for Garden — a 7x from current levels achievable without any change in total market size.",
+    "suggested_tweet": "total defi volume: $11.5b/day.\ngarden: $1.63m/day = 0.014%.\n\nreaching just 0.1% of defi volume = $11.5m/day.\n\nthat's a 7x from here.\n\nno market growth needed. just market share."
+  },
+  {
+    "id": 63,
+
+    "category": "Across Bridge Comparison",
+    "metric": "Garden Has Higher Avg Order Size Than Across Despite 12x Lower Daily Volume",
+    "value": "Across: $19.2M/day | Garden: $1.63M/day | Garden avg order: $21,308 vs Across <$5,000",
+    "raw_value": 19204723.16,
+    "insight": "Across Bridge (rank #8) processes $19.2M/day — 11.8x more than Garden. But Across primarily routes stablecoin micro-transactions for retail. Garden's average order size of $21,308 dwarfs typical Across transaction sizes. Garden moves larger capital per transaction despite lower total volume — reflecting a fundamentally different, higher-value user base.",
+    "suggested_tweet": "across bridge: $19.2m/day. rank #8.\ngarden: $1.63m/day. rank #24.\n\nbut garden's average swap is $21k.\nacross averages <$5k.\n\nwe're not the same type of bridge.\n\ngarden moves capital. others move transactions."
+  },
+  {
+    "id": 64,
+
+    "category": "Relay Comparison",
+    "metric": "Relay at $44M/Day on 44 Chains — Garden's Near-Term Target",
+    "value": "Relay: $44M/day, 44 chains (rank #7) | Garden: $1.63M/day, 16 chains",
+    "raw_value": 43983064.5,
+    "insight": "Relay Finance (rank #7) processes $44M/day across 44 chains. Garden processes $1.63M across 16 chains. Relay is an EVM-to-EVM intent-based bridge — no Bitcoin support. Reaching Relay's volume at half its chain count would put Garden comfortably in the global top 10 bridges. That's the near-term benchmark.",
+    "suggested_tweet": "relay: $44m/day. 44 chains. rank #7.\ngarden: $1.63m/day. 16 chains. rank #24.\n\nrelay doesn't touch native bitcoin.\n\ngarden does.\n\n$44m/day is our near-term target.\n\n27x from here."
+  },
+  {
+    "id": 65,
+
+    "category": "Market Recovery Timing",
+    "metric": "Garden Is Building Infrastructure During the Bear — Ready for the Bull",
+    "value": "BTC at -40.9% from ATH | Garden rank #24 growing | F&G recovering from Extreme Fear",
+    "raw_value": -40.91,
+    "insight": "Bitcoin is 40.9% below its all-time high of $126,080. Fear & Greed is at 28, recovering from 15. Garden is ranked #24 globally and growing — in a fear market. The protocols that become infrastructure during downturns become the rails of the next cycle. Garden is building its bridge network now, while capital is cautious.",
+    "suggested_tweet": "btc is 41% below ath.\nfear & greed: 28.\nmarket is scared.\n\ngarden is ranked #24 globally and growing.\n\ninfrastructure built in fear is used in greed.\n\nbullish."
+  },
+  {
+    "id": 66,
+
+    "category": "Chain Count vs Volume Leaders",
+    "metric": "Chainlink CCIP: 75 Chains, $78M/day | Garden: 16 Chains, Still Top 30%",
+    "value": "Garden: 16 chains, #24 | CCIP: 75 chains, #5 | Wormhole: 27 chains, #6",
+    "raw_value": 16,
+    "insight": "Chainlink CCIP (rank #5) operates across 75 chains. Wormhole (#6) spans 27 chains. Garden is at rank #24 with only 16 chains — demonstrating that focused execution on the right chains outperforms broad chain coverage in the early stages. Garden's 16-chain strategy prioritizes quality and Bitcoin-native routing over raw chain count.",
+    "suggested_tweet": "chainlink ccip: 75 chains. rank #5.\nwormhole: 27 chains. rank #6.\ngarden: 16 chains. rank #24.\n\nchain count isn't the moat.\n\nbitcoin-native routing is."
+  },
+  {
+    "id": 67,
+
+    "category": "ETH Volume to MCap",
+    "metric": "ETH's Volume/MCap Ratio 10.7% — High Activity Means More Bridge Demand",
+    "value": "ETH 24h volume: $30.1B on $280B mcap = 10.7% ratio",
+    "raw_value": 10.741002121684796,
+    "insight": "Ethereum's 24-hour trading volume ($30.1B) is 10.7% of its market cap — a high-activity ratio indicating significant capital movement. High ETH on-chain activity historically correlates with increased cross-chain bridging demand as users move between Ethereum and other ecosystems. Garden's ETH pool is its largest volume driver.",
+    "suggested_tweet": "ethereum moved $30.1b in 24 hours.\nthat's 10.7% of its entire market cap.\n\nhigh eth activity = high bridge demand.\n\ngarden's eth pool is our largest.\n\nwhen eth is active, garden runs."
+  },
+  {
+    "id": 68,
+
+    "category": "Zcash Trending Signal",
+    "metric": "Zcash Is Trending on CoinGecko — Privacy Coins = BTC Bridge Demand",
+    "value": "ZEC trending #8 globally | BTC trending #6 | SOL trending #7",
+    "raw_value": 8,
+    "insight": "Zcash (ZEC) is trending #8 on CoinGecko today alongside Bitcoin (#6) and Solana (#7). Privacy coin interest trending alongside Bitcoin signals a cohort of users focused on sovereign, private Bitcoin usage — exactly the user base most likely to want trustless, non-custodial Bitcoin bridging. Garden's atomic swap model is the most private bridging architecture available.",
+    "suggested_tweet": "trending today: bitcoin #6, zcash #8, solana #7.\n\nprivacy-conscious btc users are active.\n\natomic swaps are the most private cross-chain model.\n\nno custodian. no kyc. no wrapped tokens.\n\nthe overlap between zcash users and garden users is real."
+  },
+  {
+    "id": 69,
+
+    "category": "Total Active Cryptos",
+    "metric": "18,072 Active Cryptocurrencies — Garden Bridges the 16 That Matter",
+    "value": "18,072 active cryptos | Garden covers 16 key chains | Quality > Quantity",
+    "raw_value": 18072,
+    "insight": "There are 18,072 active cryptocurrencies tracked by CoinGecko. Garden operates across 16 chains — 0.09% of active assets — but those 16 chains (Bitcoin, Ethereum, Solana, Arbitrum, etc.) represent the overwhelming majority of crypto market cap and DeFi volume. Strategic chain selection beats trying to bridge everything.",
+    "suggested_tweet": "18,072 cryptocurrencies exist.\n\ngarden bridges 16 chains.\n\nbut those 16 chains are 85%+ of all crypto value and defi volume.\n\ncoverage isn't the strategy. relevance is."
+  },
+  {
+    "id": 70,
+
+    "category": "Infrastructure Timing",
+    "metric": "Garden Ranked #24 Globally During a Fear Market — Cycle Inflection Ahead",
+    "value": "Garden: #24 globally | F&G improving 15→28 | BTC +6.4% 7d",
+    "raw_value": 24,
+    "insight": "Every major Bitcoin bridge volume spike in Garden's history (January 2024, May 2025) was preceded by a period of market fear and accumulation. Today: Fear & Greed at 28, BTC recovering +6.4% weekly, sentiment improving. Garden is #24 globally and growing. The setup looks identical to the pre-spike periods that drove Garden's $5.37M peak days.",
+    "suggested_tweet": "jan 2024 volume spike: came after fear.\nmay 2025 volume spike: came after fear.\n\ncurrent f&g: 28. improving.\nbtc: +6.4% this week.\ngarden: ranked #24 globally.\n\nhistory doesn't repeat exactly.\n\nbut it rhymes."
+  }
+]

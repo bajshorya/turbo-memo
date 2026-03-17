@@ -25,6 +25,7 @@ interface DashboardState {
   categoryFeed: AgentFeedState;
   feesFeed: AgentFeedState;
   assetFeed: AgentFeedState;
+  competitorFeed: AgentFeedState;
   superAgentFeed: AgentFeedState;
 
   // Global loading state
@@ -38,6 +39,7 @@ interface DashboardState {
   fetchCategoryData: () => Promise<void>;
   fetchFeesData: () => Promise<void>;
   fetchAssetData: () => Promise<void>;
+  fetchCompetitorAnalysisData: () => Promise<void>;
   fetchSuperAgentData: () => Promise<void>;
   fetchAllFeeds: () => Promise<void>;
 
@@ -50,6 +52,8 @@ interface DashboardState {
   prevFees: () => void;
   nextAsset: () => void;
   prevAsset: () => void;
+  nextCompetitor: () => void;
+  prevCompetitor: () => void;
 
   // Check if all sub-agents are at max
   allSubAgentsAtMax: () => boolean;
@@ -75,10 +79,12 @@ const LOADING_DURATION_MAX = 15_000; // 15 seconds
 
 async function fetchFeed(endpoint: string): Promise<AgentDataItem[]> {
   // Add artificial delay for skeleton loading
-  const loadingTime = Math.random() * (LOADING_DURATION_MAX - LOADING_DURATION_MIN) + LOADING_DURATION_MIN;
-  
-  await new Promise(resolve => setTimeout(resolve, loadingTime));
-  
+  const loadingTime =
+    Math.random() * (LOADING_DURATION_MAX - LOADING_DURATION_MIN) +
+    LOADING_DURATION_MIN;
+
+  await new Promise((resolve) => setTimeout(resolve, loadingTime));
+
   const res = await fetch(`${BASE_URL}${endpoint}`);
   if (!res.ok) throw new Error(`Failed to fetch ${endpoint}`);
   const data: AgentDataItem[] = await res.json();
@@ -101,6 +107,7 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
   categoryFeed: { ...defaultFeed },
   feesFeed: { ...defaultFeed },
   assetFeed: { ...defaultFeed },
+  competitorFeed: { ...defaultFeed },
   superAgentFeed: { ...defaultFeed },
 
   // ── Fetch ──────────────────────────────────────────
@@ -108,7 +115,9 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
     set({ volumeFeed: { ...defaultFeed, loading: true } });
     try {
       const data = await fetchFeed("/agent/volume-analyzer");
-      set({ volumeFeed: { data, currentIndex: 0, loading: false, error: null } });
+      set({
+        volumeFeed: { data, currentIndex: 0, loading: false, error: null },
+      });
     } catch (e: any) {
       set({ volumeFeed: { ...defaultFeed, loading: false, error: e.message } });
     }
@@ -118,9 +127,13 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
     set({ categoryFeed: { ...defaultFeed, loading: true } });
     try {
       const data = await fetchFeed("/agent/category-volume-analyzer");
-      set({ categoryFeed: { data, currentIndex: 0, loading: false, error: null } });
+      set({
+        categoryFeed: { data, currentIndex: 0, loading: false, error: null },
+      });
     } catch (e: any) {
-      set({ categoryFeed: { ...defaultFeed, loading: false, error: e.message } });
+      set({
+        categoryFeed: { ...defaultFeed, loading: false, error: e.message },
+      });
     }
   },
 
@@ -138,9 +151,25 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
     set({ assetFeed: { ...defaultFeed, loading: true } });
     try {
       const data = await fetchFeed("/agent/asset-analyzer");
-      set({ assetFeed: { data, currentIndex: 0, loading: false, error: null } });
+      set({
+        assetFeed: { data, currentIndex: 0, loading: false, error: null },
+      });
     } catch (e: any) {
       set({ assetFeed: { ...defaultFeed, loading: false, error: e.message } });
+    }
+  },
+
+  fetchCompetitorAnalysisData: async () => {
+    set({ competitorFeed: { ...defaultFeed, loading: true } });
+    try {
+      const data = await fetchFeed("/agent/competitor_analysis");
+      set({
+        competitorFeed: { data, currentIndex: 0, loading: false, error: null },
+      });
+    } catch (e: any) {
+      set({
+        competitorFeed: { ...defaultFeed, loading: false, error: e.message },
+      });
     }
   },
 
@@ -148,9 +177,13 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
     set({ superAgentFeed: { ...defaultFeed, loading: true } });
     try {
       const data = await fetchFeed("/agent/super-agent");
-      set({ superAgentFeed: { data, currentIndex: 0, loading: false, error: null } });
+      set({
+        superAgentFeed: { data, currentIndex: 0, loading: false, error: null },
+      });
     } catch (e: any) {
-      set({ superAgentFeed: { ...defaultFeed, loading: false, error: e.message } });
+      set({
+        superAgentFeed: { ...defaultFeed, loading: false, error: e.message },
+      });
     }
   },
 
@@ -161,18 +194,25 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
     if (lastRefreshTime > 0 && now - lastRefreshTime < REFRESH_COOLDOWN) {
       return;
     }
-    
+
     set({ lastRefreshTime: now, isRefreshing: true });
-    
-    const { fetchVolumeData, fetchCategoryData, fetchFeesData, fetchAssetData } = get();
-    
+
+    const {
+      fetchVolumeData,
+      fetchCategoryData,
+      fetchFeesData,
+      fetchAssetData,
+      fetchCompetitorAnalysisData,
+    } = get();
+
     try {
       // Only fetch sub-agent data, not super agent
       await Promise.all([
-        fetchVolumeData(), 
-        fetchCategoryData(), 
-        fetchFeesData(), 
-        fetchAssetData()
+        fetchVolumeData(),
+        fetchCategoryData(),
+        fetchFeesData(),
+        fetchAssetData(),
+        fetchCompetitorAnalysisData(),
       ]);
     } finally {
       set({ isRefreshing: false });
@@ -186,10 +226,18 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
     if (!volumeFeed.data.length) return;
     const maxIndex = Math.min(volumeFeed.data.length - 1, MAX_CARDS - 1);
     if (volumeFeed.currentIndex < maxIndex) {
-      const updated = { ...volumeFeed, currentIndex: volumeFeed.currentIndex + 1 };
+      const updated = {
+        ...volumeFeed,
+        currentIndex: volumeFeed.currentIndex + 1,
+      };
       set({ volumeFeed: updated });
       // Check if all at max after update
-      if (isAtMax(updated) && isAtMax(state.categoryFeed) && isAtMax(state.feesFeed) && isAtMax(state.assetFeed)) {
+      if (
+        isAtMax(updated) &&
+        isAtMax(state.categoryFeed) &&
+        isAtMax(state.feesFeed) &&
+        isAtMax(state.assetFeed)
+      ) {
         get().fetchAllFeeds();
       }
     }
@@ -197,7 +245,12 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
   prevVolume: () => {
     const { volumeFeed } = get();
     if (volumeFeed.currentIndex > 0) {
-      set({ volumeFeed: { ...volumeFeed, currentIndex: volumeFeed.currentIndex - 1 } });
+      set({
+        volumeFeed: {
+          ...volumeFeed,
+          currentIndex: volumeFeed.currentIndex - 1,
+        },
+      });
     }
   },
 
@@ -207,9 +260,17 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
     if (!categoryFeed.data.length) return;
     const maxIndex = Math.min(categoryFeed.data.length - 1, MAX_CARDS - 1);
     if (categoryFeed.currentIndex < maxIndex) {
-      const updated = { ...categoryFeed, currentIndex: categoryFeed.currentIndex + 1 };
+      const updated = {
+        ...categoryFeed,
+        currentIndex: categoryFeed.currentIndex + 1,
+      };
       set({ categoryFeed: updated });
-      if (isAtMax(state.volumeFeed) && isAtMax(updated) && isAtMax(state.feesFeed) && isAtMax(state.assetFeed)) {
+      if (
+        isAtMax(state.volumeFeed) &&
+        isAtMax(updated) &&
+        isAtMax(state.feesFeed) &&
+        isAtMax(state.assetFeed)
+      ) {
         get().fetchAllFeeds();
       }
     }
@@ -217,7 +278,12 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
   prevCategory: () => {
     const { categoryFeed } = get();
     if (categoryFeed.currentIndex > 0) {
-      set({ categoryFeed: { ...categoryFeed, currentIndex: categoryFeed.currentIndex - 1 } });
+      set({
+        categoryFeed: {
+          ...categoryFeed,
+          currentIndex: categoryFeed.currentIndex - 1,
+        },
+      });
     }
   },
 
@@ -229,7 +295,12 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
     if (feesFeed.currentIndex < maxIndex) {
       const updated = { ...feesFeed, currentIndex: feesFeed.currentIndex + 1 };
       set({ feesFeed: updated });
-      if (isAtMax(state.volumeFeed) && isAtMax(state.categoryFeed) && isAtMax(updated) && isAtMax(state.assetFeed)) {
+      if (
+        isAtMax(state.volumeFeed) &&
+        isAtMax(state.categoryFeed) &&
+        isAtMax(updated) &&
+        isAtMax(state.assetFeed)
+      ) {
         get().fetchAllFeeds();
       }
     }
@@ -237,7 +308,9 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
   prevFees: () => {
     const { feesFeed } = get();
     if (feesFeed.currentIndex > 0) {
-      set({ feesFeed: { ...feesFeed, currentIndex: feesFeed.currentIndex - 1 } });
+      set({
+        feesFeed: { ...feesFeed, currentIndex: feesFeed.currentIndex - 1 },
+      });
     }
   },
 
@@ -247,9 +320,18 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
     if (!assetFeed.data.length) return;
     const maxIndex = Math.min(assetFeed.data.length - 1, MAX_CARDS - 1);
     if (assetFeed.currentIndex < maxIndex) {
-      const updated = { ...assetFeed, currentIndex: assetFeed.currentIndex + 1 };
+      const updated = {
+        ...assetFeed,
+        currentIndex: assetFeed.currentIndex + 1,
+      };
       set({ assetFeed: updated });
-      if (isAtMax(state.volumeFeed) && isAtMax(state.categoryFeed) && isAtMax(state.feesFeed) && isAtMax(updated)) {
+      if (
+        isAtMax(state.volumeFeed) &&
+        isAtMax(state.categoryFeed) &&
+        isAtMax(state.feesFeed) &&
+        isAtMax(updated) &&
+        isAtMax(state.competitorFeed)
+      ) {
         get().fetchAllFeeds();
       }
     }
@@ -257,13 +339,56 @@ export const useDashboardStore = create<DashboardState>((set, get) => ({
   prevAsset: () => {
     const { assetFeed } = get();
     if (assetFeed.currentIndex > 0) {
-      set({ assetFeed: { ...assetFeed, currentIndex: assetFeed.currentIndex - 1 } });
+      set({
+        assetFeed: { ...assetFeed, currentIndex: assetFeed.currentIndex - 1 },
+      });
+    }
+  },
+
+  nextCompetitor: () => {
+    const state = get();
+    const { competitorFeed } = state;
+    if (!competitorFeed.data.length) return;
+    const maxIndex = Math.min(competitorFeed.data.length - 1, MAX_CARDS - 1);
+    if (competitorFeed.currentIndex < maxIndex) {
+      const updated = {
+        ...competitorFeed,
+        currentIndex: competitorFeed.currentIndex + 1,
+      };
+      set({ competitorFeed: updated });
+      if (
+        isAtMax(state.volumeFeed) &&
+        isAtMax(state.categoryFeed) &&
+        isAtMax(state.feesFeed) &&
+        isAtMax(state.assetFeed) &&
+        isAtMax(updated)
+      ) {
+        get().fetchAllFeeds();
+      }
+    }
+  },
+  prevCompetitor: () => {
+    const { competitorFeed } = get();
+    if (competitorFeed.currentIndex > 0) {
+      set({
+        competitorFeed: {
+          ...competitorFeed,
+          currentIndex: competitorFeed.currentIndex - 1,
+        },
+      });
     }
   },
 
   allSubAgentsAtMax: () => {
-    const { volumeFeed, categoryFeed, feesFeed, assetFeed } = get();
-    return isAtMax(volumeFeed) && isAtMax(categoryFeed) && isAtMax(feesFeed) && isAtMax(assetFeed);
+    const { volumeFeed, categoryFeed, feesFeed, assetFeed, competitorFeed } =
+      get();
+    return (
+      isAtMax(volumeFeed) &&
+      isAtMax(categoryFeed) &&
+      isAtMax(feesFeed) &&
+      isAtMax(assetFeed) &&
+      isAtMax(competitorFeed)
+    );
   },
 
   // ── Filter ────────────────────────────────────────

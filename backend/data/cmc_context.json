@@ -1,0 +1,608 @@
+{
+  "metadata": {
+    "fetched_at": "2026-03-17T20:04:38.761Z",
+    "sources": [
+      "CoinMarketCap API",
+      "DeFiLlama Bridges",
+      "DeFiLlama Protocols",
+      "CoinGecko",
+      "Alternative.me"
+    ],
+    "garden_internal_data_as_of": "2026-03-17",
+    "note": "CMC data requires API key. DeFiLlama + CoinGecko are free. Garden internal metrics are from your existing dataset."
+  },
+  "market": {
+    "btc": {
+      "price_usd": 74499,
+      "market_cap_usd": 1490157681592,
+      "volume_24h_usd": 49538515890,
+      "pct_change_24h": 0.75,
+      "pct_change_7d": 6.4,
+      "pct_change_30d": 8.93,
+      "ath_usd": 126080,
+      "ath_date": "2025-10-06T18:57:42.558Z",
+      "ath_change_pct": -40.91,
+      "circulating_supply": 20003043,
+      "max_supply": 21000000,
+      "supply_pct_mined": 95.25
+    },
+    "global_coingecko": {
+      "total_market_cap_usd": 2623951412335.7686,
+      "total_volume_24h_usd": 129396624285.49928,
+      "btc_dominance_pct": 56.82,
+      "eth_dominance_pct": 10.67,
+      "defi_to_eth_ratio": 0,
+      "active_cryptocurrencies": 18072,
+      "market_cap_change_24h_pct": 0.38
+    },
+    "global_cmc": {
+      "total_market_cap_usd": 2541446144820.5776,
+      "total_volume_24h_usd": 123682916082.71,
+      "btc_dominance_pct": 58.63535276874,
+      "eth_dominance_pct": 11.027008538106,
+      "defi_volume_24h_usd": 11520583740.362392,
+      "defi_market_cap_usd": 63641058512.25783,
+      "active_cryptocurrencies": 8602,
+      "active_exchanges": 929,
+      "last_updated": "2026-03-17T20:01:59.999Z"
+    },
+    "fear_greed": {
+      "current_value": 28,
+      "current_label": "Fear",
+      "timestamp": "1773705600",
+      "week_ago_value": 15,
+      "week_ago_label": "Extreme Fear",
+      "trend": "improving",
+      "history_7d": [
+        {
+          "value": 28,
+          "label": "Fear",
+          "date": "2026-03-17"
+        },
+        {
+          "value": 23,
+          "label": "Extreme Fear",
+          "date": "2026-03-16"
+        },
+        {
+          "value": 15,
+          "label": "Extreme Fear",
+          "date": "2026-03-15"
+        },
+        {
+          "value": 16,
+          "label": "Extreme Fear",
+          "date": "2026-03-14"
+        },
+        {
+          "value": 15,
+          "label": "Extreme Fear",
+          "date": "2026-03-13"
+        },
+        {
+          "value": 18,
+          "label": "Extreme Fear",
+          "date": "2026-03-12"
+        },
+        {
+          "value": 15,
+          "label": "Extreme Fear",
+          "date": "2026-03-11"
+        }
+      ]
+    },
+    "trending_coingecko": {
+      "trending_coins": [
+        {
+          "name": "pippin",
+          "symbol": "PIPPIN",
+          "rank": 220,
+          "score": 0
+        },
+        {
+          "name": "Hyperliquid",
+          "symbol": "HYPE",
+          "rank": 14,
+          "score": 1
+        },
+        {
+          "name": "Bittensor",
+          "symbol": "TAO",
+          "rank": 38,
+          "score": 2
+        },
+        {
+          "name": "Aster",
+          "symbol": "ASTER",
+          "rank": 45,
+          "score": 3
+        },
+        {
+          "name": "Lighter",
+          "symbol": "LIT",
+          "rank": 133,
+          "score": 4
+        },
+        {
+          "name": "Bitcoin",
+          "symbol": "BTC",
+          "rank": 1,
+          "score": 5
+        },
+        {
+          "name": "Solana",
+          "symbol": "SOL",
+          "rank": 7,
+          "score": 6
+        },
+        {
+          "name": "Zcash",
+          "symbol": "ZEC",
+          "rank": 22,
+          "score": 7
+        },
+        {
+          "name": "Pudgy Penguins",
+          "symbol": "PENGU",
+          "rank": 101,
+          "score": 8
+        },
+        {
+          "name": "Aave",
+          "symbol": "AAVE",
+          "rank": 47,
+          "score": 9
+        }
+      ]
+    },
+    "trending_cmc": null
+  },
+  "tokens": {
+    "btc": {
+      "name": "Bitcoin",
+      "symbol": "BTC",
+      "rank": 1,
+      "price_usd": 74485.4911716573,
+      "market_cap_usd": 1489936482782.7812,
+      "volume_24h_usd": 52518024653.37768,
+      "pct_change_1h": -0.33,
+      "pct_change_24h": 0.75,
+      "pct_change_7d": 6.29,
+      "pct_change_30d": 9.32,
+      "circulating_supply": 20003043,
+      "fully_diluted_market_cap": 1564195314604.8,
+      "volume_to_mcap_ratio": 0.03524849902009837,
+      "last_updated": "2026-03-17T20:03:00.000Z"
+    },
+    "eth": {
+      "name": "Ethereum",
+      "symbol": "ETH",
+      "rank": 2,
+      "price_usd": 2321.7452731738713,
+      "market_cap_usd": 280215746701.31104,
+      "volume_24h_usd": 30097979298.48271,
+      "pct_change_1h": -0.52,
+      "pct_change_24h": -0.3,
+      "pct_change_7d": 13.99,
+      "pct_change_30d": 19.87,
+      "circulating_supply": 120691856.22514506,
+      "fully_diluted_market_cap": 280215746701.31,
+      "volume_to_mcap_ratio": 0.10741002121684796,
+      "last_updated": "2026-03-17T20:02:00.000Z"
+    },
+    "sol": {
+      "name": "Solana",
+      "symbol": "SOL",
+      "rank": 7,
+      "price_usd": 94.71756359371531,
+      "market_cap_usd": 54129653657.94607,
+      "volume_24h_usd": 4801658394.590861,
+      "pct_change_1h": -0.68,
+      "pct_change_24h": -0.51,
+      "pct_change_7d": 10.1,
+      "pct_change_30d": 11.15,
+      "circulating_supply": 571484860.9296119,
+      "fully_diluted_market_cap": 58964710068.79,
+      "volume_to_mcap_ratio": 0.08870661587700723,
+      "last_updated": "2026-03-17T20:02:00.000Z"
+    },
+    "bnb": {
+      "name": "BNB",
+      "symbol": "BNB",
+      "rank": 5,
+      "price_usd": 672.003276351853,
+      "market_cap_usd": 91632913287.45224,
+      "volume_24h_usd": 1992704908.4772224,
+      "pct_change_1h": -0.28,
+      "pct_change_24h": -0.98,
+      "pct_change_7d": 4.73,
+      "pct_change_30d": 9.93,
+      "circulating_supply": 136357837.1,
+      "fully_diluted_market_cap": 91632913287.45,
+      "volume_to_mcap_ratio": 0.021746606508363558,
+      "last_updated": "2026-03-17T20:02:00.000Z"
+    },
+    "rune": {
+      "name": "THORChain",
+      "symbol": "RUNE",
+      "rank": 156,
+      "price_usd": 0.44774628966305663,
+      "market_cap_usd": 157206359.9740916,
+      "volume_24h_usd": 36263822.37312917,
+      "pct_change_1h": -0.5,
+      "pct_change_24h": -1.48,
+      "pct_change_7d": 4.69,
+      "pct_change_30d": 11.56,
+      "circulating_supply": 351105891,
+      "fully_diluted_market_cap": 223873144.83,
+      "volume_to_mcap_ratio": 0.2306765602810575,
+      "last_updated": "2026-03-17T20:03:00.000Z"
+    },
+    "seed": {
+      "name": "Derp",
+      "symbol": "DERP",
+      "rank": null,
+      "price_usd": 0,
+      "market_cap_usd": 0,
+      "volume_24h_usd": 0,
+      "pct_change_1h": 0,
+      "pct_change_24h": 0,
+      "pct_change_7d": -18,
+      "pct_change_30d": 2.12,
+      "circulating_supply": 0,
+      "fully_diluted_market_cap": 53301.2,
+      "volume_to_mcap_ratio": 0,
+      "last_updated": "2025-09-02T15:38:00.000Z"
+    }
+  },
+  "bridge_market": {
+    "all_bridges_daily_volume_usd": 1284706448.97561,
+    "all_bridges_monthly_volume_usd": 0,
+    "bridge_count": 80,
+    "garden_rank_in_defillama": 24,
+    "garden_defillama_entry": {
+      "id": 49,
+      "name": "Garden",
+      "last_daily_volume_usd": 1634110.228389505,
+      "last_monthly_volume_usd": 0,
+      "chains": [
+        "Ethereum",
+        "Arbitrum",
+        "Base",
+        "Unichain",
+        "Berachain",
+        "Hyperliquid",
+        "Bitcoin",
+        "Corn",
+        "Solana",
+        "Monad",
+        "Citrea",
+        "Botanix",
+        "BSC",
+        "Tron",
+        "StarkNet",
+        "Megaeth"
+      ],
+      "chain_count": 16
+    },
+    "top_20_bridges": [
+      {
+        "rank": 1,
+        "name": "LayerZero",
+        "daily_volume_usd": 323135309.3479849,
+        "monthly_volume_usd": 0,
+        "daily_share_pct": 25.15,
+        "chain_count": 114
+      },
+      {
+        "rank": 2,
+        "name": "Circle CCTP",
+        "daily_volume_usd": 290798824.4719023,
+        "monthly_volume_usd": 0,
+        "daily_share_pct": 22.64,
+        "chain_count": 16
+      },
+      {
+        "rank": 3,
+        "name": "USDT0",
+        "daily_volume_usd": 240513139.0012726,
+        "monthly_volume_usd": 0,
+        "daily_share_pct": 18.72,
+        "chain_count": 20
+      },
+      {
+        "rank": 4,
+        "name": "Hyperliquid",
+        "daily_volume_usd": 80807051.39633688,
+        "monthly_volume_usd": 0,
+        "daily_share_pct": 6.29,
+        "chain_count": 2
+      },
+      {
+        "rank": 5,
+        "name": "Chainlink CCIP",
+        "daily_volume_usd": 78228255.69999997,
+        "monthly_volume_usd": 0,
+        "daily_share_pct": 6.09,
+        "chain_count": 75
+      },
+      {
+        "rank": 6,
+        "name": "Wormhole",
+        "daily_volume_usd": 52444257.973009616,
+        "monthly_volume_usd": 0,
+        "daily_share_pct": 4.08,
+        "chain_count": 27
+      },
+      {
+        "rank": 7,
+        "name": "Relay",
+        "daily_volume_usd": 43983064.5,
+        "monthly_volume_usd": 0,
+        "daily_share_pct": 3.42,
+        "chain_count": 44
+      },
+      {
+        "rank": 8,
+        "name": "Across",
+        "daily_volume_usd": 19204723.164142292,
+        "monthly_volume_usd": 0,
+        "daily_share_pct": 1.49,
+        "chain_count": 19
+      },
+      {
+        "rank": 9,
+        "name": "Interport Finance",
+        "daily_volume_usd": 17400505.75720275,
+        "monthly_volume_usd": 0,
+        "daily_share_pct": 1.35,
+        "chain_count": 82
+      },
+      {
+        "rank": 10,
+        "name": "Mayan",
+        "daily_volume_usd": 16457049.856227763,
+        "monthly_volume_usd": 0,
+        "daily_share_pct": 1.28,
+        "chain_count": 13
+      },
+      {
+        "rank": 11,
+        "name": "Arbitrum Bridge",
+        "daily_volume_usd": 16271868.198224137,
+        "monthly_volume_usd": 0,
+        "daily_share_pct": 1.27,
+        "chain_count": 2
+      },
+      {
+        "rank": 12,
+        "name": "Hyperlane",
+        "daily_volume_usd": 15956399.514700504,
+        "monthly_volume_usd": 0,
+        "daily_share_pct": 1.24,
+        "chain_count": 66
+      },
+      {
+        "rank": 13,
+        "name": "Stargate",
+        "daily_volume_usd": 13995167.612952854,
+        "monthly_volume_usd": 0,
+        "daily_share_pct": 1.09,
+        "chain_count": 48
+      },
+      {
+        "rank": 14,
+        "name": "Lighter",
+        "daily_volume_usd": 12614078.247379798,
+        "monthly_volume_usd": 0,
+        "daily_share_pct": 0.98,
+        "chain_count": 2
+      },
+      {
+        "rank": 15,
+        "name": "Polygon PoS Bridge",
+        "daily_volume_usd": 12099645.821997939,
+        "monthly_volume_usd": 0,
+        "daily_share_pct": 0.94,
+        "chain_count": 2
+      },
+      {
+        "rank": 16,
+        "name": "rhino.fi",
+        "daily_volume_usd": 7677620.345984096,
+        "monthly_volume_usd": 0,
+        "daily_share_pct": 0.6,
+        "chain_count": 29
+      },
+      {
+        "rank": 17,
+        "name": "deBridge",
+        "daily_volume_usd": 6918279.735666935,
+        "monthly_volume_usd": 0,
+        "daily_share_pct": 0.54,
+        "chain_count": 13
+      },
+      {
+        "rank": 18,
+        "name": "Sui Bridge",
+        "daily_volume_usd": 5043632.810791879,
+        "monthly_volume_usd": 0,
+        "daily_share_pct": 0.39,
+        "chain_count": 2
+      },
+      {
+        "rank": 19,
+        "name": "Butter Network",
+        "daily_volume_usd": 3826085.8495381875,
+        "monthly_volume_usd": 0,
+        "daily_share_pct": 0.3,
+        "chain_count": 15
+      },
+      {
+        "rank": 20,
+        "name": "Symbiosis",
+        "daily_volume_usd": 3780546.9813055247,
+        "monthly_volume_usd": 0,
+        "daily_share_pct": 0.29,
+        "chain_count": 51
+      }
+    ],
+    "garden_share_of_market": {
+      "daily_pct": 0.1,
+      "monthly_pct": 0
+    },
+    "volume_by_chain": null
+  },
+  "protocol_tvl": {
+    "thorchain": null,
+    "stargate": {
+      "name": "Stargate Finance",
+      "symbol": "STG",
+      "tvl_usd": 123267670,
+      "tvl_30d_ago_usd": 135837468,
+      "tvl_growth_30d_pct": -9.253557346931702,
+      "chains": [],
+      "tvl_history_30d": [
+        {
+          "date": "2026-02-17",
+          "tvl_usd": 135837468
+        },
+        {
+          "date": "2026-02-18",
+          "tvl_usd": 136292705
+        },
+        {
+          "date": "2026-02-19",
+          "tvl_usd": 135436941
+        },
+        {
+          "date": "2026-02-20",
+          "tvl_usd": 135621975
+        },
+        {
+          "date": "2026-02-21",
+          "tvl_usd": 136047694
+        },
+        {
+          "date": "2026-02-22",
+          "tvl_usd": 136039962
+        },
+        {
+          "date": "2026-02-23",
+          "tvl_usd": 135569423
+        },
+        {
+          "date": "2026-02-24",
+          "tvl_usd": 132789703
+        },
+        {
+          "date": "2026-02-25",
+          "tvl_usd": 132577855
+        },
+        {
+          "date": "2026-02-26",
+          "tvl_usd": 130321357
+        },
+        {
+          "date": "2026-02-27",
+          "tvl_usd": 126098904
+        },
+        {
+          "date": "2026-02-28",
+          "tvl_usd": 122669510
+        },
+        {
+          "date": "2026-03-01",
+          "tvl_usd": 123348448
+        },
+        {
+          "date": "2026-03-02",
+          "tvl_usd": 122460395
+        },
+        {
+          "date": "2026-03-03",
+          "tvl_usd": 123641461
+        },
+        {
+          "date": "2026-03-04",
+          "tvl_usd": 122174280
+        },
+        {
+          "date": "2026-03-05",
+          "tvl_usd": 123950379
+        },
+        {
+          "date": "2026-03-06",
+          "tvl_usd": 121535763
+        },
+        {
+          "date": "2026-03-07",
+          "tvl_usd": 121127935
+        },
+        {
+          "date": "2026-03-08",
+          "tvl_usd": 121284246
+        },
+        {
+          "date": "2026-03-09",
+          "tvl_usd": 118446641
+        },
+        {
+          "date": "2026-03-10",
+          "tvl_usd": 119373532
+        },
+        {
+          "date": "2026-03-11",
+          "tvl_usd": 120534851
+        },
+        {
+          "date": "2026-03-12",
+          "tvl_usd": 120177200
+        },
+        {
+          "date": "2026-03-13",
+          "tvl_usd": 118967135
+        },
+        {
+          "date": "2026-03-14",
+          "tvl_usd": 118003264
+        },
+        {
+          "date": "2026-03-15",
+          "tvl_usd": 117955164
+        },
+        {
+          "date": "2026-03-16",
+          "tvl_usd": 120687684
+        },
+        {
+          "date": "2026-03-17",
+          "tvl_usd": 123015857
+        },
+        {
+          "date": "2026-03-17",
+          "tvl_usd": 123267670
+        }
+      ]
+    }
+  },
+  "dex_market": {
+    "total_dex_volume_24h_usd": 0,
+    "top_dexs": []
+  },
+  "garden_market_position": {
+    "garden_alltime_volume_usd": 1032909569.96,
+    "garden_mar_daily_avg_usd": 1268429,
+    "garden_feb_2026_volume_usd": 55000000,
+    "total_bridge_market_daily_usd": 1284706448.97561,
+    "garden_daily_market_share_pct": 0.1,
+    "garden_monthly_market_share_pct": 0,
+    "btc_price_usd": 74499,
+    "btc_24h_change_pct": 0.75,
+    "btc_7d_change_pct": 6.4,
+    "btc_30d_change_pct": 8.93,
+    "market_sentiment": "Fear",
+    "fear_greed_value": 28,
+    "garden_daily_in_btc": 17.03
+  }
+}
