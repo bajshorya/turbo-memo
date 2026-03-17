@@ -31,18 +31,19 @@ app.get("/", (req, res) => {
     description: "API for Garden Bitcoin bridge volume data",
     version: "1.0.0",
     endpoints: {
-      "GET /api/data": "Get all volume data",
-      "GET /api/data/:id": "Get specific data by ID (e.g., /api/data/1)",
-      "GET /api/data/category/:category":
-        "Filter by category (e.g., /api/data/category/All-Time Milestone)",
-      "GET /api/metrics": "Get simplified metrics",
-      "GET /api/stats": "Get summary statistics",
+      "GET /agent/volume-analyzer": "Get all volume analyzer data",
+      "GET /agent/volume-analyzer/:id":
+        "Get specific data by ID (e.g., /agent/volume-analyzer/1)",
+      "GET /agent/volume-analyzer/category/:category":
+        "Filter by category (e.g., /agent/volume-analyzer/category/All-Time Milestone)",
+      "GET /agent/volume-analyzer/metrics": "Get simplified metrics",
+      "GET /agent/volume-analyzer/stats": "Get summary statistics",
       "GET /api/health": "Health check",
     },
   });
 });
 
-// Health check
+// Health check (keeping this as /api/health)
 app.get("/api/health", (req, res) => {
   res.json({
     status: "healthy",
@@ -51,13 +52,13 @@ app.get("/api/health", (req, res) => {
   });
 });
 
-// Get all data
-app.get("/api/data", (req, res) => {
+// Get all volume analyzer data
+app.get("/agent/volume-analyzer", (req, res) => {
   res.json(gardenData);
 });
 
-// Get data by ID
-app.get("/api/data/:id", (req, res) => {
+// Get volume analyzer data by ID
+app.get("/agent/volume-analyzer/:id", (req, res) => {
   const id = parseInt(req.params.id);
   const item = gardenData.find((item) => item.id === id);
 
@@ -71,8 +72,8 @@ app.get("/api/data/:id", (req, res) => {
   res.json(item);
 });
 
-// Get data by category
-app.get("/api/data/category/:category", (req, res) => {
+// Get volume analyzer data by category
+app.get("/agent/volume-analyzer/category/:category", (req, res) => {
   const category = req.params.category;
   const filtered = gardenData.filter(
     (item) => item.category.toLowerCase() === category.toLowerCase(),
@@ -94,8 +95,8 @@ app.get("/api/data/category/:category", (req, res) => {
   });
 });
 
-// Get metrics only
-app.get("/api/metrics", (req, res) => {
+// Get volume analyzer metrics only
+app.get("/agent/volume-analyzer/metrics", (req, res) => {
   const metrics = gardenData.map((item) => ({
     id: item.id,
     metric: item.metric,
@@ -107,8 +108,8 @@ app.get("/api/metrics", (req, res) => {
   res.json(metrics);
 });
 
-// Get statistics
-app.get("/api/stats", (req, res) => {
+// Get volume analyzer statistics
+app.get("/agent/volume-analyzer/stats", (req, res) => {
   const totalVolume = gardenData.find((item) => item.id === 1)?.raw_value || 0;
   const totalOrders = gardenData.find((item) => item.id === 2)?.raw_value || 0;
   const uniqueSources =
@@ -116,7 +117,6 @@ app.get("/api/stats", (req, res) => {
   const volumePerSecond =
     gardenData.find((item) => item.id === 99)?.raw_value || 0;
 
-  // Calculate additional stats
   const categories = [...new Set(gardenData.map((item) => item.category))];
   const totalRawValue = gardenData.reduce(
     (sum, item) => sum + (item.raw_value || 0),
@@ -153,23 +153,21 @@ app.use("*", (req, res) => {
     available_endpoints: [
       "/",
       "/api/health",
-      "/api/data",
-      "/api/data/:id",
-      "/api/data/category/:category",
-      "/api/metrics",
-      "/api/stats",
+      "/agent/volume-analyzer",
+      "/agent/volume-analyzer/:id",
+      "/agent/volume-analyzer/category/:category",
+      "/agent/volume-analyzer/metrics",
+      "/agent/volume-analyzer/stats",
     ],
   });
 });
 
-// Start server
 app.listen(PORT, () => {
   console.log(`✅ Garden Finance API is running!`);
   console.log(`📍 Local: http://localhost:${PORT}`);
-  console.log(`📚 API Docs: http://localhost:${PORT}`);
   console.log(`\nTry these endpoints:`);
-  console.log(`   • http://localhost:${PORT}/api/data`);
-  console.log(`   • http://localhost:${PORT}/api/data/1`);
-  console.log(`   • http://localhost:${PORT}/api/stats`);
+  console.log(`   • http://localhost:${PORT}/agent/volume-analyzer`);
+  console.log(`   • http://localhost:${PORT}/agent/volume-analyzer/1`);
+  console.log(`   • http://localhost:${PORT}/agent/volume-analyzer/stats`);
   console.log(`   • http://localhost:${PORT}/api/health`);
 });
