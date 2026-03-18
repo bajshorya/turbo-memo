@@ -1,11 +1,11 @@
-"use client"
+"use client";
 
-import { Search } from "lucide-react"
-import Image from "next/image"
-import { useDashboardStore } from "@/lib/store"
+import { Search } from "lucide-react";
+import Image from "next/image";
+import { useDashboardStore } from "@/lib/store";
 
 export function Header() {
-  const { searchQuery, setSearchQuery } = useDashboardStore()
+  const { searchQuery, setSearchQuery } = useDashboardStore();
 
   return (
     <header className="border-b border-gray-200 sticky top-0 z-50 bg-[#e4ebf2]">
@@ -19,7 +19,9 @@ export function Header() {
             height={32}
             className="w-[124px] h-[34px]"
           />
-          <span className="font-semibold text-[24px] text-[#1a1a3e] tracking-tight mb-1">x Turbomemo</span>
+          <span className="font-semibold text-[24px] text-[#1a1a3e] tracking-tight mb-1">
+            x turbomemo
+          </span>
         </div>
 
         {/* Search */}
@@ -39,5 +41,5 @@ export function Header() {
         <div className="flex items-center gap-2" />
       </div>
     </header>
-  )
+  );
 }
