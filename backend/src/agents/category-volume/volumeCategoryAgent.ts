@@ -7,7 +7,7 @@ import {
   PreprocessedCategoryVolumeData,
   VolumePreprocessor,
 } from "./volumeCategoryPreprocessor.js";
-import type { VolumeAnalysis, VolumeSignal } from "../../types/volumeTypes.js";
+import type { CategoryVolumeAnalysis } from "../../types/volumeTypes.js";
 
 const client = new GoogleGenerativeAI(process.env.GEMINI_API_KEY!);
 
@@ -199,6 +199,7 @@ export class CategoryVolumeAgent {
   private preprocessor: VolumePreprocessor;
   private model: GenerativeModel;
   private fallbackModels: string[] = [
+    "gemini-2.0-flash-lite",
     "gemini-2.5-flash",
     "gemini-2.0-flash", // Fallback to 2.0 if 2.5 is busy
     "gemini-1.5-pro", // Then try 1.5 pro
@@ -230,7 +231,7 @@ export class CategoryVolumeAgent {
     model: GenerativeModel,
     modelName: string,
     retryCount = 0,
-  ): Promise<VolumeAnalysis> {
+  ): Promise<CategoryVolumeAnalysis> {
     const maxRetries = 3;
 
     try {
@@ -243,7 +244,7 @@ export class CategoryVolumeAgent {
       );
 
       try {
-        return JSON.parse(text) as VolumeAnalysis;
+        return JSON.parse(text) as CategoryVolumeAnalysis;
       } catch (error) {
         console.error(
           `[CategoryVolumeAgent] Failed to parse JSON response from ${modelName}:`,
@@ -278,7 +279,7 @@ export class CategoryVolumeAgent {
     }
   }
 
-  private async callGemini(prompt: string): Promise<VolumeAnalysis> {
+  private async callGemini(prompt: string): Promise<CategoryVolumeAnalysis> {
     // Try primary model first
     const modelsToTry = [
       { model: this.model, name: "gemini-2.5-flash" },
@@ -321,7 +322,7 @@ export class CategoryVolumeAgent {
   }
 
   private async saveToDB(
-    analysis: VolumeAnalysis,
+    analysis: CategoryVolumeAnalysis,
     preprocessed: PreprocessedCategoryVolumeData,
   ): Promise<void> {
     await AgentOutputModel.create({
@@ -352,7 +353,7 @@ export class CategoryVolumeAgent {
     );
   }
 
-  async run(): Promise<VolumeAnalysis> {
+  async run(): Promise<CategoryVolumeAnalysis> {
     console.log(
       `\n[CategoryVolumeAgent] ═══ Starting run at ${new Date().toISOString()} ═══`,
     );
@@ -400,7 +401,7 @@ export class CategoryVolumeAgent {
 
     if (analysis.signals.length > 0) {
       console.log("[CategoryVolumeAgent]   Signal list:");
-      analysis.signals.forEach((s: VolumeSignal) => {
+      analysis.signals.forEach((s) => {
         console.log(`[CategoryVolumeAgent]     → [${s.type}] ${s.description}`);
       });
     }

@@ -10,7 +10,12 @@
     "dev": "tsx watch src/scheduler.ts",
     "seed": "tsx src/seed.ts",
     "typecheck": "tsc --noEmit",
-    "test:volume": "npx tsx src/agents/volume/testVolumeAgent.ts"
+    "test:volume": "npx tsx src/agents/volume/testVolumeAgent.ts",
+    "agent:continuous": "npx tsx src/agents/runContinuousAgent.ts",
+    "agent:continuous:fast": "npx tsx src/agents/runContinuousAgent.ts --interval=5000",
+    "agent:continuous:slow": "npx tsx src/agents/runContinuousAgent.ts --interval=30000",
+    "agent:continuous:test": "npx tsx src/agents/runContinuousAgent.ts --max-cycles=10 --no-mongo",
+    "agent:continuous:custom": "npx tsx src/agents/continuousSuperAgent.ts --interval=15000 --max-cycles=100 --output-dir=./my_tweets"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.30.0",

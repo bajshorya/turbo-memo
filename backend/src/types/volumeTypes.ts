@@ -96,6 +96,73 @@ export interface VolumeAnalysis {
   tweet_data_points: string[]; // ready-to-use facts for the super agent
   content_angles: string[]; // narrative angles the super agent can use
 }
+// backend/src/types/competitorTypes.ts
+
+export interface CompetitorSignal {
+  type: string;
+  description: string;
+  value: string | number;
+  competitor?: string;
+  date?: string;
+}
+// Add to src/types/volumeTypes.ts
+
+export interface CategoryVolumeSignal {
+  type: string;
+  description: string;
+  value: number | string;
+  date?: string;
+}
+
+export interface CategoryVolumeAnalysis {
+  summary: string;
+  highlights: string[];
+  sentiment: "positive" | "neutral";
+  signals: CategoryVolumeSignal[];
+  metrics: {
+    total_volume_all_time: number;
+    total_orders_all_time: number;
+    total_categories: number;
+    dominant_category_name: string;
+    dominant_category_volume_share_pct: number;
+    category_diversity_index: number;
+    volume_growth_30d_pct: number | null;
+    volume_growth_7d_pct: number | null;
+    avg_daily_volume_30d: number;
+    peak_daily_volume: number;
+    peak_daily_volume_date: string;
+  };
+  tweet_data_points: string[];
+  content_angles: string[];
+}
+export interface CompetitorMetrics {
+  garden_total_volume: number;
+  garden_total_volume_fmt: string;
+  competitor_total_volume: number;
+  competitor_total_volume_fmt: string;
+  garden_market_share_pct: number;
+  competitor_market_share_pct: number;
+  volume_ratio_garden_to_competitor: number;
+  garden_growth_30d_pct: number;
+  competitor_growth_30d_pct: number;
+  growth_differential_pct: number;
+  garden_peak_volume: number;
+  competitor_peak_volume: number;
+  btc_price: number;
+  btc_price_change_30d_pct: number;
+  market_correlation_score: number;
+}
+
+export interface CompetitorAnalysis {
+  summary: string;
+  highlights: string[];
+  sentiment: "positive" | "neutral" | "cautious";
+  signals: CompetitorSignal[];
+  metrics: CompetitorMetrics;
+  tweet_data_points: string[];
+  content_angles: string[];
+  strategic_recommendations: string[];
+}
 
 // ── MongoDB document shape ────────────────────────────────────────────────────
 
