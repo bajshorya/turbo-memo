@@ -46,13 +46,13 @@ export function  SuperAgentPanel() {
       </div>
 
       {/* Card counter */}
-      {data.length > 0 && (
+      {/* {data.length > 0 && (
         <div className="text-center mt-2">
           <span className="text-xs text-gray-400">
             {currentIndex + 1} / {data.length}
           </span>
         </div>
-      )}
+      )} */}
     </div>
   );
 }

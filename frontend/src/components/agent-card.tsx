@@ -1,6 +1,7 @@
 "use client";
 
 import type { AgentDataItem } from "@/lib/store";
+import { Copy } from "lucide-react";
 
 interface AgentCardProps {
   item: AgentDataItem;
@@ -8,11 +9,11 @@ interface AgentCardProps {
 
 export function AgentCard({ item }: AgentCardProps) {
   return (
-    <div className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden w-full select-none">
+    <div className="bg-[#eff4f9] rounded-[20px] border border-white/60 hover:border-[#fc79c1] overflow-hidden w-full select-none transition-all ease-in-out duration-200">
       {/* Header — Category badge */}
       <div className="px-5 pt-5 pb-3 flex items-center gap-2 flex-wrap">
-        <div className="bg-purple-100 border border-purple-200 rounded-full px-3 py-1">
-          <span className="text-xs font-semibold text-purple-700">
+        <div className="bg-pink-100 border border-pink-200 rounded-full px-3 py-1">
+          <span className="text-xs font-semibold text-pink-700">
             {item.category}
           </span>
         </div>
@@ -84,9 +85,9 @@ export function AgentCard({ item }: AgentCardProps) {
             e.stopPropagation();
             navigator.clipboard.writeText(item.suggested_tweet);
           }}
-          className="text-xs px-3 py-1.5 rounded-full border border-gray-200 hover:bg-gray-100 text-[#1a1a3e] transition-colors cursor-pointer"
+          className="text-xs px-3 py-1.5 rounded-full border border-gray-200 hover:bg-pink-100 hover:text-pink-900 hover:border-pink-200 bg-white text-[#1a1a3e] transition-colors cursor-pointer"
         >
-          Copy
+          <Copy className="size-3 m-0.5" />
         </button>
         <button
           onClick={(e) => {

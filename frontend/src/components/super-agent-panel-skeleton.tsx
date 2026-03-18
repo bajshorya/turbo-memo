@@ -5,10 +5,10 @@ export function SuperAgentPanelSkeleton() {
     <div className="w-1/3 shrink-0 flex flex-col">
       {/* Card area skeleton */}
       <div className="flex-1 relative" style={{ minHeight: 460 }}>
-        <div className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden w-full">
+        <div className="bg-[#eff4f9] rounded-[20px] border border-white/60 overflow-hidden w-full">
           {/* Header — Category badges */}
           <div className="px-5 pt-5 pb-3 flex items-center gap-2 flex-wrap">
-            <Skeleton className="h-6 w-20 rounded-full" />
+            <Skeleton className="h-6 w-20 rounded-full bg-pink-100/50" />
             <Skeleton className="h-6 w-16 rounded-full bg-gray-800/10" />
           </div>
 
@@ -63,10 +63,6 @@ export function SuperAgentPanelSkeleton() {
         </div>
       </div>
 
-      {/* Card counter skeleton */}
-      <div className="text-center mt-2">
-        <Skeleton className="w-8 h-3 mx-auto" />
-      </div>
     </div>
   );
 }

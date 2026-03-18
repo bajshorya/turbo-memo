@@ -76,8 +76,8 @@ export default function Home() {
 
         {/* Right — Agent Feeds (2/3 width) */}
         <div className="w-2/3 relative">
-          <ScrollArea className="h-[calc(100vh-180px)] pr-4">
-            <div className="grid grid-cols-2 gap-4 pb-16">
+          <ScrollArea className="h-[calc(100vh-180px)] pr-4 ">
+            <div className="grid grid-cols-2 gap-4 pb-[100px]">
               <AgentFeed
                 title="Volume Analyzer"
                 data={volumeFeed.data}

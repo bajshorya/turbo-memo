@@ -12,48 +12,60 @@ export function AgentFeedSkeleton() {
 
       {/* Card Display Skeleton */}
       <div className="relative" style={{ minHeight: 460 }}>
-        <div className="bg-white rounded-2xl border border-gray-200 p-6 h-full">
-          {/* Header section */}
-          <div className="flex items-center justify-between mb-4">
-            <div className="flex items-center gap-3">
-              <Skeleton className="w-16 h-6 rounded-full" />
-              <Skeleton className="w-20 h-6 rounded-full" />
-              <Skeleton className="w-12 h-6 rounded-full" />
-            </div>
-            <Skeleton className="w-12 h-4" />
+        <div className="bg-[#eff4f9] rounded-[20px] border border-white/60 overflow-hidden w-full">
+          {/* Header — Category badges */}
+          <div className="px-5 pt-5 pb-3 flex items-center gap-2 flex-wrap">
+            <Skeleton className="h-6 w-20 rounded-full bg-pink-100/50" />
+            <Skeleton className="h-6 w-16 rounded-full bg-gray-800/10" />
           </div>
 
-          {/* Competitor VS Bar */}
-          <div className="mb-4">
-            <Skeleton className="w-3/4 h-8 rounded-full" />
-          </div>
-          
-          {/* Tweet Content */}
-          <div className="mb-4 space-y-2">
-            <Skeleton className="w-full h-4" />
-            <Skeleton className="w-5/6 h-4" />
-            <Skeleton className="w-4/5 h-4" />
-          </div>
-
-          {/* Signal Tags */}
-          <div className="flex items-center gap-2 mb-4">
-            <Skeleton className="w-20 h-6 rounded-full" />
-            <Skeleton className="w-12 h-6 rounded-full" />
-          </div>
-
-          {/* Character Bar */}
-          <div className="mb-6">
-            <Skeleton className="w-full h-1 rounded-full" />
-            <div className="flex justify-between mt-1">
-              <Skeleton className="w-12 h-3" />
+          {/* Metric */}
+          <div className="px-5 pb-3">
+            <Skeleton className="h-3 w-12 mb-1" />
+            <div className="bg-gray-50 border border-gray-100 rounded-xl px-4 py-2">
+              <Skeleton className="h-4 w-32" />
             </div>
           </div>
-          
-          {/* Action Buttons */}
-          <div className="flex items-center gap-3">
-            <Skeleton className="w-20 h-10 rounded-full" />
-            <Skeleton className="w-20 h-10 rounded-full" />
-            <Skeleton className="w-32 h-10 rounded-full" />
+
+          {/* Insight */}
+          <div className="px-5 pb-3">
+            <Skeleton className="h-3 w-12 mb-1" />
+            <div className="bg-gray-50 border border-gray-100 rounded-xl px-4 py-3">
+              <div className="space-y-2">
+                <Skeleton className="h-4 w-full" />
+                <Skeleton className="h-4 w-5/6" />
+                <Skeleton className="h-4 w-4/5" />
+              </div>
+            </div>
+          </div>
+
+          {/* Suggested Tweet */}
+          <div className="px-5 pb-3">
+            <Skeleton className="h-3 w-20 mb-1" />
+            <div className="bg-gray-50 border border-gray-100 rounded-xl p-4">
+              <div className="flex items-center gap-2 mb-2">
+                <div className="flex flex-col leading-tight">
+                  <Skeleton className="h-2 w-20" />
+                </div>
+              </div>
+              <div className="space-y-2 mb-3">
+                <Skeleton className="h-4 w-full" />
+                <Skeleton className="h-4 w-4/5" />
+                <Skeleton className="h-4 w-3/4" />
+              </div>
+
+              {/* Character bar */}
+              <div className="mt-3">
+                <Skeleton className="w-full h-1 rounded-full" />
+                <Skeleton className="h-2 w-8 mt-0.5" />
+              </div>
+            </div>
+          </div>
+
+          {/* Actions */}
+          <div className="px-5 pb-5 flex items-center gap-2">
+            <Skeleton className="h-7 w-12 rounded-full" />
+            <Skeleton className="h-7 w-20 rounded-full" />
           </div>
         </div>
       </div>
