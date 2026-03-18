@@ -34,22 +34,22 @@ export function Controls() {
   const seconds = Math.ceil(remaining / 1000);
 
   return (
-    <div className="border-b border-gray-200 bg-[#EBF0F5] rounded-[20px]">
-      <div className="flex items-center justify-between px-6 py-3">
+    <div className="border-b border-gray-200 bg-[#EBF0F5] rounded-[20px] mx-6">
+      <div className="flex items-center justify-between px-1.5 h-[58px] py-1">
         {/* Left */}
-        <div className="flex items-center gap-3">
+        <div className="flex h-full items-center gap-2">
           <Button
-            variant="outline"
-            className="h-10 bg-[#f8f8f8] text-[#473c75] border-gray-200 hover:bg-gray-50 rounded-full px-4 font-medium"
+            variant="ghost"
+            className="h-full bg-[#f8f8f8] text-[#473c75] border-gray-200 hover:bg-gray-50 rounded-[14px] px-4 font-medium "
           >
             All Agents
           </Button>
 
-          <div className="flex items-center gap-2">
+          <div className="flex h-full items-center gap-0.5">
             {["Volume", "Category", "Fees", "Asset"].map((label) => (
               <div
                 key={label}
-                className="h-8 flex items-center rounded-full px-3 bg-white border border-gray-200 text-xs font-medium text-[#1a1a3e]"
+                className="h-full flex items-center rounded-lg px-4 bg-[#f8f8f8] border border-gray-200 text-xs text-[#1a1a3e] "
               >
                 <div className="w-1.5 h-1.5 rounded-full bg-green-400 mr-1.5" />
                 {label}
@@ -64,7 +64,7 @@ export function Controls() {
           size="sm"
           onClick={onRefresh}
           disabled={disabled}
-          className="h-10 bg-[#f8f8f8] text-[#473c75] hover:bg-gray-50 rounded-full px-4 font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+          className="h-full bg-[#f8f8f8] text-[#473c75] hover:bg-gray-50 rounded-[14px] px-4 font-medium disabled:opacity-50 disabled:cursor-not-allowed"
         >
           <RefreshCw className={`w-4 h-4 mr-2 ${isRefreshing ? 'animate-spin' : ''}`} />
           {isRefreshing ? 'Refreshing...' : disabled && remaining > 0 ? `Refresh (${seconds}s)` : "Refresh All"}
